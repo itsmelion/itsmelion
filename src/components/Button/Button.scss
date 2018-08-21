@@ -1,0 +1,17 @@
+button.button, a.button {
+  // &:first-of-type { margin-left: 0 }
+  .svg-inline--fa {
+    margin-right: .5rem;
+    margin-top: .11rem;
+  }
+
+  &.social { font-size: .9rem; .svg-inline--fa { font-size: 1rem; } }
+  sub.social-tag { font-size: .7rem; opacity: .7; display: block; }
+  // svg, p { display: block; }
+  &.outline { border: 1pt solid currentColor; }
+
+  &.linkedin { background-color: #0077b5; color: white; }
+  &.facebook { background-color: #3B5998; color: white; }
+  &.instagram { background-color: white; color: #24292e; }
+  &.github { background-color: #24292e; color: white; }
+}

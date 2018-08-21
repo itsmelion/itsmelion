@@ -1,0 +1,10 @@
+
+<svg width="281px" height="105px" viewBox="0 0 281 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="HoloBase">
+    <path d="M249.909091,44.1266234 L249.909091,15.8733766 L140.454545,1.00917903 L31,15.8733766 L31,44.1266234 L140.454545,58.990821 L249.909091,44.1266234 Z" id="Shape" stroke-opacity="0.2" stroke="#D64DF2" stroke-width="2" fill="#4D3751" fill-rule="nonzero"></path>
+    <polygon id="Path-2" fill="#443E46" points="30.252135 15.6003936 0.421910053 43.8484746 0.421910053 81.5929121 30.252135 43.8484746"></polygon>
+    <polygon id="Path-2" fill="#9E7EA5" transform="translate(265.636161, 48.618076) scale(-1, 1) translate(-265.636161, -48.618076) " points="280.830225 15.2436332 255.488114 44.2480809 250.442098 81.9925184 280.830225 44.2480809"></polygon>
+    <polygon id="Path-3" fill="#69596D" points="29.8696962 45.0900909 140.270517 59.944083 140.270517 104.692913 0.325863784 81.8793046"></polygon>
+    <polygon id="Path-3" fill="#7A667E" transform="translate(210.448022, 74.496231) scale(-1, 1) translate(-210.448022, -74.496231) " points="170.143745 44.3896398 280.896044 59.8539921 280.896044 104.602822 140 81.9291599"></polygon>
+  </g>
+</svg>

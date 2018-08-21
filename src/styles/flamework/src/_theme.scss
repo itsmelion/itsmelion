@@ -1,0 +1,29 @@
+.button {
+  user-select: none;
+  outline: none;
+  line-height: 1.2;
+  letter-spacing: -.25pt;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: currentColor;
+  width: auto;
+  background-color: transparent;
+  display: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1pt solid transparent;
+  padding: .5em .8em;
+  border-radius: .15em;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:hover, &:focus { @include shadow; }
+  &:only-of-type { margin-left: 0; }
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  @media #{$mobile} {
+    background-attachment: scroll;
+  }
+}

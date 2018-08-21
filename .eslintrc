@@ -1,0 +1,32 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended", "react-app", "airbnb"],
+  "plugins": ["import", "react"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "no-use-before-define": ["warn", { "functions": false, "classes": true, "variables": true }],
+    "comma-dangle": ["warn", "always-multiline"],
+    "no-unused-vars": 2,
+    "no-param-reassign": "warn",
+    "max-len": ["warn", { "code": 90 }],
+    "no-console": ["warn", { "allow": ["warn", "info"] }],
+    "react/prop-types": 0,
+    "react/jsx-one-expression-per-line": 0
+  },
+  "globals": {
+    "window": false,
+    "document": false,
+    "fetch": false,
+  }
+}

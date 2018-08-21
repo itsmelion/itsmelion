@@ -1,0 +1,19 @@
+@import 'vars';
+
+#home-items {
+  .items {
+    padding: 1rem;
+    color: currentColor;
+    img { width: 3rem; }
+    p { color: $white5; }
+    &:hover {
+      background-color: rgba($pink, .2);
+    }
+  }
+}
+
+.landscape-bg {
+  background-image: url('./section-bg-landscape.jpg');
+  background-position: top center;
+  background-color: #002650;
+}

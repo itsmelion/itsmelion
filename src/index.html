@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="en-UK">
+    <meta name="theme-color" content="#2d183a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black">
+
+    <link rel="alternate" hreflang="en-us"
+        href="//alia.ml?lang=en" />
+    <link rel="alternate" hreflang="pt-br"
+          href="//alia.ml?lang=pt" />
+    <link rel="alternate" hreflang="he"
+          href="//alia.ml?lang=he" />
+    <link rel="alternate" hreflang="x-default"
+          href="//alia.ml" />
+
+    <meta name="reply-to" content="christhopherleao@icloud.com">
+    <meta name="author" content="Christhopher Lion">
+
+    <meta name="keywords" content="Alia web, alia, alia mobile, mobile apps, apps, ΛLIΛ, belo horizonte, brazil, brasil, empresa, software, portfolio, resume, developer, lion,frontend, design" />
+    <meta name="description" content="ΛLIΛ profile" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_UK">
+    <meta property="og:locale:alternate" content="pt-BR" />
+    <meta property="fb:app_id" content="{{facebookAppId}}">
+    <meta property="og:site_name" content="ΛLIΛ" />
+    <meta property="og:title" content="Lion portfolio | ΛLIΛ" />
+    <meta property="og:description" content="Portfolio ΛLIΛ" />
+    <meta property="og:url" content="lion.alia.ml" />
+    <meta property="twitter:title" content="ΛLIΛ Portfolio" />
+
+    <link
+      rel="preload"
+      as="style"
+      async
+      href="https://fonts.googleapis.com/css?family=Assistant:300,600,700"
+      onload="this.rel='stylesheet'"
+    />
+
+    <base href="/">
+
+    <style>
+      #loading {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 100;
+        pointer-events: none;
+      }
+      #root:empty + #loading {
+        opacity: 1;
+      }
+      #root:empty + #loading h1 {
+        color: #EEE;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(0, -50%);
+      }
+    </style>
+
+    <title>Chris Lion | Portfolio ΛLIΛ </title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <div id="loading">
+        <h1>Loading... <br>Carregando</h1>
+    </div>
+  </body>
+</html>

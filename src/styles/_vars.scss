@@ -1,0 +1,43 @@
+$gutter:              1rem;
+$container-width:     74rem;
+$mobile-breakpoint:   69rem; // ~780px
+$desktop-breakpoint:  $mobile-breakpoint + 0.01;
+$mobile:  "screen and (max-width: #{$mobile-breakpoint})";
+$desktop: "screen and (min-width: #{$desktop-breakpoint})";
+
+$radius: 12pt;
+
+$black: rgb(28, 24, 33);
+$black1: rgba($black, .1);
+$black3: rgba($black, .25);
+$black5: rgba($black, .5);
+$black8: rgba($black, .75);
+
+$white: #fff;
+$white1: rgba($white, .1);
+$white3: rgba($white, .3);
+$white5: rgba($white, .6);
+$white7: rgba($white, .8);
+
+$pink: rgb(199, 71, 225);
+$dalaran: rgb(149, 69, 165);
+
+$primary: $pink;
+$base: #27232B;
+$background: $base;
+$strip-background: rgba($pink,0.1);
+
+$base-font: 'Assistant', 'Segoe UI', 'Open Sans',
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-line-height: 1.4 !default;
+$base-font-size: 100% !default;
+// Font size mixin for REM output with PX fallback
+@mixin font-size($size) {
+  font-size: $size * $base-font-size;
+  font-size: #{$size}rem;
+}

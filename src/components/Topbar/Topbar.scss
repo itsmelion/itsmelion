@@ -1,0 +1,45 @@
+@import 'vars';
+
+nav#topbar {
+  color: $white5;
+  padding: .25rem;
+  position: relative;
+  background: rgba($pink, .1);
+  border: 1pt solid rgba($pink, .2);
+  font-size: .9rem;
+
+  .tabs {
+    li {
+      margin: 0 .5rem;
+      text-align: center;
+      position: relative;
+
+      > a {
+        display: block;
+        border: 1pt solid transparent;
+        padding: .4em 1.5em;
+        height: 100%;
+        color: currentColor;
+        cursor: pointer;
+        user-select: none;
+        border-radius: $radius * 3;
+
+        &:hover { border: 1pt solid rgba($dalaran, .5); }
+      }
+
+      &:first-of-type { margin-left: 0; }
+      &:last-of-type { margin-right: 0; }
+    }
+  }
+}
+
+#nav-logo {
+  position: absolute;
+  top: 25%;
+  height: 100%;
+  width: auto;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+  min-width: 3rem;
+}

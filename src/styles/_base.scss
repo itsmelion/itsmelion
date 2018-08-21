@@ -1,0 +1,29 @@
+html,
+body {
+  color: white;
+  background-color: $base;
+}
+
+h6 { font-size: 1rem; font-weight: bold; }
+
+.dalaran { color: $pink; }
+
+.beta-tag {
+  padding: .1em .4em;
+  line-height: inherit;
+  font-size: 50%;
+  border-radius: .2em;
+  letter-spacing: 0;
+  color: $white7;
+  background-color: $dalaran;
+  vertical-align: top;
+}
+
+.pulse { animation: pulse 1.2s infinite; opacity: 1; }
+
+@keyframes pulse {
+  from { opacity: 1; }
+  30%  { opacity: 0; }
+  40%  { opacity: 0; }
+  to   { opacity: 1; }
+}

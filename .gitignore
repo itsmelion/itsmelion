@@ -1,0 +1,21 @@
+node_modules*
+bundle.js
+npm-debug.log
+.DS_Store*
+
+# IntelliJ
+*.iml
+/.idea
+
+**/.sass-cache
+**/Thumbs.ds
+**/npm-debug.log
+
+.env
+dist
+
+*.log
+
+.tmp
+dist
+build
