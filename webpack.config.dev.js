@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -51,6 +50,7 @@ const config = merge(common, {
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
     new webpack.EnvironmentPlugin([
+      'NODE_ENV',
       'appName',
       'HOST',
       'PORT',
@@ -81,7 +81,7 @@ const config = merge(common, {
   ],
   devtool: 'eval',
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: resolve(__dirname, 'dist'),
     host: process.env.HOST,
     port: Number(process.env.PORT),
     compress: !devMode,
@@ -94,7 +94,7 @@ const config = merge(common, {
       aggregateTimeout: 500,
       poll: 1000,
     },
-    // clientLogLevel: 'warning',
+    clientLogLevel: 'warning',
     // noInfo: true,
 
     // https: {
