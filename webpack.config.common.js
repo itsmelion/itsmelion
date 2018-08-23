@@ -3,11 +3,12 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
+const { resolve } = require('path');
 
 require('dotenv').config();
 
-// const devMode = process.env.NODE_ENV === 'development';
 const common = {
   entry: [
     require.resolve('react-dev-utils/webpackHotDevClient'),
@@ -36,6 +37,7 @@ const common = {
       /\.d\.ts$/,
       /\.DS_Store$/,
     ]),
+    new Dotenv(),
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
       template: './src/index.html',

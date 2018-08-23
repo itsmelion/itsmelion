@@ -7,8 +7,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const { resolve } = require('path');
 const common = require('./webpack.config.common');
 
-require('dotenv').config();
-/* eslint-disable-block */
 const devMode = process.env.NODE_ENV === 'development';
 
 const config = merge(common, {
@@ -50,14 +48,6 @@ const config = merge(common, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
-    new webpack.EnvironmentPlugin([
-      'NODE_ENV',
-      'appName',
-      'HOST',
-      'PORT',
-      'browserSyncPort',
-      'DEFAULT_LANG',
-    ]),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',

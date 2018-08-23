@@ -3,14 +3,10 @@ const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const { resolve } = require('path');
-
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 const common = require('./webpack.config.common');
-
-require('dotenv').config();
-
-// const devMode = process.env.NODE_ENV === 'development';
 
 const config = merge(common, {
   mode: 'production',
@@ -67,9 +63,6 @@ const config = merge(common, {
 
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
-    // new Dotenv({
-    //   path: './.env.production',
-    // }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
