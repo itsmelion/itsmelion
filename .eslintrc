@@ -27,6 +27,6 @@
   "globals": {
     "window": false,
     "document": false,
-    "fetch": false,
+    "fetch": false
   }
 }
