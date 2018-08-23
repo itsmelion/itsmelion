@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+const errorOverlayMiddleware = require('react-dev-utils/errorOverlayMiddleware');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const { resolve } = require('path');
@@ -95,6 +96,10 @@ const config = merge(common, {
       poll: 1000,
     },
     clientLogLevel: 'warning',
+    before(app) {
+      // This lets us open files from the runtime error overlay.
+      app.use(errorOverlayMiddleware());
+    },
     // noInfo: true,
 
     // https: {

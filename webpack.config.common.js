@@ -3,18 +3,22 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const eslintFormatter = require('react-dev-utils/eslintFormatter');
 
 require('dotenv').config();
 
 // const devMode = process.env.NODE_ENV === 'development';
 const common = {
-  entry: ['./src/index.jsx'],
+  entry: [
+    require.resolve('react-dev-utils/webpackHotDevClient'),
+    './src/index.jsx',
+  ],
   output: {
     // https://alia.ams3.digitaloceanspaces.com/ change this if proxy
     publicPath: '/',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
   },
   optimization: {
     splitChunks: {
@@ -39,24 +43,46 @@ const common = {
       hash: true,
       favicon: './src/images/favicons/favicon.ico',
       filename: 'index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      },
     }),
   ],
   module: {
     rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: { loader: 'babel-loader' },
-      },
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
-      // {
-      //   test: /\.tsx?$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     { loader: 'babel-loader' },
-      //     { loader: 'ts-loader' },
-      //   ],
-      // },
+      {
+        test: /\.(js|jsx|mjs)$/,
+        enforce: 'pre',
+        use: [
+          {
+            options: {
+              formatter: eslintFormatter,
+              eslintPath: require.resolve('eslint'),
+
+            },
+            loader: 'eslint-loader',
+          },
+        ],
+        include: resolve(__dirname, 'src'),
+      },
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'babel-loader' },
+          { loader: 'ts-loader' },
+        ],
+      },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
