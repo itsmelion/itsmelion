@@ -4,11 +4,12 @@
       "targets": {
         "browsers": ["last 2 versions", "safari >= 11"]
       }
-      }],
-      "@babel/preset-react"
-    ],
+    }],
+    "@babel/preset-react"
+  ],
   "plugins": [
-    "syntax-dynamic-import",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-classes",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-proposal-function-bind",

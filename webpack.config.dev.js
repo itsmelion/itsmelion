@@ -11,6 +11,10 @@ const devMode = process.env.NODE_ENV === 'development';
 
 const config = merge(common, {
   mode: 'development',
+  entry: [
+    require.resolve('react-dev-utils/webpackHotDevClient'),
+    './src/index.jsx',
+  ],
   output: {
     // path: __dirname,
     // publicPath: '/',

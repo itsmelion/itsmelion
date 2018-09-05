@@ -10,10 +10,6 @@ const { resolve } = require('path');
 require('dotenv').config();
 
 const common = {
-  entry: [
-    require.resolve('react-dev-utils/webpackHotDevClient'),
-    './src/index.jsx',
-  ],
   output: {
     // https://alia.ams3.digitaloceanspaces.com/ change this if proxy
     publicPath: '/',
@@ -61,11 +57,11 @@ const common = {
   ],
   module: {
     rules: [
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
       {
-        test: /\.(js|jsx|mjs)$/,
+        test: /\.jsx?$/,
         enforce: 'pre',
         use: [
+          { loader: 'source-map-loader' },
           {
             options: {
               formatter: eslintFormatter,
@@ -76,6 +72,11 @@ const common = {
           },
         ],
         include: resolve(__dirname, 'src'),
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: { loader: 'babel-loader' },
       },
       {
         test: /\.tsx?$/,

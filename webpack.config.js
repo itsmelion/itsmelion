@@ -10,6 +10,9 @@ const common = require('./webpack.config.common');
 
 const config = merge(common, {
   mode: 'production',
+  entry: [
+    './src/index.jsx',
+  ],
   output: {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
