@@ -32,19 +32,19 @@ const getLanguage = () => {
   const defaultLang = 'en';
   const browserLang = window.navigator.userLanguage || window.navigator.language;
   const lang = (`${browserLang[0]}${browserLang[1]}`).toLowerCase();
-  // const local = localStorage.getItem('lang');
+  const local = localStorage.getItem('lang');
   const queryLang = getQueryParams('lang');
   const language = queryLang || (available.includes(lang) && lang) || defaultLang;
   localStorage.setItem('lang', language);
 
-  // if (queryLang) return queryLang;
-  // if (local) return local;
-  // if (!browserLang) return defaultLang;
+  if (queryLang) return queryLang;
+  if (local) return local;
+  if (!browserLang) return defaultLang;
 
-  // return language;
+  return language;
 };
 
-getLanguage();
+window.lang = getLanguage();
 
 render(
   <BrowserRouter>

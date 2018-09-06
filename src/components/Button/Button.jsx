@@ -3,14 +3,14 @@ import './Button.scss';
 
 const Button = (props) => {
   const {
-    _style = 'default', _type = 'button', link, children, newtab, ...other
+    theme = 'default', _type = 'button', link, children, newtab, ...other
   } = props;
 
   if (link) {
     return (
       <a
         {...other}
-        className={`button row nowrap ${_style}`}
+        className={`button row nowrap ${theme}`}
         align="start start"
         href={link}
         target={newtab ? '_blank' : ''}
@@ -22,7 +22,7 @@ const Button = (props) => {
 
   return (
     // eslint-disable-next-line react/button-has-type
-    <button {...other} type={_type} className={`button row ${_style}`}>
+    <button {...other} type={_type} className={`button row ${theme}`}>
       {children}
     </button>
   );

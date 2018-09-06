@@ -3,7 +3,10 @@ import logo from '../../images/logo.png';
 
 const Footer = () => (
   <section contain="" className="p1">
-    <h2 className="mv2">&gt; let MAKE = new Code(together); <span className="pulse">_</span></h2>
+    <h2 className="mv2">
+      &gt; let MAKE = new Code(together);
+      <span className="pulse">_</span>
+    </h2>
     <footer row="" flex="" align="between stretch">
       <aside>
         <img width="24" src={logo} alt="Logo Alia" />

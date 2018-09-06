@@ -57,10 +57,8 @@
         z-index: 100;
         pointer-events: none;
       }
-      #root:empty + #loading {
-        opacity: 1;
-      }
-      #root:empty + #loading h1 {
+
+      #loading h1 {
         color: #EEE;
         position: absolute;
         top: 50%;
@@ -68,6 +66,8 @@
         text-align: center;
         transform: translate(0, -50%);
       }
+
+      #root:empty + #loading { opacity: 1; }
     </style>
 
     <title>Chris Lion | Portfolio ΛLIΛ </title>

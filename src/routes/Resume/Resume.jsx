@@ -1,30 +1,20 @@
 import React from 'react';
-import './resume.pdf';
+import './Resume.scss';
+import resumePDF from './resume.pdf';
+import i18n from './Resume.i18n';
 
-class Resume extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Resume = () => (
+  <main>
+    <header id="Resume">
+      <a className="button" target="_blank" rel="noopener noreferrer" href={resumePDF}>
+        <h1>{i18n.resume[window.lang]}</h1>
+      </a>
+    </header>
 
-  // After the component output has been rendered to the DOM.
-  // public componentDidMount() {}
-  // public componentWillUnmount() {}
+    <section>
+      <h2>contnet</h2>
+    </section>
+  </main>
+);
 
-  render() {
-    return <h1> Hello {this.props} </h1>;
-  }
-
-  // private someMethod() {
-  //   /* Async ref:
-  //   https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
-  //   */
-  //   this.setState({
-  //     something: 'data',
-  //   });
-  //   this.setState((prevState, props) => ({
-  //     counter: prevState.something + props.something
-  //   }));
-  // }
-}
 export default Resume;
