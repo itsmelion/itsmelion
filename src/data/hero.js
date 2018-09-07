@@ -5,6 +5,12 @@ export default {
     he: 'כריסטופר אריה',
   },
 
+  picture: {
+    avatar: '/images/hero/lion.jpg',
+    micro: '/images/hero/micro-lion.jpg',
+    body: '/images/hero/full-lion.jpg',
+  },
+
   contact: {
     email: 'christhopherleao@icloud.com',
     skype: 'christhopher.amaral <christhopher@hotmail.com.br>',

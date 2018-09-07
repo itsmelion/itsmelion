@@ -6,8 +6,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const { resolve } = require('path');
-
 require('dotenv').config();
+
+const isDev = process.env.NODE_ENV === 'development';
 
 const common = {
   output: {
@@ -34,7 +35,9 @@ const common = {
       /\.DS_Store$/,
     ]),
     new Dotenv(),
-    new CleanWebpackPlugin('dist', {}),
+    new CleanWebpackPlugin('dist', {
+      exclude: ['images', 'fonts'], beforeEmit: true,
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: 'body',
@@ -103,6 +106,17 @@ const common = {
         test: /\.(jpe?g|png|gif|svg|ico)/,
         use: [
           {
+            loader: 'file-loader',
+            options: {
+              name(file) {
+                if (isDev) return '[path][name].[ext]';
+                return '[path][name].[ext]?[hash]';
+              },
+              context: './src/images',
+              outputPath: 'images/',
+            },
+          },
+          {
             loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
@@ -126,14 +140,9 @@ const common = {
                 removeViewBox: true,
                 minifyStyles: true,
               },
-            },
-          },
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]?[hash]',
-              context: './src/images',
-              outputPath: 'images/',
+              webp: {
+                quality: 75,
+              },
             },
           },
         ],
