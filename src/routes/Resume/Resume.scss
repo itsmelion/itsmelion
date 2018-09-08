@@ -1,7 +1,21 @@
-#Resume {
-
-  @media print {
-    background-color: #666666;
-  }
+header.Resume {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .button { margin-top: 1rem; }
 }
 
+main.Resume {
+  background-color: white;
+  color: black;
+  box-shadow: 1pt 1pt 3pt 1pt black, 0 0 15pt 3pt black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  @media print {
+    padding: .5cm;
+    margin: 0;
+    a[href]:after { content: none }
+  }
+}

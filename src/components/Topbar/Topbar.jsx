@@ -12,7 +12,7 @@ class Topbar extends PureComponent {
 
   render() {
     return (
-      <nav id="topbar">
+      <nav hide-print="" id="topbar">
         <div className="contain row nowrap" align="between center">
           <ul className="hide-mobile" flex="" />
 

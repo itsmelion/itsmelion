@@ -11,16 +11,11 @@ const loading = () => (
 );
 
 const Home = () => (
-  <main>
+  <main id="Home">
     <Header />
     <HomeItems />
   </main>
 );
-
-const Page = Loadable({
-  loader: () => import('./routes/works/MySite'),
-  loading,
-});
 
 const Cases = Loadable({
   loader: () => import('./routes/Cases/Cases'),
@@ -38,5 +33,5 @@ const Resume = Loadable({
 });
 
 export {
-  loading, Home, Cases, Works, Page, Resume,
+  loading, Home, Cases, Works, Resume,
 };

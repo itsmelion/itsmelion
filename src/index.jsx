@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import {
-  Home, Cases, Works, Resume, Page,
+  Home, Cases, Works, Resume,
 } from './routes';
 
 require.context('./images/favicons', true);
@@ -48,17 +48,16 @@ window.lang = getLanguage();
 
 render(
   <BrowserRouter>
-    <div>
+    <>
       <Topbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/cases" component={Cases} />
         <Route path="/works" component={Works} />
         <Route path="/resume" component={Resume} />
-        <Route path="/cases/page/" component={Page} />
       </Switch>
       <Footer />
-    </div>
+    </>
   </BrowserRouter>,
   document.getElementById('root'),
 );

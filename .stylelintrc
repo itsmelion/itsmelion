@@ -6,6 +6,6 @@
     "declaration-colon-space-after": "always",
     "indentation": [2],
     "max-empty-lines": 2,
-    "unit-whitelist": ["em", "rem", "%", "s", "pt", "vh", "vw", "deg"]
+    "unit-whitelist": ["em", "rem", "%", "s", "pt", "vh", "vw", "deg", "cm"]
   }
 }

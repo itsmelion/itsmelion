@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../images/logo.png';
 
 const Footer = () => (
-  <section contain="" className="p1">
+  <section hide-print="" contain="" className="p1">
     <h2 className="mv2">
       &gt; let MAKE = new Code(together);
       <span className="pulse">_</span>
