@@ -1,3 +1,5 @@
+@import 'vars';
+
 header.Resume {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -5,17 +7,49 @@ header.Resume {
 }
 
 main.Resume {
-  background-color: white;
-  color: black;
-  box-shadow: 1pt 1pt 3pt 1pt black, 0 0 15pt 3pt black;
+  color: $black8;
+  font-size: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-top: 2rem;
   padding-bottom: 4rem;
+  padding-top: 2rem;
+  background-color: white;
+  box-shadow: 1pt 1pt 3pt 1pt black, 0 0 15pt 3pt black;
+
+  hr { margin: 2rem; }
+  h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  h3 { font-weight: 800; color: $black5; margin-bottom: 1rem; }
+  h4 { color: $primary; font-weight: 600; margin: 1rem 0 2rem 0; }
+  p { max-width: 38rem; }
+
+  img {
+    border-radius: .5em;
+    border: 1pt solid $black1;
+    padding: .2em .4em;
+  }
+
+  address {
+    padding: 1rem;
+    border: 1pt solid $black3;
+    border-radius: $radius;
+    font-style: normal;
+    white-space: nowrap;
+    margin: 1rem auto;
+  }
+
 
   @media print {
-    padding: .5cm;
     margin: 0;
+    padding: .5cm;
+    box-shadow: none;
+    color: black;
+    font-size: .9rem;
+
     a[href]:after { content: none }
   }
 }

@@ -7,23 +7,24 @@ const Footer = () => (
       &gt; let MAKE = new Code(together);
       <span className="pulse">_</span>
     </h2>
-    <footer row="" flex="" align="between stretch">
+    <footer row="" mobile-column="" align="between stretch">
       <aside>
-        <img width="24" src={logo} alt="Logo Alia" />
-        Alia is a brand who represents is Christhopher Lion as a Legal person
-        <li>Instagram</li>
+        <img
+          width="24"
+          src={logo}
+          alt="Logo Alia"
+          title="Alia is a brand who represents Christhopher Lion"
+        />
+        <a href="//instagram.com/go.alia">@go.alia</a>
       </aside>
       <article>
-        <ul>
-          <li>GitHub</li>
-        </ul>
-        <ul>
-          <li>Behance</li>
-          <li>Invision</li>
-        </ul>
-        <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
+        <h6>Hero useful links</h6>
+        <ul column="" align="start end">
+          <a href="//github.com/itsmelion">GitHub</a>
+          <a href="//linkedin.com/in/chrislion">LinkedIn</a>
+          <a href="//behance.net/lion_red">Behance</a>
+          <a href="//facebook.com/christhopherleao">Facebook</a>
+          <a href="//instagram.com/chris.lion">@chris.lion</a>
         </ul>
       </article>
     </footer>

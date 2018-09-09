@@ -34,7 +34,7 @@ const Header = () => (
         <Button
           mobile-flex="auto"
           link="//instagram.com/chris.lion"
-          theme="instagram social"
+          theme="social instagram"
           newtab
         >
           <FontAwesomeIcon icon={faInstagram} />
@@ -47,7 +47,7 @@ const Header = () => (
         <Button
           mobile-flex="auto"
           link="//facebook.com/christhopherleao"
-          theme="facebook"
+          theme="social facebook"
           newtab
         >
           <FontAwesomeIcon icon={faFacebook} />
@@ -57,7 +57,7 @@ const Header = () => (
         <Button
           mobile-flex="auto"
           link="//linkedin.com/in/chrislion"
-          theme="linkedin"
+          theme="social linkedin"
           newtab
         >
           <FontAwesomeIcon icon={faLinkedin} />
@@ -67,7 +67,7 @@ const Header = () => (
         <Button
           mobile-flex="auto"
           link="//github.com/itsmelion"
-          theme="github social"
+          theme="social github"
           newtab
         >
           <FontAwesomeIcon icon={faGithub} />

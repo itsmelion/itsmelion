@@ -13,7 +13,7 @@ export default {
 
   contact: {
     email: 'christhopherleao@icloud.com',
-    skype: 'christhopher.amaral <christhopher@hotmail.com.br>',
+    skype: 'christhopher.amaral',
     phone: '+55 31 982875204',
   },
 
@@ -30,12 +30,13 @@ export default {
 
   bio: {
     en: `Im a Developer (also Designer),
-  looking for a environment of growth and innovation.\n
-  My specialty is Frontend. Im a performance, and updates freak, and also an UI lover.`,
+        looking for a environment of growth and innovation.
+        My specialty is Frontend. Im a performance, and updates freak,
+        and also an UI lover.`,
     pt: `Eu sou um Desenvolvedor (também Designer),
-  procurando por um ambiente de crescimento e inovação.\n
-  Sou especializado em Frontend. E me importo bastante com desempenho,
-  atualizações, além de ser um amante de interfaces.`,
+        procurando por um ambiente de crescimento e inovação.
+        Sou especializado em Frontend. E me importo bastante com desempenho,
+        atualizações, além de ser um amante de interfaces.`,
   },
 
   text: {

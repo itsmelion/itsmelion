@@ -9,6 +9,7 @@ const Button = (props) => {
   if (link) {
     return (
       <a
+        align="start center"
         className={`button row nowrap ${theme}`}
         href={link}
         target={newtab ? '_blank' : ''}
@@ -21,7 +22,12 @@ const Button = (props) => {
 
   return (
     // eslint-disable-next-line react/button-has-type
-    <button type={_type} className={`button row ${theme}`} {...other}>
+    <button
+      align="start center"
+      type={_type}
+      className={`button row ${theme}`}
+      {...other}
+    >
       {children}
     </button>
   );

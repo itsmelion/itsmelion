@@ -1,8 +1,9 @@
 export default [
   {
     name: 'ROBOS.IM',
-    ref: '//robos.im',
+    ref: 'robos.im',
     logo: '/images/brands/robos.png',
+    position: 'Frontend',
     period: {
       start: {
         month: {
@@ -35,7 +36,9 @@ export default [
 
   {
     name: 'Planet Expat',
-    logo: '/images/planetexpat.png',
+    position: 'Frontend and Designer',
+    logo: '/images/brands/planetexpat.png',
+    ref: 'planetexpat.org',
     period: {
       start: {
         month: {
@@ -52,7 +55,6 @@ export default [
         year: 2017,
       },
     },
-    ref: '//studentbackr.com',
     description: {
       en: 'Design and development of web applications, widgets and landing pages.',
       pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
@@ -64,6 +66,7 @@ export default [
 
   {
     name: 'StudentBackr',
+    position: 'Frontend',
     logo: '/images/brands/backr.svg',
     period: {
       start: {
@@ -81,7 +84,7 @@ export default [
         year: 2017,
       },
     },
-    ref: '//studentbackr.com',
+    ref: 'studentbackr.com',
     description: {
       en: 'Design and development of web applications, widgets and landing pages.',
       pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
@@ -93,7 +96,9 @@ export default [
 
   {
     name: 'Autonomous as ALIA',
+    position: 'FullStack',
     logo: '/images/logo.png',
+    ref: 'alia.ml',
     period: {
       start: {
         month: {
@@ -110,9 +115,6 @@ export default [
         year: 2018,
       },
     },
-    ref: [
-      '//alia.ml',
-    ],
     description: {
       en: 'Design and development of websites',
       pt: 'Design and desenvolvimento websites',
@@ -125,7 +127,8 @@ export default [
 
   {
     name: 'Plug CRM',
-    ref: '//plugcrm.net',
+    ref: 'plugcrm.net',
+    position: 'Frontend and Designer',
     logo: '/images/brands/plug.png',
     period: {
       start: {
@@ -156,7 +159,9 @@ export default [
 
   {
     name: 'Destakinox',
+    position: 'Designer',
     logo: '/images/brands/destak.jpg',
+    ref: 'destakinox.com.br',
     period: {
       start: {
         month: {
@@ -173,7 +178,6 @@ export default [
         year: 2015,
       },
     },
-    ref: '//destakinox.com.br',
     description: {
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
@@ -182,7 +186,9 @@ export default [
   },
   {
     name: 'MG Representações',
+    position: 'Designer',
     logo: '/images/brands/mgrepresentacoes.png',
+    ref: 'mgrepresentacoes.com.br',
     period: {
       start: {
         month: {
@@ -199,7 +205,6 @@ export default [
         year: 2015,
       },
     },
-    ref: '//mgrepresentacoes.com.br',
     description: {
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
