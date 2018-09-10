@@ -1,9 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFacebook, faInstagram, faLinkedin, faGithub,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 import Button from '../Button/Button';
+import HeroFrame from '../HeroFrame/HeroFrame';
 import holoDefault from './holo-sillhouete.svg';
 import holoPlatform from './holo-base.svg';
 import hero from '../../data/hero';
@@ -16,7 +20,7 @@ const Header = () => (
     align="between center"
     id="home-header"
   >
-    <div flex="auto">
+    <div className="ph10" flex="auto">
       <article className="bio">
         <h6 className="dalaran">Hero:</h6>
         <h2>{hero.name[window.lang]}</h2>
@@ -29,6 +33,8 @@ const Header = () => (
           <span className="beta-tag">beta</span>
         </h4>
       </article>
+
+      <HeroFrame picture={hero.picture.avatar} />
 
       <div row="">
         <Button
@@ -51,7 +57,9 @@ const Header = () => (
           newtab
         >
           <FontAwesomeIcon icon={faFacebook} />
-          <p><span>Facebook</span></p>
+          <p>
+            <span>Facebook</span>
+          </p>
         </Button>
 
         <Button
@@ -61,7 +69,9 @@ const Header = () => (
           newtab
         >
           <FontAwesomeIcon icon={faLinkedin} />
-          <p><span>LinkedIn</span></p>
+          <p>
+            <span>LinkedIn</span>
+          </p>
         </Button>
 
         <Button

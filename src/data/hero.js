@@ -1,3 +1,5 @@
+import avatar from '../images/hero/lion.jpg';
+
 export default {
   name: {
     en: 'Christhopher Lion',
@@ -6,7 +8,7 @@ export default {
   },
 
   picture: {
-    avatar: '/images/hero/lion.jpg',
+    avatar,
     micro: '/images/hero/micro-lion.jpg',
     body: '/images/hero/full-lion.jpg',
   },
