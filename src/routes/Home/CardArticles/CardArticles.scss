@@ -1,0 +1,65 @@
+@import 'vars';
+
+.fel-mountain,
+.fel-mountain img {
+  margin-top: -13rem;
+  margin-top: -32vh;
+  height: 70vh;
+
+  @media #{$mobile} {
+    height: 40vh;
+    margin-top: -19vh;
+    object-position: right bottom;
+  }
+}
+
+#CardSection {
+  margin-top: 2rem;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-overflow-scrolling: touch;
+
+  > section {
+    margin-bottom: -2rem;
+    padding-bottom: 2rem;
+    overflow-x: scroll;
+    z-index: 2;
+  }
+}
+
+.CardArticles {
+  min-width: 18rem;
+  min-height: 16rem;
+  margin: 1rem;
+  border: 1pt solid darken($dalaran, 20%);
+  border-radius: $radius * 2;
+  z-index: 2;
+  background-color: $base;
+  transform: scale(0.9, 0.9);
+  position: relative;
+  img {
+    width: 3rem;
+  }
+
+  > a {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 3rem 2rem 3rem;
+  }
+
+  @media #{$mobile} {
+    transform: scale(1, 1);
+  }
+
+  &:nth-of-type(even) {
+    transform: scale(1.1, 1.1);
+    @media #{$mobile} {
+      transform: scale(1, 1);
+    }
+  }
+
+  &:hover {
+    background-color: rgba($dalaran, 0.2);
+    border-color: $dalaran;
+  }
+}

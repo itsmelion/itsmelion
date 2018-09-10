@@ -17,7 +17,11 @@ const Education = () => (
         <span flex="" className="hide-mobile" />
         <div row="" align="end center" nowrap="">
           <div className="right">
-            <h6>{school.institution} <sub>{school.initials && `(${school.initials})`}</sub></h6>
+            <h6>
+              {school.institution}
+              <sub>{school.initials && `(${school.initials})`}</sub>
+            </h6>
+
             <p className="hide-mobile">{school.alternativeName}</p>
           </div>
           <img
