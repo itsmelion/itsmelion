@@ -15,7 +15,10 @@ export default {
 
   contact: {
     email: 'christhopherleao@icloud.com',
-    skype: 'christhopher.amaral',
+    skype: {
+      label: 'christhopher.amaral <christhopher@hotmail.com.br>',
+      url: 'https://join.skype.com/invite/QRZJqK4phjyU',
+    },
     phone: '+55 31 982875204',
   },
 

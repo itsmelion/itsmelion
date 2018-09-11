@@ -15,12 +15,7 @@ const Resume = () => (
       <h1>{i18n.resume[window.lang]}</h1>
 
       <div row="">
-        <Button
-          newtab
-          link={resumePDF}
-          theme="default mr1"
-          rel="noopener noreferrer"
-        >
+        <Button newtab link={resumePDF} theme="default mr1" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFileDownload} />
           Download PDF
         </Button>
@@ -41,12 +36,20 @@ const Resume = () => (
 
         <address flex="auto">
           <p>
-            {hero.address.city},
-            {hero.address.country}
+            {hero.address.city},{hero.address.country}
           </p>
-          <p><a href={`mailto:${hero.contact.email}`}>{hero.contact.email}</a></p>
-          <p><a href={`tel:${hero.contact.phone}`}>{hero.contact.phone}</a></p>
-          <p>Skype: {hero.contact.skype}</p>
+          <p>
+            <a href={`mailto:${hero.contact.email}`}>{hero.contact.email}</a>
+          </p>
+          <p>
+            <a href={`tel:${hero.contact.phone}`}>{hero.contact.phone}</a>
+          </p>
+          <p>
+            Skype:
+            <a href={hero.contact.skype.url}>
+              {hero.contact.skype.label}
+            </a>
+          </p>
         </address>
       </header>
 
