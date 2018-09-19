@@ -1,6 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
 import Button from '../../components/Button/Button';
 import Experience from './Experience/Experience';
 import Education from './Education/Education';
@@ -22,6 +28,56 @@ const Resume = () => (
 
         <Button onClick={() => window.print()}>
           <FontAwesomeIcon icon={faPrint} /> Print
+        </Button>
+
+        <Button
+          mobile-flex="auto"
+          link={hero.social.instagram.url}
+          theme="social instagram"
+          newtab
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+          <p>
+            <span>{hero.social.instagram.name}</span>
+            <sub className="social-tag">
+              @{hero.social.instagram.user}
+            </sub>
+          </p>
+        </Button>
+
+        <Button
+          mobile-flex="auto"
+          link={hero.social.facebook.url}
+          theme="social facebook"
+          newtab
+        >
+          <FontAwesomeIcon icon={faFacebook} />
+          <p><span>{hero.social.facebook.name}</span></p>
+        </Button>
+
+        <Button
+          mobile-flex="auto"
+          link={hero.social.linkedin.url}
+          theme="social linkedin"
+          newtab
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <p><span>{hero.social.linkedin.name}</span></p>
+        </Button>
+
+        <Button
+          mobile-flex="auto"
+          link={hero.social.github.url}
+          theme="social github"
+          newtab
+        >
+          <FontAwesomeIcon icon={faGithub} />
+          <p>
+            <span>{hero.social.github.name}</span>
+            <sub className="social-tag">
+              @{hero.social.github.user}
+            </sub>
+          </p>
         </Button>
       </div>
     </header>

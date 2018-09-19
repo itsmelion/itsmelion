@@ -1,12 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
-import Button from '../Button/Button';
 import HeroFrame from '../HeroFrame/HeroFrame';
 import holoDefault from './holo-sillhouete.svg';
 import holoPlatform from './holo-base.svg';
@@ -35,58 +27,6 @@ const Header = () => (
       </article>
 
       <HeroFrame picture={hero.picture.avatar} />
-
-      <div row="">
-        <Button
-          mobile-flex="auto"
-          link="//instagram.com/chris.lion"
-          theme="social instagram"
-          newtab
-        >
-          <FontAwesomeIcon icon={faInstagram} />
-          <p>
-            <span>Instagram</span>
-            <sub className="social-tag">@chris.lion</sub>
-          </p>
-        </Button>
-
-        <Button
-          mobile-flex="auto"
-          link="//facebook.com/christhopherleao"
-          theme="social facebook"
-          newtab
-        >
-          <FontAwesomeIcon icon={faFacebook} />
-          <p>
-            <span>Facebook</span>
-          </p>
-        </Button>
-
-        <Button
-          mobile-flex="auto"
-          link="//linkedin.com/in/chrislion"
-          theme="social linkedin"
-          newtab
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-          <p>
-            <span>LinkedIn</span>
-          </p>
-        </Button>
-
-        <Button
-          mobile-flex="auto"
-          link="//github.com/itsmelion"
-          theme="social github"
-          newtab
-        >
-          <FontAwesomeIcon icon={faGithub} />
-          <p>
-            <span>GitHub</span>
-            <sub className="social-tag">@itsmelion</sub>
-          </p>
-        </Button>
-      </div>
     </div>
 
     <div flex="initial">

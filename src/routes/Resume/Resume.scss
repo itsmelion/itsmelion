@@ -40,6 +40,8 @@ main.Resume {
     font-style: normal;
     white-space: nowrap;
     margin: 1rem auto;
+    max-width: 100%;
+    a { display: flex; max-width: 100%;}
   }
 
 

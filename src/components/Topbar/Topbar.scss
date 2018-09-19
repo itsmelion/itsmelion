@@ -42,4 +42,8 @@ nav#topbar {
   left: 50%;
   right: 50%;
   min-width: 3rem;
+
+  @media #{$mobile} {
+    left: 1rem;
+  }
 }

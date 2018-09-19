@@ -22,6 +22,31 @@ export default {
     phone: '+55 31 982875204',
   },
 
+  social: {
+    github: {
+      name: 'Github',
+      user: 'itsmelion',
+      url: 'https://github.com/itsmelion',
+    },
+    instagram: {
+      name: 'Instagram',
+      user: 'chris.lion',
+      url: 'https://instagram.com/chris.lion',
+    },
+    facebook: {
+      name: 'Facebook',
+      url: 'https://facebook.com/christhopherleao',
+    },
+    linkedin: {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/chrislion',
+    },
+    behance: {
+      name: 'Behance',
+      url: 'https://behance.net/lion_red',
+    },
+  },
+
   ocupation: {
     en: 'Development and Design',
     pt: 'Desenvolvimento e Design',
