@@ -4,8 +4,18 @@ import cards from './CardArticles.i18n';
 import './CardArticles.scss';
 
 const CardArticles = () => cards.map(card => (
-  <article key={card.path} className="column CardArticles" flex="30" mobile-flex="auto">
-    <Link to={card.path} flex="" className="column" align="around center">
+  <article
+    key={card.path}
+    className={`column CardArticles ${card.disabled ? 'disabled' : ''}`}
+    flex="30"
+    mobile-flex="auto"
+  >
+    <Link
+      to={card.path}
+      flex=""
+      className="column"
+      align="around center"
+    >
       <div className="center">
         <img flex="none" src={card.icon} alt="" />
         <h4>{card.title[window.lang]}</h4>

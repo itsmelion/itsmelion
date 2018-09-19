@@ -12,7 +12,7 @@ const Header = () => (
     align="between center"
     id="home-header"
   >
-    <div className="ph10" flex="auto">
+    <div className="column ph10" align="start start" flex="auto">
       <article className="bio">
         <h6 className="dalaran">Hero:</h6>
         <h2>{hero.name[window.lang]}</h2>

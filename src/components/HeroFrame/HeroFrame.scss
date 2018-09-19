@@ -9,13 +9,13 @@
   margin-top: 60pt;
 
   .avatar {
+    position: absolute;
     width: 56pt;
     height: 60pt;
-    padding: 4pt;
-    background-color: rgba($dalaran, 0.7);
-    position: absolute;
     top: -32pt;
     left: -12pt;
+    padding: 4pt;
+    background-color: rgba($dalaran, 0.7);
 
     img {
       width: 100%;
@@ -25,11 +25,10 @@
   }
 
   .hud {
-    margin-top: 30pt;
-    background-color: rgba($dalaran, 0.2);
     padding: 1rem;
     padding-top: 3rem;
     border-radius: $radius / 2;
-    clip-path: polygon(44% 0, 51% 20%, 100% 22%, 100% 100%, 0% 100%, 0% 0%);
+    background-color: rgba($dalaran, 0.2);
+    // clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
   }
 }

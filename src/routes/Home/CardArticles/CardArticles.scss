@@ -37,6 +37,12 @@
   background-color: $base;
   transform: scale(0.9, 0.9);
   position: relative;
+
+  &.disabled {
+    opacity: .4;
+    pointer-events: none;
+  }
+
   img {
     width: 3rem;
   }
@@ -49,6 +55,11 @@
 
   @media #{$mobile} {
     transform: scale(1, 1);
+    margin: .5rem;
+
+    > a {
+      padding: .8rem 1.5rem 1rem 1.5rem;
+    }
   }
 
   &:nth-of-type(even) {
