@@ -3,10 +3,7 @@ import logo from '../../images/logo.png';
 
 const Footer = () => (
   <section hide-print="" contain="" className="p1">
-    <h2 className="mv2">
-      &gt; let MAKE = new Code(together);
-      <span className="pulse">_</span>
-    </h2>
+    <h2 className="mv2">Lets talk</h2>
     <footer row="" mobile-column="" align="between stretch">
       <aside>
         <img
@@ -15,7 +12,7 @@ const Footer = () => (
           alt="Logo Alia"
           title="Alia is a brand who represents Christhopher Lion"
         />
-        <a href="//instagram.com/go.alia">@go.alia</a>
+        <a href="//instagram.com/go.alia">@go.alia <span className="pulse">_</span></a>
       </aside>
       <article>
         <h6>Hero useful links</h6>

@@ -7,6 +7,7 @@
 .HeroFrame {
   position: relative;
   margin-top: 60pt;
+  font-size: .8rem;
 
   .avatar {
     position: absolute;
@@ -30,5 +31,26 @@
     border-radius: $radius / 2;
     background-color: rgba($dalaran, 0.2);
     // clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
+  }
+
+  .skill-bars {
+    width: 100%;
+
+    p {
+      padding: .2em 2em;
+      margin-bottom: .4em;
+      color: white;
+    }
+
+    .Backend { background-color: $ysera; }
+
+    .Frontend { background-color: $alliance; }
+
+    .Design { background-color: $pink; }
+  }
+
+  .skill-tags {
+    h6 { color: $pink; display: inline; margin-right: 1em }
+    span { margin-right: .5em }
   }
 }

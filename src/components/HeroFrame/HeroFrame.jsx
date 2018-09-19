@@ -1,15 +1,22 @@
 import React from 'react';
 import './HeroFrame.scss';
+import skills from '../../data/skills';
 
 const HeroFrame = ({ picture }) => (
   <article className="HeroFrame">
     <div className="hud">
-      Lorem ipsum dolor sit amet consectetur,
-      <br />
-      adipisicing elit. Velit laudantium dolore
-      <br />
-      sunt harum odit amet alias labore? Explicabo fugiat dicta saepe ipsum earum quis
-      hic?
+
+      <div className="skill-bars">
+        {skills.bars.map(({ field, ratio }) => (
+          <p className={field} key={field} style={{ width: `${ratio}%` }}>{field}</p>
+        ))}
+      </div>
+
+    </div>
+
+    <div className="skill-tags">
+      <h6>Tags:</h6>
+      {skills.tags[window.lang].map(tag => <span key={tag}>{tag}</span>)}
     </div>
 
     <div className="avatar hex">
