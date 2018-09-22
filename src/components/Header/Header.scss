@@ -1,8 +1,12 @@
+@import 'vars';
+
 header#home-header {
   padding: 1rem 2rem;
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+
   .bio {
-    h2 {
-      font-weight: 700;
-    }
+    h2 { font-weight: 700; }
+    max-width: 45rem;
   }
 }

@@ -25,6 +25,30 @@
     }
   }
 
+  .hud-decorated {
+    > span { background-color: rgba($dalaran, 0.2); }
+
+    .decoration {
+      width: 4rem;
+      clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  .hero-social {
+    color: $white5;
+
+    a {
+      min-width: 2rem;
+      min-height: 2rem;
+      margin-right: .5rem;
+      margin-left: .25rem;
+      font-size: 1.2rem;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
   .hud {
     padding: 1rem;
     padding-top: 3rem;

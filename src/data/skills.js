@@ -30,9 +30,22 @@ const tags = {
   ],
 };
 
+const languages = [
+  {
+    language: 'English',
+    level: 'Advanced',
+    certification: 'TOEFL',
+  },
+  {
+    language: 'Portuguese',
+    level: 'Native',
+  },
+];
+
 const skills = {
   bars,
   tags,
+  languages,
 };
 
 export default skills;

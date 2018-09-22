@@ -1,19 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint, faFileDownload } from '@fortawesome/free-solid-svg-icons';
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
 import Button from '../../components/Button/Button';
 import Experience from './Experience/Experience';
 import Education from './Education/Education';
 import './Resume.scss';
 import resumePDF from './resume.pdf';
 import i18n from './Resume.i18n';
-import hero from '../../data/hero';
+import {
+  social, contact, address, bio, text, ocupation, name,
+} from '../../data/hero';
 
 const Resume = () => (
   <>
@@ -32,78 +28,80 @@ const Resume = () => (
 
         <Button
           mobile-flex="auto"
-          link={hero.social.instagram.url}
+          link={social.instagram.url}
           theme="social instagram"
           newtab
         >
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={social.instagram.icon} />
           <p>
-            <span>{hero.social.instagram.name}</span>
+            <span>{social.instagram.name}</span>
             <sub className="social-tag">
-              @{hero.social.instagram.user}
+              @{social.instagram.user}
             </sub>
           </p>
         </Button>
 
         <Button
           mobile-flex="auto"
-          link={hero.social.facebook.url}
+          link={social.facebook.url}
           theme="social facebook"
           newtab
         >
-          <FontAwesomeIcon icon={faFacebook} />
-          <p><span>{hero.social.facebook.name}</span></p>
+          <FontAwesomeIcon icon={social.facebook.icon} />
+          <p><span>{social.facebook.name}</span></p>
         </Button>
 
         <Button
           mobile-flex="auto"
-          link={hero.social.linkedin.url}
+          link={social.linkedin.url}
           theme="social linkedin"
           newtab
         >
-          <FontAwesomeIcon icon={faLinkedin} />
-          <p><span>{hero.social.linkedin.name}</span></p>
+          <FontAwesomeIcon icon={social.linkedin.icon} />
+          <p><span>{social.linkedin.name}</span></p>
         </Button>
 
         <Button
           mobile-flex="auto"
-          link={hero.social.github.url}
+          link={social.github.url}
           theme="social github"
           newtab
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={social.github.icon} />
           <p>
-            <span>{hero.social.github.name}</span>
+            <span>{social.github.name}</span>
             <sub className="social-tag">
-              @{hero.social.github.user}
+              @{social.github.user}
             </sub>
           </p>
         </Button>
       </div>
     </header>
 
-    <main contain="" className="Resume">
+    <main className="contain Resume">
       <header row="">
         <div flex="auto">
-          <h2>{hero.name[window.lang]}</h2>
-          <h3>{hero.ocupation[window.lang]}</h3>
-          <p>{hero.bio[window.lang]}</p>
+          <h2>{name[window.lang]}</h2>
+          <h3>{ocupation[window.lang]}</h3>
+          <p>{bio[window.lang]}</p>
+          <br />
+          <p>{text[window.lang]}</p>
         </div>
 
         <address flex="auto">
           <p>
-            {hero.address.city},{hero.address.country}
+            {address.city},{address.country}
           </p>
           <p>
-            <a href={`mailto:${hero.contact.email}`}>{hero.contact.email}</a>
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
           </p>
           <p>
-            <a href={`tel:${hero.contact.phone}`}>{hero.contact.phone}</a>
+            <a href={`tel:${contact.phone}`}>{contact.phone}</a>
           </p>
           <p>
             Skype:
-            <a href={hero.contact.skype.url}>
-              {hero.contact.skype.label}
+            <a href={contact.skype.url}>
+              {contact.skype.label}
             </a>
           </p>
         </address>

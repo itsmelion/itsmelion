@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "up": "npm cache verify && npm upgrade && npm prune && npm dedupe",
+    "up": "npm upgrade && npm prune && npm dedupe",
     "build": "webpack -p",
     "start": "webpack-dev-server --hot --inline --color --config webpack.config.dev.js",
     "push": "rsync -avz ./dist/ lion@alia.ml:/opt/alia/ --progress --delete",
