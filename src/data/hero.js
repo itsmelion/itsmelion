@@ -46,7 +46,7 @@ export const ocupation = {
 export const picture = {
   avatar,
   micro: '/images/hero/micro-lion.jpg',
-  body: '/images/hero/full-lion.jpg',
+  body: '',
 };
 
 export const name = {

@@ -24,9 +24,17 @@ const Header = () => (
       <HeroFrame picture={picture.avatar} />
     </div>
 
-    <div flex="initial">
-      <img src={holoDefault} alt="Hero holographic silhouette" />
-      <img src={holoPlatform} alt="Hero hologram platform" />
+    <div className="column flex-initial Hologram" align="center">
+      <img
+        className="hero-hologram"
+        src={picture.body || holoDefault}
+        alt="Hero holographic silhouette"
+      />
+      <img
+        className="hologram-platform"
+        src={holoPlatform}
+        alt="Hero hologram platform"
+      />
     </div>
   </header>
 );

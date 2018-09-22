@@ -6,7 +6,7 @@ import { social, ocupation } from '../../data/hero';
 
 const HeroFrame = ({ picture }) => (
   <article className="HeroFrame">
-    <p>{ocupation[window.lang]}</p>
+    <h6 className="hero-role">Rank: {ocupation[window.lang]}</h6>
     <div className="row nowrap hud-decorated">
       <span flex="grow" />
       <span className="decoration" />

@@ -1,5 +1,7 @@
 @import 'vars';
 
+$hero-avatar-width: 56pt;
+
 .hex {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0 25%);
 }
@@ -11,9 +13,9 @@
 
   .avatar {
     position: absolute;
-    width: 56pt;
+    width: $hero-avatar-width;
     height: 60pt;
-    top: -32pt;
+    top: -20pt;
     left: -12pt;
     padding: 4pt;
     background-color: rgba($dalaran, 0.7);
@@ -25,11 +27,18 @@
     }
   }
 
+  .hero-role {
+    margin-left: $hero-avatar-width - 5pt;
+    color: $pink;
+    margin-bottom: .5rem;
+    margin-top: -.5rem;
+  }
+
   .hud-decorated {
     > span { background-color: rgba($dalaran, 0.2); }
 
     .decoration {
-      width: 4rem;
+      width: $hero-avatar-width;
       clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
     }
   }
@@ -51,8 +60,7 @@
 
   .hud {
     padding: 1rem;
-    padding-top: 3rem;
-    border-radius: $radius / 2;
+    border-radius: 0 $radius /2 $radius /2 $radius /2;
     background-color: rgba($dalaran, 0.2);
     // clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
   }
@@ -64,6 +72,7 @@
       padding: .2em 2em;
       margin-bottom: .4em;
       color: white;
+      text-shadow: 0 .5pt 1pt $black5;
     }
 
     .Backend { background-color: $ysera; }
