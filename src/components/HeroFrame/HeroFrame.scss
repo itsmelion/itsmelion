@@ -45,13 +45,13 @@ $hero-avatar-width: 56pt;
 
   .hero-social {
     color: $white5;
+    margin-top: -.75em;
 
     a {
-      min-width: 2rem;
-      min-height: 2rem;
-      margin-right: .5rem;
-      margin-left: .25rem;
-      font-size: 1.2rem;
+      padding: .5rem .5rem;
+      margin-left: .25em;
+      line-height: 1;
+      font-size: 1.4em;
       &:hover {
         color: $white;
       }
