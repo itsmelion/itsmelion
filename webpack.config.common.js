@@ -6,11 +6,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const { resolve } = require('path');
-// const jpeg = require('imagemin-mozjpeg');
-// const png = require('imagemin-pngquant');
-// const gif = require('imagemin-gifsicle');
-// const svg = require('imagemin-svgo');
-// const webp = require('imagemin-webp');
+const jpeg = require('imagemin-mozjpeg');
+const png = require('imagemin-pngquant');
+const gif = require('imagemin-gifsicle');
+const svg = require('imagemin-svgo');
+const webp = require('imagemin-webp');
 require('dotenv').config();
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -110,7 +110,41 @@ const common = {
       {
         test: /\.(jpe?g|png|gif|svg|ico)/,
         use: [
-          // 'url-loader?limit=8000',
+          // {
+          //   loader: 'url-loader',
+          //   options: {
+          //     limit: 8192,
+          //   },
+          // },
+          {
+            loader: 'img-loader',
+            options: {
+              plugins: [
+                jpeg({
+                  progressive: true,
+                  arithmetic: false,
+                  quality: 70,
+                }),
+                png({
+                  quality: '65-90',
+                  floyd: 0.5,
+                  speed: 2,
+                }),
+                gif({ interlaced: false }),
+                webp({ quality: 75 }),
+                svg({
+                  removeComments: true,
+                  removeDoctype: true,
+                  removeViewBox: true,
+                  minifyStyles: true,
+                  plugins: [
+                    { removeTitle: true },
+                    { convertPathData: false },
+                  ],
+                }),
+              ],
+            },
+          },
           {
             loader: 'file-loader',
             options: {
@@ -122,35 +156,6 @@ const common = {
               outputPath: 'images/',
             },
           },
-          // {
-          //   loader: 'img-loader',
-          //   options: {
-          //     plugins: [
-          //       jpeg({
-          //         progressive: true,
-          //         arithmetic: false,
-          //         quality: 70,
-          //       }),
-          //       png({
-          //         quality: '65-90',
-          //         floyd: 0.5,
-          //         speed: 2,
-          //       }),
-          //       gif({ interlaced: false }),
-          //       webp({ quality: 75 }),
-          //       svg({
-          //         removeComments: true,
-          //         removeDoctype: true,
-          //         removeViewBox: true,
-          //         minifyStyles: true,
-          //         plugins: [
-          //           { removeTitle: true },
-          //           { convertPathData: false },
-          //         ],
-          //       }),
-          //     ],
-          //   },
-          // },
         ],
       },
       {
