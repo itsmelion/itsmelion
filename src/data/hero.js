@@ -59,7 +59,7 @@ export const contact = {
   email: 'christhopherleao@icloud.com',
   skype: {
     icon: faSkype,
-    label: 'christhopher.amaral <christhopher@hotmail.com.br>',
+    label: 'christhopher.amaral',
     url: 'https://join.skype.com/invite/QRZJqK4phjyU',
   },
   phone: '+55 31 982875204',
@@ -93,15 +93,4 @@ export const text = {
   no desenvolvimento de um software mais bonito e com performance.
   Posso aprimorar a comunicação entre Design e Desenvolvimento, liderar equipes e
   mentorear a carreira de designers e desenvolvedores menos experientes.`,
-};
-
-export default {
-  name,
-  ocupation,
-  picture,
-  contact,
-  social,
-  address,
-  bio,
-  text,
 };

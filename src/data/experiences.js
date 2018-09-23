@@ -1,3 +1,20 @@
+const adobeIllustrator = { name: 'Illustrator', year: 2012 };
+const adobeAfterEffects = { name: 'Adobe After Effects', year: 2015 };
+const angularJs = { name: 'Angular.js', year: 2014 };
+const angular = { name: 'Angular', year: 2016 };
+const wordpress = { name: 'Wordpress', year: 2015 };
+const webpack = { name: 'Webpack', year: 2016 };
+const nginx = { name: 'nGinx', year: 2017 };
+const adobePhotoshop = { name: 'Photoshop', year: 2012 };
+const react = { name: 'React', year: 2017 };
+const invision = { name: 'inVision', year: 2016 };
+const bash = { name: 'Bash scripts', year: 2015 };
+const nodeJs = { name: 'Node.js', year: 2017 };
+const mongo = { name: 'MongoDB', year: 2017 };
+const docker = { name: 'Docker', year: 2018 };
+const microServices = { name: 'Micro-Services', year: 2018 };
+const laravel = { name: 'Laravel', year: 2017 };
+
 export default [
   {
     name: 'ROBOS.IM',
@@ -24,8 +41,17 @@ export default [
       en: 'Design and development of web applications, widgets and landing pages.',
       pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
-    technology: [
-      'AngularJS', 'Docker', 'Micro-Services', 'Node.js', 'React', 'Webpack', 'MongoDB',
+    technologies: [
+      adobeIllustrator,
+      invision,
+      webpack,
+      angularJs,
+      nodeJs,
+      react,
+      bash,
+      mongo,
+      docker,
+      microServices,
     ],
     links: [
       'https://www.linkedin.com/company/robos.im/',
@@ -59,8 +85,12 @@ export default [
       en: 'Design and development of web applications, widgets and landing pages.',
       pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
-    technology: [
-      'AngularJS', 'Illustrator', 'Laravel', 'Webpack', 'Wordpress',
+    technologies: [
+      adobeIllustrator,
+      adobePhotoshop,
+      wordpress,
+      webpack,
+      nginx,
     ],
   },
 
@@ -92,6 +122,14 @@ export default [
     technology: [
       'AngularJS', 'Illustrator', 'Laravel', 'Webpack', 'Wordpress',
     ],
+    technologies: [
+      adobeIllustrator,
+      wordpress,
+      webpack,
+      angularJs,
+      nginx,
+      laravel,
+    ],
   },
 
   {
@@ -119,9 +157,22 @@ export default [
       en: 'Design and development of websites',
       pt: 'Design and desenvolvimento websites',
     },
-    technology: [
-      'AngularJS', 'React', 'Illustrator', 'Webpack', 'Wordpress', 'NGINX', 'Photoshop',
-      'InVision', 'Bash',
+    technologies: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      wordpress,
+      invision,
+      webpack,
+      angularJs,
+      angular,
+      nodeJs,
+      react,
+      nginx,
+      bash,
+      mongo,
+      docker,
+      microServices,
     ],
   },
 
@@ -152,8 +203,11 @@ export default [
       pt: `Design e desenvolvimento de aplicações web, Vídeos e animações,
       e imagens com fins publicitários.`,
     },
-    technology: [
-      'AngularJS', 'Photoshop', 'Illustrator', 'After Effects',
+    technologies: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      angularJs,
     ],
   },
 
@@ -182,7 +236,10 @@ export default [
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
     },
-    technology: ['Photoshop', 'Illustrator', 'Analyctics', 'Mailing tools'],
+    technologies: [
+      adobeIllustrator,
+      adobePhotoshop,
+    ],
   },
   {
     name: 'MG Representações',
@@ -209,6 +266,9 @@ export default [
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
     },
-    technology: ['Photoshop', 'Illustrator', 'Analyctics', 'Mailing tools'],
+    technologies: [
+      adobeIllustrator,
+      adobePhotoshop,
+    ],
   },
 ];
