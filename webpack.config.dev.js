@@ -60,6 +60,7 @@ const config = merge(common, {
     new BrowserSyncPlugin({
       port: Number(process.env.browserSyncPort),
       proxy: `http://${process.env.HOST}:${process.env.PORT}`,
+      ws: true,
       watchOptions: {
         ignoreInitial: true,
         ignored: './src',
