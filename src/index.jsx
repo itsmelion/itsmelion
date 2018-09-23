@@ -4,8 +4,9 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
+import Resume from './routes/Resume/Resume';
 import {
-  Home, Cases, Works, Resume,
+  Home, Cases, Works,
 } from './routes';
 
 require.context('./images/favicons', true);
