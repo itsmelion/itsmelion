@@ -28,7 +28,11 @@ const Footer = () => (
 
         <article className="footer-hero">
           <h6>Connect with {lastName[window.lang]}</h6>
-          <ul className="column mobile-row" align="start end" mobile-align="around center">
+          <ul
+            className="column mobile-row"
+            align="start end"
+            mobile-align="around center"
+          >
             {Object.keys(social).map(key => (
               <a key={key} href={social[key].url}>{social[key].name}</a>
             ))}

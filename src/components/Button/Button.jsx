@@ -3,7 +3,7 @@ import './Button.scss';
 
 const Button = (props) => {
   const {
-    theme = 'default', _type = 'button', link, children, newtab, ...other
+    theme = 'default', _type = 'button', link, children, newtab = true, ...other
   } = props;
 
   if (link) {

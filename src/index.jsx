@@ -5,9 +5,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import Resume from './routes/Resume/Resume';
-import {
-  Home, Cases, Works,
-} from './routes';
+import Portfolio from './routes/Portfolio/Feed';
+
+import { Home } from './routes';
 
 require.context('./images/favicons', true);
 
@@ -54,8 +54,8 @@ render(
       <Topbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/cases" component={Cases} />
-        <Route path="/works" component={Works} />
+        {/* <Route path="/cases" component={Cases} /> */}
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume" component={Resume} />
       </Switch>
       <Footer />

@@ -27,8 +27,8 @@ class Topbar extends PureComponent {
 
           <ul className="row nowrap tabs" flex="" align="end">
             <li>
-              <NavLink to="/cases">
-                {texts.cases[this.lang]}
+              <NavLink to="/portfolio">
+                {texts.portfolio[this.lang]}
               </NavLink>
             </li>
 

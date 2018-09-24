@@ -1,9 +1,10 @@
 export default {
-  cases: {
-    en: 'Cases',
-    pt: 'Casos',
+  portfolio: {
+    en: 'Portfolio',
+    pt: 'Potifólio',
     he: 'במקרים',
   },
+
   resume: {
     en: 'Resume',
     pt: 'Currículo',
