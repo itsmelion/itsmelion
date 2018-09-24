@@ -49,10 +49,16 @@ export const picture = {
   body: '',
 };
 
+export const lastName = {
+  en: 'Lion',
+  pt: 'Leão',
+  he: 'אריה',
+};
+
 export const name = {
-  en: 'Christhopher Lion',
-  pt: 'Christhopher Leão',
-  he: 'כריסטופר אריה',
+  en: `Christhopher ${lastName.en}`,
+  pt: `Christhopher ${lastName.pt}`,
+  he: `כריסטופר ${lastName.he}`,
 };
 
 export const contact = {
