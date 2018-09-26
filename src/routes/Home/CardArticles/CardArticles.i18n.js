@@ -4,18 +4,18 @@ import resumeIcon from './icons8-paper.png';
 
 export default [
   {
-    path: '/works',
+    path: '/portfolio',
     icon: worksIcon,
-    disabled: true,
+    disabled: false,
     title: {
-      en: 'My Works',
-      pt: 'Meus Trabalhos',
-      he: 'My Works',
+      en: 'Portfolio',
+      pt: 'Portifólio',
+      he: 'Portfolio',
     },
     description: {
-      en: 'Unavailable because its under development',
-      pt: 'Indisponível. Sessão em desenvolvimento',
-      he: 'Unavailable because its under development',
+      en: 'A collection of showcases and stuff i made. Separated for you',
+      pt: 'Uma coleção de casos e trabalhos que fiz, e separei para você.',
+      he: 'A collection of showcases and stuff i made. Separated for you',
     },
   },
 

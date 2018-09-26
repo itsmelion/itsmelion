@@ -1,7 +1,7 @@
 export default {
   portfolio: {
     en: 'Portfolio',
-    pt: 'Potifólio',
+    pt: 'Portifólio',
     he: 'במקרים',
   },
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from '../../../components/Button/Button';
+import thumb from './default-thumbnail.svg';
 import './Work.scss';
 
 const Work = ({ work }) => (
   <article flex="auto" className="Work">
-    <img className="cover-fit" src={work.icon} alt="Work Preview" />
+    <img className="contain-fit" src={work.thumbnail || thumb} alt="Work Preview" />
 
     <div className="p1">
       <h3>{work.title}</h3>
@@ -14,6 +15,5 @@ const Work = ({ work }) => (
     </div>
   </article>
 );
-
 
 export default Work;

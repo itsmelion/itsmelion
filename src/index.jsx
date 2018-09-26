@@ -6,7 +6,6 @@ import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import Resume from './routes/Resume/Resume';
 import Portfolio from './routes/Portfolio/Feed';
-
 import { Home } from './routes';
 
 require.context('./images/favicons', true);
@@ -30,7 +29,7 @@ const getQueryParams = (parameter) => {
 
 const getLanguage = () => {
   const available = ['pt', 'en', 'he'];
-  const defaultLang = 'en';
+  const defaultLang = process.env.DEFAULT_LANG;
   const browserLang = window.navigator.userLanguage || window.navigator.language;
   const lang = (`${browserLang[0]}${browserLang[1]}`).toLowerCase();
   const local = localStorage.getItem('lang');
@@ -45,7 +44,7 @@ const getLanguage = () => {
   return language;
 };
 
-window.lang = getLanguage() || 'en';
+window.lang = getLanguage() || process.env.DEFAULT_LANG;
 localStorage.setItem('lang', window.lang);
 
 render(

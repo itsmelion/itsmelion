@@ -5,6 +5,7 @@ import {
   faGithub,
   faBehance,
   faSkype,
+  faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
 import avatar from '../images/hero/lion.jpg';
 
@@ -15,26 +16,31 @@ export const social = {
     user: 'itsmelion',
     url: 'https://github.com/itsmelion',
   },
-  instagram: {
-    icon: faInstagram,
-    name: 'Instagram',
-    user: 'chris.lion',
-    url: 'https://instagram.com/chris.lion',
+  linkedin: {
+    icon: faLinkedin,
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/in/chrislion',
+  },
+  dribble: {
+    icon: faDribbble,
+    name: 'Dribble',
+    url: 'https://dribbble.com/ChrisLion',
+  },
+  behance: {
+    icon: faBehance,
+    name: 'Behance',
+    url: 'https://behance.net/lion_red',
   },
   facebook: {
     icon: faFacebook,
     name: 'Facebook',
     url: 'https://facebook.com/christhopherleao',
   },
-  linkedin: {
-    icon: faLinkedin,
-    name: 'LinkedIn',
-    url: 'https://linkedin.com/in/chrislion',
-  },
-  behance: {
-    icon: faBehance,
-    name: 'Behance',
-    url: 'https://behance.net/lion_red',
+  instagram: {
+    icon: faInstagram,
+    name: 'Instagram',
+    user: 'chris.lion',
+    url: 'https://instagram.com/chris.lion',
   },
 };
 

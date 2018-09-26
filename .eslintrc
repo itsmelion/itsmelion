@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "react-app"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
   "plugins": ["import", "react"],
   "env": {
     "es6": true,
