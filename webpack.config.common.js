@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const { resolve } = require('path');
 const jpeg = require('imagemin-mozjpeg');
 const png = require('imagemin-pngquant');
 const gif = require('imagemin-gifsicle');
@@ -44,7 +44,7 @@ const common = {
       exclude: ['images', 'fonts'], beforeEmit: true,
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: path.resolve(__dirname, `${process.env.PUBLIC_PATH}/index.html`),
       inject: 'body',
       hash: true,
       favicon: './src/images/favicons/favicon.ico',
@@ -79,7 +79,7 @@ const common = {
             loader: 'eslint-loader',
           },
         ],
-        include: resolve(__dirname, 'src'),
+        include: path.resolve(__dirname, 'src'),
       },
       {
         test: /\.jsx?$/,
@@ -148,7 +148,7 @@ const common = {
           {
             loader: 'file-loader',
             options: {
-              name(file) {
+              name() {
                 if (isDev) return '[path][name].[ext]';
                 return '[path][name].[ext]?[hash]';
               },

@@ -7,7 +7,8 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const { resolve } = require('path');
 const common = require('./webpack.config.common');
 
-const devMode = process.env.NODE_ENV === 'development';
+const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
+const host = process.env.HOST || '0.0.0.0';
 
 const config = merge(common, {
   mode: 'development',
@@ -77,10 +78,12 @@ const config = merge(common, {
   ],
   devtool: 'eval',
   devServer: {
-    contentBase: resolve(__dirname, 'dist'),
-    host: process.env.HOST,
+    host,
+    https: protocol === 'https',
+    contentBase: resolve(__dirname, process.env.PUBLIC_PATH),
+    watchContentBase: true,
     port: Number(process.env.PORT),
-    compress: !devMode,
+    compress: true,
     inline: true,
     hot: true,
     disableHostCheck: true,
@@ -90,12 +93,10 @@ const config = merge(common, {
       aggregateTimeout: 500,
       poll: 1000,
     },
-    clientLogLevel: 'warning',
     before(app) {
       // This lets us open files from the runtime error overlay.
       app.use(errorOverlayMiddleware());
     },
-    // noInfo: true,
 
     // https: {
     //   key: fs.readFileSync('server/certificates/lion.test.key'),
@@ -105,6 +106,8 @@ const config = merge(common, {
 
     // lazy: true,
     // overlay: true,
+    // noInfo: true,
+    clientLogLevel: 'none',
   },
 });
 

@@ -1,14 +1,16 @@
+const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
-const { resolve } = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const common = require('./webpack.config.common');
 
 const config = merge(common, {
+  // Don't attempt to continue if there are any errors.
+  bail: true,
   mode: 'production',
   entry: [
     './src/index.jsx',
@@ -56,7 +58,7 @@ const config = merge(common, {
           {
             loader: 'sass-loader',
             options: {
-              includePaths: [resolve(__dirname, 'src/styles')],
+              includePaths: [path.resolve(__dirname, 'src/styles')],
             },
           },
         ],
