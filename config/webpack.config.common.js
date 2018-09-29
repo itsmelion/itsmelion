@@ -2,18 +2,17 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getClientEnvironment = require('./env');
 const jpeg = require('imagemin-mozjpeg');
 const png = require('imagemin-pngquant');
 const gif = require('imagemin-gifsicle');
 const svg = require('imagemin-svgo');
 const webp = require('imagemin-webp');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const eslintFormatter = require('react-dev-utils/eslintFormatter');
+const getClientEnvironment = require('./env');
 const paths = require('./paths');
 
 const env = getClientEnvironment('');
@@ -75,7 +74,6 @@ const common = {
     ]),
     new Dotenv(),
     new webpack.DefinePlugin(env.stringified),
-    // new InterpolateHtmlPlugin(env.raw),
     // new CleanWebpackPlugin('dist', {
     //   exclude: ['images', 'fonts'], beforeEmit: true,
     // }),

@@ -13,7 +13,8 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "resolutions": {
-    "babel-core": ">=7.0.0-bridge.0"
+    "babel-core": ">=7.0.0-bridge.0",
+    "imagemin": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -88,7 +89,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.1.4",
