@@ -3,16 +3,15 @@ bundle.js
 npm-debug.log
 .DS_Store*
 
-# IntelliJ
-*.iml
-/.idea
-
 **/.sass-cache
 **/Thumbs.ds
 **/npm-debug.log
 
 .env
-dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 src/styles/flamework
 
@@ -20,4 +19,5 @@ src/styles/flamework
 
 .tmp
 dist
-build
+/build
+/coverage

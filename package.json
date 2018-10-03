@@ -5,10 +5,16 @@
   "main": "./src/index.js",
   "scripts": {
     "up": "npm upgrade && npm prune && npm dedupe",
-    "build": "webpack -p",
-    "start": "webpack-dev-server --hot --inline --color --config webpack.config.dev.js",
+    "precommit": "lint-staged",
     "push": "rsync -avz ./dist/ lion@alia.ml:/opt/alia/ --progress --delete",
-    "deploy": "npm run build && npm run push"
+    "deploy": "npm run build && npm run push",
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "resolutions": {
+    "babel-core": ">=7.0.0-bridge.0",
+    "imagemin": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -23,7 +29,7 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-function-bind": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -32,60 +38,116 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "babel-loader": "^8.0.2",
-    "browser-sync": "^2.24.7",
-    "browser-sync-webpack-plugin": "latest",
+    "@babel/runtime": "^7.1.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-react-app": "^5.0.2",
+    "case-sensitive-paths-webpack-plugin": "^2.1.2",
+    "chalk": "^2.4.1",
     "clean-webpack-plugin": "latest",
     "compression-webpack-plugin": "^2.0.0",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
+    "dotenv-expand": "^4.2.0",
     "dotenv-webpack": ">=1.5.7",
+    "eslint-config-react-app": "^3.0.3",
     "file-loader": "^2.0.0",
+    "fs-extra": "^7.0.0",
     "html-loader": "latest",
     "html-webpack-plugin": "^3.2.0",
-    "imagemin": "^5.3.1",
+    "imagemin": "^6.0.0",
     "imagemin-gifsicle": "^5.2.0",
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^6.0.0",
     "imagemin-svgo": "^7.0.0",
     "imagemin-webp": "^4.1.0",
     "img-loader": "^3.0.0",
+    "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
+    "object-assign": "^4.1.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "postcss": "^7.0.4",
+    "postcss": "^7.0.5",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.0.7",
+    "postcss-preset-env": "^6.0.10",
     "postcss-syntax": "^0.34.0",
+    "promise": "^8.0.2",
+    "raf": "^3.4.0",
     "raw-loader": "^0.5.1",
+    "react-dev-utils": "^6.0.3",
+    "resolve": "^1.8.1",
     "resolve-url-loader": "^3.0.0",
     "sass-loader": ">=7.1.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
-    "webpack-merge": "^4.1.4"
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.1.4",
+    "whatwg-fetch": "^3.0.0"
   },
   "optionalDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.6.0",
+    "@types/jest": "^23.3.3",
+    "@types/node": "^10.11.4",
+    "eslint": "^5.6.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-flowtype": "^2.50.3",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "react-dev-utils": "^5.0.2",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended-scss": ">=3.2.0",
     "stylelint-scss": "^3.3.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node",
+      "mjs"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
