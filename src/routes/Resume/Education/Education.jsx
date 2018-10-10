@@ -3,7 +3,7 @@ import './Education.scss';
 import { scholarity } from '../../../data/education';
 
 const Education = () => (
-  <ol id="Education">
+  <ol id="Education" className="resume-section">
     {scholarity.map(school => (
       <li
         row=""
@@ -14,7 +14,9 @@ const Education = () => (
         <div>
           <h5>{school.course[window.lang]}</h5>
         </div>
+
         <span flex="" className="hide-mobile" />
+
         <div row="" align="end center" nowrap="">
           <div className="right">
             <h6>

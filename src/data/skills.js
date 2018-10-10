@@ -1,3 +1,5 @@
+import tools from './tools';
+
 const bars = [
   { field: 'Design', ratio: 70 },
   { field: 'Frontend', ratio: 85 },
@@ -46,6 +48,7 @@ const skills = {
   bars,
   tags,
   languages,
+  tools,
 };
 
 export default skills;

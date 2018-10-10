@@ -1,49 +1,38 @@
 @import 'vars';
 
-header.Resume {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  .button { margin-top: 1rem; }
-}
-
-main.Resume {
-  color: $black8;
+#Resume {
   font-size: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   padding-bottom: 4rem;
-  padding-top: 2rem;
-  background-color: white;
-  box-shadow: 1pt 1pt 3pt 1pt black, 0 0 15pt 3pt black;
+  padding-top: 8rem;
+  background-image: url(./dalaran-woods.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
 
-  hr { margin: 2rem; }
+  @media #{$mobile} {
+    background-attachment: scroll;
+  }
+
+  main {
+    background-color: rgba($darnassus, .85);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   h2 {
     font-weight: 800;
-    text-transform: uppercase;
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-  h3 { font-weight: 800; color: $black5; margin-bottom: 1rem; }
-  h4 { color: $primary; font-weight: 600; margin: 1rem 0 2rem 0; }
-  p { max-width: 38rem; }
-
-  img {
-    border-radius: .5em;
-    border: 1pt solid $black1;
-    padding: .2em .4em;
+    font-size: 1.6rem;
+    line-height: 1.15;
   }
 
-  address {
-    padding: 1rem;
-    border: 1pt solid $black3;
-    border-radius: $radius;
-    font-style: normal;
-    white-space: nowrap;
-    margin: 1rem auto;
-    max-width: 100%;
-    a { display: flex; max-width: 100%;}
-  }
+  h3 { font-weight: 800; color: $white3; margin-bottom: 1rem; }
 
+  h4 { color: $primary; font-weight: 600; margin: 1.25rem 0 .75rem 0; }
+
+  .resume-section {
+    background-color: rgba(white, .1);
+    padding: .5rem;
+  }
 
   @media print {
     margin: 0;

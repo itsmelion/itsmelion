@@ -1,28 +1,31 @@
 @import 'vars';
 
 nav#topbar {
-  color: $white7;
+  position: fixed;
+  width: 100%;
+  top: 0;
   padding: .25rem;
-  position: relative;
-  background: rgba($pink, .1);
+  color: $white7;
   border: 1pt solid rgba($pink, .2);
+  background: rgba($black, .5);
   font-size: .9rem;
+  z-index: 900;
 
   .tabs {
     li {
+      position: relative;
       margin: 0 .5rem;
       text-align: center;
-      position: relative;
 
       > a {
         display: block;
-        border: 1pt solid transparent;
-        padding: .4em 1.5em;
         height: 100%;
+        padding: .4em 1.5em;
         color: currentColor;
+        border: 1pt solid transparent;
+        border-radius: $radius * 3;
         cursor: pointer;
         user-select: none;
-        border-radius: $radius * 3;
 
         &:hover { border: 1pt solid rgba($dalaran, .5); }
       }
@@ -35,13 +38,13 @@ nav#topbar {
 
 #nav-logo {
   position: absolute;
-  top: 25%;
-  height: 100%;
   width: auto;
-  margin: auto;
-  left: 50%;
-  right: 50%;
+  height: 100%;
   min-width: 3rem;
+  top: 25%;
+  right: 50%;
+  left: 50%;
+  margin: auto;
 
   @media #{$mobile} {
     left: 1rem;
