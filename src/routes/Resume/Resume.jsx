@@ -1,12 +1,18 @@
+// @ts-nocheck
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPrint, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPrint, faFileDownload, faEnvelope, faMapMarkedAlt,
+} from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
+
 import Button from '../../components/Button/Button';
+
 import Education from './Education/Education';
 import Timeline from './Timeline/Timeline';
+import SkillList from './Skills/Skill-List';
 import './Resume.scss';
 import resumePDF from './resume.pdf';
-import i18n from './Resume.i18n';
 import {
   social, contact, address, bio, text, ocupation, name,
 } from '../../data/hero';
@@ -14,34 +20,41 @@ import {
 const Resume = () => (
   <div id="Resume" column="" align="center">
     <main contain="" align="start">
-      <header row="">
-        <div flex="auto">
-          <p>{i18n.resume[window.lang]}</p>
-          <h2>{name[window.lang]}</h2>
-          <h3>{ocupation[window.lang]}</h3>
+      <h2>{name[window.lang]}</h2>
+      <h3>{ocupation[window.lang]}</h3>
+
+      <header row="nowrap" mobile-wrap="">
+        <div flex="auto" className="pv1">
           <p>{bio[window.lang]}</p>
           <br />
           <p>{text[window.lang]}</p>
         </div>
 
-        <address flex="auto">
-          <p>{address.city},{address.country}</p>
+        <address flex="auto" className="p1">
+          <p row="nowrap">
+            <FontAwesomeIcon className="mr1" icon={faMapMarkedAlt} />
+            {address.city},{address.country}
+          </p>
 
-          <p>
+          <p row="nowrap">
+            <FontAwesomeIcon className="mr1" icon={faEnvelope} />
             <a href={`mailto:${contact.email}`}>{contact.email}</a>
           </p>
-          <p>
+          <p row="nowrap">
+            <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
             <a href={`tel:${contact.phone}`}>{contact.phone}</a>
           </p>
 
-          <p>
-            Skype:
+          <p row="nowrap">
+            <FontAwesomeIcon className="mr1" icon={faSkype} />
             <a href={contact.skype.url}>
               {contact.skype.label}
             </a>
           </p>
         </address>
       </header>
+
+      <SkillList />
 
       <h4>Experience</h4>
       <Timeline />
@@ -56,9 +69,9 @@ const Resume = () => (
             Download PDF
           </Button>
 
-          <Button onClick={() => window.print()}>
+          {/* <Button onClick={() => window.print()}>
             <FontAwesomeIcon icon={faPrint} /> Print
-          </Button>
+          </Button> */}
 
           <Button
             mobile-flex="auto"

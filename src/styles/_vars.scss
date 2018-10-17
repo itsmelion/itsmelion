@@ -45,3 +45,11 @@ $base-font-size: 100% !default;
   font-size: $size * $base-font-size;
   font-size: #{$size}rem;
 }
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

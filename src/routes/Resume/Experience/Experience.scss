@@ -1,13 +1,6 @@
 @import 'vars';
 
-#Experience {
-  li {
-    margin-bottom: 2rem;
-    border-bottom: 1pt dotted $black3;
-    padding-bottom: 1rem;
-  }
-
-
+.Experience {
   .technologies {
     margin: .5rem;
 
@@ -15,8 +8,8 @@
       padding: .2rem .4rem;
       margin-right: .3rem;
       border-radius: $radius;
-      border: 1pt solid $white1;
-      color: $white5;
+      border: 1pt solid $black1;
+      color: $black5;
       font-size: .8em;
     }
   }

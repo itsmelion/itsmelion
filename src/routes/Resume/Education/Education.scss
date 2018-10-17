@@ -2,9 +2,9 @@
 
 #Education {
   li {
-    margin-bottom: 2rem;
     border-bottom: 1pt dotted $black3;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 
     @media print {
       margin-bottom: 1rem;
@@ -19,6 +19,7 @@
     max-height: 100%;
     object-fit: contain;
     margin: auto 1rem;
+    margin-right: 0;
   }
 
   sub {

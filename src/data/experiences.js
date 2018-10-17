@@ -17,11 +17,19 @@ import {
   laravel,
 } from './tools';
 
+import destakLogo from '../images/brands/destak.jpg';
+import mgRepresentacoesLogo from '../images/brands/mgrepresentacoes.png';
+import plugLogo from '../images/brands/plug.png';
+import aliaLogo from '../images/logo.png';
+import backrLogo from '../images/brands/backr.svg';
+import expatLogo from '../images/brands/planetexpat.png';
+import robosLogo from '../images/brands/robos.png';
+
 export default [
   {
     name: 'Destakinox',
     position: 'Designer',
-    logo: '/images/brands/destak.jpg',
+    logo: destakLogo,
     ref: 'destakinox.com.br',
     period: {
       start: {
@@ -53,7 +61,7 @@ export default [
   {
     name: 'MG Representações',
     position: 'Designer',
-    logo: '/images/brands/mgrepresentacoes.png',
+    logo: mgRepresentacoesLogo,
     ref: 'mgrepresentacoes.com.br',
     period: {
       start: {
@@ -87,7 +95,7 @@ export default [
     name: 'Plug CRM',
     ref: 'plugcrm.net',
     position: 'Frontend and Designer',
-    logo: '/images/brands/plug.png',
+    logo: plugLogo,
     period: {
       start: {
         month: {
@@ -123,7 +131,7 @@ export default [
   {
     name: 'Autonomous as ALIA',
     position: 'FullStack',
-    logo: '/images/logo.png',
+    logo: aliaLogo,
     ref: 'alia.ml',
     period: {
       start: {
@@ -140,7 +148,7 @@ export default [
           en: 'early',
           pt: 'início de',
         },
-        year: 2018,
+        year: 2019,
       },
     },
     description: {
@@ -169,7 +177,7 @@ export default [
   {
     name: 'StudentBackr',
     position: 'Frontend',
-    logo: '/images/brands/backr.svg',
+    logo: backrLogo,
     period: {
       start: {
         month: {
@@ -206,7 +214,7 @@ export default [
   {
     name: 'Planet Expat',
     position: 'Frontend and Designer',
-    logo: '/images/brands/planetexpat.png',
+    logo: expatLogo,
     ref: 'planetexpat.org',
     period: {
       start: {
@@ -242,7 +250,7 @@ export default [
   {
     name: 'ROBOS.IM',
     ref: 'robos.im',
-    logo: '/images/brands/robos.png',
+    logo: robosLogo,
     position: 'Frontend',
     period: {
       start: {

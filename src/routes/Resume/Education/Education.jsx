@@ -1,23 +1,24 @@
 import React from 'react';
+import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 import './Education.scss';
 import { scholarity } from '../../../data/education';
 
+
 const Education = () => (
-  <ol id="Education" className="resume-section">
+  <ol id="Education">
     {scholarity.map(school => (
       <li
         row=""
+        className="resume-section"
         align="start center"
         mobile-column=""
         key={school.institution}
       >
-        <div>
-          <h5>{school.course[window.lang]}</h5>
-        </div>
+        <h5>{school.course[window.lang]}</h5>
 
         <span flex="" className="hide-mobile" />
 
-        <div row="" align="end center" nowrap="">
+        <div row="nowrap" align="end center">
           <div className="right">
             <h6>
               {school.institution}
@@ -26,11 +27,11 @@ const Education = () => (
 
             <p className="hide-mobile">{school.alternativeName}</p>
           </div>
-          <img
-            hide-print=""
+
+          <AsyncImage
             className="contain-fit"
             flex="none"
-            src={school.logo}
+            path={school.logo}
             alt={`Logo ${school.institution}`}
           />
         </div>

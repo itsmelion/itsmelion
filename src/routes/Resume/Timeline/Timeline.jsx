@@ -5,14 +5,6 @@ import Company from './Company/Company';
 import Experience from '../Experience/Experience';
 import experiences from '../../../data/experiences';
 
-const yearsFromNow = (y = 2016, m = 0) => {
-  let year = parseInt(y, 10);
-  const month = parseInt(m, 10);
-  if (month >= 6) { year += 1; }
-
-  return Math.ceil((new Date() - new Date(year, month, 0)) / 1000 / 60 / 60 / 24 / 365);
-};
-
 Modal.setAppElement('#root');
 const modalStyling = {
   overlay: {
@@ -29,7 +21,7 @@ const modalStyling = {
 class Timeline extends PureComponent {
   constructor(props) {
     super(props);
-    this.years = [2, 3, 4, 5, 6, 7, 8]; // 201'2' till 201'8'
+    this.years = [2, 3, 4, 5, 6, 7, 8, 9]; // 201'2' till 201'9'
     this.state = {
       openDialog: false,
       companyIndex: 0,

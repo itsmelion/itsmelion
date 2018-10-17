@@ -1,9 +1,11 @@
 @import 'vars';
+@import '~flamework/src/vars';
 
 #Resume {
   font-size: 1rem;
   padding-bottom: 4rem;
   padding-top: 8rem;
+  background-color: $nightsong;
   background-image: url(./dalaran-woods.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -11,6 +13,7 @@
 
   @media #{$mobile} {
     background-attachment: scroll;
+    background-image: unset;
   }
 
   main {
@@ -30,8 +33,9 @@
   h4 { color: $primary; font-weight: 600; margin: 1.25rem 0 .75rem 0; }
 
   .resume-section {
-    background-color: rgba(white, .1);
+    background-color: lighten($darnassus, 2%);
     padding: .5rem;
+    @include shadow;
   }
 
   @media print {
