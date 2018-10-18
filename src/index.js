@@ -2,7 +2,7 @@ import './styles/main.scss';
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import Resume from './routes/Resume/Resume';
@@ -30,7 +30,7 @@ const getQueryParams = (parameter) => {
 
 const getLanguage = () => {
   const available = ['pt', 'en', 'he'];
-  const defaultLang = process.env.DEFAULT_LANG;
+  const defaultLang = process.env.REACT_APP_DEFAULT_LANG;
   const browserLang = window.navigator.userLanguage || window.navigator.language;
   const lang = (`${browserLang[0]}${browserLang[1]}`).toLowerCase();
   const local = localStorage.getItem('lang');
@@ -53,7 +53,7 @@ const yearsFromNow = (y = 2016, m = 0) => {
   return Math.ceil((new Date() - new Date(year, month, 0)) / 1000 / 60 / 60 / 24 / 365);
 }
 
-window.lang = getLanguage() || process.env.DEFAULT_LANG;
+window.lang = getLanguage() || process.env.REACT_APP_DEFAULT_LANG;
 window.yearsFromNow = yearsFromNow;
 localStorage.setItem('lang', window.lang);
 
@@ -72,4 +72,8 @@ render(
   </BrowserRouter>,
   document.getElementById('root'),
 );
-registerServiceWorker();
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.register();

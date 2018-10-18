@@ -18,7 +18,7 @@ const SkillList = () => (
 
       {Tools.design.map(({ name, logo, year }) => (
         <li data-tip={tooltip(year, name)[window.lang]} key={name}>
-          <Skill logo={logo} vector />
+          <Skill logo={logo} />
         </li>
       ))}
     </ul>
@@ -28,7 +28,7 @@ const SkillList = () => (
 
       {Tools.frontend.map(({ name, logo, year }) => (
         <li data-tip={tooltip(year, name)[window.lang]} key={name}>
-          <Skill logo={logo} vector />
+          <Skill logo={logo} />
         </li>
       ))}
     </ul>
@@ -38,7 +38,7 @@ const SkillList = () => (
 
       {Tools.backend.map(({ name, logo, year }) => (
         <li data-tip={tooltip(year, name)[window.lang]} key={name}>
-          <Skill logo={logo} vector />
+          <Skill logo={logo} />
         </li>
       ))}
     </ul>
@@ -48,7 +48,7 @@ const SkillList = () => (
 
       {wishlist.backend.map(({ name, logo }) => (
         <li data-tip={name} key={name}>
-          <Skill logo={logo} vector />
+          <Skill logo={logo} />
         </li>
       ))}
     </ul>

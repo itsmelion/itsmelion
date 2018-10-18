@@ -1,13 +1,13 @@
 // @ts-nocheck
-/* eslint-disable import/no-webpack-loader-syntax, import/no-unresolved */
+/* eslint-disable import/no-unresolved */
 
-import illustratorLogo from '!html-loader!../images/brands/illustrator.svg';
-import afterEffectsLogo from '!html-loader!../images/brands/after-effects.svg';
-import webpackLogo from '!html-loader!../images/brands/webpack.svg';
-import nginxLogo from '!html-loader!../images/brands/nginx.svg';
-import adobePhotoshopLogo from '!html-loader!../images/brands/photoshop.svg';
-import invisionLogo from '!html-loader!../images/brands/invision.svg';
-import mongoLogo from '!html-loader!../images/brands/mongodb.svg';
+import { ReactComponent as illustratorLogo } from 'images/brands/illustrator.svg';
+import { ReactComponent as afterEffectsLogo } from 'images/brands/after-effects.svg';
+import { ReactComponent as webpackLogo } from 'images/brands/webpack.svg';
+import { ReactComponent as adobePhotoshopLogo } from 'images/brands/photoshop.svg';
+import { ReactComponent as invisionLogo } from 'images/brands/invision.svg';
+import { ReactComponent as mongoLogo } from 'images/brands/mongodb.svg';
+import nginxLogo from 'images/brands/nginx.png';
 
 import { faTerminal, faQuestion } from '@fortawesome/free-solid-svg-icons';
 

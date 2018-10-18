@@ -1,17 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Hex from '../../../components/Hex/Hex';
-import AsyncImage from '../../../components/AsyncImage/AsyncImage';
-import InlineSVG from '../../../components/InlineSVG/InlineSVG';
+import Hex from 'components/Hex/Hex';
+import AsyncImage from 'components/AsyncImage/AsyncImage';
 
-const renderImageByType = (logo, vector) => {
-  if (typeof logo === 'object') return <FontAwesomeIcon icon={logo} />;
+const renderImageByType = (Logo) => {
+  if (typeof Logo === 'object') return <FontAwesomeIcon icon={Logo} />;
+  if (typeof Logo === 'string') return <AsyncImage path={Logo} />;
 
-  return vector
-    ? <InlineSVG icon={logo} />
-    : <AsyncImage path={logo} />;
+  return <Logo />;
 };
 
-const Skill = ({ logo, vector = true }) => <Hex>{renderImageByType(logo, vector)}</Hex>;
+const Skill = ({ logo }) => <Hex>{renderImageByType(logo)}</Hex>;
 
 export default Skill;

@@ -1,12 +1,11 @@
 import React from 'react';
 import './Hex.scss';
-import InlineSVG from '../InlineSVG/InlineSVG';
-import hexSvg from '!html-loader!./Hex.svg';
+import { ReactComponent as HexSVG } from './Hex.svg';
 
 const Hex = ({ children }) => (
   <div className="Hex">
-    <InlineSVG icon={hexSvg} />
-    <div>{children}</div>
+    <HexSVG />
+    <div row="" align="center center">{children}</div>
   </div>
 );
 

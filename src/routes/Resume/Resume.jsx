@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPrint, faFileDownload, faEnvelope, faMapMarkedAlt,
+  faFileDownload, faEnvelope, faMapMarkedAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 

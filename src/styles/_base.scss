@@ -2,6 +2,11 @@ html,
 body {
   color: white;
   background-color: $base;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h6 { font-size: 1rem; font-weight: 700; }

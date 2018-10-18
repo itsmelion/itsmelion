@@ -15,6 +15,7 @@
     }
   },
   "rules": {
+    "react/jsx-filename-extension": 0,
     "no-use-before-define": ["warn", { "functions": false, "classes": true, "variables": true }],
     "comma-dangle": ["warn", "always-multiline"],
     "no-unused-vars": 2,

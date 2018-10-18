@@ -1,7 +1,19 @@
-@import 'vars';
+@import 'styles/_vars.scss';
 
 #SkillList {
   li {
     color: $white7;
+    div > div > svg, .fa-w-20 {
+      font-size: 1.2rem;
+      width: 1.2rem;
+      height: 100%;
+    }
+
+    img {
+      height: auto;
+      width: 1.2rem;
+      margin: auto;
+      display: block;
+    }
   }
 }
