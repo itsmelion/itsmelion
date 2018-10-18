@@ -55,6 +55,7 @@ export const sketch = { name: 'Sketch App', year: 2017, logo: faQuestion };
 export const threeD = { name: '3ds Max', year: 2012, logo: faQuestion };
 export const lightroom = { name: 'Adobe Lightroom', year: 2016, logo: faQuestion };
 export const graphQL = { name: 'GraphQL', logo: faQuestion };
+export const reactNative = { name: 'React Native', logo: faReact };
 
 const tools = {
   design: [
@@ -74,12 +75,15 @@ const tools = {
 
 export const wishlist = {
   design: null,
+
   frontend: [
     graphQL,
+    reactNative,
   ],
 
   backend: [
     graphQL,
+    reactNative,
     {
       name: 'Next.js',
       logo: faQuestion,
