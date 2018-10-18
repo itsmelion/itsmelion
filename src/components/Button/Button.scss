@@ -1,9 +1,6 @@
 @import 'vars';
 
-button.button, a.button {
-  margin-left: .2em;
-  margin-right: .2em;
-  margin-top: 1rem;
+button.Button, a.Button {
   font-weight: 700;
 
   &:first-of-type { margin-left: 0 }
@@ -23,7 +20,7 @@ button.button, a.button {
   &.social {
     font-weight: 700;
     font-size: .9em;
-    padding: .4em 1em .4em 1em;
+    padding: .25em .75em .25em .75em;
     .svg-inline--fa { font-size: 1.5em; }
   }
   sub.social-tag {

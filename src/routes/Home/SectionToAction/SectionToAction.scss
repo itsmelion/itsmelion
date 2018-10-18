@@ -1,0 +1,13 @@
+@import 'vars';
+
+#SectionToAction {
+  position: absolute;
+  width: 100%;
+
+  .button {
+    transform: translateY(-50%);
+    border-radius: 3em;
+    line-height: 1;
+    padding: .8em 2em 1em 2em;
+  }
+}

@@ -1,19 +1,9 @@
 @import 'vars';
 
-#Experience {
-  li {
-    margin-bottom: 2rem;
-    border-bottom: 1pt dotted $black1;
-    padding-bottom: 1rem;
-    @media print {
-      margin-bottom: 1rem;
-      padding-bottom: .5rem;
-    }
-  }
-
-
+.Experience {
   .technologies {
     margin: .5rem;
+
     span {
       padding: .2rem .4rem;
       margin-right: .3rem;
@@ -23,6 +13,7 @@
       font-size: .8em;
     }
   }
+
   img {
     width: 4rem;
     height: 3rem;

@@ -10,7 +10,7 @@ const Button = (props) => {
     return (
       <a
         align="start center"
-        className={`button row nowrap ${theme}`}
+        className={`button row nowrap Button ${theme}`}
         href={link}
         target={newtab ? '_blank' : ''}
         {...other}
@@ -25,7 +25,7 @@ const Button = (props) => {
     <button
       align="start center"
       type={_type}
-      className={`button row ${theme}`}
+      className={`button row Button ${theme}`}
       {...other}
     >
       {children}

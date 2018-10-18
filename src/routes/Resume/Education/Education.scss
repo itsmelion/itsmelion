@@ -2,9 +2,10 @@
 
 #Education {
   li {
-    margin-bottom: 2rem;
-    border-bottom: 1pt dotted $black1;
+    border-bottom: 1pt dotted $black3;
     padding-bottom: 1rem;
+    padding-top: 1rem;
+
     @media print {
       margin-bottom: 1rem;
       padding-bottom: .5rem;
@@ -18,10 +19,11 @@
     max-height: 100%;
     object-fit: contain;
     margin: auto 1rem;
+    margin-right: 0;
   }
+
   sub {
     font-size: .7em;
-    color: $black5;
+    color: $white3;
   }
-  span { height: 1pt; margin: 2rem; background-color: $black1; }
 }

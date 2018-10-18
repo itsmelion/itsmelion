@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import texts from './Topbar.i18n';
 import './Topbar.scss';
 import logo from './logo.svg';
+import { contact } from '../../data/hero';
 
 class Topbar extends PureComponent {
   constructor(props) {
@@ -36,6 +37,12 @@ class Topbar extends PureComponent {
               <NavLink to="/resume">
                 {texts.resume[this.lang]}
               </NavLink>
+            </li>
+
+            <li className="default-to-action">
+              <a href={contact.agenda}>
+                {texts.book[this.lang]}
+              </a>
             </li>
           </ul>
         </div>

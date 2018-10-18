@@ -7,7 +7,7 @@ $desktop: "screen and (min-width: #{$desktop-breakpoint})";
 
 $radius: 12pt;
 
-$black: rgb(28, 24, 33);
+$black: #1c0c34;
 $black1: rgba($black, .1);
 $black3: rgba($black, .25);
 $black5: rgba($black, .5);
@@ -19,14 +19,16 @@ $white3: rgba($white, .3);
 $white5: rgba($white, .6);
 $white7: rgba($white, .8);
 
-$pink: rgb(199, 71, 225);
-$dalaran: rgb(149, 69, 165);
+$pink: #b951ce;
+$dalaran: #7e409d;
+$darnassus: #3B3161;
 $ysera: #59DFB3;
 $alliance: #19B5FF;
+$nightsong: #221c35;
 
 $primary: $pink;
-$base: #27232B; // 25242B
-$background: $base;
+$base: #211b2b; // 25242B
+$background: #211b2b;
 $strip-background: rgba($pink,0.1);
 
 $base-font: 'Assistant', 'Segoe UI', 'Open Sans',
@@ -42,4 +44,12 @@ $base-font-size: 100% !default;
 @mixin font-size($size) {
   font-size: $size * $base-font-size;
   font-size: #{$size}rem;
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

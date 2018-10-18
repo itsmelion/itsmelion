@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "react-app"],
   "plugins": ["import", "react"],
   "env": {
     "es6": true,
@@ -22,7 +22,8 @@
     "max-len": ["warn", { "code": 90 }],
     "no-console": ["warn", { "allow": ["warn", "info"] }],
     "react/prop-types": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/jsx-one-expression-per-line": 0,
+    "class-methods-use-this": 0
   },
   "globals": {
     "window": false,

@@ -10,4 +10,10 @@ export default {
     pt: 'Currículo',
     he: 'קורות חיים',
   },
+
+  book: {
+    en: 'Book a call',
+    pt: 'Agende uma conversa',
+    he: 'Book a call',
+  },
 };

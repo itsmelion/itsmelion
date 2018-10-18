@@ -1,145 +1,142 @@
-const adobeIllustrator = { name: 'Illustrator', year: 2012 };
-const adobeAfterEffects = { name: 'Adobe After Effects', year: 2015 };
-const angularJs = { name: 'Angular.js', year: 2014 };
-const angular = { name: 'Angular', year: 2016 };
-const wordpress = { name: 'Wordpress', year: 2015 };
-const webpack = { name: 'Webpack', year: 2016 };
-const nginx = { name: 'nGinx', year: 2017 };
-const adobePhotoshop = { name: 'Photoshop', year: 2012 };
-const react = { name: 'React', year: 2017 };
-const invision = { name: 'inVision', year: 2016 };
-const bash = { name: 'Bash scripts', year: 2015 };
-const nodeJs = { name: 'Node.js', year: 2017 };
-const mongo = { name: 'MongoDB', year: 2017 };
-const docker = { name: 'Docker', year: 2018 };
-const microServices = { name: 'Micro-Services', year: 2018 };
-const laravel = { name: 'Laravel', year: 2017 };
+import {
+  adobeIllustrator,
+  adobeAfterEffects,
+  angularJs,
+  angular,
+  wordpress,
+  webpack,
+  nginx,
+  adobePhotoshop,
+  react,
+  invision,
+  bash,
+  nodeJs,
+  mongo,
+  docker,
+  microServices,
+  laravel,
+} from './tools';
+
+import destakLogo from '../images/brands/destak.jpg';
+import mgRepresentacoesLogo from '../images/brands/mgrepresentacoes.png';
+import plugLogo from '../images/brands/plug.png';
+import aliaLogo from '../images/logo.png';
+import backrLogo from '../images/brands/backr.svg';
+import expatLogo from '../images/brands/planetexpat.png';
+import robosLogo from '../images/brands/robos.png';
 
 export default [
   {
-    name: 'ROBOS.IM',
-    ref: 'robos.im',
-    logo: '/images/brands/robos.png',
-    position: 'Frontend',
+    name: 'Destakinox',
+    position: 'Designer',
+    logo: destakLogo,
+    ref: 'destakinox.com.br',
     period: {
       start: {
         month: {
+          semester: 0,
           en: 'early',
           pt: 'início de',
         },
-        year: 2018,
+        year: 2012,
       },
       end: {
         month: {
+          semester: 0,
           en: 'mid',
           pt: 'meados de',
         },
-        year: 2018,
+        year: 2014,
       },
     },
     description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
-    },
-    technologies: [
-      adobeIllustrator,
-      invision,
-      webpack,
-      angularJs,
-      nodeJs,
-      react,
-      bash,
-      mongo,
-      docker,
-      microServices,
-    ],
-    links: [
-      'https://www.linkedin.com/company/robos.im/',
-      'https://www.instagram.com/robos.im/',
-      'https://www.facebook.com/wearerobos',
-    ],
-  },
-
-  {
-    name: 'Planet Expat',
-    position: 'Frontend and Designer',
-    logo: '/images/brands/planetexpat.png',
-    ref: 'planetexpat.org',
-    period: {
-      start: {
-        month: {
-          en: 'early',
-          pt: 'início de',
-        },
-        year: 2017,
-      },
-      end: {
-        month: {
-          en: 'late',
-          pt: 'final de',
-        },
-        year: 2017,
-      },
-    },
-    description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+      en: 'Design of publicity and marketing content.',
+      pt: 'Design de conteúdo publicitário e de marketing.',
     },
     technologies: [
       adobeIllustrator,
       adobePhotoshop,
-      wordpress,
-      webpack,
-      nginx,
+    ],
+  },
+  {
+    name: 'MG Representações',
+    position: 'Designer',
+    logo: mgRepresentacoesLogo,
+    ref: 'mgrepresentacoes.com.br',
+    period: {
+      start: {
+        month: {
+          semester: 0,
+          en: 'early',
+          pt: 'início de',
+        },
+        year: 2012,
+      },
+      end: {
+        month: {
+          semester: 0,
+          en: 'mid',
+          pt: 'meados de',
+        },
+        year: 2014,
+      },
+    },
+    description: {
+      en: 'Design of publicity and marketing content.',
+      pt: 'Design de conteúdo publicitário e de marketing.',
+    },
+    technologies: [
+      adobeIllustrator,
+      adobePhotoshop,
     ],
   },
 
   {
-    name: 'StudentBackr',
-    position: 'Frontend',
-    logo: '/images/brands/backr.svg',
+    name: 'Plug CRM',
+    ref: 'plugcrm.net',
+    position: 'Frontend and Designer',
+    logo: plugLogo,
     period: {
       start: {
         month: {
-          en: 'early',
-          pt: 'início de',
+          semester: 1,
+          en: 'mid',
+          pt: 'meados de',
         },
-        year: 2017,
+        year: 2014,
       },
       end: {
         month: {
+          semester: 0,
           en: 'late',
           pt: 'final de',
         },
         year: 2017,
       },
     },
-    ref: 'studentbackr.com',
     description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+      en: `Design and development of web applications, Animations and videos,
+      also images for publicity.`,
+      pt: `Design e desenvolvimento de aplicações web, Vídeos e animações,
+      e imagens com fins publicitários.`,
     },
-    technology: [
-      'AngularJS', 'Illustrator', 'Laravel', 'Webpack', 'Wordpress',
-    ],
     technologies: [
+      adobeAfterEffects,
       adobeIllustrator,
-      wordpress,
-      webpack,
+      adobePhotoshop,
       angularJs,
-      nginx,
-      laravel,
     ],
   },
 
   {
     name: 'Autonomous as ALIA',
     position: 'FullStack',
-    logo: '/images/logo.png',
+    logo: aliaLogo,
     ref: 'alia.ml',
     period: {
       start: {
         month: {
+          semester: 0,
           en: 'ends',
           pt: 'final de',
         },
@@ -147,10 +144,11 @@ export default [
       },
       end: {
         month: {
+          semester: 0,
           en: 'early',
           pt: 'início de',
         },
-        year: 2018,
+        year: 2019,
       },
     },
     description: {
@@ -177,20 +175,59 @@ export default [
   },
 
   {
-    name: 'Plug CRM',
-    ref: 'plugcrm.net',
-    position: 'Frontend and Designer',
-    logo: '/images/brands/plug.png',
+    name: 'StudentBackr',
+    position: 'Frontend',
+    logo: backrLogo,
     period: {
       start: {
         month: {
-          en: 'mid',
-          pt: 'meados de',
+          semester: 1,
+          en: 'early',
+          pt: 'início de',
         },
-        year: 2015,
+        year: 2017,
       },
       end: {
         month: {
+          semester: 0,
+          en: 'late',
+          pt: 'final de',
+        },
+        year: 2017,
+      },
+    },
+    ref: 'studentbackr.com',
+    description: {
+      en: 'Design and development of web applications, widgets and landing pages.',
+      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+    },
+    technologies: [
+      adobeIllustrator,
+      wordpress,
+      webpack,
+      angularJs,
+      nginx,
+      laravel,
+    ],
+  },
+
+  {
+    name: 'Planet Expat',
+    position: 'Frontend and Designer',
+    logo: expatLogo,
+    ref: 'planetexpat.org',
+    period: {
+      start: {
+        month: {
+          semester: 1,
+          en: 'early',
+          pt: 'início de',
+        },
+        year: 2017,
+      },
+      end: {
+        month: {
+          semester: 1,
           en: 'late',
           pt: 'final de',
         },
@@ -198,77 +235,61 @@ export default [
       },
     },
     description: {
-      en: `Design and development of web applications, Animations and videos,
-      also images for publicity.`,
-      pt: `Design e desenvolvimento de aplicações web, Vídeos e animações,
-      e imagens com fins publicitários.`,
+      en: 'Design and development of web applications, widgets and landing pages.',
+      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
     technologies: [
-      adobeAfterEffects,
       adobeIllustrator,
       adobePhotoshop,
-      angularJs,
+      wordpress,
+      webpack,
+      nginx,
     ],
   },
 
   {
-    name: 'Destakinox',
-    position: 'Designer',
-    logo: '/images/brands/destak.jpg',
-    ref: 'destakinox.com.br',
+    name: 'ROBOS.IM',
+    ref: 'robos.im',
+    logo: robosLogo,
+    position: 'Frontend',
     period: {
       start: {
         month: {
+          semester: 0,
           en: 'early',
           pt: 'início de',
         },
-        year: 2013,
+        year: 2018,
       },
       end: {
         month: {
+          semester: 0,
           en: 'mid',
           pt: 'meados de',
         },
-        year: 2015,
+        year: 2018,
       },
     },
     description: {
-      en: 'Design of publicity and marketing content.',
-      pt: 'Design de conteúdo publicitário e de marketing.',
+      en: 'Design and development of web applications, widgets and landing pages.',
+      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
     technologies: [
       adobeIllustrator,
-      adobePhotoshop,
+      invision,
+      webpack,
+      angularJs,
+      nodeJs,
+      react,
+      bash,
+      mongo,
+      docker,
+      microServices,
     ],
-  },
-  {
-    name: 'MG Representações',
-    position: 'Designer',
-    logo: '/images/brands/mgrepresentacoes.png',
-    ref: 'mgrepresentacoes.com.br',
-    period: {
-      start: {
-        month: {
-          en: 'early',
-          pt: 'início de',
-        },
-        year: 2013,
-      },
-      end: {
-        month: {
-          en: 'mid',
-          pt: 'meados de',
-        },
-        year: 2015,
-      },
-    },
-    description: {
-      en: 'Design of publicity and marketing content.',
-      pt: 'Design de conteúdo publicitário e de marketing.',
-    },
-    technologies: [
-      adobeIllustrator,
-      adobePhotoshop,
+    links: [
+      'https://www.linkedin.com/company/robos.im/',
+      'https://www.instagram.com/robos.im/',
+      'https://www.facebook.com/wearerobos',
     ],
   },
 ];

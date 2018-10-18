@@ -75,7 +75,7 @@ export const contact = {
     url: 'https://join.skype.com/invite/QRZJqK4phjyU',
   },
   phone: '+55 31 982875204',
-  agenda: 'https://calendly.com/itsmelion',
+  agenda: 'https://calendly.com/itsmelion/talk',
 };
 
 export const address = {
