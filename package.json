@@ -6,7 +6,7 @@
   "scripts": {
     "up": "npm upgrade && npm prune && npm dedupe",
     "precommit": "lint-staged",
-    "push": "rsync -avz ./dist/ lion@alia.ml:/opt/alia/ --progress --delete",
+    "push": "rsync -avz ./build/ lion@alia.ml:/opt/alia/ --progress --delete",
     "deploy": "npm run build && npm run push",
     "start": "react-scripts start",
     "build": "react-scripts build",
