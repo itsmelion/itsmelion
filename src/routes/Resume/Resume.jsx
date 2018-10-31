@@ -12,10 +12,14 @@ import Education from './Education/Education';
 import Timeline from './Timeline/Timeline';
 import SkillList from './Skills/Skill-List';
 import './Resume.scss';
-import resumePDF from './resume.pdf';
 import {
   social, contact, address, bio, text, ocupation, name,
 } from '../../data/hero';
+
+const resume = {
+  en: 'https://drive.google.com/uc?export=download&id=1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV',
+  pt: 'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
+};
 
 const Resume = () => (
   <div id="Resume" column="" align="center">
@@ -64,7 +68,12 @@ const Resume = () => (
 
       <footer hide-print="" align="start start" className="column Resume">
         <div row="">
-          <Button newtab link={resumePDF} theme="default mr1" rel="noopener noreferrer">
+          <Button
+            newtab
+            link={resume[window.lang]}
+            theme="default mr1"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faFileDownload} />
             Download PDF
           </Button>
