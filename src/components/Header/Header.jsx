@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroFrame from '../HeroFrame/HeroFrame';
+import AsyncImage from '../AsyncImage/AsyncImage';
 import holoDefault from './holo-sillhouete.svg';
 import holoPlatform from './holo-base.svg';
 import { bio, picture, name } from '../../data/hero';
@@ -25,9 +26,9 @@ const Header = () => (
     </div>
 
     <div className="column flex-initial Hologram" align="center">
-      <img
+      <AsyncImage
         className="hero-hologram"
-        src={picture.body || holoDefault}
+        path={picture.body || holoDefault}
         alt="Hero holographic silhouette"
       />
       <img

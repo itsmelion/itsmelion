@@ -7,7 +7,9 @@ import {
   faSkype,
   faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
-import avatar from '../images/hero/lion.jpg';
+
+import avatar from '../images/hero/square.jpg';
+import HeroBody from '../components/Header/Hero.png';
 
 export const social = {
   github: {
@@ -52,7 +54,7 @@ export const ocupation = {
 export const picture = {
   avatar,
   micro: '/images/hero/micro-lion.jpg',
-  body: '',
+  body: HeroBody,
 };
 
 export const lastName = {
