@@ -1,10 +1,33 @@
-
-<svg width="281px" height="105px" viewBox="0 0 281 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g id="HoloBase">
-    <path d="M249.909091,44.1266234 L249.909091,15.8733766 L140.454545,1.00917903 L31,15.8733766 L31,44.1266234 L140.454545,58.990821 L249.909091,44.1266234 Z" id="Shape" stroke-opacity="0.2" stroke="#D64DF2" stroke-width="2" fill="#4D3751" fill-rule="nonzero"></path>
-    <polygon id="Path-2" fill="#443E46" points="30.252135 15.6003936 0.421910053 43.8484746 0.421910053 81.5929121 30.252135 43.8484746"></polygon>
-    <polygon id="Path-2" fill="#9E7EA5" transform="translate(265.636161, 48.618076) scale(-1, 1) translate(-265.636161, -48.618076) " points="280.830225 15.2436332 255.488114 44.2480809 250.442098 81.9925184 280.830225 44.2480809"></polygon>
-    <polygon id="Path-3" fill="#69596D" points="29.8696962 45.0900909 140.270517 59.944083 140.270517 104.692913 0.325863784 81.8793046"></polygon>
-    <polygon id="Path-3" fill="#7A667E" transform="translate(210.448022, 74.496231) scale(-1, 1) translate(-210.448022, -74.496231) " points="170.143745 44.3896398 280.896044 59.8539921 280.896044 104.602822 140 81.9291599"></polygon>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="HoloBase" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 281 105" style="enable-background:new 0 0 281 105;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{opacity:0.2;}
+	.st2{fill:#D64DF2;}
+	.st3{fill:#663B9E;}
+	.st4{fill:#944EC6;}
+	.st5{fill:#7946AF;}
+	.st6{fill:#884FBA;}
+</style>
+<g id="Shape">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="106.32" y1="88.3386" x2="174.0016" y2="-28.8893">
+		<stop  offset="0" style="stop-color:#6C2899"/>
+		<stop  offset="0.2257" style="stop-color:#6F2A9D"/>
+		<stop  offset="0.4411" style="stop-color:#7630A8"/>
+		<stop  offset="0.6525" style="stop-color:#833BBC"/>
+		<stop  offset="0.86" style="stop-color:#9549D6"/>
+		<stop  offset="1" style="stop-color:#A455ED"/>
+	</linearGradient>
+	<polygon class="st0" points="249.9,44.1 250.4,15.2 140.5,1 30.3,15.6 30.3,44.5 140.5,59 	"/>
+	<g class="st1">
+		<path class="st2" d="M140.5,4l106.9,13.8L247,41.5L140.4,56L33.3,41.8l-0.1-23.6L140.5,4 M140.5,1L30.3,15.6l0.1,28.9L140.5,59
+			l109.5-14.9l0.5-28.9L140.5,1L140.5,1z"/>
+	</g>
+</g>
+<polygon id="Path-2" class="st3" points="30.3,15.6 0.4,44.1 0.4,81.9 30.3,44.6 "/>
+<polygon id="Path-2_1_" class="st4" points="250.3,15.2 275.9,44.2 280.9,81.9 249.8,44.1 "/>
+<polygon id="Path-3" class="st5" points="30.4,44.3 140.5,59 140.3,104.7 0.4,81.9 "/>
+<polygon id="Path-3_1_" class="st6" points="249.9,44.2 140.5,59 140,104.7 280.9,82 "/>
 </svg>
