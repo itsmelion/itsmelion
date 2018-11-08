@@ -19,7 +19,7 @@ import {
 
 import destakLogo from '../images/brands/destak.jpg';
 import mgRepresentacoesLogo from '../images/brands/mgrepresentacoes.png';
-import plugLogo from '../images/brands/plug.png';
+import crmLogo from '../images/brands/rd-station_crm.svg';
 import aliaLogo from '../images/logo.png';
 import backrLogo from '../images/brands/backr.svg';
 import expatLogo from '../images/brands/planetexpat.png';
@@ -53,10 +53,7 @@ export default [
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
     },
-    technologies: [
-      adobeIllustrator,
-      adobePhotoshop,
-    ],
+    technologies: [adobeIllustrator, adobePhotoshop],
   },
   {
     name: 'MG Representações',
@@ -85,17 +82,14 @@ export default [
       en: 'Design of publicity and marketing content.',
       pt: 'Design de conteúdo publicitário e de marketing.',
     },
-    technologies: [
-      adobeIllustrator,
-      adobePhotoshop,
-    ],
+    technologies: [adobeIllustrator, adobePhotoshop],
   },
 
   {
-    name: 'Plug CRM',
-    ref: 'plugcrm.net',
+    name: 'RD Station CRM (former PlugCRM)',
+    ref: 'www.rdstation.com/crm/',
     position: 'Frontend and Designer',
-    logo: plugLogo,
+    logo: crmLogo,
     period: {
       start: {
         month: {
@@ -198,8 +192,10 @@ export default [
     },
     ref: 'studentbackr.com',
     description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+      en:
+        'Design and development of web applications, widgets and landing pages.',
+      pt:
+        'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
     technologies: [
       adobeIllustrator,
@@ -235,16 +231,12 @@ export default [
       },
     },
     description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+      en:
+        'Design and development of web applications, widgets and landing pages.',
+      pt:
+        'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
-    technologies: [
-      adobeIllustrator,
-      adobePhotoshop,
-      wordpress,
-      webpack,
-      nginx,
-    ],
+    technologies: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
   },
 
   {
@@ -271,8 +263,10 @@ export default [
       },
     },
     description: {
-      en: 'Design and development of web applications, widgets and landing pages.',
-      pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+      en:
+        'Design and development of web applications, widgets and landing pages.',
+      pt:
+        'Design and desenvolvimento de aplicações web, widgets e landing pages.',
     },
     technologies: [
       adobeIllustrator,
