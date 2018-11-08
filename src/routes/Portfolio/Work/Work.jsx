@@ -5,13 +5,19 @@ import './Work.scss';
 
 const Work = ({ work }) => (
   <article flex="auto" className="Work">
-    <img className="contain-fit" src={work.thumbnail || thumb} alt="Work Preview" />
+    <img
+      className="cover-fit"
+      src={work.thumbnail || thumb}
+      alt="Work Preview"
+    />
 
     <div className="p1">
-      <h3>{work.title}</h3>
+      <h4>{work.title}</h4>
       <p>{work.description}</p>
 
-      <Button theme="outline" link={work.ref}>View Project</Button>
+      <Button theme="outline" link={work.ref}>
+        View Project
+      </Button>
     </div>
   </article>
 );
