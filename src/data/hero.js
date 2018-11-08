@@ -5,7 +5,7 @@ import {
   faGithub,
   faBehance,
   faSkype,
-  faDribbble,
+  // faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
 
 import avatar from '../images/hero/square.jpg';
@@ -23,11 +23,11 @@ export const social = {
     name: 'LinkedIn',
     url: 'https://linkedin.com/in/chrislion',
   },
-  dribble: {
-    icon: faDribbble,
-    name: 'Dribble',
-    url: 'https://dribbble.com/ChrisLion',
-  },
+  // dribble: {
+  //   icon: faDribbble,
+  //   name: 'Dribble',
+  //   url: 'https://dribbble.com/ChrisLion',
+  // },
   behance: {
     icon: faBehance,
     name: 'Behance',
