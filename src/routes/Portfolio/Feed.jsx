@@ -7,20 +7,23 @@ const Feed = () => (
     <header className="mv2">
       <h2 className="mt2">
         Showcase
-        <span style={{ marginLeft: '-5px' }} className="beta-tag">
+        <span style={{ marginLeft: '-2px' }} className="beta-tag">
           beta
         </span>
       </h2>
     </header>
 
     <section row="">
-      {portfolio.map(work => <Work work={work} />)}
+      {portfolio.map(work => (
+        <Work key={work.ref} work={work} />
+      ))}
     </section>
 
     <section className="alert-info p1 mv1">
       <h3>Notice:</h3>
       <p>
-        this section is under development, and there is more content to be submitted.
+        this section is under development, and there is more content to be
+        submitted.
         <br />
         Check back in a while.
       </p>
