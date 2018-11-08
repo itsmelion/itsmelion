@@ -1,6 +1,7 @@
 {
+  "parser": "babel-eslint",
   "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "react-app"],
-  "plugins": ["import", "react"],
+  "plugins": ["import", "prettier", "react"],
   "env": {
     "es6": true,
     "browser": true,
@@ -15,9 +16,16 @@
     }
   },
   "rules": {
+    "comma-dangle": ["warn"],
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
     "react/jsx-filename-extension": 0,
     "no-use-before-define": ["warn", { "functions": false, "classes": true, "variables": true }],
-    "comma-dangle": ["warn", "always-multiline"],
     "no-unused-vars": 2,
     "no-param-reassign": "warn",
     "max-len": ["warn", { "code": 90 }],

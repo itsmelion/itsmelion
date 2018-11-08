@@ -5,6 +5,7 @@
   margin-top: -16rem;
   margin-top: -42vh;
   height: 70vh;
+  display: block;
 
   @media #{$mobile} {
     height: 40vh;
