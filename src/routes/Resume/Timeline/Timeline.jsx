@@ -28,20 +28,20 @@ class Timeline extends PureComponent {
     };
   }
 
-  toggleDetails = (index) => {
+  toggleDetails = index => {
     this.setState({
       openDialog: true,
       companyIndex: index,
     });
-  }
+  };
 
   handleOpenModal = () => {
     this.setState({ openDialog: true });
-  }
+  };
 
   handleCloseModal = () => {
     this.setState({ openDialog: false });
-  }
+  };
 
   render() {
     const height = `${(experiences.length + 1) * 1.5 + 3.25}rem`;
@@ -51,7 +51,9 @@ class Timeline extends PureComponent {
       <>
         <section id="Timeline" style={{ height }} className="resume-section">
           {this.years.map((y, i) => (
-            <span style={{ left: `${i * 150}px` }} className="marker" key={y}>201{y}</span>
+            <span style={{ left: `${i * 150}px` }} className="marker" key={y}>
+              201{y}
+            </span>
           ))}
           {experiences.map((company, top) => (
             <Company

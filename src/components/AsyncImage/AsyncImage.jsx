@@ -1,6 +1,5 @@
-// @ts-nocheck
 import React, { PureComponent } from 'react';
-import spinner from './spinner.gif';
+import spinner from './preloader.gif';
 
 export default class AsyncImage extends PureComponent {
   constructor(props) {
@@ -12,9 +11,10 @@ export default class AsyncImage extends PureComponent {
   componentDidMount() {
     const { path } = this.props;
     this.asyncImage.src = path;
-    this.asyncImage.onload = () => this.setState({
-      ready: true,
-    });
+    this.asyncImage.onload = () =>
+      this.setState({
+        ready: true,
+      });
   }
 
   render() {
