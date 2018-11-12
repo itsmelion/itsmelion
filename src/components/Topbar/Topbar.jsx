@@ -1,49 +1,74 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import texts from './Topbar.i18n';
-import './Topbar.scss';
-import logo from './logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 import { contact } from '../../data/hero';
+import texts from './Topbar.i18n';
+import logo from './logo.svg';
+import Hex from '../Hex/Hex';
+import './Topbar.scss';
 
-class Topbar extends PureComponent {
+class Topbar extends Component {
   constructor(props) {
     super(props);
     this.lang = localStorage.getItem('lang');
+    this.state = {
+      collapsed: false,
+    };
   }
 
-  render() {
-    return (
-      <nav hide-print="" id="topbar">
-        <div className="contain row nowrap" align="between center">
-          <ul className="hide-mobile" flex="" />
+  closeMenu = () => this.setState({ collapsed: false });
 
-          <NavLink to="/">
-            <li id="nav-logo" flex="none" className="row nowrap" align="start end">
-              <img src={logo} alt="ALIA Logo" />
-              <span style={{ marginLeft: '-10px' }} className="beta-tag">
-                beta
-              </span>
-            </li>
+  toggle = () =>
+    this.setState(({ collapsed }) => ({
+      collapsed: !collapsed,
+    }));
+
+  render() {
+    const collapse = this.state.collapsed ? 'opened' : 'closed';
+
+    return (
+      <nav hide-print="" id="topbar" className={collapse}>
+        <div className="contain row nowrap" align="between center">
+          <NavLink
+            flex="none"
+            id="nav-logo"
+            onClick={this.closeMenu}
+            className="row nowrap above-left"
+            align="start end"
+            to="/"
+          >
+            <Hex>
+              <img src={logo} alt="Alia logo" />
+            </Hex>
+
+            <span className="beta-tag">beta</span>
           </NavLink>
 
-          <ul className="row nowrap tabs" flex="" align="end">
-            <li>
-              <NavLink to="/portfolio">
-                {texts.portfolio[this.lang]}
-              </NavLink>
-            </li>
+          <button
+            type="button"
+            onClick={this.toggle}
+            className="show-mobile above-right"
+            id="nav-toggle"
+            flex="none"
+          >
+            <FontAwesomeIcon className="icon-closed" icon={faTimes} />
+            <FontAwesomeIcon className="icon-menu" icon={faApple} />
+          </button>
 
-            <li>
-              <NavLink to="/resume">
-                {texts.resume[this.lang]}
-              </NavLink>
-            </li>
+          <ul flex="" align="end" className={`tabs ${collapse}`}>
+            <NavLink to="/portfolio" onClick={this.closeMenu}>
+              {texts.portfolio[this.lang]}
+            </NavLink>
 
-            <li className="default-to-action">
-              <a href={contact.agenda}>
-                {texts.book[this.lang]}
-              </a>
-            </li>
+            <NavLink to="/resume" onClick={this.closeMenu}>
+              {texts.resume[this.lang]}
+            </NavLink>
+
+            <a className="default-to-action" href={contact.agenda}>
+              {texts.book[this.lang]}
+            </a>
           </ul>
         </div>
       </nav>

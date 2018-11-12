@@ -47,8 +47,8 @@ export const social = {
 };
 
 export const ocupation = {
-  en: 'Senior Frontend and Designer',
-  pt: 'Senior Frontend e Designer',
+  en: 'Frontend Developer',
+  pt: 'Frontend Developer',
 };
 
 export const picture = {

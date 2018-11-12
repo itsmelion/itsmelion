@@ -7,51 +7,108 @@ nav#topbar {
   padding: .25rem;
   color: $white7;
   border: 1pt solid rgba($pink, .2);
-  background: rgba($black, .5);
-  font-size: .9rem;
+  background: $nightsong;
   z-index: 900;
+  font-size: .9rem;
+
+  button {
+    appearance: none;
+    color: currentColor;
+    border: 0;
+    background-color: transparent;
+  }
+
+  #nav-toggle {
+    height: 100%;
+    background-color: lighten($nightsong, 8%);
+    padding: .5em 1em;
+  }
+
+  .above-left, .above-right,  {
+    z-index: 999;
+  }
+
+  .above-left { left: 0; }
+  .above-right { right: 0; }
 
   .tabs {
-    li {
-      position: relative;
-      margin: 0 .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    overflow-y: auto;
+
+    a {
+      display: block;
+      height: auto;
+      padding: .5em 1.5em;
+      color: currentColor;
+      border: 1pt solid transparent;
+      border-radius: $radius * 3;
+      line-height: 1.2;
       text-align: center;
+      user-select: none;
+      cursor: pointer;
+      margin: .5em;
 
-      > a {
-        display: block;
-        height: 100%;
-        padding: .4em 1.5em;
-        color: currentColor;
-        border: 1pt solid transparent;
-        border-radius: $radius * 3;
-        cursor: pointer;
-        user-select: none;
-
-        &:hover { border: 1pt solid rgba($dalaran, .5); }
+      &.active, &:hover {
+        border: 1pt solid rgba($dalaran, .5);
       }
+    }
 
-      &:first-of-type { margin-left: 0; }
-      &:last-of-type { margin-right: 0; }
+    @media #{$mobile} {
+      background-color: $nightsong;
+      padding: 2em;
+      padding-top: 5rem;
+      flex-direction: column;
+      position: fixed;
+      width: auto;
+      overflow-y: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: transform .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transform: translateX(100%);
+
+      &.opened { transform: translateX(0); }
+    }
+  }
+
+  &.opened {
+    #nav-toggle {
+      .icon-closed { display: inline; }
+      .icon-menu { display: none; }
+    }
+  }
+
+  &.closed {
+    #nav-toggle {
+      .icon-closed { display: none; }
+      .icon-menu { display: inline; }
     }
   }
 }
 
 #nav-logo {
-  position: absolute;
-  width: auto;
+  position: relative;
+  width: 3em;
   height: 100%;
-  min-width: 3rem;
-  top: 25%;
-  right: 50%;
-  left: 50%;
-  margin: auto;
+  margin-bottom: -1.5em;
 
-  @media #{$mobile} {
-    left: 1rem;
+  .beta-tag {
+    position: absolute;
+    right: -2.25em;
+    bottom: .5em;
   }
 }
 
 .default-to-action {
-  background-color: $dalaran;
   border-radius: $radius;
+  background-color: $dalaran;
 }
+
+// @keyframes slide-in {
+//   from { transform: translateX(-100%); }
+//   to { transform: translateX(0); }
+// }

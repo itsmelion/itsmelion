@@ -4,13 +4,8 @@ import portfolio from '../../data/portfolio';
 
 const Feed = () => (
   <main contain="" flex="" id="Portfolio-feed">
-    <header className="mv2">
-      <h2 className="mt2">
-        Showcase
-        <span style={{ marginLeft: '-2px' }} className="beta-tag">
-          beta
-        </span>
-      </h2>
+    <header className="mv2 p1">
+      <h2 className="mt2">Showcase</h2>
     </header>
 
     <section row="">

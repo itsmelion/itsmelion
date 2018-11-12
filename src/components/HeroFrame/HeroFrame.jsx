@@ -6,7 +6,7 @@ import { social, ocupation } from '../../data/hero';
 
 const HeroFrame = ({ picture }) => (
   <article className="HeroFrame">
-    <h6 className="hero-role">Rank: {ocupation[window.lang]}</h6>
+    <h6 className="hero-role">{ocupation[window.lang]}</h6>
     <div className="row nowrap hud-decorated">
       <span flex="grow" />
       <span className="decoration" />
@@ -23,14 +23,18 @@ const HeroFrame = ({ picture }) => (
     <div className="hud">
       <div className="skill-bars">
         {skills.bars.map(({ field, ratio }) => (
-          <p className={field} key={field} style={{ width: `${ratio}%` }}>{field}</p>
+          <p className={field} key={field} style={{ width: `${ratio}%` }}>
+            {field}
+          </p>
         ))}
       </div>
     </div>
 
     <div className="skill-tags">
       <h6>Tags:</h6>
-      {skills.tags[window.lang].map(tag => <span key={tag}>{tag}</span>)}
+      {skills.tags[window.lang].map(tag => (
+        <span key={tag}>{tag}</span>
+      ))}
     </div>
 
     <div className="avatar hex">
