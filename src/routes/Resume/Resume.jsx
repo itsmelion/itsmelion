@@ -2,7 +2,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFileDownload, faEnvelope, faMapMarkedAlt,
+  faFileDownload,
+  faEnvelope,
+  faMapMarkedAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 
@@ -13,12 +15,20 @@ import Timeline from './Timeline/Timeline';
 import SkillList from './Skills/Skill-List';
 import './Resume.scss';
 import {
-  social, contact, address, bio, text, ocupation, name,
+  social,
+  contact,
+  address,
+  bio,
+  text,
+  ocupation,
+  name,
 } from '../../data/hero';
 
 const resume = {
-  en: 'https://drive.google.com/uc?export=download&id=1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV',
-  pt: 'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
+  en:
+    'https://drive.google.com/uc?export=download&id=1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV',
+  pt:
+    'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
 };
 
 const Resume = () => (
@@ -42,16 +52,20 @@ const Resume = () => (
 
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faEnvelope} />
-            <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            <a className="link" href={`mailto:${contact.email}`}>
+              {contact.email}
+            </a>
           </p>
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
-            <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+            <a className="link" href={`tel:${contact.phone}`}>
+              {contact.phone}
+            </a>
           </p>
 
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faSkype} />
-            <a href={contact.skype.url}>
+            <a className="link" href={contact.skype.url}>
               {contact.skype.label}
             </a>
           </p>
@@ -91,9 +105,7 @@ const Resume = () => (
             <FontAwesomeIcon icon={social.instagram.icon} />
             <p>
               <span>{social.instagram.name}</span>
-              <sub className="social-tag">
-                @{social.instagram.user}
-              </sub>
+              <sub className="social-tag">@{social.instagram.user}</sub>
             </p>
           </Button>
 
@@ -104,7 +116,9 @@ const Resume = () => (
             newtab
           >
             <FontAwesomeIcon icon={social.facebook.icon} />
-            <p><span>{social.facebook.name}</span></p>
+            <p>
+              <span>{social.facebook.name}</span>
+            </p>
           </Button>
 
           <Button
@@ -114,7 +128,9 @@ const Resume = () => (
             newtab
           >
             <FontAwesomeIcon icon={social.linkedin.icon} />
-            <p><span>{social.linkedin.name}</span></p>
+            <p>
+              <span>{social.linkedin.name}</span>
+            </p>
           </Button>
 
           <Button
@@ -126,9 +142,7 @@ const Resume = () => (
             <FontAwesomeIcon icon={social.github.icon} />
             <p>
               <span>{social.github.name}</span>
-              <sub className="social-tag">
-                @{social.github.user}
-              </sub>
+              <sub className="social-tag">@{social.github.user}</sub>
             </p>
           </Button>
         </div>

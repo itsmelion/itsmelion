@@ -3,24 +3,22 @@ import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 import './Education.scss';
 import { scholarity } from '../../../data/education';
 
-
 const Education = () => (
-  <ol id="Education">
+  <ol id="Education" className="mb2">
     {scholarity.map(school => (
       <li
-        row=""
+        row="nowrap"
         className="resume-section"
-        align="start center"
-        mobile-column=""
+        align="start"
         key={school.institution}
       >
         <h5>{school.course[window.lang]}</h5>
 
-        <span flex="" className="hide-mobile" />
+        <span flex="" />
 
         <div row="nowrap" align="end center">
           <div className="right">
-            <h6>
+            <h6 column="">
               {school.institution}
               <sub>{school.initials && `(${school.initials})`}</sub>
             </h6>
@@ -29,7 +27,7 @@ const Education = () => (
           </div>
 
           <AsyncImage
-            className="contain-fit"
+            className="hide-mobile contain-fit"
             flex="none"
             path={school.logo}
             alt={`Logo ${school.institution}`}
@@ -39,6 +37,5 @@ const Education = () => (
     ))}
   </ol>
 );
-
 
 export default Education;

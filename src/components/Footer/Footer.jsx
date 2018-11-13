@@ -12,18 +12,16 @@ const Footer = () => (
     <footer id="Footer" hide-print="">
       <div className="contain row mobile-column footer" align="between stretch">
         <aside className="footer-alia">
-          <img
-            width="24"
-            src={logo}
-            alt="Logo Alia"
-          />
+          <img width="28" src={logo} alt="Logo Alia" />
 
           <p>
-            Alia is a brand that represents
-            Christhopher Lion as a Individual Entrepreneur
+            Alia is a brand that represents Christhopher Lion as a Individual
+            Entrepreneur
           </p>
 
-          <a href="//instagram.com/go.alia">@go.alia</a>
+          <a className="link" href="//instagram.com/go.alia">
+            @go.alia
+          </a>
         </aside>
 
         <article className="footer-hero">
@@ -34,7 +32,9 @@ const Footer = () => (
             mobile-align="around center"
           >
             {Object.keys(social).map(key => (
-              <a key={key} href={social[key].url}>{social[key].name}</a>
+              <a className="link" key={key} href={social[key].url}>
+                {social[key].name}
+              </a>
             ))}
           </ul>
         </article>

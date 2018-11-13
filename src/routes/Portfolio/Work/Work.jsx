@@ -15,7 +15,7 @@ const Work = ({ work }) => (
       <h4>{work.title}</h4>
       <p>{work.description}</p>
 
-      <Button theme="outline" link={work.ref}>
+      <Button theme="outline mt1" link={work.ref}>
         View Project
       </Button>
     </div>
