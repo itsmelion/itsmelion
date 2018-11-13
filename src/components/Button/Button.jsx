@@ -1,9 +1,14 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = (props) => {
+const Button = props => {
   const {
-    theme = 'default', _type = 'button', link, children, newtab = true, ...other
+    theme = 'default',
+    _type = 'button',
+    link,
+    children,
+    newtab = true,
+    ...other
   } = props;
 
   if (link) {
@@ -12,6 +17,7 @@ const Button = (props) => {
         align="start center"
         className={`button row nowrap Button ${theme}`}
         href={link}
+        rel="noopener noreferrer"
         target={newtab ? '_blank' : ''}
         {...other}
       >

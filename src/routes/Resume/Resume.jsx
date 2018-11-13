@@ -80,21 +80,18 @@ const Resume = () => (
       <h4>Education</h4>
       <Education />
 
-      <footer hide-print="" align="start start" className="column Resume">
+      <footer hide-print="" className="column Resume">
         <div row="">
-          <Button
-            newtab
-            link={resume[window.lang]}
-            theme="default mr1"
-            rel="noopener noreferrer"
-          >
+          <Button link={resume[window.lang]} newtab theme="default social">
             <FontAwesomeIcon icon={faFileDownload} />
             Download PDF
           </Button>
 
-          {/* <Button onClick={() => window.print()}>
+          {/*
+          <Button onClick={() => window.print()}>
             <FontAwesomeIcon icon={faPrint} /> Print
-          </Button> */}
+          </Button>
+          */}
 
           <Button
             mobile-flex="auto"
