@@ -1,14 +1,21 @@
 import React from 'react';
 import './Company.scss';
 
-const Company = (props) => {
-  const { toggle, top, company: { name, period: { start, end } } } = props;
+const Company = React.memo(props => {
+  const {
+    toggle,
+    top,
+    company: {
+      name,
+      period: { start, end },
+    },
+  } = props;
   const yearWidth = 150;
   const isCurrent = end.year ? end.year : 2018;
-  let year = (yearWidth * (start.year - 2012));
+  let year = yearWidth * (start.year - 2012);
   let period = yearWidth * Math.ceil(isCurrent - start.year);
   const color = `hsl(${Math.ceil(360 * Math.random())}, 70%, 45%)`;
-  const offsetTop = `${(top * 1.25) + 3.25}rem`;
+  const offsetTop = `${top * 2 + 3.25}rem`;
 
   if (!period) {
     period = yearWidth / 2;
@@ -31,7 +38,6 @@ const Company = (props) => {
       {name}
     </button>
   );
-};
-
+});
 
 export default Company;

@@ -44,7 +44,7 @@ class Timeline extends PureComponent {
   };
 
   render() {
-    const height = `${(experiences.length + 1) * 1.5 + 3.25}rem`;
+    const height = `${(experiences.length + 1) * 2 + 3.5}rem`;
     const { companyIndex, openDialog } = this.state;
 
     return (

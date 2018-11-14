@@ -23,7 +23,9 @@ const Experience = ({
         <h6>{name}</h6>
 
         <p>
-          <a href={`//${ref}`}>{ref}</a>
+          <a className="link" href={`//${ref}`}>
+            {ref}
+          </a>
         </p>
 
         <p>
