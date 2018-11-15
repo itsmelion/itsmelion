@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2448" viewBox="17.409 8.256 479.241 469.257"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-551.776" y1="1628.417" x2="-1021.448" y2="1158.745" gradientTransform="matrix(1 0 0 -1 1045.93 1634.176)"><stop offset="0" stop-color="#ffaa2a"/><stop offset="1" stop-color="#ffc06c"/></linearGradient><path fill="url(#a)" d="M17.409 8.256H496.65v469.257H17.409z"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-788.597" y1="1589.841" x2="-788.597" y2="1195.175" gradientTransform="matrix(1 0 0 -1 1045.93 1634.176)"><stop offset="0" stop-color="#251200"/><stop offset="1"/></linearGradient><path d="M192.234 247.147h42.479l-21.239-82.371-21.24 82.371zM53.666 45v396H461V45H53.666zm204.36 292.462l-15.542-53.532H184.98l-15.542 53.532h-39.372l55.432-189.263v-20.722h52.842l63.202 209.985h-43.516zm104.649 0h-42.48V177.729h42.48v159.733zm-20.983-178.901c-12.16 0-22.019-9.742-22.019-21.758 0-12.017 9.857-21.759 22.019-21.759s22.018 9.742 22.018 21.759c0 12.016-9.857 21.758-22.018 21.758z" fill="url(#b)"/></svg>
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2448" style="enable-background:new 0 0 2500 2448;" xml:space="preserve">
+<path style="fill:#F99135;" d="M0,0h2500v2448H0V0z"/>
+<rect x="189" y="192" width="2125" height="2066"/>
+<polygon style="fill:#F99135;" points="1255,1717 1174,1438 874.3,1438 793.3,1717 587.9,1717 877,730.1 877,622 1152.6,622
+	1482.1,1717 "/>
+<polygon points="912,1246 1133.6,1246 1022.8,816.3 "/>
+<rect x="1579" y="914.5" style="fill:#F99135;" width="181.7" height="802.5"/>
+<path style="fill:#F99135;" d="M1669.8,802.8c-52.9,0-96-42.4-96-94.8s42.9-94.8,96-94.8c52.9,0,96,42.4,96,94.8
+	S1722.9,802.8,1669.8,802.8z"/>
+</svg>

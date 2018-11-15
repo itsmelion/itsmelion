@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faApple } from '@fortawesome/free-brands-svg-icons';
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import { contact } from '../../data/hero';
 import texts from './Topbar.i18n';
 import logo from './logo.svg';
@@ -54,7 +53,7 @@ class Topbar extends Component {
             flex="none"
           >
             <FontAwesomeIcon className="icon-closed" icon={faTimes} />
-            <FontAwesomeIcon className="icon-menu" icon={faApple} />
+            <FontAwesomeIcon className="icon-menu" icon={faBars} />
           </button>
 
           <ul flex="" align="end" className={`tabs ${collapse}`}>
