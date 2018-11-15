@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = props => {
+const Button = React.memo(props => {
   const {
     theme = 'default',
     _type = 'button',
@@ -37,6 +37,6 @@ const Button = props => {
       {children}
     </button>
   );
-};
+});
 
 export default Button;

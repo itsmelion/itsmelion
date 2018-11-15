@@ -24,6 +24,7 @@ import { ReactComponent as adobePhotoshopLogo } from 'images/brands/photoshop.sv
 import { ReactComponent as invisionLogo } from 'images/brands/invision.svg';
 import nginxLogo from 'images/brands/nginx.png';
 import lightroomLogo from 'images/brands/lightroom.svg';
+import autodeskLogo from 'images/brands/3dsmax.svg';
 
 export const adobeIllustrator = {
   name: 'Illustrator',
@@ -66,7 +67,7 @@ export const tests = { name: 'Automated Tests', year: 2017, logo: faJs };
 export const git = { name: 'Version Control', year: 2015, logo: faGit };
 export const sass = { name: 'Sass Styles', year: 2014, logo: faSass };
 export const sketch = { name: 'Sketch App', year: 2017, logo: faGem };
-export const threeD = { name: '3ds Max', year: 2012, logo: faQuestion };
+export const threeD = { name: '3ds Max', year: 2012, logo: autodeskLogo };
 export const lightroom = {
   name: 'Adobe Lightroom',
   year: 2016,

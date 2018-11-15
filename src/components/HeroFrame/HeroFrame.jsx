@@ -4,7 +4,7 @@ import './HeroFrame.scss';
 import skills from '../../data/skills';
 import { social, ocupation } from '../../data/hero';
 
-const HeroFrame = ({ picture }) => (
+const HeroFrame = React.memo(({ picture }) => (
   <article className="HeroFrame">
     <h6 className="hero-role">{ocupation[window.lang]}</h6>
     <div className="row nowrap hud-decorated">
@@ -41,6 +41,6 @@ const HeroFrame = ({ picture }) => (
       <img className="cover-fit hex" src={picture} alt="hero" />
     </div>
   </article>
-);
+));
 
 export default HeroFrame;

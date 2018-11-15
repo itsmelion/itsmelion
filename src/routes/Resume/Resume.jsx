@@ -31,7 +31,7 @@ const resume = {
     'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
 };
 
-const Resume = () => (
+const Resume = React.memo(() => (
   <div id="Resume" column="" align="center">
     <main contain="" align="start">
       <h2>{name[window.lang]}</h2>
@@ -146,6 +146,6 @@ const Resume = () => (
       </footer>
     </main>
   </div>
-);
+));
 
 export default Resume;

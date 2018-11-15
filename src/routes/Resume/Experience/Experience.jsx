@@ -1,15 +1,20 @@
 import React from 'react';
 import './Experience.scss';
 import AsyncImage from '../../../components/AsyncImage/AsyncImage';
+import i18n from './Experience.i18n';
 
 const Experience = ({
   experience: { name, position, description, technologies, ref, period, logo },
 }) => (
-  <div className="Experience">
+  <section className="Experience">
     <div flex="auto">
-      <h5>{position}</h5>
+      <h5>
+        {i18n.role[window.lang]}: {position}
+      </h5>
 
-      <p>{description[window.lang]}</p>
+      <p>
+        {i18n.tasks[window.lang]}: {description[window.lang]}
+      </p>
 
       <p className="row technologies">
         {technologies.map(({ name: tech }) => (
@@ -43,7 +48,7 @@ const Experience = ({
 
       <AsyncImage className="contain-fit" flex="none" path={logo} alt={name} />
     </div>
-  </div>
+  </section>
 );
 
 export default Experience;

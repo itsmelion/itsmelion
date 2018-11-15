@@ -7,7 +7,7 @@ import { bio, picture, name } from '../../data/hero';
 
 import './Header.scss';
 
-const Header = () => (
+const Header = React.memo(() => (
   <header
     className="contain row nowrap mobile-wrap"
     align="between center"
@@ -38,6 +38,6 @@ const Header = () => (
       />
     </div>
   </header>
-);
+));
 
 export default Header;

@@ -3,7 +3,7 @@ import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 import './Education.scss';
 import { scholarity } from '../../../data/education';
 
-const Education = () => (
+const Education = React.memo(() => (
   <ol id="Education" className="mb2">
     {scholarity.map(school => (
       <li
@@ -36,6 +36,6 @@ const Education = () => (
       </li>
     ))}
   </ol>
-);
+));
 
 export default Education;

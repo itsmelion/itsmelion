@@ -31,8 +31,11 @@ button.Button, a.Button {
     display: block;
   }
 
-  &.outline { border: 1pt solid currentColor; }
+  &.outline {
+    border: 1pt solid currentColor;
+  }
 
+  // Brands
   &.linkedin { background-color: #0077b5; color: white; }
   &.facebook { background-color: #3B5998; color: white; }
   &.instagram { background-color: white; color: #24292e; }

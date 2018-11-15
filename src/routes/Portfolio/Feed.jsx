@@ -1,6 +1,7 @@
 import React from 'react';
+// eslint-disable-next-line import/no-unresolved
+import portfolio from 'data/portfolio';
 import Work from './Work/Work';
-import portfolio from '../../data/portfolio';
 
 const Feed = () => (
   <main contain="" flex="" id="Portfolio-feed">

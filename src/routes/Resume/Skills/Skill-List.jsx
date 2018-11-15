@@ -11,9 +11,14 @@ const tooltip = (year, tool) => ({
   he: `${window.yearsFromNow(year)} years of experience with <b>${tool}</b>`,
 });
 
-const SkillList = () => (
+const SkillList = React.memo(() => (
   <section id="SkillList" className="mv1 row">
-    <ul flex="33" mobile-flex="100" align="center center" className="center mv2 row design-list">
+    <ul
+      flex="33"
+      mobile-flex="100"
+      align="center center"
+      className="center mv2 row design-list"
+    >
       <h6 flex="100">Design</h6>
 
       {Tools.design.map(({ name, logo, year }) => (
@@ -23,7 +28,12 @@ const SkillList = () => (
       ))}
     </ul>
 
-    <ul flex="33" mobile-flex="100" align="center center" className="center mv2 row frontend-list">
+    <ul
+      flex="33"
+      mobile-flex="100"
+      align="center center"
+      className="center mv2 row frontend-list"
+    >
       <h5 flex="100">Frontend</h5>
 
       {Tools.frontend.map(({ name, logo, year }) => (
@@ -33,7 +43,12 @@ const SkillList = () => (
       ))}
     </ul>
 
-    <ul flex="33" mobile-flex="100" align="center center" className="center mv2 row backend-list">
+    <ul
+      flex="33"
+      mobile-flex="100"
+      align="center center"
+      className="center mv2 row backend-list"
+    >
       <h6 flex="100">Backend/DevOps</h6>
 
       {Tools.backend.map(({ name, logo, year }) => (
@@ -55,6 +70,6 @@ const SkillList = () => (
 
     <ReactTooltip place="bottom" effect="solid" html />
   </section>
-);
+));
 
 export default SkillList;

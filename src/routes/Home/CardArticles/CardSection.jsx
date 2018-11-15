@@ -5,7 +5,7 @@ import mountainLarge from './fel-mountain@1x.jpg';
 import CardArticles from './CardArticles';
 import './CardArticles.scss';
 
-const CardSection = () => (
+const CardSection = React.memo(() => (
   <>
     <div id="CardSection" contain="">
       <section row="nowrap" align="around center" mobile-align="start center">
@@ -19,6 +19,6 @@ const CardSection = () => (
       <img className="cover-fit" src={mountainMedium} alt="Fel Mountain" />
     </picture>
   </>
-);
+));
 
 export default CardSection;

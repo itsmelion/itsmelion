@@ -1,15 +1,21 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Button from '../../../components/Button/Button';
 import thumb from './default-thumbnail.svg';
 import './Work.scss';
+import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 
-const Work = ({ work }) => (
+const Work = React.memo(({ work }) => (
   <article flex="auto" className="column Work">
-    <img
-      className="cover-fit"
-      src={work.thumbnail || thumb}
-      alt="Work Preview"
+    <AsyncImage
+      className="cover-fit thumbnail"
+      path={work.thumbnail || thumb}
     />
+
+    {work.logo && (
+      <AsyncImage className="contain-fit logo" path={work.logo} alt="logo" />
+    )}
 
     <div flex="" className="legend column p1" align="between">
       <div>
@@ -17,11 +23,20 @@ const Work = ({ work }) => (
         <p>{work.description}</p>
       </div>
 
-      <Button theme="outline mt1" link={work.ref}>
-        View Project
-      </Button>
+      <div row="nowrap" align="between">
+        <Button theme="outline mt1" link={work.ref}>
+          View Project
+        </Button>
+
+        {work.source && (
+          <Button theme="outline mt1" link={work.source}>
+            <FontAwesomeIcon icon={faGithub} />
+            Inspect source
+          </Button>
+        )}
+      </div>
     </div>
   </article>
-);
+));
 
 export default Work;
