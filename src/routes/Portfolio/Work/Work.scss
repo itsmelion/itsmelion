@@ -34,6 +34,12 @@
     border: 3pt solid #e0e0e0;
   }
 
+  .tags {
+    font-size: .7em;
+    color: $black3;
+    li { margin-right: .8em; margin-top: .8em }
+  }
+
   .Button {
     font-size: .9em;
   }

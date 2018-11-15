@@ -8,10 +8,12 @@ import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 
 const Work = React.memo(({ work }) => (
   <article flex="auto" className="column Work">
-    <AsyncImage
-      className="cover-fit thumbnail"
-      path={work.thumbnail || thumb}
-    />
+    {work.thumbnail && (
+      <AsyncImage
+        className="cover-fit thumbnail"
+        path={work.thumbnail || thumb}
+      />
+    )}
 
     {work.logo && (
       <AsyncImage className="contain-fit logo" path={work.logo} alt="logo" />
@@ -21,6 +23,10 @@ const Work = React.memo(({ work }) => (
       <div>
         <h4>{work.title}</h4>
         <p>{work.description}</p>
+
+        <ul className="row tags">
+          {work.tags && work.tags.map(tag => <li>#{tag}</li>)}
+        </ul>
       </div>
 
       <div row="nowrap" align="between">

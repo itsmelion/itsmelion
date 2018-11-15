@@ -31,4 +31,13 @@ const voceMusico = {
   ref: 'https://projects.invisionapp.com/boards/282BUHXDP4SWR/',
 };
 
-export default [sense, voceMusico, live8];
+const flamework = {
+  type: 'frontend',
+  title: 'NPM: Flamework',
+  description: 'A SCSS toolkit for Flexbox layouts',
+  tags: ['open-source', 'Sass', 'npm'],
+  ref: '//npmjs.com/packages/flamework/',
+  source: 'https://github.com/itsmelion/flamework',
+};
+
+export default [sense, voceMusico, live8, flamework];
