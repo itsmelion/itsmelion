@@ -22,7 +22,9 @@ import {
   text,
   ocupation,
   name,
+  picture,
 } from '../../data/hero';
+import Certifications from '../../components/Certifications/Certifications';
 
 const resume = {
   en:
@@ -31,48 +33,54 @@ const resume = {
     'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
 };
 
-const Resume = React.memo(() => (
+const Resume = () => (
   <div id="Resume" column="" align="center">
     <main contain="" align="start">
-      <h2>{name[window.lang]}</h2>
-      <h3>{ocupation[window.lang]}</h3>
+      <header className="row nowrap profile" mobile-wrap="">
+        <img className="avatar" src={picture.avatar} alt={name[window.lang]} />
+        <div flex="auto" className="p1">
+          <div>
+            <h2>{name[window.lang]}</h2>
+            <h3>{ocupation[window.lang]}</h3>
+          </div>
 
-      <header row="nowrap" mobile-wrap="">
-        <div flex="auto" className="pv1">
+          <address flex="auto" className="mb2">
+            <p row="nowrap">
+              <FontAwesomeIcon className="mr1" icon={faMapMarkedAlt} />
+              {address.city},&nbsp;{address.country}
+            </p>
+
+            <p row="nowrap">
+              <FontAwesomeIcon className="mr1" icon={faEnvelope} />
+              <a className="link" href={`mailto:${contact.email}`}>
+                {contact.email}
+              </a>
+            </p>
+
+            <p row="nowrap">
+              <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
+              <a className="link" href={`tel:${contact.phone}`}>
+                {contact.phone}
+              </a>
+            </p>
+
+            <p row="nowrap">
+              <FontAwesomeIcon className="mr1" icon={faSkype} />
+              <a className="link" href={contact.skype.url}>
+                {contact.skype.label}
+              </a>
+            </p>
+          </address>
+
           <p>{bio[window.lang]}</p>
           <br />
           <p>{text[window.lang]}</p>
         </div>
-
-        <address flex="auto" className="p1">
-          <p row="nowrap">
-            <FontAwesomeIcon className="mr1" icon={faMapMarkedAlt} />
-            {address.city},{address.country}
-          </p>
-
-          <p row="nowrap">
-            <FontAwesomeIcon className="mr1" icon={faEnvelope} />
-            <a className="link" href={`mailto:${contact.email}`}>
-              {contact.email}
-            </a>
-          </p>
-          <p row="nowrap">
-            <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
-            <a className="link" href={`tel:${contact.phone}`}>
-              {contact.phone}
-            </a>
-          </p>
-
-          <p row="nowrap">
-            <FontAwesomeIcon className="mr1" icon={faSkype} />
-            <a className="link" href={contact.skype.url}>
-              {contact.skype.label}
-            </a>
-          </p>
-        </address>
       </header>
 
       <SkillList />
+
+      <Certifications />
 
       <h4>Experience</h4>
       <Timeline />
@@ -146,6 +154,6 @@ const Resume = React.memo(() => (
       </footer>
     </main>
   </div>
-));
+);
 
 export default Resume;

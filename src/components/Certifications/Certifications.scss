@@ -1,0 +1,70 @@
+@import '~flamework/src/_vars.scss';
+@import 'styles/_vars.scss';
+
+#Certifications {
+  .item {
+    margin: 1em;
+    margin-left: 0;
+    border: 1pt solid rgba($pink, .5);
+    border-radius: $radius / 2;
+  }
+
+  .cert {
+    padding: .5em 1em;
+    padding-top: 1em;
+    sub {
+      color: $white3;
+      display: block;
+      font-size: .65em;
+    }
+  }
+
+  .svg-inline--fa {
+    margin-right: .8em;
+  }
+
+  .Button {
+    border: none;
+    box-shadow: none;
+    color: $white5;
+    &:hover { color: currentColor; }
+
+    .svg-inline--fa {
+      margin-right: 0;
+    }
+  }
+
+  .see-more {
+    margin-top: .5em;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+    color: $white3;
+    border: none;
+    font-size: .8em;
+    padding: .5em;
+    width: 100%;
+    background-color: rgba($pink, .1);
+
+    &:hover {
+      color: white;
+    }
+    &.true { color: greenyellow; }
+  }
+
+  .materias {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s;
+
+    li {padding: .5em;}
+
+    &.true {
+      max-height: none;
+    }
+  }
+}
+
+
+
