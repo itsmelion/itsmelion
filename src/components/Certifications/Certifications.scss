@@ -23,6 +23,11 @@
     margin-right: .8em;
   }
 
+  .view {
+    font-size: 1.5rem;
+    display: block;
+  }
+
   .Button {
     border: none;
     box-shadow: none;
@@ -58,7 +63,17 @@
     overflow: hidden;
     transition: max-height .2s;
 
-    li {padding: .5em;}
+    li {
+      background-color: rgba($dalaran, .2);
+      padding: .8em 2rem;
+      font-size: .9em;
+      color: $white7;
+      line-height: 1.6;
+
+      &:nth-of-type(even) {
+        background-color: rgba($dalaran, .05);
+      }
+    }
 
     &.true {
       max-height: none;
