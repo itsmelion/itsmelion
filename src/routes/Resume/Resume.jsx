@@ -25,6 +25,7 @@ import {
   picture,
 } from '../../data/hero';
 import Certifications from '../../components/Certifications/Certifications';
+import certifications from 'data/certifications';
 
 const resume = {
   en:
@@ -80,7 +81,15 @@ const Resume = () => (
 
       <SkillList />
 
-      <Certifications />
+      <section id="Certifications">
+        <h4>Certifications</h4>
+
+        <div row="" align="start start">
+          {certifications.map(certification => (
+            <Certifications data={certification} />
+          ))}
+        </div>
+      </section>
 
       <h4>Experience</h4>
       <Timeline />

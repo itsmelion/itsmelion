@@ -81,9 +81,10 @@ export const contact = {
 };
 
 export const address = {
-  street: 'Rua Patrocínio, 127',
-  city: 'Belo Horizonte',
-  country: 'Brazil',
+  street: 'R. do Carmo 2',
+  code: '1200-094',
+  city: 'Lisbon',
+  country: 'Portugal',
 };
 
 export const bio = {
