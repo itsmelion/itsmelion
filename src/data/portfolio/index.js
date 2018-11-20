@@ -36,7 +36,7 @@ const flamework = {
   title: 'NPM: Flamework',
   description: 'A SCSS toolkit for Flexbox layouts',
   tags: ['open-source', 'Sass', 'npm'],
-  ref: '//npmjs.com/packages/flamework/',
+  ref: 'https://www.npmjs.com/package/flamework',
   source: 'https://github.com/itsmelion/flamework',
 };
 
@@ -66,13 +66,21 @@ const worldStock = {
   source: 'https://github.com/itsmelion/worldstock',
 };
 
+const brewser = {
+  type: 'all',
+  title: 'Brewser',
+  description: 'A Beer catalog, that allows people to browse beer specs',
+  tags: ['open-source', 'Angular'],
+  ref: 'https://github.com/itsmelion/brewser',
+  source: 'https://github.com/itsmelion/brewser',
+};
+
 const abs = {
   type: 'frontend',
   title: 'ABS Minas',
   description: 'Brazillian Sommellier Association of Minas Gerais portal',
   tags: ['open-source', 'Wordpress'],
   ref: '//abs-minas.com.br',
-  source: 'https://github.com/itsmelion/abs',
 };
 
 const plugLib = {
@@ -96,7 +104,6 @@ const benvenuto = {
   title: 'Benvenuto',
   description: 'A landing page for the imobiliary industry.',
   ref: 'https://benvenuto.com.br/',
-  source: 'https://github.com/itsmelion/benvenuto',
 };
 
 const backr = {
@@ -128,14 +135,15 @@ export default [
   voceMusico,
   live8,
   flamework,
-  arcaneCapsule,
   expat, // job
   backr, // job
   plugCRM, // job
   robos, // job
-  worldStock,
-  plugLib,
   benvenuto,
+  plugLib,
   oMelhorCRM,
+  brewser,
+  arcaneCapsule,
+  worldStock,
   abs,
 ];
