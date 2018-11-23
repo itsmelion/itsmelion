@@ -1,54 +1,70 @@
 import React from 'react';
+import AsyncImage from 'components/AsyncImage/AsyncImage';
 import './Experience.scss';
-import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 import i18n from './Experience.i18n';
 
-const Experience = ({
-  experience: { name, position, description, technologies, ref, period, logo },
-}) => (
-  <section className="Experience">
-    <div flex="auto">
-      <h5>
-        {i18n.role[window.lang]}: {position}
-      </h5>
+const Archievements = React.memo(({ archievements }) => (
+  <ol className="p1 archievements">
+    <h6>Archievements</h6>
+    {archievements.map(item => (
+      <li>{item}</li>
+    ))}
+  </ol>
+));
 
-      <p>
-        {i18n.tasks[window.lang]}: {description[window.lang]}
-      </p>
+const Experience = React.memo(({ print, exp }) => (
+  <article className={`Experience ${print ? 'print' : ''}`}>
+    <AsyncImage
+      className="contain-fit"
+      flex="none"
+      path={exp.logo}
+      alt={exp.name}
+    />
 
-      <p className="row technologies">
-        {technologies.map(({ name: tech }) => (
-          <span key={tech}>{tech}</span>
-        ))}
-      </p>
-    </div>
+    <div row="">
+      <div className="header" flex="initial">
+        <h6 className="inline">{exp.name}</h6>
 
-    <div flex="auto" row="" align="end">
-      <div className="right" flex="initial">
-        <h6>{name}</h6>
+        <small>
+          <span>(</span>
+
+          <span>
+            {exp.period.start.month[window.lang]}
+            <b>&nbsp;{exp.period.start.year}</b>
+          </span>
+
+          <span>&nbsp;-&nbsp;</span>
+
+          <span>
+            {exp.period.end.month[window.lang]}
+            <b>&nbsp;{exp.period.end.year}</b>
+          </span>
+
+          <span>)</span>
+        </small>
+
+        <a className="block link" href={`//${exp.ref}`}>
+          {exp.ref}
+        </a>
+
+        <h6>
+          {i18n.role[window.lang]}: {exp.position}
+        </h6>
 
         <p>
-          <a className="link" href={`//${ref}`}>
-            {ref}
-          </a>
+          {i18n.tasks[window.lang]}: {exp.description[window.lang]}
         </p>
 
-        <p>
-          <small>
-            <span>
-              {period.start.month[window.lang]} <b>{period.start.year}</b>
-            </span>
-            <span>&nbsp;-&nbsp;</span>
-            <span>
-              {period.end.month[window.lang]} <b>{period.end.year}</b>
-            </span>
-          </small>
+        <p className="row technologies">
+          {exp.technologies.map(({ name: tech }) => (
+            <span key={tech}>{tech}</span>
+          ))}
         </p>
       </div>
-
-      <AsyncImage className="contain-fit" flex="none" path={logo} alt={name} />
     </div>
-  </section>
-);
+
+    {exp.archievements && <Archievements archievements={exp.archievements} />}
+  </article>
+));
 
 export default Experience;

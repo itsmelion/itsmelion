@@ -71,7 +71,7 @@ class Timeline extends PureComponent {
           isOpen={openDialog}
           style={modalStyling}
         >
-          <Experience experience={experiences[companyIndex]} />
+          <Experience exp={experiences[companyIndex]} />
         </Modal>
       </>
     );

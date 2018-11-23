@@ -8,8 +8,7 @@ import Footer from './components/Footer/Footer';
 import { Home } from './routes';
 import Resume from './routes/Resume/Resume';
 import Feed from './routes/Portfolio/Feed';
-
-require.context('./images/favicons', true);
+import Print from './routes/Resume/Print/Print';
 
 const getQueryParams = parameter => {
   let param;
@@ -74,6 +73,7 @@ render(
         {/* <Route path="/cases" component={Cases} /> */}
         <Route path="/portfolio" component={Feed} />
         <Route path="/resume" component={Resume} />
+        <Route path="/print" component={Print} />
       </Switch>
       <Footer />
     </>
