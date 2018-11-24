@@ -5,7 +5,7 @@ import Profile from '../Profile/Profile';
 import Experience from '../Experience/Experience';
 import './Print.scss';
 
-const Print = React.memo(() => (
+const Print = () => (
   <main id="Print">
     <Profile />
 
@@ -27,6 +27,6 @@ const Print = React.memo(() => (
       <Experience print exp={experience} />
     ))}
   </main>
-));
+);
 
 export default Print;

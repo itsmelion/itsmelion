@@ -12,11 +12,10 @@ import SkillList from './Skills/Skill-List';
 import Profile from './Profile/Profile';
 import './Resume.scss';
 
+const driveURL = 'https://drive.google.com/uc?export=download&id=';
 const resume = {
-  en:
-    'https://drive.google.com/uc?export=download&id=1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV',
-  pt:
-    'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
+  en: `${driveURL}1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV`,
+  pt: `${driveURL}1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ`,
 };
 
 const Resume = () => (
@@ -31,7 +30,7 @@ const Resume = () => (
 
         <div row="" align="start start">
           {certifications.map(certification => (
-            <Certifications data={certification} />
+            <Certifications key={certification.name} data={certification} />
           ))}
         </div>
       </section>
