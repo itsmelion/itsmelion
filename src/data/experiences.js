@@ -26,9 +26,11 @@ import expatLogo from '../images/brands/planetexpat.png';
 import robosLogo from '../images/brands/robos.png';
 
 const backr = {
-  name: 'StudentBackr',
-  position: 'Frontend',
   logo: backrLogo,
+  name: 'StudentBackr',
+  ref: 'studentbackr.com',
+  position: 'Frontend',
+  business: 'Crowdfunding software, for students only',
   period: {
     start: {
       month: {
@@ -47,12 +49,9 @@ const backr = {
       year: 2017,
     },
   },
-  ref: 'studentbackr.com',
   description: {
-    en:
-      'Design and development of web applications, widgets and landing pages.',
-    pt:
-      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+    en: 'Design and development of web applications and landing pages.',
+    pt: 'Design and desenvolvimento de aplicações web e landing pages.',
   },
   archievements: [
     'Improved website speed and performance for over 80%',
@@ -72,10 +71,10 @@ const backr = {
 };
 
 const destak = {
-  name: 'Destakinox',
-  position: 'Designer',
   logo: destakLogo,
+  name: 'Destakinox',
   ref: 'destakinox.com.br',
+  position: 'Designer',
   period: {
     start: {
       month: {
@@ -226,10 +225,11 @@ const alia = {
 };
 
 const expat = {
-  name: 'Planet Expat',
-  position: 'Frontend and Designer',
   logo: expatLogo,
+  name: 'Planet Expat',
   ref: 'planetexpat.org',
+  business: 'Mentoring/Coaching, and recruitment focused on working abroad',
+  position: 'Frontend and Designer',
   period: {
     start: {
       month: {
@@ -268,6 +268,7 @@ const robos = {
   ref: 'robos.im',
   logo: robosLogo,
   position: 'Frontend',
+  business: 'Chatbots as a Service and artificial intelligence',
   period: {
     start: {
       month: {
