@@ -9,12 +9,12 @@ const Profile = React.memo(() => (
   <header className="profile">
     <div row="nowrap" mobile-wrap="">
       <img
-        className="avatar"
+        className="avatar mr2 mb1"
         src={hero.picture.avatar}
         alt={hero.name[window.lang]}
       />
 
-      <div flex="auto" className="ph2">
+      <div flex="auto">
         <div>
           <h2>{hero.name[window.lang]}</h2>
           <h3>{hero.role}</h3>

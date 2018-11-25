@@ -25,6 +25,103 @@ import backrLogo from '../images/brands/backr.svg';
 import expatLogo from '../images/brands/planetexpat.png';
 import robosLogo from '../images/brands/robos.png';
 
+const expat = {
+  logo: expatLogo,
+  name: 'Planet Expat',
+  ref: 'planetexpat.org',
+  business: 'Mentoring/Coaching, and recruitment focused on working abroad',
+  position: 'Frontend and Designer',
+  period: {
+    start: {
+      month: {
+        semester: 1,
+        en: 'early',
+        pt: 'início de',
+      },
+      year: 2017,
+    },
+    end: {
+      month: {
+        semester: 1,
+        en: 'late',
+        pt: 'final de',
+      },
+      year: 2017,
+    },
+  },
+  archievements: [
+    'Improved website speed and performance for over 120%',
+    'Implemented Webpack optimizations and standards for Wordpress',
+    'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
+    'Designed and Developed an easily maintainable, and fully customized wordpress theme for PlanetExpat',
+  ],
+  description: {
+    en:
+      'Design and development of web applications, widgets and landing pages.',
+    pt:
+      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+  },
+  technologies: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
+};
+
+const robos = {
+  name: 'ROBOS.IM',
+  ref: 'robos.im',
+  logo: robosLogo,
+  position: 'Frontend',
+  business: 'Chatbots as a Service and artificial intelligence',
+  period: {
+    start: {
+      month: {
+        semester: 0,
+        en: 'early',
+        pt: 'início de',
+      },
+      year: 2018,
+    },
+    end: {
+      month: {
+        semester: 0,
+        en: 'mid',
+        pt: 'meados de',
+      },
+      year: 2018,
+    },
+  },
+  description: {
+    en:
+      'Design and development of web applications, widgets and landing pages.',
+    pt:
+      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+  },
+  archievements: [
+    'Improved app speed and performance and reduced bundle size for over 50%',
+    'Created a standalone Live chat widget in React',
+    'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
+    'Completely redesigned homepage, and developed it using React',
+    'Leveraged garbage over the application, brought better/modern dependencies, simplified/improved functions, and refactored code using better stardards',
+    'Introduced Unit/Integration Tests',
+    'See CTO recomendation: https://angel.co/chrislion',
+  ],
+  technologies: [
+    adobeIllustrator,
+    invision,
+    webpack,
+    angularJs,
+    nodeJs,
+    react,
+    bash,
+    mongo,
+    docker,
+    microServices,
+  ],
+  links: [
+    'https://www.linkedin.com/company/robos.im/',
+    'https://www.instagram.com/robos.im/',
+    'https://www.facebook.com/wearerobos',
+  ],
+};
+
 const backr = {
   logo: backrLogo,
   name: 'StudentBackr',
@@ -222,102 +319,7 @@ const alia = {
     docker,
     microServices,
   ],
+  contractors: [expat, backr, robos],
 };
 
-const expat = {
-  logo: expatLogo,
-  name: 'Planet Expat',
-  ref: 'planetexpat.org',
-  business: 'Mentoring/Coaching, and recruitment focused on working abroad',
-  position: 'Frontend and Designer',
-  period: {
-    start: {
-      month: {
-        semester: 1,
-        en: 'early',
-        pt: 'início de',
-      },
-      year: 2017,
-    },
-    end: {
-      month: {
-        semester: 1,
-        en: 'late',
-        pt: 'final de',
-      },
-      year: 2017,
-    },
-  },
-  archievements: [
-    'Improved website speed and performance for over 120%',
-    'Implemented Webpack optimizations and standards for Wordpress',
-    'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
-    'Designed and Developed an easily maintainable, and fully customized wordpress theme for PlanetExpat',
-  ],
-  description: {
-    en:
-      'Design and development of web applications, widgets and landing pages.',
-    pt:
-      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
-  },
-  technologies: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
-};
-
-const robos = {
-  name: 'ROBOS.IM',
-  ref: 'robos.im',
-  logo: robosLogo,
-  position: 'Frontend',
-  business: 'Chatbots as a Service and artificial intelligence',
-  period: {
-    start: {
-      month: {
-        semester: 0,
-        en: 'early',
-        pt: 'início de',
-      },
-      year: 2018,
-    },
-    end: {
-      month: {
-        semester: 0,
-        en: 'mid',
-        pt: 'meados de',
-      },
-      year: 2018,
-    },
-  },
-  description: {
-    en:
-      'Design and development of web applications, widgets and landing pages.',
-    pt:
-      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
-  },
-  archievements: [
-    'Improved app speed and performance and reduced bundle size for over 50%',
-    'Created a standalone Live chat widget in React',
-    'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
-    'Completely redesigned homepage, and developed it using React',
-    'Leveraged garbage over the application, brought better/modern dependencies, simplified/improved functions, and refactored code using better stardards',
-    'Introduced Unit/Integration Tests',
-  ],
-  technologies: [
-    adobeIllustrator,
-    invision,
-    webpack,
-    angularJs,
-    nodeJs,
-    react,
-    bash,
-    mongo,
-    docker,
-    microServices,
-  ],
-  links: [
-    'https://www.linkedin.com/company/robos.im/',
-    'https://www.instagram.com/robos.im/',
-    'https://www.facebook.com/wearerobos',
-  ],
-};
-
-export default [destak, mg, rd, alia, backr, expat, robos];
+export default [destak, mg, rd, alia];

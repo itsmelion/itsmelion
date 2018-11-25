@@ -1,9 +1,9 @@
 export default {
-  role: {
-    en: 'Role',
-    pt: 'Função',
-    he: 'Role',
-  },
+  // role: {
+  //   en: 'Role',
+  //   pt: 'Função',
+  //   he: 'Role',
+  // },
   tasks: {
     en: 'Main tasks',
     pt: 'Principais funções',

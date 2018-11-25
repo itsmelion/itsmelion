@@ -24,7 +24,7 @@ const Print = () => (
     <h4>Work Experience</h4>
 
     {exp.map(experience => (
-      <Experience print exp={experience} />
+      <Experience key={experience.name} print exp={experience} />
     ))}
   </main>
 );
