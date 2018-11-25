@@ -2,6 +2,7 @@ import './styles/main.scss';
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import * as serviceWorker from './serviceWorker';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
@@ -33,6 +34,12 @@ render(
   </BrowserRouter>,
   document.getElementById('root'),
 );
+
+if (process.env.NODE_ENV === 'production') {
+  ReactGA.initialize(process.env.REACT_APP_ANALYTICS);
+  // eslint-disable-next-line no-restricted-globals
+  history.listen(location => ReactGA.pageview(location.pathname));
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
