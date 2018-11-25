@@ -70,7 +70,7 @@ export const name = {
 };
 
 export const contact = {
-  email: 'christhopherleao@icloud.com',
+  email: process.env.REACT_APP_EMAIL,
   skype: {
     icon: faSkype,
     label: 'christhopher.amaral',
@@ -108,4 +108,15 @@ export const text = {
   no desenvolvimento de um software mais bonito e com performance.
   Posso aprimorar a comunicação entre Design e Desenvolvimento, liderar equipes e
   mentorear a carreira de designers e desenvolvedores menos experientes.`,
+};
+
+export default {
+  role: ocupation.en,
+  name,
+  bio,
+  text,
+  address,
+  contact,
+  picture,
+  lastName,
 };

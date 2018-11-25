@@ -1,14 +1,15 @@
-// @ts-nocheck
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
+import { yearsFromNow } from 'utilities';
+
 import Tools, { wishlist } from '../../../data/tools';
 import './Skills.scss';
 import Skill from './Skill';
 
 const tooltip = (year, tool) => ({
-  en: `${window.yearsFromNow(year)} years of experience with <b>${tool}</b>`,
-  pt: `${window.yearsFromNow(year)} anos de experiência com <b>${tool}</b>`,
-  he: `${window.yearsFromNow(year)} years of experience with <b>${tool}</b>`,
+  en: `${yearsFromNow(year)} years of experience with <b>${tool}</b>`,
+  pt: `${yearsFromNow(year)} anos de experiência com <b>${tool}</b>`,
+  he: `${yearsFromNow(year)} years of experience with <b>${tool}</b>`,
 });
 
 const SkillList = React.memo(() => (

@@ -1,83 +1,27 @@
-// @ts-nocheck
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFileDownload,
-  faEnvelope,
-  faMapMarkedAlt,
-} from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
-
-import Button from '../../components/Button/Button';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { social } from 'data/hero';
+import certifications from 'data/certifications';
+import Certifications from 'components/Certifications/Certifications';
+import Button from 'components/Button/Button';
 
 import Education from './Education/Education';
 import Timeline from './Timeline/Timeline';
 import SkillList from './Skills/Skill-List';
+import Profile from './Profile/Profile';
 import './Resume.scss';
-import {
-  social,
-  contact,
-  address,
-  bio,
-  text,
-  ocupation,
-  name,
-  picture,
-} from '../../data/hero';
-import Certifications from '../../components/Certifications/Certifications';
-import certifications from 'data/certifications';
 
+const driveURL = 'https://drive.google.com/uc?export=download&id=';
 const resume = {
-  en:
-    'https://drive.google.com/uc?export=download&id=1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV',
-  pt:
-    'https://drive.google.com/uc?export=download&id=1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ',
+  en: `${driveURL}1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV`,
+  pt: `${driveURL}1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ`,
 };
 
 const Resume = () => (
   <div id="Resume" column="" align="center">
     <main contain="" align="start">
-      <header className="row nowrap profile" mobile-wrap="">
-        <img className="avatar" src={picture.avatar} alt={name[window.lang]} />
-        <div flex="auto" className="p1">
-          <div>
-            <h2>{name[window.lang]}</h2>
-            <h3>{ocupation[window.lang]}</h3>
-          </div>
-
-          <address flex="auto" className="mb2">
-            <p row="nowrap">
-              <FontAwesomeIcon className="mr1" icon={faMapMarkedAlt} />
-              {address.city},&nbsp;{address.country}
-            </p>
-
-            <p row="nowrap">
-              <FontAwesomeIcon className="mr1" icon={faEnvelope} />
-              <a className="link" href={`mailto:${contact.email}`}>
-                {contact.email}
-              </a>
-            </p>
-
-            <p row="nowrap">
-              <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
-              <a className="link" href={`tel:${contact.phone}`}>
-                {contact.phone}
-              </a>
-            </p>
-
-            <p row="nowrap">
-              <FontAwesomeIcon className="mr1" icon={faSkype} />
-              <a className="link" href={contact.skype.url}>
-                {contact.skype.label}
-              </a>
-            </p>
-          </address>
-
-          <p>{bio[window.lang]}</p>
-          <br />
-          <p>{text[window.lang]}</p>
-        </div>
-      </header>
+      <Profile />
 
       <SkillList />
 
@@ -86,7 +30,7 @@ const Resume = () => (
 
         <div row="" align="start start">
           {certifications.map(certification => (
-            <Certifications data={certification} />
+            <Certifications key={certification.name} data={certification} />
           ))}
         </div>
       </section>

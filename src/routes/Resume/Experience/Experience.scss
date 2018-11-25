@@ -1,25 +1,51 @@
-@import 'styles/_vars.scss';
+@import 'styles/vars.scss';
 
 .Experience {
+  &.print {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  small {
+    font-size: .8em;
+    color: $black5;
+    font-weight: 400;
+    margin-left: .5em;
+  }
+
   .technologies {
-    margin: .5rem;
 
     span {
-      padding: .2rem .4rem;
-      margin-right: .3rem;
+      margin-bottom: .5em;
+      padding: .2em .4em;
+      margin-right: .3em;
       border-radius: $radius;
       border: 1pt solid $black1;
       color: $black5;
-      font-size: .8em;
+      font-size: .7em;
     }
   }
 
+  .archievements, .archievements li  {
+    list-style: square outside;
+  }
+
+  .archievements, .role, .technologies {
+    margin: 1em 0;
+  }
+
+  .contractor {
+    border: 1pt solid $black1;
+  }
+
   img {
-    width: 4rem;
     height: 3rem;
-    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    margin: auto 1rem;
+    max-width: 7rem;
+
+    @media print {
+      height: 2rem;
+    }
   }
 }

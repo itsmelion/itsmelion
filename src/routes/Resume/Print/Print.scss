@@ -1,0 +1,26 @@
+@import '~flamework/src/vars';
+@import 'styles/vars.scss';
+
+#Print {
+  margin-bottom: 4rem;
+  padding: 1.5cm;
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+  background-color: white;
+  box-shadow: 0 0 18pt rgba(black, .4), 0 0 4pt rgba(65, 65, 65, .5);
+  color: black;
+  font-size: 11pt;
+
+  hr { opacity: .2; margin-top: 1.5rem; margin-bottom: 1.5rem; }
+
+  .profile {
+    h3 { color: $black5; }
+  }
+
+  @media print {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    a[href]:after { content: none }
+  }
+}
