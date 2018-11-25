@@ -70,7 +70,7 @@ export const name = {
 };
 
 export const contact = {
-  email: 'christhopherleao@icloud.com',
+  email: process.env.REACT_APP_EMAIL,
   skype: {
     icon: faSkype,
     label: 'christhopher.amaral',
