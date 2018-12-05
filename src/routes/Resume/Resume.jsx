@@ -43,7 +43,7 @@ const Resume = () => (
 
       <footer hide-print="" className="column Resume">
         <div row="">
-          <Button link={resume[window.lang]} newtab theme="default social">
+          <Button link={resume.en} newtab theme="default social">
             <FontAwesomeIcon icon={faFileDownload} />
             Download PDF
           </Button>
