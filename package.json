@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "up": "npm upgrade && npm prune && npm dedupe",
-    "push": "rsync -avz ./build/ lion@alia.ml:/opt/alia/ --progress --delete",
+    "push": "rsync -avz --perms --chmod=a+rwx --progress --delete ./build/ lion@alia.ml:/opt/alia/ ",
     "deploy": "npm run build && npm run push",
     "start": "react-scripts start",
     "build": "react-scripts build",
