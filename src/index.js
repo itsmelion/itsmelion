@@ -37,8 +37,7 @@ render(
 
 if (process.env.NODE_ENV === 'production') {
   ReactGA.initialize(process.env.REACT_APP_ANALYTICS);
-  // eslint-disable-next-line no-restricted-globals
-  history.listen(location => ReactGA.pageview(location.pathname));
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 // If you want your app to work offline and load faster, you can change
