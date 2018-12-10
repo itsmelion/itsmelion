@@ -15,6 +15,8 @@ import {
   docker,
   microServices,
   laravel,
+  graphQL,
+  gatsby,
 } from './tools';
 
 import destakLogo from '../images/brands/destak.jpg';
@@ -66,7 +68,7 @@ const expat = {
 
 const robos = {
   name: 'ROBOS.IM',
-  ref: 'robos.im',
+  ref: 'robos.alia.ml',
   logo: robosLogo,
   position: 'Frontend',
   business: 'Chatbots as a Service and artificial intelligence',
@@ -119,6 +121,7 @@ const robos = {
     'https://www.linkedin.com/company/robos.im/',
     'https://www.instagram.com/robos.im/',
     'https://www.facebook.com/wearerobos',
+    'http://robos.im',
   ],
 };
 
@@ -275,6 +278,57 @@ const rd = {
   ],
 };
 
+const indenizou = {
+  name: 'Indenizou.com',
+  ref: 'indenizou.com',
+  // logo: robosLogo,
+  position: 'Frontend + Design & Marketing',
+  business: 'Indenizations for flight and luggage problems',
+  period: {
+    start: {
+      month: {
+        semester: 1,
+        en: 'ends',
+        pt: 'final de',
+      },
+      year: 2018,
+    },
+    end: {
+      month: {
+        semester: 0,
+        en: 'early',
+        pt: 'inicio de',
+      },
+      year: 2019,
+    },
+  },
+  description: {
+    en: `Design and development of conversion focused Landing pages,
+    marketing strategy, SEO Optimizations.`,
+    pt: `Design and desenvolvimento de langinng pages focadas em conversão,
+    elaboração de estratégias de marketing e otimizações de SEO`,
+  },
+  archievements: [
+    'Improved app speed and performance',
+    `Produced landing pages with high performance and SEO friendly using
+    Gatsby for pre-rendering static content`,
+    `Leveraged garbage over the application,
+    brought better/modern dependencies,
+    simplified/improved functions, and refactored code using better stardards`,
+    'Implemented and configured Chatbots for customer assistance automation',
+    'Managed and created newsletter flows (onboarding, followup..) and campaigns',
+  ],
+  technologies: [
+    adobeIllustrator,
+    invision,
+    webpack,
+    react,
+    graphQL,
+    gatsby,
+  ],
+  links: ['http://alia.indenizou.com'],
+};
+
 const alia = {
   name: 'Autonomous as ALIA',
   position: 'FullStack',
@@ -313,13 +367,15 @@ const alia = {
     angular,
     nodeJs,
     react,
+    gatsby,
+    graphQL,
     nginx,
     bash,
     mongo,
     docker,
     microServices,
   ],
-  contractors: [expat, backr, robos],
+  contractors: [expat, backr, indenizou, robos],
 };
 
 export default [destak, mg, rd, alia];

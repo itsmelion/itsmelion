@@ -74,6 +74,7 @@ export const lightroom = {
   logo: lightroomLogo,
 };
 export const graphQL = { name: 'GraphQL', logo: faQuestion };
+export const gatsby = { name: 'Gatsby', logo: faQuestion };
 export const reactNative = { name: 'React Native', logo: faReact };
 
 const tools = {

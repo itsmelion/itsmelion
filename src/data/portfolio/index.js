@@ -127,7 +127,15 @@ const robos = {
   title: 'ROBOS.IM',
   description: 'Homepage and app of ROBOS, an AI as Service platform',
   tags: ['Angular', 'Sass', 'React', 'Micro-Services', 'NodeJS'],
-  ref: '//robos.im',
+  ref: '//robos.alia.ml',
+};
+
+const indenizou = {
+  type: 'all',
+  title: 'Indenizou.com',
+  description: 'Landing pages and marketing stategy and automations for indenizou.com',
+  tags: ['React', 'Gatsby', 'GraphQL', 'NodeJS', 'Nginx'],
+  ref: '//indenizou.com',
 };
 
 export default [
@@ -135,6 +143,7 @@ export default [
   voceMusico,
   live8,
   flamework,
+  indenizou,
   expat, // job
   backr, // job
   plugCRM, // job
