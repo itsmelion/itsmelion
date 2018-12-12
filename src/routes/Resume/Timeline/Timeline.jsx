@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import Modal from 'react-modal';
+import experiences from 'data/experiences';
 import './Timeline.scss';
 import Company from './Company/Company';
 import Experience from '../Experience/Experience';
-import experiences from '../../../data/experiences';
 
 Modal.setAppElement('#root');
 const modalStyling = {
@@ -14,6 +14,8 @@ const modalStyling = {
   content: {
     top: 'unset',
     bottom: 0,
+    left: '5%',
+    right: '5%',
     color: 'black',
   },
 };
@@ -28,7 +30,7 @@ class Timeline extends PureComponent {
     };
   }
 
-  toggleDetails = index => {
+  toggleDetails = (index) => {
     this.setState({
       openDialog: true,
       companyIndex: index,
@@ -66,10 +68,15 @@ class Timeline extends PureComponent {
         </section>
 
         <Modal
+          shouldCloseOnEsc
+          shouldFocusAfterRender
           shouldCloseOnOverlayClick
+          shouldReturnFocusAfterClose
           onRequestClose={this.handleCloseModal}
           isOpen={openDialog}
           style={modalStyling}
+          bodyOpenClassName="modal-open"
+          htmlOpenClassName="modal-open"
         >
           <Experience exp={experiences[companyIndex]} />
         </Modal>

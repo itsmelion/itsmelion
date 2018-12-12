@@ -13,3 +13,7 @@
 .ReactModal__Content--after-open {
   transform: translate3d(0, 0, 0);
 }
+
+.modal-open {
+  overflow-y: hidden;
+}
