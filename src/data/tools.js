@@ -10,18 +10,18 @@ import {
   faGit,
   faSass,
   faEnvira,
+  faInvision,
+  faSketch,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faTerminal,
   faQuestion,
-  faGem,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { ReactComponent as illustratorLogo } from 'images/brands/illustrator.svg';
 import { ReactComponent as afterEffectsLogo } from 'images/brands/after-effects.svg';
 import { ReactComponent as webpackLogo } from 'images/brands/webpack.svg';
 import { ReactComponent as adobePhotoshopLogo } from 'images/brands/photoshop.svg';
-import { ReactComponent as invisionLogo } from 'images/brands/invision.svg';
 import nginxLogo from 'images/brands/nginx.png';
 import lightroomLogo from 'images/brands/lightroom.svg';
 import autodeskLogo from 'images/brands/3dsmax.svg';
@@ -52,7 +52,7 @@ export const adobePhotoshop = {
   logo: adobePhotoshopLogo,
 };
 export const react = { name: 'React', year: 2017, logo: faReact };
-export const invision = { name: 'inVision', year: 2016, logo: invisionLogo };
+export const invision = { name: 'inVision', year: 2016, logo: faInvision };
 export const bash = { name: 'Shell scripts', year: 2015, logo: faTerminal };
 export const nodeJs = { name: 'Node.js', year: 2017, logo: faNodeJs };
 export const mongo = { name: 'MongoDB', year: 2017, logo: faEnvira };
@@ -66,7 +66,7 @@ export const laravel = { name: 'Laravel', year: 2017, logo: faLaravel };
 export const tests = { name: 'Automated Tests', year: 2017, logo: faJs };
 export const git = { name: 'Version Control', year: 2015, logo: faGit };
 export const sass = { name: 'Sass Styles', year: 2014, logo: faSass };
-export const sketch = { name: 'Sketch App', year: 2017, logo: faGem };
+export const sketch = { name: 'Sketch App', year: 2017, logo: faSketch };
 export const threeD = { name: '3ds Max', year: 2012, logo: autodeskLogo };
 export const lightroom = {
   name: 'Adobe Lightroom',
