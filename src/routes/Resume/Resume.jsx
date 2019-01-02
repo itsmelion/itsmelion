@@ -35,7 +35,7 @@ const Resume = () => (
         </div>
       </section>
 
-      <h4>Experience</h4>
+      <h4>Experience and Contractors</h4>
       <Timeline />
 
       <h4>Education</h4>

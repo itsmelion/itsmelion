@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
 import './Experience.scss';
 import i18n from './Experience.i18n';
@@ -33,16 +34,18 @@ const Business = React.memo(({ exp }) => (
       </small>
     </h6>
 
-    <a className="block link" href={`//${exp.ref}`}>
-      {exp.ref}
-    </a>
+    <div className="mb1">
+      <a className="link" href={`//${exp.ref}`}>
+        {exp.ref}
+      </a>
 
-    <p>{exp.business}</p>
+      <p>{exp.business}</p>
+    </div>
   </div>
 ));
 
 const Archievements = React.memo(({ archievements }) => (
-  <ol className="archievements">
+  <ol className="mv1 archievements">
     <h6>Archievements</h6>
     {archievements.map(item => (
       <li key={item}>{item}</li>
@@ -50,12 +53,17 @@ const Archievements = React.memo(({ archievements }) => (
   </ol>
 ));
 
+Archievements.propTypes = {
+  archievements: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
 const Experience = React.memo(({ print, exp }) => (
   <article className={`Experience ${print ? 'print' : ''}`}>
     <div row="nowrap">
       <Business exp={exp} />
     </div>
-    <div className="role">
+
+    <div className="mv1 role">
       <h6>{exp.position}</h6>
 
       <p>
@@ -65,16 +73,16 @@ const Experience = React.memo(({ print, exp }) => (
 
     {exp.archievements && <Archievements archievements={exp.archievements} />}
 
-    <p className="row technologies">
-      {exp.technologies.map(({ name: tech }) => (
+    <p className="row mv1 technologies">
+      {exp.technologies.direct.map(({ name: tech }) => (
         <span key={tech}>{tech}</span>
       ))}
     </p>
 
-    {exp.contractors && <h6 className="mb1">Main contractors:</h6>}
+    {exp.contractors && <h6 className="mb05">Main contractors:</h6>}
 
-    {exp.contractors &&
-      exp.contractors.map(contractor => (
+    {exp.contractors
+      && exp.contractors.map(contractor => (
         <section key={contractor.ref} className="pv1 ph2 contractor">
           <Business exp={contractor} />
 
@@ -91,11 +99,55 @@ const Experience = React.memo(({ print, exp }) => (
           {contractor.archievements && (
             <Archievements archievements={contractor.archievements} />
           )}
+
+          <h6 className="mt1">Technologies: </h6>
+          <div>
+            <ul className="row mv05 technologies">
+              <b>Actively worked:&nbsp;</b>
+              {contractor.technologies.direct.map(({ name: tech }) => (
+                <li key={tech}>
+                  <span>{tech}</span>
+                </li>
+              ))}
+            </ul>
+
+            {contractor.technologies.indirect && (
+              <ul className="row technologies">
+                <b>Indirectly worked:&nbsp;</b>
+                {contractor.technologies.indirect.map(({ name: tech }) => (
+                  <li key={tech}>
+                    <span>{tech}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </section>
       ))}
 
     <hr />
   </article>
 ));
+
+Experience.propTypes = {
+  print: PropTypes.bool,
+  exp: PropTypes.shape({
+    name: PropTypes.string,
+    ref: PropTypes.string,
+    position: PropTypes.string,
+    period: PropTypes.object,
+    description: PropTypes.object,
+    logo: PropTypes.string,
+    archievements: PropTypes.arrayOf(PropTypes.string),
+    technologies: PropTypes.shape({
+      direct: PropTypes.arrayOf(PropTypes.object),
+      indirect: PropTypes.arrayOf(PropTypes.object),
+    }),
+  }).isRequired,
+};
+
+Experience.defaultProps = {
+  print: false,
+};
 
 export default Experience;
