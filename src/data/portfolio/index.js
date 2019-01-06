@@ -44,7 +44,7 @@ const arcaneCapsule = {
   type: 'all',
   title: 'Arcane Capsule',
   description: 'A video converter for the web',
-  tags: ['open-source', 'NodeJS', 'Micro-Services', 'React'],
+  tags: ['open-source', 'NodeJS', 'Micro-Services', 'Docker', 'React'],
   ref: '//arcane.capsule.gq',
   source: 'https://github.com/itsmelion/arcane-capsule',
 };
