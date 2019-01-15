@@ -5,7 +5,6 @@ import { social } from 'data/hero';
 import certifications from 'data/certifications';
 import Certifications from 'components/Certifications/Certifications';
 import Button from 'components/Button/Button';
-
 import Education from './Education/Education';
 import Timeline from './Timeline/Timeline';
 import SkillList from './Skills/Skill-List';
