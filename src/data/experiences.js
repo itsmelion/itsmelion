@@ -63,7 +63,9 @@ const expat = {
     pt:
       'Design and desenvolvimento de aplicações web, widgets e landing pages.',
   },
-  technologies: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
+  technologies: {
+    direct: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
+  },
 };
 
 const robos = {
@@ -105,18 +107,20 @@ const robos = {
     'Introduced Unit/Integration Tests',
     'See CTO recomendation: https://angel.co/chrislion',
   ],
-  technologies: [
-    adobeIllustrator,
-    invision,
-    webpack,
-    angularJs,
-    nodeJs,
-    react,
-    bash,
-    mongo,
-    docker,
-    microServices,
-  ],
+  technologies: {
+    direct: [
+      adobeIllustrator,
+      invision,
+      webpack,
+      angularJs,
+      nodeJs,
+      react,
+      bash,
+      mongo,
+      docker,
+      microServices,
+    ],
+  },
   links: [
     'https://www.linkedin.com/company/robos.im/',
     'https://www.instagram.com/robos.im/',
@@ -160,14 +164,17 @@ const backr = {
     'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
     'Leveraged garbage over the application, brought better/modern dependencies, and refactored code using better stardards',
   ],
-  technologies: [
-    adobeIllustrator,
-    wordpress,
-    webpack,
-    angularJs,
-    nginx,
-    laravel,
-  ],
+  technologies: {
+    direct: [
+      adobeIllustrator,
+      wordpress,
+      webpack,
+      angularJs,
+      nginx,
+      laravel,
+    ],
+    indirect: [laravel],
+  },
 };
 
 const destak = {
@@ -198,7 +205,7 @@ const destak = {
     en: 'Design of publicity and marketing content.',
     pt: 'Design de conteúdo publicitário e de marketing.',
   },
-  technologies: [adobeIllustrator, adobePhotoshop],
+  technologies: { direct: [adobeIllustrator, adobePhotoshop] },
 };
 
 const mg = {
@@ -228,7 +235,7 @@ const mg = {
     en: 'Design of publicity and marketing content.',
     pt: 'Design de conteúdo publicitário e de marketing.',
   },
-  technologies: [adobeIllustrator, adobePhotoshop],
+  technologies: { direct: [adobeIllustrator, adobePhotoshop] },
 };
 
 const rd = {
@@ -270,12 +277,14 @@ const rd = {
     pt: `Design e desenvolvimento de aplicações web, Vídeos e animações,
     e imagens com fins publicitários.`,
   },
-  technologies: [
-    adobeAfterEffects,
-    adobeIllustrator,
-    adobePhotoshop,
-    angularJs,
-  ],
+  technologies: {
+    direct: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      angularJs,
+    ],
+  },
 };
 
 const indenizou = {
@@ -318,30 +327,32 @@ const indenizou = {
     'Implemented and configured Chatbots for customer assistance automation',
     'Managed and created newsletter flows (onboarding, followup..) and campaigns',
   ],
-  technologies: [
-    adobeIllustrator,
-    invision,
-    webpack,
-    react,
-    graphQL,
-    gatsby,
-  ],
-  links: ['http://alia.indenizou.com'],
+  technologies: {
+    direct: [
+      adobeIllustrator,
+      invision,
+      webpack,
+      react,
+      graphQL,
+      gatsby,
+    ],
+  },
+  links: ['http://indenizou.alia.ml'],
 };
 
 const alia = {
   name: 'Autonomous as ALIA',
-  position: 'FullStack',
+  position: 'Frontend Developer and Designer',
   logo: aliaLogo,
   ref: 'alia.ml',
   period: {
     start: {
       month: {
-        semester: 0,
+        semester: 1,
         en: 'ends',
         pt: 'final de',
       },
-      year: 2016,
+      year: 2012,
     },
     end: {
       month: {
@@ -353,29 +364,31 @@ const alia = {
     },
   },
   description: {
-    en: 'Services of design and development of web apps',
-    pt: 'Serviços de design and desenvolvimento de aplicações web',
+    en: 'Consultancy and services of development and design of web software',
+    pt: 'Consultoria e serviços de desenvolvimento e design de aplicações web',
   },
-  technologies: [
-    adobeAfterEffects,
-    adobeIllustrator,
-    adobePhotoshop,
-    wordpress,
-    invision,
-    webpack,
-    angularJs,
-    angular,
-    nodeJs,
-    react,
-    gatsby,
-    graphQL,
-    nginx,
-    bash,
-    mongo,
-    docker,
-    microServices,
-  ],
-  contractors: [expat, backr, indenizou, robos],
+  technologies: {
+    direct: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      wordpress,
+      invision,
+      webpack,
+      angularJs,
+      angular,
+      nodeJs,
+      react,
+      gatsby,
+      graphQL,
+      nginx,
+      bash,
+      mongo,
+      docker,
+      microServices,
+    ],
+  },
+  contractors: [expat, backr, indenizou, robos, destak, mg, rd],
 };
 
-export default [destak, mg, rd, alia];
+export default [alia];
