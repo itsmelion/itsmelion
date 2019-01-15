@@ -390,7 +390,7 @@ const alia = {
       microServices,
     ],
   },
-  contractors: [expat, backr, indenizou, robos, destak, mg, rd],
+  contractors: [indenizou, robos, expat, backr, rd, destak, mg],
 };
 
 export default [alia];
