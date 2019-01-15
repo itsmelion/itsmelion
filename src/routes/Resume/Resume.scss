@@ -6,15 +6,6 @@
   padding-bottom: 4rem;
   padding-top: 8rem;
   background-color: $nightsong;
-  background-image: url(./dalaran-woods.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed;
-
-  @media #{$mobile} {
-    background-attachment: scroll;
-    background-image: unset;
-  }
 
   main {
     background-color: rgba($darnassus, .7);
