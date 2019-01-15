@@ -288,10 +288,10 @@ const rd = {
 };
 
 const indenizou = {
-  name: 'Indenizou.com',
+  name: 'Indenizou',
   ref: 'indenizou.com',
   // logo: robosLogo,
-  position: 'Frontend + Design & Marketing',
+  position: 'Frontend, Design and Marketing',
   business: 'Indenizations for flight and luggage problems',
   period: {
     start: {
@@ -329,12 +329,14 @@ const indenizou = {
   ],
   technologies: {
     direct: [
+      docker,
+      nodeJs,
+      react,
+      gatsby,
+      mongo,
+      webpack,
       adobeIllustrator,
       invision,
-      webpack,
-      react,
-      graphQL,
-      gatsby,
     ],
   },
   links: ['http://indenizou.alia.ml'],
