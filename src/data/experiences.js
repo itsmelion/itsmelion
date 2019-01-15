@@ -103,7 +103,7 @@ const robos = {
     'Created a standalone Live chat widget in React',
     'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
     'Completely redesigned homepage, and developed it using React',
-    'Leveraged garbage over the application, brought better/modern dependencies, simplified/improved functions, and refactored code using better stardards',
+    'Leveraged garbage over the application, brought better/modern dependencies, simplified/improved functions, and refactored code using better standards',
     'Introduced Unit/Integration Tests',
     'See CTO recomendation: https://angel.co/chrislion',
   ],
@@ -159,10 +159,10 @@ const backr = {
   },
   archievements: [
     'Improved website speed and performance for over 80%',
-    'Completely refactored the dashboard (backoffice) for staff and admnistrators manage content and users.',
+    'Completely refactored the dashboard (backoffice) for staff and administrators manage content and users.',
     'Introduced component architecture to Angular/Laravel, increasing UI consistency, control, and speeding up development',
     'Introduced wireframing, design thinking concepts to increase team productivity and overall quality',
-    'Leveraged garbage over the application, brought better/modern dependencies, and refactored code using better stardards',
+    'Leveraged garbage over the application, brought better/modern dependencies, and refactored code using better standards',
   ],
   technologies: {
     direct: [
@@ -323,7 +323,7 @@ const indenizou = {
     Gatsby for pre-rendering static content`,
     `Leveraged garbage over the application,
     brought better/modern dependencies,
-    simplified/improved functions, and refactored code using better stardards`,
+    simplified/improved functions, and refactored code using better standards`,
     'Implemented and configured Chatbots for customer assistance automation',
     'Managed and created newsletter flows (onboarding, followup..) and campaigns',
   ],
