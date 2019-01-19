@@ -6,6 +6,7 @@ import ReactGA from 'react-ga';
 import * as serviceWorker from './serviceWorker';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollTop';
 import { Home } from './routes';
 import Resume from './routes/Resume/Resume';
 import Feed from './routes/Portfolio/Feed';
@@ -19,7 +20,7 @@ localStorage.setItem('lang', window.lang);
 
 render(
   <BrowserRouter>
-    <>
+    <ScrollToTop>
       <Topbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -29,10 +30,11 @@ render(
         <Route path="/print" component={Print} />
       </Switch>
       <Footer />
-    </>
+    </ScrollToTop>
   </BrowserRouter>,
   document.getElementById('root'),
 );
+
 
 if (process.env.NODE_ENV === 'production') {
   ReactGA.initialize(process.env.REACT_APP_ANALYTICS);
