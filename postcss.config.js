@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const path = require('path');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssImport = require('postcss-import');
 const flexBugs = require('postcss-flexbugs-fixes');
@@ -6,12 +7,14 @@ const flexBugs = require('postcss-flexbugs-fixes');
 module.exports = {
   ident: 'postcss',
   plugins: [
-    postcssImport({ root: __dirname }),
+    postcssImport({ root: path.join(__dirname, 'src') }),
     flexBugs(),
     postcssPresetEnv({
       browsers: [
-        'last 4 versions',
-        'not ie < 10', // React doesn't support IE8 anyway
+        '>0.2%',
+        'not dead',
+        'not ie <= 11',
+        'not op_mini all',
       ],
     }),
   ],

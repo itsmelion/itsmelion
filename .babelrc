@@ -2,7 +2,12 @@
   "presets": [
     ["@babel/preset-env", {
       "targets": {
-        "browsers": ["last 2 versions", "safari >= 11"]
+        "browsers": [
+          ">0.2%",
+          "not dead",
+          "not ie <= 11",
+          "not op_mini all"
+        ]
       }
     }],
     "@babel/preset-react"
