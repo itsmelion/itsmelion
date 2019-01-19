@@ -14,8 +14,7 @@ import LanguageService from './Language';
 
 // Setup application Language (locale) to global context
 const languageService = new LanguageService(['pt', 'en', 'he']);
-window.lang =
-  languageService.getLanguage() || process.env.REACT_APP_DEFAULT_LANG;
+window.lang = languageService.getLanguage() || process.env.REACT_APP_DEFAULT_LANG;
 localStorage.setItem('lang', window.lang);
 
 render(
