@@ -11,13 +11,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.13",
-    "@fortawesome/free-brands-svg-icons": "^5.7.0",
-    "@fortawesome/free-regular-svg-icons": "^5.7.0",
-    "@fortawesome/free-solid-svg-icons": "^5.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.14",
+    "@fortawesome/free-brands-svg-icons": "^5.7.1",
+    "@fortawesome/free-regular-svg-icons": "^5.7.1",
+    "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "flamework": "^3.1.0",
-    "node-sass": "^4.11.0",
+    "flamework": "^3.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -29,24 +28,13 @@
     "react-tooltip": "^3.9.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
-    "@babel/plugin-proposal-function-bind": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-classes": "^7.2.2",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.3.1",
-    "postcss": "^7.0.14",
-    "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.5.0"
+    "node-sass": "^4.11.0"
   },
   "optionalDependencies": {
     "eslint-config-airbnb": "^17.1.0",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.5.1"
+    "stylelint-scss": "^3.5.2"
   },
   "browserslist": [
     ">0.2%",
