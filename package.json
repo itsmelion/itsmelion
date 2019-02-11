@@ -1,6 +1,9 @@
 {
   "name": "@alia-code/portfolio",
   "version": "1.0.0",
+  "homepage": "http://lion.alia.ml",
+  "repository": "github:itsmelion/portfolio.git",
+  "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "description": "A place to know me better, my skills, contact, download CV",
   "main": "./src/index.jsx",
   "scripts": {
@@ -42,14 +45,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/itsmelion/portfolio.git"
-  },
-  "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/itsmelion/portfolio/issues"
   },
-  "homepage": "http://lion.alia.ml"
 }
