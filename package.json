@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "homepage": "http://lion.alia.ml",
   "repository": "github:itsmelion/portfolio.git",
-  "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "description": "A place to know me better, my skills, contact, download CV",
   "main": "./src/index.jsx",
+  "author": {
+    "name": "Christhopher Lion",
+    "email": "christhopherleao@icloud.com",
+    "url": "https://lion.alia.ml"
+  },
   "scripts": {
     "up": "npm upgrade && npm prune && npm dedupe",
     "start": "react-scripts start",
@@ -46,7 +50,5 @@
     "not op_mini all"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/itsmelion/portfolio/issues"
-  },
+  "bugs": "https://github.com/itsmelion/portfolio/issues"
 }
