@@ -83,8 +83,8 @@ export const contact = {
 export const address = {
   street: 'R. do Carmo 2',
   code: '1200-094',
-  city: 'Lisbon',
-  country: 'Portugal',
+  city: 'Belo Horizonte',
+  country: 'Minas Gerais',
 };
 
 export const bio = {
