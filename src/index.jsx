@@ -1,9 +1,8 @@
 import './styles/main.scss';
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
-import * as serviceWorker from './serviceWorker';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollTop';
@@ -19,7 +18,7 @@ window.lang = languageService.getLanguage() || process.env.REACT_APP_DEFAULT_LAN
 localStorage.setItem('lang', window.lang);
 
 render(
-  <BrowserRouter>
+  <Router>
     <ScrollToTop>
       <Topbar />
       <Switch>
@@ -31,7 +30,7 @@ render(
       </Switch>
       <Footer />
     </ScrollToTop>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root'),
 );
 
@@ -40,8 +39,3 @@ if (process.env.NODE_ENV === 'production') {
   ReactGA.initialize(process.env.REACT_APP_ANALYTICS);
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
