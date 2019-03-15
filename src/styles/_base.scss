@@ -5,6 +5,11 @@ body {
   font-weight: 400;
 }
 
+// temporary fix for padding cards
+[contain], .contain, .container {
+  padding: 0 4%;
+}
+
 a.link:hover:not(.button) {
   color: $alliance;
 }
