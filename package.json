@@ -31,9 +31,7 @@
     "react-modal": "^3.8.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
-    "react-tooltip": "^3.10.0"
-  },
-  "devDependencies": {
+    "react-tooltip": "^3.10.0",
     "@fortawesome/fontawesome-pro": "^5.8.1",
     "node-sass": "^4.11.0"
   },
