@@ -6,13 +6,11 @@ class Drawer extends Component {
     open: this.props.open,
   };
 
-  close = close => {
-    const isBackdrop = close.target.classList.contains('Drawer');
+  close = ({ target }) => {
+    const isBackdrop = target.classList.contains('Drawer');
     if (!isBackdrop) return;
 
-    this.setState(({ open }) => ({
-      open: !open,
-    }));
+    return this.setState(({ open }) => ({ open: !open }));
   };
 
   render() {
