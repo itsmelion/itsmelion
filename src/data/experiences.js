@@ -342,6 +342,107 @@ const indenizou = {
   links: ['http://indenizou.alia.ml'],
 };
 
+const Drover = {
+  name: 'Drover',
+  ref: 'joindrover.com',
+  logo: 'https://static.siliconmilkroundabout.com/prod/logos/68/a5f5b774e1-1bd6800b-620e-48c4-adc9-577c2a187918-original.png',
+  position: 'Frontend Developer',
+  business: 'Drover is a flexible car subscription service to make cars easier for everyone',
+  period: {
+    start: {
+      month: {
+        semester: 0,
+        en: 'early',
+        pt: 'inicio de',
+      },
+      year: 2019,
+    },
+    end: {
+      month: {
+        semester: 1,
+        en: 'mid',
+        pt: 'meados de',
+      },
+      year: 2019,
+    },
+  },
+  description: {
+    en: `Development of web apps and sites with performance and code-reusability`,
+    pt: `Development of web apps and sites with performance and code-reusability`,
+  },
+  archievements: [
+    'Drover counts with a diverse and international environment, where english is the default(required) language.',
+    `Daily meetings with collaborators based in London & Portugal.`,
+    `Leveraged garbage over the application,
+    brought better/modern dependencies,
+    simplified/improved functions, and refactored code using better standards`,
+    'Me and all colaborators were able take part of architectural decison making, contributing and improving different parts of the product and creating better standards and workflow.',
+    'SCRUM methodology',
+    'Responsible for strategies for code-reuse, performance, development of CLI functions'
+  ],
+  technologies: {
+    direct: [
+      docker,
+      nodeJs,
+      react,
+      webpack,
+      invision,
+    ],
+  },
+  links: ['http://joindrover.com/'],
+};
+
+const PrimeIT = {
+  name: 'PrimeIT Consulting',
+  position: 'Senior Frontend Developer',
+  logo: 'https://www.primeit.pt/public/imgs/id/png/id-primeit-it-positive.png',
+  ref: 'primeit.pt',
+  period: {
+    start: {
+      month: {
+        semester: 0,
+        en: 'early',
+        pt: 'inicio de',
+      },
+      year: 2019,
+    },
+    end: {
+      month: {
+        semester: 1,
+        en: 'mid',
+        pt: 'meados de',
+      },
+      year: 2019,
+    },
+  },
+  description: {
+    en: 'Consultancy and services of development and design of web software',
+    pt: 'Consultoria e serviços de desenvolvimento e design de aplicações web',
+  },
+  technologies: {
+    direct: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      wordpress,
+      invision,
+      webpack,
+      angularJs,
+      angular,
+      nodeJs,
+      react,
+      gatsby,
+      graphQL,
+      nginx,
+      bash,
+      mongo,
+      docker,
+      microServices,
+    ],
+  },
+  contractors: [Drover],
+};
+
 const alia = {
   name: 'Autonomous as ALIA',
   position: 'Frontend Developer and Designer',
@@ -393,4 +494,4 @@ const alia = {
   contractors: [indenizou, robos, expat, backr, rd, destak, mg],
 };
 
-export default [alia];
+export default [alia, PrimeIT];
