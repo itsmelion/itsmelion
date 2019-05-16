@@ -76,15 +76,16 @@ export const contact = {
     label: 'christhopher.amaral',
     url: 'https://join.skype.com/invite/QRZJqK4phjyU',
   },
-  phone: '+55 31 982875204',
+  phone: '+351913840493',
   agenda: 'https://calendly.com/itsmelion/talk',
 };
 
 export const address = {
-  street: 'R. do Carmo 2',
-  code: '1200-094',
-  city: 'Belo Horizonte',
-  country: 'Minas Gerais',
+  street: 'R. Bombeiros Voluntários 20, Odivelas',
+  complement: 'C/V Esq.',
+  code: '2675-218',
+  city: 'Lisbon',
+  country: 'Portugal',
 };
 
 export const bio = {
