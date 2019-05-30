@@ -89,15 +89,14 @@ export const address = {
 };
 
 export const bio = {
-  en: `Im a Frontend Developer,
-    looking for a environment of growth and innovation.
-    I love performance, cutting edge software,
-    and also an Design and UIUX enthusiast.`,
+  en: `Im a Frontend Developer, that loves growth and innovation.
+    Im performance obsessed, love cutting edge software,
+    and i also am a Design and UIUX enthusiast.`,
   pt: `Eu sou um Desenvolvedor Frontend,
-    procurando por um ambiente de crescimento e inovação.
-    E me importo bastante com desempenho, software de ponta,
+    que gosta de trabalhar em ambientes de crescimento e inovação.
+    Me importo bastante com desempenho, software de ponta,
     além de ser um amante de Design
-    e entusiasta de interface e experiência de usuário.`,
+    e entusiasta de interface/experiência de usuário.`,
 };
 
 export const text = {
