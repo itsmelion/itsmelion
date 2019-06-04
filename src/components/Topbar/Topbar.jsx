@@ -2,20 +2,17 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/pro-light-svg-icons';
-import { contact } from '../../data/hero';
+import { lang } from 'utils';
+import { contact } from 'data/hero';
 import texts from './Topbar.i18n';
 import logo from './logo.svg';
 import Hex from '../Hex/Hex';
 import './Topbar.scss';
 
 class Topbar extends Component {
-  constructor(props) {
-    super(props);
-    this.lang = localStorage.getItem('lang');
-    this.state = {
-      collapsed: false,
-    };
-  }
+  state = {
+    collapsed: false,
+  };
 
   closeMenu = () => this.setState({ collapsed: false });
 
@@ -58,15 +55,15 @@ class Topbar extends Component {
 
           <ul flex="" align="end" className={`tabs ${collapse}`}>
             <NavLink to="/portfolio" onClick={this.closeMenu}>
-              {texts.portfolio[this.lang]}
+              {lang(texts.portfolio)}
             </NavLink>
 
             <NavLink to="/resume" onClick={this.closeMenu}>
-              {texts.resume[this.lang]}
+              {lang(texts.resume)}
             </NavLink>
 
             <a className="default-to-action" href={contact.agenda}>
-              {texts.book[this.lang]}
+              {lang(texts.book)}
             </a>
           </ul>
         </div>

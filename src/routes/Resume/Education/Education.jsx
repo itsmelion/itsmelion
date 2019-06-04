@@ -1,7 +1,8 @@
 import React from 'react';
-import AsyncImage from '../../../components/AsyncImage/AsyncImage';
+import { lang } from 'utils';
+import { scholarity } from 'data/education';
+import AsyncImage from 'components/AsyncImage/AsyncImage';
 import './Education.scss';
-import { scholarity } from '../../../data/education';
 
 const Education = React.memo(() => (
   <ol id="Education" className="mb2">
@@ -12,7 +13,7 @@ const Education = React.memo(() => (
         align="start"
         key={school.institution}
       >
-        <h5>{school.course[window.lang]}</h5>
+        <h5>{lang(school.course)}</h5>
 
         <span flex="" />
 

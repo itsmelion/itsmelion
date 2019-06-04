@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import {
   faDocker,
   faAngular,
@@ -18,12 +17,12 @@ import {
   faQuestion,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { ReactComponent as illustratorLogo } from 'images/brands/illustrator.svg';
-import { ReactComponent as afterEffectsLogo } from 'images/brands/after-effects.svg';
-import { ReactComponent as webpackLogo } from 'images/brands/webpack.svg';
-import { ReactComponent as adobePhotoshopLogo } from 'images/brands/photoshop.svg';
 import nginxLogo from 'images/brands/nginx.png';
 import lightroomLogo from 'images/brands/lightroom.svg';
+import illustratorLogo from 'images/brands/illustrator.svg';
+import photoshopLogo from 'images/brands/photoshop.svg';
+import afterEffectsLogo from 'images/brands/after-effects.svg';
+import webpackLogo from 'images/brands/webpack.svg';
 import autodeskLogo from 'images/brands/3dsmax.svg';
 
 // temporarely adding GraphQL icon, white Fontawesome doesnt add it
@@ -62,7 +61,7 @@ export const nginx = { name: 'nGinx', year: 2017, logo: nginxLogo };
 export const adobePhotoshop = {
   name: 'Photoshop',
   year: 2012,
-  logo: adobePhotoshopLogo,
+  logo: photoshopLogo,
 };
 export const react = { name: 'React', year: 2017, logo: faReact };
 export const invision = { name: 'inVision', year: 2016, logo: faInvision };

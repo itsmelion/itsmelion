@@ -23,7 +23,7 @@ const modalStyling = {
 class Timeline extends PureComponent {
   constructor(props) {
     super(props);
-    this.years = [2, 3, 4, 5, 6, 7, 8, 9]; // 201'2' till 201'9'
+    this.years = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
     this.state = {
       openDialog: false,
       companyIndex: 0,
@@ -46,15 +46,15 @@ class Timeline extends PureComponent {
   };
 
   render() {
-    const height = `${(experiences.length + 1) * 2 + 3.5}rem`;
+    const height = `${(experiences.length + 1) * 2 + 6}rem`;
     const { companyIndex, openDialog } = this.state;
-
+    const yearWidth = 125;
     return (
       <>
         <section id="Timeline" style={{ height }} className="resume-section">
           {this.years.map((y, i) => (
-            <span style={{ left: `${i * 150}px` }} className="marker" key={y}>
-              201{y}
+            <span style={{ left: `${i * yearWidth}px` }} className="marker" key={y}>
+              20{y}
             </span>
           ))}
           {experiences.map((company, top) => (
@@ -62,6 +62,7 @@ class Timeline extends PureComponent {
               top={top}
               company={company}
               key={company.name}
+              yearWidth={yearWidth}
               toggle={this.toggleDetails}
             />
           ))}

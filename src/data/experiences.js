@@ -19,13 +19,13 @@ import {
   gatsby,
 } from './tools';
 
-import destakLogo from '../images/brands/destak.jpg';
-import mgRepresentacoesLogo from '../images/brands/mgrepresentacoes.png';
-import crmLogo from '../images/brands/rd-station_crm.svg';
-import aliaLogo from '../images/logo.png';
-import backrLogo from '../images/brands/backr.svg';
-import expatLogo from '../images/brands/planetexpat.png';
-import robosLogo from '../images/brands/robos.png';
+import destakLogo from 'images/brands/destak.jpg';
+import mgRepresentacoesLogo from 'images/brands/mgrepresentacoes.png';
+import crmLogo from 'images/brands/rd-station_crm.svg';
+import aliaLogo from 'images/logo.png';
+import backrLogo from 'images/brands/backr.svg';
+import expatLogo from 'images/brands/planetexpat.png';
+import robosLogo from 'images/brands/robos.png';
 
 const expat = {
   logo: expatLogo,
@@ -58,10 +58,8 @@ const expat = {
     'Designed and Developed an easily maintainable, and fully customized wordpress theme for PlanetExpat',
   ],
   description: {
-    en:
-      'Design and development of web applications, widgets and landing pages.',
-    pt:
-      'Design and desenvolvimento de aplicações web, widgets e landing pages.',
+    en: 'Design and development of web applications, widgets and landing pages.',
+    pt: 'Design and desenvolvimento de aplicações web, widgets e landing pages.',
   },
   technologies: {
     direct: [adobeIllustrator, adobePhotoshop, wordpress, webpack, nginx],
@@ -367,12 +365,11 @@ const Drover = {
     },
   },
   description: {
-    en: `Development of web apps and sites with performance and code-reusability`,
-    pt: `Development of web apps and sites with performance and code-reusability`,
+    en: 'Development of web apps and sites with performance and code-reusability',
   },
   archievements: [
     'Drover counts with a diverse and international environment, where english is the default(required) language.',
-    `Daily meetings with collaborators based in London & Portugal.`,
+    'Daily meetings with collaborators based in London & Portugal.',
     `Leveraged garbage over the application,
     brought better/modern dependencies,
     simplified/improved functions, and refactored code using better standards`,
@@ -417,8 +414,8 @@ const VisionBox = {
     },
   },
   description: {
-    en: `Development and implementation of integrated, user-centric, digital identity management solutions and services built upon trusted biometric tokens`,
-    pt: `Development and implementation of integrated, user-centric, digital identity management solutions and services built upon trusted biometric tokens`,
+    en: `Development and implementation of integrated, user-centric,
+    digital identity management solutions and services built upon trusted biometric tokens`,
   },
   archievements: [
     'VisionBox counts with a diverse and international environment.',
@@ -456,7 +453,6 @@ const PrimeIT = {
         en: 'mid',
         pt: 'meados de',
       },
-      year: 2019,
     },
   },
   description: {

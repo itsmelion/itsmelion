@@ -8,8 +8,8 @@ import {
   // faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
 
-import avatar from '../images/hero/square.jpg';
-import HeroBody from '../components/Header/Hero.png';
+import avatar from 'images/hero/square.jpg';
+import HeroBody from 'components/Header/Hero.png';
 
 export const social = {
   github: {
@@ -48,7 +48,6 @@ export const social = {
 
 export const ocupation = {
   en: 'Frontend Developer',
-  pt: 'Frontend Developer',
 };
 
 export const picture = {
@@ -83,7 +82,7 @@ export const contact = {
 export const address = {
   street: 'R. Bombeiros Voluntários 20, Odivelas',
   complement: 'C/V Esq.',
-  code: '2675-218',
+  code: '2675-304',
   city: 'Lisbon',
   country: 'Portugal',
 };

@@ -1,12 +1,13 @@
+import './HeroFrame.scss';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './HeroFrame.scss';
-import skills from '../../data/skills';
-import { social, ocupation } from '../../data/hero';
+import { lang } from 'utils';
+import skills from 'data/skills';
+import { social, ocupation } from 'data/hero';
 
 const HeroFrame = React.memo(({ picture }) => (
   <article className="HeroFrame">
-    <h6 className="hero-role">{ocupation[window.lang]}</h6>
+    <h6 className="hero-role">{lang(ocupation)}</h6>
     <div className="row nowrap hud-decorated">
       <span flex="grow" />
       <span className="decoration" />
@@ -32,9 +33,7 @@ const HeroFrame = React.memo(({ picture }) => (
 
     <div className="skill-tags">
       <h6>Tags:</h6>
-      {skills.tags[window.lang].map(tag => (
-        <span key={tag}>{tag}</span>
-      ))}
+      {lang(skills.tags).map(tag => <span key={tag}>{tag}</span>)}
     </div>
 
     <div className="avatar hex">

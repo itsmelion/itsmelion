@@ -1,6 +1,6 @@
 import React from 'react';
 import './Recomendations.scss';
-// eslint-disable-next-line import/no-unresolved
+import { lang } from 'utils';
 import recomendations from 'data/recomendations';
 
 const i18n = {
@@ -16,10 +16,10 @@ const Recomendations = React.memo(() => (
     {recomendations.map(recomendation => (
       <article key={recomendation.name}>
         <h4>{recomendation.name}</h4>
-        <p>{recomendation.message[window.lang]}</p>
+        <p>{lang(recomendation.message)}</p>
 
         <small>
-          {i18n.source[window.lang]}:&nbsp;
+          {lang(i18n.source)}:&nbsp;
           <a target="_blank" rel="noopener noreferrer" href={recomendation.ref}>
             {recomendation.ref}
           </a>

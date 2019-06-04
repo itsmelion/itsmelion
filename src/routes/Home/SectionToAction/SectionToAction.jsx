@@ -1,7 +1,8 @@
 import React from 'react';
-import Button from '../../../components/Button/Button';
+import { lang } from 'utils';
+import { contact } from 'data/hero';
+import Button from 'components/Button/Button';
 import './SectionToAction.scss';
-import { contact } from '../../../data/hero';
 
 const texts = {
   book: {
@@ -14,7 +15,7 @@ const texts = {
 const SectionToAction = () => (
   <section id="SectionToAction" row="" align="around center">
     <Button link={contact.agenda}>
-      {texts.book[window.lang]}
+      {lang(texts.book)}
     </Button>
   </section>
 );

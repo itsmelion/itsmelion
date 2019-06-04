@@ -1,9 +1,10 @@
 import React from 'react';
+import { lang } from 'utils';
+import { social, lastName } from 'data/hero';
+import logo from 'images/logo.png';
+
 import PoweredBy from './PoweredBy';
-// import CallToActions from './CallToActions';
 import './Footer.scss';
-import logo from '../../images/logo.png';
-import { social, lastName } from '../../data/hero';
 
 const Footer = React.memo(() => (
   <footer id="Footer" hide-print="">
@@ -22,7 +23,7 @@ const Footer = React.memo(() => (
       </aside>
 
       <article className="footer-hero">
-        <h6>Connect with {lastName[window.lang]}</h6>
+        <h6>Connect with {lang(lastName)}</h6>
         <ul
           className="column mobile-row"
           align="start end"

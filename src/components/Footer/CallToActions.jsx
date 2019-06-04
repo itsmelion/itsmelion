@@ -1,4 +1,6 @@
 import React from 'react';
+import { lang } from 'utils';
+
 import Button from '../Button/Button';
 import i18n from './Footer.i18n';
 
@@ -11,7 +13,7 @@ const CallToActions = () => (
 
     <div row="" align="center">
       {i18n.CallToActions.map(({ label, action }) => (
-        <Button key={action}>{label[window.lang]}</Button>
+        <Button key={action}>{lang(label)}</Button>
       ))}
     </div>
   </section>

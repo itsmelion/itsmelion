@@ -2,7 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
+import { lang } from 'utils';
 import hero from 'data/hero';
+
 import './Profile.scss';
 
 const Profile = React.memo(() => (
@@ -11,12 +13,12 @@ const Profile = React.memo(() => (
       <img
         className="avatar mr2 mb1"
         src={hero.picture.avatar}
-        alt={hero.name[window.lang]}
+        alt={lang(hero.name)}
       />
 
       <div flex="auto">
         <div>
-          <h2>{hero.name[window.lang]}</h2>
+          <h2>{lang(hero.name)}</h2>
           <h3>{hero.role}</h3>
         </div>
 
@@ -51,10 +53,10 @@ const Profile = React.memo(() => (
     </div>
 
     <h5 className="mt1">Bio</h5>
-    <p>{hero.bio[window.lang]}</p>
+    <p>{lang(hero.bio)}</p>
 
     <h5 className="mt1">Strengths</h5>
-    <p>{hero.text[window.lang]}</p>
+    <p>{lang(hero.text)}</p>
   </header>
 ));
 

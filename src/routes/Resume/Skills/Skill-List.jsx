@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
+import { lang } from 'utils';
 import { yearsFromNow } from 'utilities';
 
-import Tools, { wishlist } from '../../../data/tools';
+import Tools, { wishlist } from 'data/tools';
 import './Skills.scss';
 import Skill from './Skill';
 
@@ -23,7 +24,7 @@ const SkillList = React.memo(() => (
       <h6 flex="100">Design</h6>
 
       {Tools.design.map(({ name, logo, year }) => (
-        <li data-tip={tooltip(year, name)[window.lang]} key={name}>
+        <li data-tip={lang(tooltip(year, name))} key={name}>
           <Skill logo={logo} />
         </li>
       ))}
@@ -38,7 +39,7 @@ const SkillList = React.memo(() => (
       <h5 flex="100">Frontend</h5>
 
       {Tools.frontend.map(({ name, logo, year }) => (
-        <li data-tip={tooltip(year, name)[window.lang]} key={name}>
+        <li data-tip={lang(tooltip(year, name))} key={name}>
           <Skill logo={logo} />
         </li>
       ))}
@@ -53,7 +54,7 @@ const SkillList = React.memo(() => (
       <h6 flex="100">Backend/DevOps</h6>
 
       {Tools.backend.map(({ name, logo, year }) => (
-        <li data-tip={tooltip(year, name)[window.lang]} key={name}>
+        <li data-tip={lang(tooltip(year, name))} key={name}>
           <Skill logo={logo} />
         </li>
       ))}

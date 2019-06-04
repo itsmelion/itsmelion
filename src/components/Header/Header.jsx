@@ -1,4 +1,5 @@
 import React from 'react';
+import { lang } from 'utils';
 import HeroFrame from '../HeroFrame/HeroFrame';
 import AsyncImage from '../AsyncImage/AsyncImage';
 import holoDefault from './holo-sillhouete.svg';
@@ -16,13 +17,13 @@ const Header = React.memo(() => (
     <div className="column" align="start start" flex="auto">
       <article className="bio">
         <h6 className="dalaran">Hero:</h6>
-        <h2>{name[window.lang]}</h2>
+        <h2>{lang(name)}</h2>
 
         <h6 className="dalaran">Bio:</h6>
-        <p>{bio[window.lang]}</p>
+        <p>{lang(bio)}</p>
       </article>
 
-      <HeroFrame picture={picture.avatar} />
+      <HeroFrame picture={picture.thumbnail || picture.avatar} />
     </div>
 
     <div className="column flex-initial Hologram" align="center">

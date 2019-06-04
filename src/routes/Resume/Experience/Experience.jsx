@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { lang } from 'utils';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
 import './Experience.scss';
 import i18n from './Experience.i18n';
@@ -19,14 +20,14 @@ const Business = React.memo(({ exp }) => (
         <span>(</span>
 
         <span>
-          {exp.period.start.month[window.lang]}
+          {lang(exp.period.start.month)}
           <b>&nbsp;{exp.period.start.year}</b>
         </span>
 
         <span>&nbsp;-&nbsp;</span>
 
         <span>
-          {exp.period.end.month[window.lang]}
+          {lang(exp.period.end.month)}
           <b>&nbsp;{exp.period.end.year}</b>
         </span>
 
@@ -67,7 +68,7 @@ const Experience = React.memo(({ print, exp }) => (
       <h6>{exp.position}</h6>
 
       <p>
-        {i18n.tasks[window.lang]}: {exp.description[window.lang]}
+        {lang(i18n.tasks)}: {lang(exp.description)}
       </p>
     </div>
 
@@ -93,7 +94,7 @@ const Experience = React.memo(({ print, exp }) => (
 
           <div>
             <h6 className="inline">Responsibilities: </h6>
-            <p className="inline">{contractor.description[window.lang]}</p>
+            <p className="inline">{lang(contractor.description)}</p>
           </div>
 
           {contractor.archievements && (
