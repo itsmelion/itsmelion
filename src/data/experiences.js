@@ -392,6 +392,50 @@ const Drover = {
   links: ['http://joindrover.com/'],
 };
 
+const VisionBox = {
+  name: 'VisionBox',
+  ref: 'vision-box.com',
+  logo: 'https://www.vision-box.com/assets/images/vb-logo-color.svg',
+  position: 'Frontend Developer',
+  business: 'Vision-Box™ acts on airports, airlines, governments and private entities with critical security and identification challenges, supporting them to optimize the identification and flow of travelers, establishing trusted biometric identity enrollment, verification and authentication processes.',
+  period: {
+    start: {
+      month: {
+        semester: 1,
+        en: 'mid',
+        pt: 'meados de',
+      },
+      year: 2019,
+    },
+    end: {
+      month: {
+        semester: 1,
+        en: 'ends',
+        pt: 'final de',
+      },
+      year: 2019,
+    },
+  },
+  description: {
+    en: `Development and implementation of integrated, user-centric, digital identity management solutions and services built upon trusted biometric tokens`,
+    pt: `Development and implementation of integrated, user-centric, digital identity management solutions and services built upon trusted biometric tokens`,
+  },
+  archievements: [
+    'VisionBox counts with a diverse and international environment.',
+    'Collaborate with clients based all over the world.',
+    'Responsible for strategies for code-reuse, performance, development of CLI functions'
+  ],
+  technologies: {
+    direct: [
+      docker,
+      nodeJs,
+      react,
+      webpack,
+    ],
+  },
+  links: ['https://www.vision-box.com/'],
+};
+
 const PrimeIT = {
   name: 'PrimeIT Consulting',
   position: 'Senior Frontend Developer',
@@ -440,7 +484,7 @@ const PrimeIT = {
       microServices,
     ],
   },
-  contractors: [Drover],
+  contractors: [VisionBox, Drover],
 };
 
 const alia = {

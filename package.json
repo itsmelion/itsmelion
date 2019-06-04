@@ -15,7 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint:css":"stylelint './src/**/*.js'",
+    "lint:css": "stylelint './src/**/*.js'",
     "eject": "react-scripts eject"
   },
   "dependencies": {
