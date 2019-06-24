@@ -36,15 +36,15 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
     "react-tooltip": "^3.10.0",
-    "styled-components": "^4.3.1"
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0"
+    "babel-plugin-styled-components": "^1.10.1"
   },
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.9.0",
-    "@typescript-eslint/parser": "^1.9.0",
-    "babel-eslint": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "babel-eslint": "^10.0.2",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^4.0.1",
@@ -55,16 +55,16 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react": "^7.14.0",
     "eslint-plugin-react-hooks": "^1.x",
     "eslint-plugin-standard": "^4.0.0",
-    "stylelint": "^10.0.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
     "stylelint-scss": "^3.8.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.2"
   },
   "browserslist": [
     ">0.2%",
