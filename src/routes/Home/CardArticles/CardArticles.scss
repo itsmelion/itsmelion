@@ -2,14 +2,11 @@
 
 .fel-mountain,
 .fel-mountain img {
-  margin-top: -16rem;
-  margin-top: -42vh;
-  height: 70vh;
+  margin-top: -14rem;
   display: block;
 
   @media #{$mobile} {
-    height: 40vh;
-    margin-top: -19vh;
+    margin-top: -1rem;
     object-position: right bottom;
   }
 }
