@@ -27,9 +27,6 @@
       "modules": true
     }
   },
-  "globals": {
-    "fetch": "readonly"
-  },
   "rules": {
     "react/jsx-one-expression-per-line": 0
   }
