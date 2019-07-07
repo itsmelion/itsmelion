@@ -4,3 +4,5 @@
 https://develop.lion-portfolio.netlify.com/* https://develop.lion.alia.ml/:splat 301!
 https://lion-portfolio.netlify.com/* https://lion.alia.ml/:splat 301!
 https://www.lion.alia.ml/* https://lion.alia.ml/:splat 301!
+http://www.lion.alia.ml/* https://lion.alia.ml/:splat 301!
+http://lion.alia.ml/* https://lion.alia.ml/:splat 301!

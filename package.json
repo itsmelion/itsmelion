@@ -1,7 +1,7 @@
 {
   "name": "@alia-code/portfolio",
   "version": "1.0.0",
-  "homepage": "https://lion.alia.ml",
+  "homepage": "http://lion.alia.ml",
   "repository": "github:itsmelion/portfolio.git",
   "description": "A place to know me better, my skills, contact, download CV",
   "main": "./src/index.jsx",
