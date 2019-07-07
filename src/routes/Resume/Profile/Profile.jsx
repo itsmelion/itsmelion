@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
@@ -7,7 +7,7 @@ import hero from 'data/hero';
 
 import './Profile.scss';
 
-const Profile = React.memo(() => (
+const Profile = () => (
   <header className="profile">
     <div row="nowrap" mobile-wrap="">
       <img
@@ -17,9 +17,10 @@ const Profile = React.memo(() => (
       />
 
       <div flex="auto">
-        <div>
+        <div className="mb1">
           <h2>{lang(hero.name)}</h2>
           <h3>{hero.role}</h3>
+          <h5 className="show-print"><a rel="noopener noreferer" href={hero.url}>{hero.url}</a></h5>
         </div>
 
         <address flex="auto" className="mb1">
@@ -58,6 +59,6 @@ const Profile = React.memo(() => (
     <h5 className="mt1">Strengths</h5>
     <p>{lang(hero.text)}</p>
   </header>
-));
+);
 
-export default Profile;
+export default memo(Profile);

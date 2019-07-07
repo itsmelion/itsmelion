@@ -1,3 +1,14 @@
+import destakLogo from 'images/brands/destak.jpg';
+import mgRepresentacoesLogo from 'images/brands/mgrepresentacoes.png';
+import crmLogo from 'images/brands/rd-station_crm.svg';
+import aliaLogo from 'images/logo.png';
+import backrLogo from 'images/brands/backr.svg';
+import expatLogo from 'images/brands/planetexpat.png';
+import robosLogo from 'images/brands/robos.png';
+import droverLogo from 'images/brands/drover.png';
+import primeLogo from 'images/brands/primeit-it.png';
+import visionBoxLogo from 'images/brands/visionBox.svg';
+
 import {
   adobeIllustrator,
   adobeAfterEffects,
@@ -18,14 +29,6 @@ import {
   graphQL,
   gatsby,
 } from './tools';
-
-import destakLogo from 'images/brands/destak.jpg';
-import mgRepresentacoesLogo from 'images/brands/mgrepresentacoes.png';
-import crmLogo from 'images/brands/rd-station_crm.svg';
-import aliaLogo from 'images/logo.png';
-import backrLogo from 'images/brands/backr.svg';
-import expatLogo from 'images/brands/planetexpat.png';
-import robosLogo from 'images/brands/robos.png';
 
 const expat = {
   logo: expatLogo,
@@ -132,7 +135,7 @@ const backr = {
   name: 'StudentBackr',
   ref: 'studentbackr.com',
   position: 'Frontend',
-  business: 'Crowdfunding software, for students only',
+  business: 'Crowdfunding software, focused on students only',
   period: {
     start: {
       month: {
@@ -179,6 +182,7 @@ const destak = {
   logo: destakLogo,
   name: 'Destakinox',
   ref: 'destakinox.com.br',
+  business: 'e-Commerce',
   position: 'Designer',
   period: {
     start: {
@@ -240,6 +244,7 @@ const rd = {
   name: 'RD Station CRM (former PlugCRM)',
   ref: 'www.rdstation.com/crm/',
   position: 'Frontend and Designer',
+  business: 'Commercial CRM (B2B & B2C)',
   logo: crmLogo,
   period: {
     start: {
@@ -337,13 +342,13 @@ const indenizou = {
       invision,
     ],
   },
-  links: ['http://indenizou.alia.ml'],
+  links: ['https://pediu.indenizou.com'],
 };
 
 const Drover = {
   name: 'Drover',
   ref: 'joindrover.com',
-  logo: 'https://static.siliconmilkroundabout.com/prod/logos/68/a5f5b774e1-1bd6800b-620e-48c4-adc9-577c2a187918-original.png',
+  logo: droverLogo,
   position: 'Frontend Developer',
   business: 'Drover is a flexible car subscription service to make cars easier for everyone',
   period: {
@@ -392,7 +397,7 @@ const Drover = {
 const VisionBox = {
   name: 'VisionBox',
   ref: 'vision-box.com',
-  logo: 'https://www.vision-box.com/assets/images/vb-logo-color.svg',
+  logo: visionBoxLogo,
   position: 'Frontend Developer',
   business: 'Vision-Box™ acts on airports, airlines, governments and private entities with critical security and identification challenges, supporting them to optimize the identification and flow of travelers, establishing trusted biometric identity enrollment, verification and authentication processes.',
   period: {
@@ -407,8 +412,8 @@ const VisionBox = {
     end: {
       month: {
         semester: 1,
-        en: 'ends',
-        pt: 'final de',
+        en: 'mid',
+        pt: 'meados de',
       },
       year: 2019,
     },
@@ -436,7 +441,7 @@ const VisionBox = {
 const PrimeIT = {
   name: 'PrimeIT Consulting',
   position: 'Senior Frontend Developer',
-  logo: 'https://www.primeit.pt/public/imgs/id/png/id-primeit-it-positive.png',
+  logo: primeLogo,
   ref: 'primeit.pt',
   period: {
     start: {
@@ -449,10 +454,11 @@ const PrimeIT = {
     },
     end: {
       month: {
-        semester: 1,
+        semester: 0,
         en: 'mid',
         pt: 'meados de',
       },
+      year: 2020,
     },
   },
   description: {

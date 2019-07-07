@@ -94,23 +94,23 @@ export const bio = {
   pt: `Eu sou um Desenvolvedor Frontend,
     que gosta de trabalhar em ambientes de crescimento e inovação.
     Me importo bastante com desempenho, software de ponta,
-    além de ser um amante de Design
-    e entusiasta de interface/experiência de usuário.`,
+    além de ser um amante de Design e entusiasta de interface/experiência de usuário.`,
 };
 
 export const text = {
   en: `My range of skills gives me the ability to take solid decisions
-  on building a beautiful and performant software.
-  Improve the communication between Designers and Developers, lead teams, and
+  on building a beautiful and performant software. Resolve development problems with strategy, building scalable and easy maintainable software.
+  I can serve improving communication between Designers and Developers, lead teams, and
   mentor less experienced Designers or Frontend Developers.`,
   pt: `Minha experiência, me traz a habilidade de tomar decisões mais concretas
-  no desenvolvimento de um software mais bonito e com performance.
+  no desenvolvimento de um software mais bonito e com performance. Resolvendo problemas com estrategia, e construindo software escalável, de fácil manutenção, e distribuído.
   Posso aprimorar a comunicação entre Design e Desenvolvimento, liderar equipes e
   mentorear a carreira de designers e desenvolvedores menos experientes.`,
 };
 
 export default {
   role: ocupation.en,
+  url: 'https://lion.alia.ml/',
   name,
   bio,
   text,

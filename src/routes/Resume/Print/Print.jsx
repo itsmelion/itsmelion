@@ -1,8 +1,9 @@
 import React from 'react';
 // import hero from 'data/hero';
 import exp from 'data/experiences';
-import Profile from '../Profile/Profile';
-import Experience from '../Experience/Experience';
+import Profile from 'routes/Resume//Profile/Profile';
+import Skills from 'routes/Resume/Skills/Skill-List';
+import Experience from 'routes/Resume//Experience/Experience';
 import './Print.scss';
 
 const Print = () => (
@@ -20,10 +21,12 @@ const Print = () => (
     </ul>
 
     <hr />
+    <Skills />
 
+    <hr />
     <h4>Work Experience</h4>
 
-    {exp.map(experience => (
+    {exp.reverse().map(experience => (
       <Experience key={experience.name} print exp={experience} />
     ))}
   </main>

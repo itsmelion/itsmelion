@@ -15,5 +15,12 @@
       margin: auto;
       display: block;
     }
+
+    .show-print {
+      display: none;
+      @media print {
+        display: inherit;
+      }
+    }
   }
 }

@@ -50,7 +50,7 @@ export const adobeAfterEffects = {
 };
 
 export const angularJs = { name: 'AngularJS', year: 2014, logo: faAngular };
-export const angular = { name: 'Angular', year: 2016, logo: faAngular };
+export const angular = { name: 'Angular', year: 2017, logo: faAngular };
 export const wordpress = {
   name: 'Wordpress',
   year: 2015,
@@ -116,15 +116,7 @@ export const wishlist = {
     reactNative,
     flutter,
     {
-      name: 'Next.js',
-      logo: faQuestion,
-    },
-    {
-      name: 'Circle CI',
-      logo: faQuestion,
-    },
-    {
-      name: 'Redis',
+      name: 'Jenkins (CI tools)',
       logo: faQuestion,
     },
   ],
