@@ -11,7 +11,7 @@ const Print = () => (
     <Profile />
 
     <ul className="mt1 perks">
-      <h6>Perks</h6>
+      <h5>Perks</h5>
 
       <li>
         #FluentEnglish #UIUX #CommandLine #Gamification #Performance

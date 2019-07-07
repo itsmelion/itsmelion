@@ -391,7 +391,7 @@ const Drover = {
       invision,
     ],
   },
-  links: ['http://joindrover.com/'],
+  links: ['https://joindrover.com/'],
 };
 
 const VisionBox = {
@@ -425,11 +425,11 @@ const VisionBox = {
   archievements: [
     'VisionBox counts with a diverse and international environment.',
     'Collaborate with clients based all over the world.',
-    'Responsible for strategies for code-reuse, performance, development of CLI functions'
+    'Delivered apps in a high demand, and self-managed base',
+    'Defined strategies for cleaner code, performance, and consistency',
   ],
   technologies: {
     direct: [
-      docker,
       nodeJs,
       react,
       webpack,
@@ -454,11 +454,11 @@ const PrimeIT = {
     },
     end: {
       month: {
-        semester: 0,
+        semester: 1,
         en: 'mid',
         pt: 'meados de',
       },
-      year: 2020,
+      year: 2019,
     },
   },
   description: {

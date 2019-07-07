@@ -3,7 +3,7 @@
 
 .profile {
   .avatar {
-    height: 11rem;
+    height: 10rem;
     border-radius: $radius / 2;
     @include shadow;
   }
@@ -11,12 +11,21 @@
   h2 {
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.6rem;
+    font-size: 1.8em;
     line-height: 1.15;
   }
 
   h3 {
+    font-size: 1.6em;
     font-weight: 800;
     color: $white3;
   }
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: $white3;
+  }
+
+  p, a, button { font-size: 1em; }
 }

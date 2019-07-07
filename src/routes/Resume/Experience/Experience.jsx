@@ -9,7 +9,7 @@ const Business = React.memo(({ exp }) => (
   <div className="business">
     <AsyncImage
       flex="none"
-      className="contain-fit hide-print block"
+      className="contain-fit block"
       path={exp.logo}
       alt={exp.name}
     />
@@ -39,8 +39,6 @@ const Business = React.memo(({ exp }) => (
       <a className="link" href={`//${exp.ref}`}>
         {exp.ref}
       </a>
-
-      <p>{exp.business}</p>
     </div>
   </div>
 ));
@@ -58,7 +56,7 @@ Archievements.propTypes = {
   archievements: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-const Experience = React.memo(({ print, exp }) => (
+const Experience = ({ print, exp }) => (
   <article className={`Experience ${print ? 'print' : ''}`}>
     <div row="nowrap">
       <Business exp={exp} />
@@ -128,7 +126,7 @@ const Experience = React.memo(({ print, exp }) => (
 
     <hr />
   </article>
-));
+);
 
 Experience.propTypes = {
   print: PropTypes.bool,
@@ -151,4 +149,4 @@ Experience.defaultProps = {
   print: false,
 };
 
-export default Experience;
+export default React.memo(Experience);
