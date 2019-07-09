@@ -1,9 +1,9 @@
 {
   "name": "@alia-code/portfolio",
   "version": "1.0.0",
-  "homepage": "http://lion.alia.ml",
+  "homepage": "https://lion.alia.ml",
   "repository": "github:itsmelion/portfolio.git",
-  "description": "A place to know me better, my skills, contact, download CV",
+  "description": "Get to know Chris's skills, contacts, download his CV, and more.",
   "main": "./src/index.jsx",
   "author": {
     "name": "Christhopher Lion",
@@ -11,7 +11,7 @@
     "url": "https://lion.alia.ml"
   },
   "scripts": {
-    "up": "npm upgrade && npm prune && npm dedupe",
+    "up": "yarn upgrade",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -65,7 +65,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
     "stylelint-scss": "^3.9.0",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.3"
   },
   "resolutions": {
     "babel-eslint": "10.0.1"

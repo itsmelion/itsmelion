@@ -1,5 +1,0 @@
-/*    /index.html   200
-
-# Redirect default Netlify subdomain to primary domain
-https://develop.lion-portfolio.netlify.com/* https://develop.lion.alia.ml/:splat 301!
-https://lion-portfolio.netlify.com/* https://lion.alia.ml/:splat 301!
