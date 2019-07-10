@@ -35,8 +35,11 @@ export default class LanguageService {
   }
 
   getLanguage() {
-    const browserLang = window.navigator.userLanguage
-      || window.navigator.language;
+    const browserLang = window.navigator.language
+    || window.navigator.userLanguage
+    || window.navigator.browserLanguage
+    || window.navigator.systemLanguage
+    || window.navigator.languages[0];
     const lang = `${browserLang[0]}${browserLang[1]}`.toLowerCase();
     const local = localStorage.getItem('lang');
     const queryLang = this.getQueryParam();
