@@ -1,9 +1,9 @@
 import React from 'react';
 // import hero from 'data/hero';
 import exp from 'data/experiences';
-import Profile from 'routes/Resume//Profile/Profile';
+import Profile from 'routes/Resume/Profile/Profile';
 import Skills from 'routes/Resume/Skills/Skill-List';
-import Experience from 'routes/Resume//Experience/Experience';
+import Experience from 'routes/Resume/Experience/Experience';
 import Wrapper from './Print.styled';
 
 const Print = () => (
