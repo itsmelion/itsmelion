@@ -27,15 +27,17 @@ render(
   <Router>
     <ScrollToTop>
       <Topbar />
-      <Suspense fallback={<Splash />}>
+      <Splash />
+      {/* <Suspense fallback={<Splash />}>
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route path="/cases" component={Cases} /> */}
+          {/* <Route path="/cases" component={Cases} />}
           <Route path="/portfolio" component={Feed} />
           <Route path="/resume" component={Resume} />
           <Route path="/print" component={Print} />
         </Switch>
       </Suspense>
+      */}
       <Footer />
     </ScrollToTop>
   </Router>,
