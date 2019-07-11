@@ -75,9 +75,9 @@
   <style>
     :root { --theme: %REACT_APP_THEME%; }
 
-    #loading {
+    #loading, .suspense-loading-bg {
       opacity: 0;
-      transition: opacity .3s ease-out;
+      transition: opacity .25s ease-out;
       position: fixed;
       height: 100%;
       width: 100%;
@@ -87,16 +87,17 @@
       bottom: 0;
       z-index: 100;
       pointer-events: none;
+      text-align: center;
+      color: #ccccEe;
       background-color: %REACT_APP_THEME%;
     }
 
-    #loading h1 {
-      color: #ccccEe;
+    #loading h1, .suspense-loading-bg h1 {
       position: absolute;
       top: 50%;
       width: 100%;
-      text-align: center;
       transform: translate(0, -50%);
+      text-align: center;
     }
 
     #root:empty + #loading { opacity: 1; }

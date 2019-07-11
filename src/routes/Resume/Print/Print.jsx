@@ -4,10 +4,10 @@ import exp from 'data/experiences';
 import Profile from 'routes/Resume//Profile/Profile';
 import Skills from 'routes/Resume/Skills/Skill-List';
 import Experience from 'routes/Resume//Experience/Experience';
-import './Print.scss';
+import Wrapper from './Print.styled';
 
 const Print = () => (
-  <main id="Print">
+  <Wrapper>
     <Profile />
 
     <ul className="mt1 perks">
@@ -29,7 +29,7 @@ const Print = () => (
     {exp.reverse().map(experience => (
       <Experience key={experience.name} print exp={experience} />
     ))}
-  </main>
+  </Wrapper>
 );
 
 export default Print;

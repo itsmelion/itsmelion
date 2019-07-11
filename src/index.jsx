@@ -1,5 +1,5 @@
 import './styles/main.scss';
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -10,27 +10,32 @@ import {
   faGithub,
   faBehance,
   faSkype,
-  faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
+
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollTop';
-import { Home } from './routes';
+import Splash from './components/Splash/Splash';
+
+import Home from './routes/Home/Home';
 import Resume from './routes/Resume/Resume';
-import Feed from './routes/Portfolio/Feed';
-import Print from './routes/Resume/Print/Print';
+
+const Print = lazy(() => import('./routes/Resume/Print/Print'));
+const Feed = lazy(() => import('./routes/Portfolio/Feed'));
 
 render(
   <Router>
     <ScrollToTop>
       <Topbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        {/* <Route path="/cases" component={Cases} /> */}
-        <Route path="/portfolio" component={Feed} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/print" component={Print} />
-      </Switch>
+      <Suspense fallback={<Splash />}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          {/* <Route path="/cases" component={Cases} /> */}
+          <Route path="/portfolio" component={Feed} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/print" component={Print} />
+        </Switch>
+      </Suspense>
       <Footer />
     </ScrollToTop>
   </Router>,
@@ -44,5 +49,4 @@ library.add(
   faGithub,
   faBehance,
   faSkype,
-  faDribbble,
 );
