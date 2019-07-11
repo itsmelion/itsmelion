@@ -5,6 +5,10 @@
   "repository": "github:itsmelion/portfolio.git",
   "description": "Get to know Chris's skills, contacts, download his CV, and more.",
   "main": "./src/index.jsx",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=12"
+  },
   "author": {
     "name": "Christhopher Lion",
     "email": "christhopherleao@icloud.com",
