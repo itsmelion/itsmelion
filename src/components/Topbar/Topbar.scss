@@ -2,6 +2,7 @@
 
 nav#topbar {
   position: fixed;
+  will-change: transform;
   width: 100%;
   top: 0;
   padding: .25rem;
@@ -63,6 +64,7 @@ nav#topbar {
       padding-top: 5rem;
       flex-direction: column;
       position: fixed;
+      will-change: transform;
       width: auto;
       overflow-y: auto;
       top: 0;
