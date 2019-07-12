@@ -74,35 +74,17 @@
   "resolutions": {
     "babel-eslint": "10.0.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "unreleased Chrome versions",
-      "unreleased Firefox versions",
-      "unreleased Edge versions",
-      "unreleased iOS versions",
-      "unreleased Safari versions",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all",
-      "not kaios <= 99",
-      "not Baidu <= 99"
-    ],
-    "development": [
-      ">0.3%",
-      "unreleased Chrome versions",
-      "unreleased Firefox versions",
-      "unreleased Edge versions",
-      "unreleased iOS versions",
-      "unreleased Safari versions",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all",
-      "not kaios <= 99",
-      "not Baidu <= 99"
-    ],
-    "ssr": "current node"
-  },
+  "browserslist": [
+    ">0.3%",
+    "unreleased versions",
+    "last 2 versions",
+    "not Chrome <= 60",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not kaios <= 99",
+    "not Baidu <= 99"
+  ],
   "license": "MIT",
   "bugs": "https://github.com/itsmelion/portfolio/issues"
 }
