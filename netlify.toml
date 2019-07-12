@@ -87,11 +87,6 @@
   to = "https://lion.alia.ml/:splat"
   status = 200
 
-[[redirects]]
-  from = "https://lion.alia.ml/favicons/og-image.jpg"
-  to = "http://lion.alia.ml/favicons/og-image.jpg"
-  status = 200
-
 # [[redirects]]
 #   from = "/api/*"
 #   to = "https://us-central1-netlify-intercom.cloudfunctions.net/readHeaders/:splat"
