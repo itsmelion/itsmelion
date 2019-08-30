@@ -29,6 +29,9 @@
   },
   "rules": {
     "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": "warn",
+    "react/state-in-constructor": ["warn", "never"],
     "react/prop-types": 0
   }
 }
