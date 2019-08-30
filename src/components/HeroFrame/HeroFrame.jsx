@@ -13,7 +13,7 @@ const HeroFrame = React.memo(({ picture }) => (
       <span className="decoration" />
 
       <ul className="row nowrap hero-social" align="start end">
-        {Object.keys(social).map(key => (
+        {Object.keys(social).map((key) => (
           <a key={key} href={social[key].url}>
             <FontAwesomeIcon icon={social[key].icon} />
           </a>
@@ -33,7 +33,7 @@ const HeroFrame = React.memo(({ picture }) => (
 
     <div className="skill-tags">
       <h6>Tags:</h6>
-      {lang(skills.tags).map(tag => <span key={tag}>{tag}</span>)}
+      {lang(skills.tags).map((tag) => <span key={tag}>{tag}</span>)}
     </div>
 
     <div className="avatar hex">

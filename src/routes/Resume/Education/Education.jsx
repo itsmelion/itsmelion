@@ -6,7 +6,7 @@ import './Education.scss';
 
 const Education = React.memo(() => (
   <ol id="Education" className="mb2">
-    {scholarity.map(school => (
+    {scholarity.map((school) => (
       <li
         row="nowrap"
         className="resume-section"

@@ -4,7 +4,7 @@ import { lang } from 'utils';
 import cards from './CardArticles.i18n';
 import './CardArticles.scss';
 
-const CardArticles = React.memo(() => cards.map(card => (
+const CardArticles = React.memo(() => cards.map((card) => (
   <article
     key={card.path}
     className={`column CardArticles ${card.disabled ? 'disabled' : ''}`}

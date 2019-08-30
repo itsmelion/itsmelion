@@ -25,7 +25,7 @@ const Work = React.memo(({ work }) => (
         <p>{work.description}</p>
 
         <ul className="row tags">
-          {work.tags && work.tags.map(tag => <li key={tag}>#{tag}</li>)}
+          {work.tags && work.tags.map((tag) => <li key={tag}>#{tag}</li>)}
         </ul>
       </div>
 

@@ -30,7 +30,7 @@ const Resume = () => (
         <h4>Certifications</h4>
 
         <div row="" align="start start">
-          {certifications.map(certification => (
+          {certifications.map((certification) => (
             <Certifications key={certification.name} data={certification} />
           ))}
         </div>

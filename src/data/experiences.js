@@ -380,7 +380,7 @@ const Drover = {
     simplified/improved functions, and refactored code using better standards`,
     'Me and all colaborators were able take part of architectural decison making, contributing and improving different parts of the product and creating better standards and workflow.',
     'SCRUM methodology',
-    'Responsible for strategies for code-reuse, performance, development of CLI functions'
+    'Responsible for strategies for code-reuse, performance, development of CLI functions',
   ],
   technologies: {
     direct: [

@@ -10,7 +10,7 @@ const Feed = () => (
     </header>
 
     <section row="">
-      {portfolio.map(work => (
+      {portfolio.map((work) => (
         <Work key={work.ref} work={work} />
       ))}
     </section>

@@ -13,7 +13,7 @@ const i18n = {
 
 const Recomendations = React.memo(() => (
   <section contain="" id="Recomendations">
-    {recomendations.map(recomendation => (
+    {recomendations.map((recomendation) => (
       <article key={recomendation.name}>
         <h4>{recomendation.name}</h4>
         <p>{lang(recomendation.message)}</p>

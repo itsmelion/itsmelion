@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/pro-light-svg-icons';
@@ -9,20 +9,20 @@ import logo from './logo.svg';
 import Hex from '../Hex/Hex';
 import './Topbar.scss';
 
-class Topbar extends Component {
+class Topbar extends PureComponent {
   state = {
     collapsed: false,
   };
 
   closeMenu = () => this.setState({ collapsed: false });
 
-  toggle = () =>
-    this.setState(({ collapsed }) => ({
-      collapsed: !collapsed,
-    }));
+  toggle = () => this.setState(({ collapsed }) => ({
+    collapsed: !collapsed,
+  }));
 
   render() {
-    const collapse = this.state.collapsed ? 'opened' : 'closed';
+    const { collapsed } = this.state;
+    const collapse = collapsed ? 'opened' : 'closed';
 
     return (
       <nav hide-print="" id="topbar" className={collapse}>
@@ -71,4 +71,5 @@ class Topbar extends Component {
     );
   }
 }
+
 export default Topbar;

@@ -46,7 +46,7 @@ const Business = React.memo(({ exp }) => (
 const Archievements = React.memo(({ archievements }) => (
   <ol className="mv1 archievements">
     <h6>Achievements</h6>
-    {archievements.map(item => (
+    {archievements.map((item) => (
       <li key={item}>{item}</li>
     ))}
   </ol>
@@ -81,7 +81,7 @@ const Experience = ({ print, exp }) => (
     {exp.contractors && <h6 className="mb05">Main contractors:</h6>}
 
     {exp.contractors
-      && exp.contractors.map(contractor => (
+      && exp.contractors.map((contractor) => (
         <section key={contractor.ref} className="pv1 ph2 contractor">
           <Business exp={contractor} />
 

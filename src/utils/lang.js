@@ -67,7 +67,7 @@ const startLanguage = () => {
   return 'en';
 };
 
-export const trans = (lang => (obj) => {
+export const trans = ((lang) => (obj) => {
   if (!obj || !isPlainObject(obj)) {
     // eslint-disable-next-line no-console
     console.warn(obj);

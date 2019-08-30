@@ -47,7 +47,7 @@ class Certifications extends PureComponent {
         </button>
 
         <ul flex="none" className={`materias ${open}`}>
-          {certification.disciplines.map(content => (
+          {certification.disciplines.map((content) => (
             <li key={content}>{content}</li>
           ))}
         </ul>

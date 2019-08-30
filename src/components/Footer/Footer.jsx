@@ -29,7 +29,7 @@ const Footer = React.memo(() => (
           align="start end"
           mobile-align="around center"
         >
-          {Object.keys(social).map(key => (
+          {Object.keys(social).map((key) => (
             <a className="link" key={key} href={social[key].url}>
               {social[key].name}
             </a>
