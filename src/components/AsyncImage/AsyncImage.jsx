@@ -11,7 +11,7 @@ const AsyncImage = (props) => {
   useEffect(() => {
     asyncImage.src = path;
     asyncImage.onload = () => setReady(true);
-  }, []);
+  }, [asyncImage.src, path, asyncImage.onload]);
 
 
   if (!path) return null;
