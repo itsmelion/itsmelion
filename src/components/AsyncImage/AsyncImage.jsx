@@ -1,32 +1,36 @@
-import React, { memo, useState, useEffect } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import spinner from './preloader.gif';
 
-const AsyncImage = (props) => {
-  const { className, path, alt } = props;
-  const asyncImage = new Image();
+export default class AsyncImage extends PureComponent {
+  state = { ready: false };
 
-  const [ready, setReady] = useState(false);
+  asyncImage = new Image();
 
-  useEffect(() => {
-    asyncImage.src = path;
-    asyncImage.onload = () => setReady(true);
-  }, [asyncImage.src, path, asyncImage.onload]);
+  componentDidMount() {
+    const { path } = this.props;
+    this.asyncImage.src = path;
+    this.asyncImage.onload = () => this.setState({
+      ready: true,
+    });
+  }
 
+  render() {
+    const { ready } = this.state;
+    const { className, path, alt } = this.props;
 
-  if (!path) return null;
+    if (!path) return null;
 
-  return (
-    <img
-      {...props}
-      src={ready ? asyncImage.src : spinner}
-      alt={alt}
-      className={`AsyncImage cover-fit ${ready} ${className}`}
-    />
-  );
-};
-
-export default memo(AsyncImage);
+    return (
+      <img
+        {...this.props}
+        src={ready ? this.asyncImage.src : spinner}
+        alt={alt}
+        className={`AsyncImage cover-fit ${ready} ${className}`}
+      />
+    );
+  }
+}
 
 AsyncImage.propTypes = {
   path: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
