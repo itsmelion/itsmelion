@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'yarn test'
+        sh 'yarn lint:ci'
       }
     }
   }
@@ -21,15 +21,18 @@ pipeline {
   post {
     always {
       echo 'This will always run'
-      slackSend channel: '#emerald-dream',
+      slackSend channel: '#teldrassil',
                 color: 'good',
-                message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
+                message: "The pipeline ${currentBuild.fullDisplayName} completed."
     }
     success {
       echo 'This will run only if successful'
     }
     failure {
       echo 'This will run only if failed'
+      slackSend channel: '#teldrassil',
+                color: 'bad',
+                message: "${currentBuild.fullDisplayName} *FAILED*."
     }
     unstable {
       echo 'This will run only if the run was marked as unstable'
