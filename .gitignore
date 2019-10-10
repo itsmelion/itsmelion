@@ -29,6 +29,7 @@ npm-debug.log
 **/Thumbs.ds
 
 .tmp
+.yarn
 dist
 src/styles/flamework
 public/google83411edbb80d393f.html
