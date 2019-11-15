@@ -11,6 +11,8 @@ import {
   faEnvira,
   faInvision,
   faSketch,
+  faSwift,
+  faAppStore,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faTerminal,
@@ -50,7 +52,7 @@ export const adobeAfterEffects = {
 };
 
 export const angularJs = { name: 'AngularJS', year: 2014, logo: faAngular };
-export const angular = { name: 'Angular', year: 2017, logo: faAngular };
+
 export const wordpress = {
   name: 'Wordpress',
   year: 2015,
@@ -86,8 +88,9 @@ export const lightroom = {
   logo: lightroomLogo,
 };
 export const graphQL = { name: 'GraphQL', logo: faGraphQl };
-export const gatsby = { name: 'Gatsby', logo: faQuestion };
-export const flutter = { name: 'Flutter', logo: faQuestion };
+export const gatsby = { name: 'Gatsby & SSR', logo: faQuestion };
+export const flutter = { name: 'Flutter', logo: faAppStore };
+export const swift = { name: 'Swift', logo: faSwift };
 export const reactNative = { name: 'React Native', logo: faReact };
 
 const tools = {
@@ -101,7 +104,7 @@ const tools = {
     threeD,
   ],
 
-  frontend: [webpack, react, angular, wordpress, tests, sass, git],
+  frontend: [graphQL, react, reactNative, angularJs, wordpress, tests, sass, webpack, git],
 
   backend: [bash, nginx, nodeJs, mongo, docker],
 };
@@ -109,17 +112,9 @@ const tools = {
 export const wishlist = {
   design: null,
 
-  frontend: [graphQL, reactNative, flutter],
+  frontend: [flutter, swift],
 
-  backend: [
-    graphQL,
-    reactNative,
-    flutter,
-    {
-      name: 'Jenkins (CI tools)',
-      logo: faQuestion,
-    },
-  ],
+  backend: [flutter, swift],
 };
 
 export default tools;

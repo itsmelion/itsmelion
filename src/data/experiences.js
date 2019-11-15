@@ -8,6 +8,7 @@ import robosLogo from 'images/brands/robos.png';
 import droverLogo from 'images/brands/drover.png';
 import primeLogo from 'images/brands/primeit-it.png';
 import visionBoxLogo from 'images/brands/visionBox.svg';
+import generousLogo from 'images/brands/generous.jpg';
 
 import {
   adobeIllustrator,
@@ -540,4 +541,52 @@ const alia = {
   contractors: [indenizou, robos, expat, backr, rd, destak, mg],
 };
 
-export default [alia, PrimeIT];
+const Generous = {
+  name: 'Generous Studio',
+  position: 'Software Developer',
+  logo: generousLogo,
+  ref: 'generous.studio',
+  period: {
+    start: {
+      month: {
+        semester: 2,
+        en: 'ends',
+        pt: 'final de',
+      },
+      year: 2019,
+    },
+    end: {
+      month: {
+        semester: 0,
+        en: 'early',
+        pt: 'início de',
+      },
+      year: 2022,
+    },
+  },
+  description: {
+    en: 'Consultancy and services of development and design of software',
+    pt: 'Consultoria e serviços de desenvolvimento e design de aplicações',
+  },
+  technologies: {
+    direct: [
+      adobeAfterEffects,
+      adobeIllustrator,
+      adobePhotoshop,
+      wordpress,
+      invision,
+      angularJs,
+      nodeJs,
+      react,
+      gatsby,
+      graphQL,
+      nginx,
+      bash,
+      mongo,
+      docker,
+      microServices,
+    ],
+  },
+};
+
+export default [alia, PrimeIT, Generous];
