@@ -13,7 +13,7 @@
   command = "yarn build"
   # This is where we will look for your lambda functions
   # functions = "project/functions/"
-  environment = { NODE_VERSION = "12" }
+  environment = { NODE_VERSION = "13" }
 
 # Set enviroment variable prompts for templates
 # [template.environment]
