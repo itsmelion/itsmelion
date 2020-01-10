@@ -31,7 +31,7 @@ jobs:
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       with:
-        args: "Lint *FAILED* at {{ GITHUB_REPOSITORY }}\n Dude, your code sucks.."
+        args: "Lint *FAILED* at {{ GITHUB_REPOSITORY }}\\n Dude, your code sucks.."
 
     - name: Slack notification SUCCESS
       uses: itsmelion/action-slack@feature/refactor-config
@@ -39,4 +39,4 @@ jobs:
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       with:
-        args: "Lint *SUCCESS!* at {{ GITHUB_REPOSITORY }}\n One more step to a glorious future."
+        args: "Lint *SUCCESS!* at {{ GITHUB_REPOSITORY }}\\n One more step to a glorious future."
