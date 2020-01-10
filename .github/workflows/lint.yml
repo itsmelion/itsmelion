@@ -1,6 +1,9 @@
-name: Lint stuff
+name: Lint
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -22,19 +25,18 @@ jobs:
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         CI: true
-    - name: Slack notification FAIL
-      uses: Ilshidur/action-slack@1.0.1
+    - name: Slack notification FAILED
+      uses: itsmelion/action-slack@feature/refactor-config
       if: failure()
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_OVERRIDE_MESSAGE: true
       with:
-        args: '*FAILED* Dude, your code sucks..'
+        args: "Lint *FAILED* at {{ GITHUB_REPOSITORY }}\n Dude, your code sucks.."
+
     - name: Slack notification SUCCESS
-      uses: Ilshidur/action-slack@1.0.1
+      uses: itsmelion/action-slack@feature/refactor-config
       if: success()
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_OVERRIDE_MESSAGE: true
       with:
-        args: '*Success!* One more step to a glorious future.'
+        args: "Lint *SUCCESS!* at {{ GITHUB_REPOSITORY }}\n One more step to a glorious future."
