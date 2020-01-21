@@ -1,5 +1,10 @@
+:root,
 html,
 body {
+  --fa-primary-color: #dcc5f9;
+  --fa-secondary-color: #f1e6ff;
+  --fa-primary-opacity: .75;
+  --fa-secondary-opacity: 1;
   color: white;
   background-color: $base;
   font-weight: 400;

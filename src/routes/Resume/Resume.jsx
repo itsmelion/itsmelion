@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faFilePdf } from '@fortawesome/pro-duotone-svg-icons';
 
 import { lang } from 'utils';
 import { social } from 'data/hero';
@@ -45,7 +45,7 @@ const Resume = () => (
       <footer hide-print="" className="column Resume">
         <div row="">
           <Button link={lang(resume)} newtab theme="default social">
-            <FontAwesomeIcon icon={faFileDownload} />
+            <FontAwesomeIcon icon={faFilePdf} />
             Download PDF
           </Button>
 

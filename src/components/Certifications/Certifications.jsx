@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
 import './Certifications.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faScroll, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faEye } from '@fortawesome/free-regular-svg-icons';
+import { faFileCertificate, faChevronDown, faEye } from '@fortawesome/pro-duotone-svg-icons';
 import Button from '../Button/Button';
 
 class Certifications extends PureComponent {
@@ -20,7 +19,7 @@ class Certifications extends PureComponent {
       <article className="column item" flex="nogrow" key={certification.ref}>
         <div align="between center" row="nowrap">
           <div flex="" className="cert" row="nowrap" align="center center">
-            <FontAwesomeIcon icon={faScroll} />
+            <FontAwesomeIcon icon={faFileCertificate} />
             <h6 flex="">
               {certification.name}
               <sub>provided by Udemy</sub>
@@ -32,6 +31,7 @@ class Certifications extends PureComponent {
             title="View Certificate"
             theme="outline view"
             link={certification.ref}
+            style={{ 'background-color': 'transparent' }}
           >
             <FontAwesomeIcon icon={faEye} />
           </Button>

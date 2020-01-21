@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/pro-duotone-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 import { lang } from 'utils';
 import hero from 'data/hero';
@@ -25,7 +25,7 @@ const Profile = () => (
 
         <address flex="auto" className="mb1">
           <p row="nowrap">
-            <FontAwesomeIcon className="mr1" icon={faMapMarkedAlt} />
+            <FontAwesomeIcon className="mr1" icon={faMapMarkerAlt} />
             {hero.address.city},&nbsp;{hero.address.country}
           </p>
 

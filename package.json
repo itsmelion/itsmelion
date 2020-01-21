@@ -25,14 +25,17 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.11.2",
+    "@fortawesome/fontawesome-pro": "^5.12.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/pro-light-svg-icons": "^5.11.2",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/pro-duotone-svg-icons": "^5.12.0",
+    "@fortawesome/pro-light-svg-icons": "^5.12.0",
+    "@fortawesome/pro-regular-svg-icons": "^5.12.0",
+    "@fortawesome/pro-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.7",
-    "axios": "^0.19.0",
+    "axios": "^0.19.1",
     "flamework": "^3.1.6",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
@@ -42,34 +45,27 @@
     "react-modal": "^3.11.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
-    "react-tooltip": "^3.11.1",
-    "styled-components": "^5.0.0-regexrehydrate"
-  },
-  "devDependencies": {
-    "node-sass": "^4.13.0"
+    "react-tooltip": "^3.11.2",
+    "styled-components": "^5.0.0"
   },
   "optionalDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-react-app": "^5.0.2",
     "eslint-config-react-tools": "^1.1.7",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-flowtype": "4.6.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.x",
     "eslint-plugin-standard": "^4.0.1",
     "react-is": "^16.12.0",
-    "stylelint": "^11.1.1",
+    "stylelint": "^13.0.0",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-recommended-scss": "^4.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-scss": "^3.12.1",
-    "stylis": "^3.5.4",
     "typescript": "^3.7.2"
   },
   "browserslist": [
@@ -84,5 +80,8 @@
     "not Baidu <= 99"
   ],
   "license": "MIT",
-  "bugs": "https://github.com/itsmelion/portfolio/issues"
+  "bugs": "https://github.com/itsmelion/portfolio/issues",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
