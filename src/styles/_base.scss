@@ -15,6 +15,11 @@ body {
   padding: 0 4%;
 }
 
+// TODO: remove block when upgrade to flamework@>=4
+a[href], .link, :link, :any-link {
+  color: unset;
+}
+
 a.link:hover:not(.button) {
   color: $alliance;
 }
