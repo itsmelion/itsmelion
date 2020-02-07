@@ -2957,11 +2957,6 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
-  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
-
 clean-css@4.2.x:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -9646,12 +9641,11 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-tooltip@^3.11.2:
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-3.11.2.tgz#78972910657d6184defdcdc9a0182c1e44e01ce6"
-  integrity sha512-7EJ7Cv7lgctw02j0hyp+PpJklIP3gyDbm4CvVQvq7U6zgZtuI+bFFnRzsQB1oTiHPkkhE2NU04EIkgBDiVNzxw==
+react-tooltip@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.0.0.tgz#a3ea46c9fae6ceeaa0969000793ad75c49f9572c"
+  integrity sha512-AddFMtuHNZT6ISwsyh3VGfCDqv8fl5ra4Nctga3U4c05Es/YjWHqdsIxLC9Iq+u4OwnTBEnfYq4xqr2USvvg3A==
   dependencies:
-    classnames "^2.2.5"
     prop-types "^15.6.0"
 
 react@^16.12.0:
