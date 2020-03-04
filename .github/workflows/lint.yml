@@ -6,37 +6,30 @@ on:
     - master
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [13.x]
+    env:
+      CI: true
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+
+    - name: Use Node.js 13.x
+      uses: actions/setup-node@v1.4.0
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '13.x'
+
     - name: install packages and check syntax
       run: |
-        yarn install
+        yarn install --frozen-lockfile --silent
         yarn lint:ci
         yarn lint:css
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        CI: true
-    - name: Slack notification FAILED
-      uses: itsmelion/action-slack@feature/refactor-config
+
+    - name: Slack notification FAIL
+      uses: Ilshidur/action-slack@2.0.1
       if: failure()
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       with:
-        args: "Lint *FAILED* at {{ GITHUB_REPOSITORY }}\\n Dude, your code sucks.."
-
-    - name: Slack notification SUCCESS
-      uses: itsmelion/action-slack@feature/refactor-config
-      if: success()
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      with:
-        args: "Lint *SUCCESS!* at {{ GITHUB_REPOSITORY }}\\n One more step to a glorious future."
+        args: "Lint *FAILED* \n {{ GITHUB_ACTOR }} at {{ GITHUB_REPOSITORY }} \n Dude, your code sucks.."
