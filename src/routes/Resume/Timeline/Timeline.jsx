@@ -6,6 +6,7 @@ import Company from './Company/Company';
 import Experience from '../Experience/Experience';
 
 Modal.setAppElement('#root');
+
 const modalStyling = {
   overlay: {
     backgroundColor: 'rgba(51, 51, 102, .75)',
@@ -21,14 +22,12 @@ const modalStyling = {
 };
 
 class Timeline extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.years = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
-    this.state = {
-      openDialog: false,
-      companyIndex: 0,
-    };
-  }
+  years = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+
+  state = {
+    openDialog: false,
+    companyIndex: 0,
+  };
 
   toggleDetails = (index) => {
     this.setState({
