@@ -7,7 +7,7 @@ env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 jobs:
-  setup:
+  lint-and-build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,30 +22,22 @@ jobs:
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-  build:
-    runs-on: ubuntu-latest
-    needs: setup
-    steps:
-    - name: Build the app for production
-      run: yarn build
-
-    - name: Slack notification if FAIL
-      uses: Ilshidur/action-slack@2.0.1
-      if: failure()
-      with:
-        args: "*BUILD failed* \n Yo {{ GITHUB_ACTOR }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
-
-  lint:
-    runs-on: ubuntu-latest
-    needs: setup
-    steps:
     - name: Lint code
-      run: |
-        yarn lint:ci
-        yarn lint:css
+        run: |
+          yarn lint:ci
+          yarn lint:css
 
-    - name: Slack notification if FAIL
+    - name: Slack - Lint fail
       uses: Ilshidur/action-slack@2.0.1
       if: failure()
       with:
         args: "*LINT fail* \n Yo {{ GITHUB_ACTOR }}, your code sucks."
+
+    - name: Build the app for production
+        run: yarn build
+
+    - name: Slack - Build fail
+      uses: Ilshidur/action-slack@2.0.1
+      if: failure()
+      with:
+        args: "*BUILD failed* \n Yo {{ GITHUB_ACTOR }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
