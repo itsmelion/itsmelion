@@ -34,7 +34,7 @@ jobs:
         args: "*LINT fail* \n Yo {{ GITHUB_ACTOR }}, your code sucks."
 
     - name: Build the app for production
-        run: yarn build
+      run: yarn build
 
     - name: Slack - Build fail
       uses: Ilshidur/action-slack@2.0.1
