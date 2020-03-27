@@ -1,35 +1,49 @@
-name: Lint
+name: Build
 
-on:
-  push:
-    branches:
-    - master
+on: push
+
+env:
+  CI: true
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 jobs:
-  lint:
+  setup:
     runs-on: ubuntu-latest
-    env:
-      CI: true
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
-    - name: Use Node.js 13.x
-      uses: actions/setup-node@v1.4.0
+    - name: Use Node.js >=13.x
+      uses: actions/setup-node@v1.4.1
       with:
-        node-version: '13.x'
+        node-version: '>=13.x'
 
-    - name: install packages and check syntax
-      run: |
-        yarn install --frozen-lockfile --silent
-        yarn lint:ci
-        yarn lint:css
+    - name: Install packages
+      run: yarn install --production --frozen-lockfile --silent
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Slack notification FAIL
+  build:
+    needs: setup
+    steps:
+    - name: Build the app for production
+      run: yarn build
+
+    - name: Slack notification if FAIL
       uses: Ilshidur/action-slack@2.0.1
       if: failure()
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       with:
-        args: "Lint *FAILED* \n {{ GITHUB_ACTOR }} at {{ GITHUB_REPOSITORY }} \n Dude, your code sucks.."
+        args: "*BUILD failed* \n Yo {{ GITHUB_ACTOR }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
+
+    lint:
+      needs: setup
+      steps:
+      - name: Lint code
+        run: |
+          yarn lint:ci
+          yarn lint:css
+
+      - name: Slack notification if FAIL
+        uses: Ilshidur/action-slack@2.0.1
+        if: failure()
+        with:
+          args: "*LINT fail* \n Yo {{ GITHUB_ACTOR }}, your code sucks."
