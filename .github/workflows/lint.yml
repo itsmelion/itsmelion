@@ -1,43 +1,47 @@
-name: Build
+# name: Lint
 
-on: push
+# on: pull_request
 
-env:
-  CI: true
-  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+# env:
+#   CI: true
+#   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+#   HUSKY_SKIP_INSTALL: true
 
-jobs:
-  lint-and-build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
 
-    - name: Use Node.js >=13.x
-      uses: actions/setup-node@v1.4.1
-      with:
-        node-version: '>=13.x'
+# devs:
+#   itsmelion: Lion
 
-    - name: Install packages
-      run: yarn install --production --frozen-lockfile --silent
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+# jobs:
+#   eslint:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#         with:
+#           fetch-depth: 1
 
-    - name: Lint code
-      run: |
-        yarn lint:ci
-        yarn lint:css
+#       - name: Get yarn cache directory path
+#       id: yarn-cache-dir-path
+#       run: echo "::set-output name=dir::$(yarn cache dir)"
+#       - uses: actions/cache@v1
+#         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+#         with:
+#           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+#           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-yarn-
 
-    - name: Slack - Lint fail
-      uses: Ilshidur/action-slack@2.0.1
-      if: failure()
-      with:
-        args: "*LINT fail* \n Yo {{ GITHUB_ACTOR }}, your code sucks."
+#       - name: Yarn install
+#       - run: yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+#         env:
+#           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Build the app for production
-      run: yarn build
+#       - name: Lint code
+#         run: |
+#           yarn lint:ci
+#           yarn lint:css
 
-    - name: Slack - Build fail
-      uses: Ilshidur/action-slack@2.0.1
-      if: failure()
-      with:
-        args: "*BUILD failed* \n Yo {{ GITHUB_ACTOR }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
+#       - name: Slack - Build fail
+#         uses: Ilshidur/action-slack@2.0.1
+#         if: failure()
+#         with:
+#           args: "*Lint failed* \n Yo {{ devs.[GITHUB_ACTOR] }} \n see what at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks"
