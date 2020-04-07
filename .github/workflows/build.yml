@@ -46,7 +46,7 @@ jobs:
       uses: Ilshidur/action-slack@2.0.1
       env:
         itsmelion: Lion
-        SLACK_CHANNEL: ${{ env.[GITHUB_ACTOR] }}
+        SLACK_CHANNEL: ${{ env[${{GITHUB_ACTOR}}] }}
       # if: failure()
       with:
         args: "*BUILD failed* \n Yo ${{ devs.[GITHUB_ACTOR] }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
