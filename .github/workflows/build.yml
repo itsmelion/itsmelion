@@ -40,6 +40,8 @@ jobs:
 
     - name: Slack - Build fail
       uses: Ilshidur/action-slack@2.0.1
-      if: failure()
+      env:
+        SLACK_CHANNEL: ${{ devs.[GITHUB_ACTOR] }}
+      # if: failure()
       with:
-        args: "*BUILD failed* \n Yo {{ GITHUB_ACTOR }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
+        args: "*BUILD failed* \n Yo ${{ devs.[GITHUB_ACTOR] }} \n see why at https://github.com/{{GITHUB_REPOSITORY}}/commit/{{GITHUB_SHA}}/checks \n _You are not prepared._"
