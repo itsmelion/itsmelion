@@ -13,6 +13,7 @@ on:
 
 env:
   CI: true
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
   HUSKY_SKIP_INSTALL: true
 
@@ -35,8 +36,6 @@ jobs:
 
     - name: Install packages
       run: yarn install --frozen-lockfile --silent --non-interactive --ignore-scripts
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: Build the app for production
       run: yarn build
