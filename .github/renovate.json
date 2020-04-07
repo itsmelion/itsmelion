@@ -1,5 +1,12 @@
 {
   "extends": [
     "config:base"
+  ],
+  "commitBody": "[skip ci]",
+  "packageRules": [
+    {
+      "updateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
