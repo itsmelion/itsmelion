@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf } from '@fortawesome/pro-duotone-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 import { lang } from 'utils';
 import { social } from 'data/hero';

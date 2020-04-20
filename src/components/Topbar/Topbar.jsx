@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faBars } from '@fortawesome/pro-light-svg-icons';
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import { lang } from 'utils';
 import { contact } from 'data/hero';
 import texts from './Topbar.i18n';

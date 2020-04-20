@@ -18,7 +18,7 @@ const PoweredBy = () => (
       fontSize: '.7rem',
     }}
   >
-  Powered by ΛLIΛ
+    Powered by ΛLIΛ
   </p>
 );
 

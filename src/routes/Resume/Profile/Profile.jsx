@@ -1,9 +1,11 @@
 import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt } from '@fortawesome/pro-duotone-svg-icons';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 import { lang } from 'utils';
-import hero from 'data/hero';
+import hero, {
+  name, address, picture, contact, bio, text,
+} from 'data/hero';
 
 import './Profile.scss';
 
@@ -12,13 +14,13 @@ const Profile = () => (
     <div row="nowrap" mobile-wrap="">
       <img
         className="avatar mr2 mb1"
-        src={hero.picture.avatar}
-        alt={lang(hero.name)}
+        src={picture.avatar}
+        alt={lang(name)}
       />
 
       <div flex="auto">
         <div className="mb1">
-          <h2>{lang(hero.name)}</h2>
+          <h2>{lang(name)}</h2>
           <h3>{hero.role}</h3>
           <h5 className="show-print"><a rel="noopener noreferer" href={hero.url}>{hero.url}</a></h5>
         </div>
@@ -26,27 +28,27 @@ const Profile = () => (
         <address flex="auto" className="mb1">
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faMapMarkerAlt} />
-            {hero.address.city},&nbsp;{hero.address.country}
+            {address.city},&nbsp;{address.country}
           </p>
 
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faEnvelope} />
-            <a className="link" href={`mailto:${hero.contact.email}`}>
-              {hero.contact.email}
+            <a className="link" href={`mailto:${contact.email}`}>
+              {contact.email}
             </a>
           </p>
 
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faWhatsapp} />
-            <a className="link" href={`tel:${hero.contact.phone}`}>
-              {hero.contact.phone}
+            <a className="link" href={`tel:${contact.phone}`}>
+              {contact.phone}
             </a>
           </p>
 
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faSkype} />
-            <a className="link" href={hero.contact.skype.url}>
-              {hero.contact.skype.label}
+            <a className="link" href={contact.skype.url}>
+              {contact.skype.label}
             </a>
           </p>
         </address>
@@ -54,10 +56,10 @@ const Profile = () => (
     </div>
 
     <h5 className="mt1">Bio</h5>
-    <p>{lang(hero.bio)}</p>
+    <p>{lang(bio)}</p>
 
     <h5 className="mt1">Strengths</h5>
-    <p>{lang(hero.text)}</p>
+    <p>{lang(text)}</p>
   </header>
 );
 
