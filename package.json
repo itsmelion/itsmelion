@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "node-pre-gyp": "0.14.0",
-    "node-sass": "4.13.1"
+    "node-sass": "4.14.0"
   },
   "optionalDependencies": {
     "eslint": "6.8.0",
