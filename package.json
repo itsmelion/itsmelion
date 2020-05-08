@@ -45,7 +45,7 @@
     "node-sass": "4.14.1"
   },
   "optionalDependencies": {
-    "eslint": "6.8.0",
+    "eslint": "7.0.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-react-tools": "1.1.7",
     "eslint-config-standard": "14.1.1",
