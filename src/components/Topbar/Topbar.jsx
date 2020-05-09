@@ -25,40 +25,38 @@ class Topbar extends PureComponent {
     const collapse = collapsed ? 'opened' : 'closed';
 
     return (
-      <nav hide-print="" id="topbar" className={collapse}>
-        <div className="contain row nowrap" align="between center">
+      <nav className={collapse} hide-print="" id="topbar">
+        <div align="between center" className="contain row nowrap">
           <NavLink
+            align="start end"
+            className="row nowrap above-left"
             flex="none"
             id="nav-logo"
             onClick={this.closeMenu}
-            className="row nowrap above-left"
-            align="start end"
-            to="/"
-          >
+            to="/">
             <Hex>
-              <img src={logo} alt="Alia logo" />
+              <img alt="Alia logo" src={logo} />
             </Hex>
 
             <span className="beta-tag">beta</span>
           </NavLink>
 
           <button
-            type="button"
-            onClick={this.toggle}
             className="show-mobile above-right"
-            id="nav-toggle"
             flex="none"
-          >
+            id="nav-toggle"
+            onClick={this.toggle}
+            type="button">
             <FontAwesomeIcon className="icon-closed" icon={faTimes} />
             <FontAwesomeIcon className="icon-menu" icon={faBars} />
           </button>
 
-          <ul flex="" align="end" className={`tabs ${collapse}`}>
-            <NavLink to="/portfolio" onClick={this.closeMenu}>
+          <ul align="end" className={`tabs ${collapse}`} flex="">
+            <NavLink onClick={this.closeMenu} to="/portfolio">
               {lang(texts.portfolio)}
             </NavLink>
 
-            <NavLink to="/resume" onClick={this.closeMenu}>
+            <NavLink onClick={this.closeMenu} to="/resume">
               {lang(texts.resume)}
             </NavLink>
 

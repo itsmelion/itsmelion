@@ -7,16 +7,16 @@ import './CardArticles.scss';
 
 const CardSection = React.memo(() => (
   <>
-    <div id="CardSection" contain="">
-      <section row="nowrap" align="around center" mobile-align="start center">
+    <div contain="" id="CardSection">
+      <section align="around center" mobile-align="start center" row="nowrap">
         <CardArticles />
       </section>
     </div>
 
-    <picture style={{ zIndex: 0 }} className="cover-fit fel-mountain">
+    <picture className="cover-fit fel-mountain" style={{ zIndex: 0 }}>
       <source media="(max-width: 50rem)" srcSet={mountainSmall} />
       <source media="(min-width: 50.01rem)" srcSet={mountainLarge} />
-      <img className="cover-fit" src={mountainMedium} alt="Fel Mountain" />
+      <img alt="Fel Mountain" className="cover-fit" src={mountainMedium} />
     </picture>
   </>
 ));

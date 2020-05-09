@@ -20,8 +20,8 @@ const resume = {
 };
 
 const Resume = () => (
-  <div id="Resume" column="" align="center">
-    <main contain="" align="start">
+  <div align="center" column="" id="Resume">
+    <main align="start" contain="">
       <Profile />
 
       <SkillList />
@@ -29,7 +29,7 @@ const Resume = () => (
       <section id="Certifications">
         <h4>Certifications</h4>
 
-        <div row="" align="start start">
+        <div align="start start" row="">
           {certifications.map((certification) => (
             <Certifications key={certification.name} data={certification} />
           ))}
@@ -42,7 +42,7 @@ const Resume = () => (
       <h4>Education</h4>
       <Education />
 
-      <footer hide-print="" className="column Resume">
+      <footer className="column Resume" hide-print="">
         <div row="">
           <Button link={lang(resume)} newtab theme="default social">
             <FontAwesomeIcon icon={faFilePdf} />
@@ -56,24 +56,25 @@ const Resume = () => (
           */}
 
           <Button
-            mobile-flex="auto"
             link={social.instagram.url}
-            theme="social instagram"
+            mobile-flex="auto"
             newtab
-          >
+            theme="social instagram">
             <FontAwesomeIcon icon={social.instagram.icon} />
             <p>
               <span>{social.instagram.name}</span>
-              <sub className="social-tag">@{social.instagram.user}</sub>
+              <sub className="social-tag">
+                @
+                {social.instagram.user}
+              </sub>
             </p>
           </Button>
 
           <Button
-            mobile-flex="auto"
             link={social.facebook.url}
-            theme="social facebook"
+            mobile-flex="auto"
             newtab
-          >
+            theme="social facebook">
             <FontAwesomeIcon icon={social.facebook.icon} />
             <p>
               <span>{social.facebook.name}</span>
@@ -81,11 +82,10 @@ const Resume = () => (
           </Button>
 
           <Button
-            mobile-flex="auto"
             link={social.linkedin.url}
-            theme="social linkedin"
+            mobile-flex="auto"
             newtab
-          >
+            theme="social linkedin">
             <FontAwesomeIcon icon={social.linkedin.icon} />
             <p>
               <span>{social.linkedin.name}</span>
@@ -93,15 +93,17 @@ const Resume = () => (
           </Button>
 
           <Button
-            mobile-flex="auto"
             link={social.github.url}
-            theme="social github"
+            mobile-flex="auto"
             newtab
-          >
+            theme="social github">
             <FontAwesomeIcon icon={social.github.icon} />
             <p>
               <span>{social.github.name}</span>
-              <sub className="social-tag">@{social.github.user}</sub>
+              <sub className="social-tag">
+                @
+                {social.github.user}
+              </sub>
             </p>
           </Button>
         </div>

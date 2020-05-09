@@ -50,34 +50,34 @@ class Timeline extends PureComponent {
     const yearWidth = 125;
     return (
       <>
-        <section id="Timeline" style={{ height }} className="resume-section">
+        <section className="resume-section" id="Timeline" style={{ height }}>
           {this.years.map((y, i) => (
-            <span style={{ left: `${i * yearWidth}px` }} className="marker" key={y}>
-              20{y}
+            <span key={y} className="marker" style={{ left: `${i * yearWidth}px` }}>
+              20
+              {y}
             </span>
           ))}
           {experiences.map((company, top) => (
             <Company
-              top={top}
-              company={company}
               key={company.name}
-              yearWidth={yearWidth}
+              company={company}
               toggle={this.toggleDetails}
+              top={top}
+              yearWidth={yearWidth}
             />
           ))}
         </section>
 
         <Modal
-          shouldCloseOnEsc
-          shouldFocusAfterRender
-          shouldCloseOnOverlayClick
-          shouldReturnFocusAfterClose
-          onRequestClose={this.handleCloseModal}
-          isOpen={openDialog}
-          style={modalStyling}
           bodyOpenClassName="modal-open"
           htmlOpenClassName="modal-open"
-        >
+          isOpen={openDialog}
+          onRequestClose={this.handleCloseModal}
+          shouldCloseOnEsc
+          shouldCloseOnOverlayClick
+          shouldFocusAfterRender
+          shouldReturnFocusAfterClose
+          style={modalStyling}>
           <Experience exp={experiences[companyIndex]} />
         </Modal>
       </>

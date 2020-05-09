@@ -16,8 +16,7 @@ const PoweredBy = () => (
       fontFamily: fontStack,
       textAlign: 'center',
       fontSize: '.7rem',
-    }}
-  >
+    }}>
     Powered by ΛLIΛ
   </p>
 );

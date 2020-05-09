@@ -7,7 +7,7 @@ import './Work.scss';
 import AsyncImage from '../../../components/AsyncImage/AsyncImage';
 
 const Work = React.memo(({ work }) => (
-  <article flex="auto" className="column Work">
+  <article className="column Work" flex="auto">
     {work.thumbnail && (
       <AsyncImage
         className="cover-fit thumbnail"
@@ -16,26 +16,31 @@ const Work = React.memo(({ work }) => (
     )}
 
     {work.logo && (
-      <AsyncImage className="contain-fit logo" path={work.logo} alt="logo" />
+      <AsyncImage alt="logo" className="contain-fit logo" path={work.logo} />
     )}
 
-    <div flex="" className="legend column p1" align="between">
+    <div align="between" className="legend column p1" flex="">
       <div>
         <h4>{work.title}</h4>
         <p>{work.description}</p>
 
         <ul className="row tags">
-          {work.tags && work.tags.map((tag) => <li key={tag}>#{tag}</li>)}
+          {work.tags && work.tags.map((tag) => (
+            <li key={tag}>
+              #
+              {tag}
+            </li>
+          ))}
         </ul>
       </div>
 
-      <div row="nowrap" align="between">
-        <Button theme="outline mt1" link={work.ref}>
+      <div align="between" row="nowrap">
+        <Button link={work.ref} theme="outline mt1">
           View Project
         </Button>
 
         {work.source && (
-          <Button theme="outline mt1" link={work.source}>
+          <Button link={work.source} theme="outline mt1">
             <FontAwesomeIcon icon={faGithub} />
             Inspect source
           </Button>

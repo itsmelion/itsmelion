@@ -26,7 +26,6 @@ const Company = React.memo((props) => {
   return (
     <button
       key={name}
-      type="button"
       className="button default company"
       onClick={() => toggle(top)}
       style={{
@@ -35,7 +34,7 @@ const Company = React.memo((props) => {
         top: offsetTop,
         backgroundColor: color,
       }}
-    >
+      type="button">
       {name}
     </button>
   );

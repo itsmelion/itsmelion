@@ -13,7 +13,7 @@ const texts = {
 };
 
 const SectionToAction = () => (
-  <section id="SectionToAction" row="" align="around center">
+  <section align="around center" id="SectionToAction" row="">
     <Button link={contact.agenda}>
       {lang(texts.book)}
     </Button>

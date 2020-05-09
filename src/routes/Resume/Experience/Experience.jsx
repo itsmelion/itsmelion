@@ -8,10 +8,10 @@ import i18n from './Experience.i18n';
 const Business = React.memo(({ exp }) => (
   <div className="business">
     <AsyncImage
-      flex="none"
-      className="contain-fit block"
-      path={exp.logo}
       alt={exp.name}
+      className="contain-fit block"
+      flex="none"
+      path={exp.logo}
     />
 
     <h6 className="inline">
@@ -21,14 +21,18 @@ const Business = React.memo(({ exp }) => (
 
         <span>
           {lang(exp.period.start.month)}
-          <b>&nbsp;{exp.period.start.year}</b>
+          <b>
+            {exp.period.start.year}
+          </b>
         </span>
 
         <span>&nbsp;-&nbsp;</span>
 
         <span>
           {lang(exp.period.end.month)}
-          <b>&nbsp;{exp.period.end.year}</b>
+          <b>
+            {exp.period.end.year}
+          </b>
         </span>
 
         <span>)</span>
@@ -66,7 +70,9 @@ const Experience = ({ print, exp }) => (
       <h6>{exp.position}</h6>
 
       <p>
-        {lang(i18n.tasks)}: {lang(exp.description)}
+        {lang(i18n.tasks)}
+        :
+        {lang(exp.description)}
       </p>
     </div>
 

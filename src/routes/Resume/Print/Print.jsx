@@ -27,7 +27,7 @@ const Print = () => (
     <h4>Work Experience</h4>
 
     {exp.reverse().map((experience) => (
-      <Experience key={experience.name} print exp={experience} />
+      <Experience key={experience.name} exp={experience} print />
     ))}
   </Wrapper>
 );

@@ -12,7 +12,7 @@ const HeroFrame = React.memo(({ picture }) => (
       <span flex="grow" />
       <span className="decoration" />
 
-      <ul className="row nowrap hero-social" align="start end">
+      <ul align="start end" className="row nowrap hero-social">
         {Object.keys(social).map((key) => (
           <a key={key} href={social[key].url}>
             <FontAwesomeIcon icon={social[key].icon} />
@@ -24,7 +24,7 @@ const HeroFrame = React.memo(({ picture }) => (
     <div className="hud">
       <div className="skill-bars">
         {skills.bars.map(({ field, ratio }) => (
-          <p className={field} key={field} style={{ width: `${ratio}%` }}>
+          <p key={field} className={field} style={{ width: `${ratio}%` }}>
             {field}
           </p>
         ))}
@@ -37,7 +37,7 @@ const HeroFrame = React.memo(({ picture }) => (
     </div>
 
     <div className="avatar hex">
-      <img className="cover-fit hex" src={picture} alt="hero" />
+      <img alt="hero" className="cover-fit hex" src={picture} />
     </div>
   </article>
 ));

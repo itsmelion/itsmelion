@@ -16,9 +16,9 @@ class Certifications extends PureComponent {
     const { data: certification } = this.props;
 
     return (
-      <article className="column item" flex="nogrow" key={certification.ref}>
+      <article key={certification.ref} className="column item" flex="nogrow">
         <div align="between center" row="nowrap">
-          <div flex="" className="cert" row="nowrap" align="center center">
+          <div align="center center" className="cert" flex="" row="nowrap">
             <FontAwesomeIcon icon={faAward} />
             <h6 flex="">
               {certification.name}
@@ -28,25 +28,23 @@ class Certifications extends PureComponent {
 
           <Button
             flex="none"
-            title="View Certificate"
-            theme="outline view"
             link={certification.ref}
             style={{ 'background-color': 'transparent' }}
-          >
+            theme="outline view"
+            title="View Certificate">
             <FontAwesomeIcon icon={faEye} />
           </Button>
         </div>
         <span flex="" />
         <button
-          type="button"
           className={`see-more ${open}`}
           onClick={this.toggle}
-        >
+          type="button">
           <FontAwesomeIcon icon={faChevronDown} />
           what was learned?
         </button>
 
-        <ul flex="none" className={`materias ${open}`}>
+        <ul className={`materias ${open}`} flex="none">
           {certification.disciplines.map((content) => (
             <li key={content}>{content}</li>
           ))}

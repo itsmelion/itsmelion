@@ -11,24 +11,26 @@ import './Profile.scss';
 
 const Profile = () => (
   <header className="profile">
-    <div row="nowrap" mobile-wrap="">
+    <div mobile-wrap="" row="nowrap">
       <img
+        alt={lang(name)}
         className="avatar mr2 mb1"
         src={picture.avatar}
-        alt={lang(name)}
       />
 
       <div flex="auto">
         <div className="mb1">
           <h2>{lang(name)}</h2>
           <h3>{hero.role}</h3>
-          <h5 className="show-print"><a rel="noopener noreferer" href={hero.url}>{hero.url}</a></h5>
+          <h5 className="show-print"><a href={hero.url} rel="noopener noreferer">{hero.url}</a></h5>
         </div>
 
-        <address flex="auto" className="mb1">
+        <address className="mb1" flex="auto">
           <p row="nowrap">
             <FontAwesomeIcon className="mr1" icon={faMapMarkerAlt} />
-            {address.city},&nbsp;{address.country}
+            {address.city}
+            ,&nbsp;
+            {address.country}
           </p>
 
           <p row="nowrap">

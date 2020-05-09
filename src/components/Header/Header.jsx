@@ -10,11 +10,10 @@ import './Header.scss';
 
 const Header = React.memo(() => (
   <header
-    className="contain row nowrap mobile-wrap"
     align="between center"
-    id="home-header"
-  >
-    <div className="column" align="start start" flex="auto">
+    className="contain row nowrap mobile-wrap"
+    id="home-header">
+    <div align="start start" className="column" flex="auto">
       <article className="bio">
         <h6 className="dalaran">Hero:</h6>
         <h2>{lang(name)}</h2>
@@ -26,16 +25,16 @@ const Header = React.memo(() => (
       <HeroFrame picture={picture.thumbnail || picture.avatar} />
     </div>
 
-    <div className="column flex-initial Hologram" align="center">
+    <div align="center" className="column flex-initial Hologram">
       <AsyncImage
+        alt="Hero holographic silhouette"
         className="hero-hologram"
         path={picture.body || holoDefault}
-        alt="Hero holographic silhouette"
       />
       <img
+        alt="Hero hologram platform"
         className="hologram-platform"
         src={holoPlatform}
-        alt="Hero hologram platform"
       />
     </div>
   </header>

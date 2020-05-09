@@ -5,7 +5,7 @@ import { ReactComponent as HexSVG } from './Hex.svg';
 const Hex = React.memo(({ children }) => (
   <div className="Hex">
     <HexSVG />
-    <div row="" align="center center">
+    <div align="center center" row="">
       {children}
     </div>
   </div>

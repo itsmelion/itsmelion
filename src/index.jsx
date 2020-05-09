@@ -31,11 +31,11 @@ render(
 
     <Suspense fallback={<Splash />}>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route component={Home} exact path="/" />
         {/* <Route path="/cases" component={Cases} /> */}
-        <Route path="/portfolio" component={Feed} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/print" component={Print} />
+        <Route component={Feed} path="/portfolio" />
+        <Route component={Resume} path="/resume" />
+        <Route component={Print} path="/print" />
       </Switch>
     </Suspense>
 

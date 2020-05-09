@@ -7,10 +7,10 @@ import PoweredBy from './PoweredBy';
 import './Footer.scss';
 
 const Footer = React.memo(() => (
-  <footer id="Footer" hide-print="">
-    <div className="contain row mobile-column footer" align="between stretch">
+  <footer hide-print="" id="Footer">
+    <div align="between stretch" className="contain row mobile-column footer">
       <aside className="footer-alia">
-        <img width="28" src={logo} alt="Logo Alia" />
+        <img alt="Logo Alia" src={logo} width="28" />
 
         <p>
           Alia is a brand that represents Christhopher Lion as a Individual
@@ -23,14 +23,16 @@ const Footer = React.memo(() => (
       </aside>
 
       <article className="footer-hero">
-        <h6>Connect with {lang(lastName)}</h6>
+        <h6>
+          Connect with
+          {lang(lastName)}
+        </h6>
         <ul
-          className="column mobile-row"
           align="start end"
-          mobile-align="around center"
-        >
+          className="column mobile-row"
+          mobile-align="around center">
           {Object.keys(social).map((key) => (
-            <a className="link" key={key} href={social[key].url}>
+            <a key={key} className="link" href={social[key].url}>
               {social[key].name}
             </a>
           ))}

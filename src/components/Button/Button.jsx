@@ -19,8 +19,7 @@ const Button = React.memo((props) => {
         href={link}
         rel="noopener noreferrer"
         target={newtab ? '_blank' : ''}
-        {...other}
-      >
+        {...other}>
         {children}
       </a>
     );
@@ -30,10 +29,9 @@ const Button = React.memo((props) => {
     // eslint-disable-next-line react/button-has-type
     <button
       align="start center"
-      type={_type}
       className={`button row Button ${theme}`}
-      {...other}
-    >
+      type={_type}
+      {...other}>
       {children}
     </button>
   );

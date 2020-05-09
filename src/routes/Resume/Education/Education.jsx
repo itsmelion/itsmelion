@@ -5,19 +5,18 @@ import AsyncImage from 'components/AsyncImage/AsyncImage';
 import './Education.scss';
 
 const Education = React.memo(() => (
-  <ol id="Education" className="mb2">
+  <ol className="mb2" id="Education">
     {scholarity.map((school) => (
       <li
-        row="nowrap"
-        className="resume-section"
-        align="start"
         key={school.institution}
-      >
+        align="start"
+        className="resume-section"
+        row="nowrap">
         <h5>{lang(school.course)}</h5>
 
         <span flex="" />
 
-        <div row="nowrap" align="end center">
+        <div align="end center" row="nowrap">
           <div className="right">
             <h6 column="">
               {school.institution}
@@ -28,10 +27,10 @@ const Education = React.memo(() => (
           </div>
 
           <AsyncImage
+            alt={`Logo ${school.institution}`}
             className="hide-mobile contain-fit"
             flex="none"
             path={school.logo}
-            alt={`Logo ${school.institution}`}
           />
         </div>
       </li>

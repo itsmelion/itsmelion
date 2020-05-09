@@ -15,7 +15,7 @@ const tooltip = (year, tool) => ({
 
 // eslint-disable-next-line react/prop-types
 const mapSkill = ({ name, logo, year }) => (
-  <li data-tip={(year && lang(tooltip(year, name))) || name} key={name}>
+  <li key={name} data-tip={(year && lang(tooltip(year, name))) || name}>
     <Skill logo={logo} />
     {/* eslint-disable-next-line react/no-danger */}
     <p className="show-print" dangerouslySetInnerHTML={{ __html: (year && lang(tooltip(year, name))) || name }} />
@@ -25,47 +25,44 @@ const mapSkill = ({ name, logo, year }) => (
 const mapToolset = (dataset, area, func = mapSkill) => dataset[area].map(func);
 
 const SkillList = () => (
-  <section id="SkillList" className="mv1 row">
+  <section className="mv1 row" id="SkillList">
     <ul
-      flex="33"
-      mobile-flex="100"
       align="center center"
       className="center mv2 row design-list"
-    >
+      flex="33"
+      mobile-flex="100">
       <h6 flex="100">Design</h6>
 
       {mapToolset(Tools, 'design')}
     </ul>
 
     <ul
-      flex="33"
-      mobile-flex="100"
       align="center center"
       className="center mv2 row frontend-list"
-    >
+      flex="33"
+      mobile-flex="100">
       <h5 flex="100">Frontend</h5>
 
       {mapToolset(Tools, 'frontend')}
     </ul>
 
     <ul
-      flex="33"
-      mobile-flex="100"
       align="center center"
       className="center mv2 row backend-list"
-    >
+      flex="33"
+      mobile-flex="100">
       <h6 flex="100">Backend/DevOps</h6>
 
       {mapToolset(Tools, 'backend')}
     </ul>
 
-    <ul flex="100" className="center row mb2 wish-list" align="center center">
+    <ul align="center center" className="center row mb2 wish-list" flex="100">
       <h6 flex="100">Wishlist</h6>
 
       {mapToolset(wishlist, 'backend')}
     </ul>
 
-    <ReactTooltip place="bottom" effect="solid" html />
+    <ReactTooltip effect="solid" html place="bottom" />
   </section>
 );
 

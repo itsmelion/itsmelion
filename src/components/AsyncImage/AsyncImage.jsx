@@ -24,9 +24,9 @@ export default class AsyncImage extends PureComponent {
     return (
       <img
         {...this.props}
-        src={ready ? this.asyncImage.src : spinner}
         alt={alt}
         className={`AsyncImage cover-fit ${ready} ${className}`}
+        src={ready ? this.asyncImage.src : spinner}
       />
     );
   }

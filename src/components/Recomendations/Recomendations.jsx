@@ -19,8 +19,9 @@ const Recomendations = React.memo(() => (
         <p>{lang(recomendation.message)}</p>
 
         <small>
-          {lang(i18n.source)}:&nbsp;
-          <a target="_blank" rel="noopener noreferrer" href={recomendation.ref}>
+          {lang(i18n.source)}
+          :&nbsp;
+          <a href={recomendation.ref} rel="noopener noreferrer" target="_blank">
             {recomendation.ref}
           </a>
         </small>
