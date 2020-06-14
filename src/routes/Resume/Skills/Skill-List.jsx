@@ -5,7 +5,7 @@ import { yearsFromNow } from 'utilities';
 
 import Tools, { wishlist } from 'data/tools';
 import './Skills.scss';
-import Skill from './Skill';
+import SkillIcon from './Skill';
 
 const tooltip = (year, tool) => ({
   en: `${yearsFromNow(year)} years of experience with&nbsp;<b>${tool}</b>`,
@@ -13,16 +13,16 @@ const tooltip = (year, tool) => ({
   he: `${yearsFromNow(year)} years of experience with&nbsp;<b>${tool}</b>`,
 });
 
-// eslint-disable-next-line react/prop-types
-const mapSkill = ({ name, logo, year }) => (
+const Skill = ({ name, logo, year }) => (
   <li key={name} data-tip={(year && lang(tooltip(year, name))) || name}>
-    <Skill logo={logo} />
-    {/* eslint-disable-next-line react/no-danger */}
-    <p className="show-print" dangerouslySetInnerHTML={{ __html: (year && lang(tooltip(year, name))) || name }} />
+    <SkillIcon logo={logo} />
+    <p
+      className="show-print"
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: (year && lang(tooltip(year, name))) || name }}
+    />
   </li>
 );
-
-const mapToolset = (dataset, area, func = mapSkill) => dataset[area].map(func);
 
 const SkillList = () => (
   <section className="mv1 row" id="SkillList">
@@ -33,7 +33,7 @@ const SkillList = () => (
       mobile-flex="100">
       <h6 flex="100">Design</h6>
 
-      {mapToolset(Tools, 'design')}
+      {Tools.design.map(Skill)}
     </ul>
 
     <ul
@@ -43,7 +43,7 @@ const SkillList = () => (
       mobile-flex="100">
       <h5 flex="100">Frontend</h5>
 
-      {mapToolset(Tools, 'frontend')}
+      {Tools.frontend.map(Skill)}
     </ul>
 
     <ul
@@ -53,13 +53,13 @@ const SkillList = () => (
       mobile-flex="100">
       <h6 flex="100">Backend/DevOps</h6>
 
-      {mapToolset(Tools, 'backend')}
+      {Tools.backend.map(Skill)}
     </ul>
 
     <ul align="center center" className="center row mb2 wish-list" flex="100">
       <h6 flex="100">Wishlist</h6>
 
-      {mapToolset(wishlist, 'backend')}
+      {wishlist.backend.map(Skill)}
     </ul>
 
     <ReactTooltip effect="solid" html place="bottom" />

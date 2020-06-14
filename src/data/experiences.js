@@ -243,7 +243,7 @@ const mg = {
 const rd = {
   name: 'RD Station CRM (former PlugCRM)',
   ref: 'www.rdstation.com/crm/',
-  position: 'Frontend and Designer',
+  position: 'Frontend Developer and Designer',
   business: 'Commercial CRM (B2B & B2C)',
   logo: crmLogo,
   period: {
@@ -561,26 +561,23 @@ const Generous = {
       year: 2022,
     },
   },
+  business: 'Services of development and design of software',
   description: {
-    en: 'Consultancy and services of development and design of software',
-    pt: 'Consultoria e serviços de desenvolvimento e design de aplicações',
+    en: `
+      Code review, manage application architecture, plan sprints,
+      and develop web and mobile apps.
+    `,
+    get pt() { return this.en; },
   },
   technologies: {
     direct: [
-      adobeAfterEffects,
-      adobeIllustrator,
-      adobePhotoshop,
       wordpress,
-      invision,
-      angularJs,
       nodeJs,
       react,
       gatsby,
       graphQL,
       nginx,
       bash,
-      mongo,
-      docker,
       microServices,
     ],
   },

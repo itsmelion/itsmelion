@@ -89,7 +89,7 @@ export const lightroom = {
   logo: lightroomLogo,
 };
 export const graphQL = { name: 'GraphQL', logo: faGraphQl };
-export const gatsby = { name: 'Gatsby & SSR', logo: faQuestion };
+export const gatsby = { name: 'SSR', logo: faQuestion };
 export const flutter = { name: 'Flutter', logo: faAppStore };
 export const swift = { name: 'Swift', logo: faSwift };
 export const reactNative = { name: 'React Native', year: 2019, logo: faReact };

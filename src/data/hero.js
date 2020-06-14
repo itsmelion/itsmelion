@@ -47,8 +47,9 @@ export const social = {
 };
 
 export const ocupation = {
-  en: 'Frontend Developer',
+  en: 'Software Developer & Designer',
 };
+export const role = ocupation.en;
 
 export const picture = {
   avatar,
@@ -59,7 +60,7 @@ export const picture = {
 export const lastName = {
   en: 'Lion',
   pt: 'Leão',
-  he: 'אריה',
+  he: 'ארי',
 };
 
 export const name = {
@@ -81,41 +82,70 @@ export const contact = {
 
 export const address = {
   street: 'R. Bombeiros Voluntários 20, Odivelas',
-  complement: 'C/V Esq.',
+  complement: 'Cave Esquerda',
   code: '2675-304',
   city: 'Lisbon',
   country: 'Portugal',
 };
 
 export const bio = {
-  en: `Im a Frontend Developer, that loves growth and innovation.
+  en: `
+    Im a Frontend Developer, that loves growth and innovation.
     Im performance obsessed, love cutting edge software,
-    and i also am a Design and UIUX enthusiast.`,
-  pt: `Eu sou um Desenvolvedor Frontend,
+    and i also am a Design and UIUX enthusiast.
+  `,
+  pt: `
+    Eu sou um Desenvolvedor Frontend,
     que gosta de trabalhar em ambientes de crescimento e inovação.
     Me importo bastante com desempenho, software de ponta,
-    além de ser um amante de Design e entusiasta de interface/experiência de usuário.`,
+    além de ser um amante de Design e entusiasta de interface/experiência de usuário.
+  `,
 };
 
 export const text = {
-  en: `My range of skills gives me the ability to take solid decisions
-  on building a beautiful and performant software. Resolve development problems with strategy, building scalable and easy maintainable software.
-  I can serve improving communication between Designers and Developers, lead teams, and
-  mentor less experienced Designers or Frontend Developers.`,
-  pt: `Minha experiência, me traz a habilidade de tomar decisões mais concretas
-  no desenvolvimento de um software mais bonito e com performance. Resolvendo problemas com estrategia, e construindo software escalável, de fácil manutenção, e distribuído.
-  Posso aprimorar a comunicação entre Design e Desenvolvimento, liderar equipes e
-  mentorear a carreira de designers e desenvolvedores menos experientes.`,
+  en: `
+    My range of skills gives me the ability to take solid decisions
+    on building a beautiful and performant software.
+    Resolve development problems with strategy,
+    building scalable and easy maintainable software.
+    I can serve improving communication between Designers and Developers,
+    lead teams, and mentor less experienced Designers or Frontend Developers.
+  `,
+  pt: `
+    Minha experiência, me traz a habilidade de tomar decisões mais concretas
+    no desenvolvimento de um software mais bonito e com performance.
+    Resolvendo problemas com estratégia,
+    e construindo software escalável, de fácil manutenção, e distribuído.
+    Posso aprimorar a comunicação entre Design e Desenvolvimento,
+    liderar equipes e mentorear a carreira de designers e desenvolvedores menos experientes.
+  `,
 };
 
-export default {
-  role: ocupation.en,
-  url: 'https://lion.alia.ml/',
-  name,
-  bio,
-  text,
-  address,
-  contact,
-  picture,
-  lastName,
+export const inDepth = {
+  en: `
+  My journey as a professional since the very beginning always required for me to making decisions,
+  prioritise, explore, and be aware of core things like data flow and layout consistency.
+  I always were responsible for deliver all or majority of software developed,
+  and my work alone having direct impact on what stakeholders would get in the end of the day.
+  This shaped my way to think, and how i relate to the product and team.
+  It leaded me to be criterious, humble, and pro-active.
+  In daily basis i am called on to to argue about course of actions,
+  do or don't, and to listen others.
+  As if work wasn't enough to make this point, in life it follows the same pattern.
+  Im constantly involved leadership of theological study groups, or church ministry,
+  that requires loads of skills like: public speaking,
+  systematic argumentation and clear communication, mentoring,
+  serve in humility, honor, commitment,
+  care and regard of other peoples opinions, beliefs, sexual orientation and rights.
+  I am also a father of a beautiful girl,
+  and if that alone doesn't require a lot of responsibility,
+  we find ourselves living on a foreign country.
+  All of these responsibilities though may seem overwhelming, i do with joy,
+  and don't see myself doing something else.
+  All i seek are greater environments where i can be even more fruitful and deliver even
+  more, building a better tomorrow for me, and everyone around me.
+  `,
+  get pt() { return this.en; },
 };
+
+export const url = 'https://lion.alia.ml/';

@@ -10,7 +10,7 @@
   },
   "author": {
     "name": "Christhopher Lion",
-    "email": "christhopherleao@icloud.com",
+    "email": "itsmelion@icloud.com",
     "url": "https://lion.alia.ml"
   },
   "scripts": {
@@ -29,7 +29,7 @@
     "@fortawesome/react-fontawesome": "0.1.10",
     "axios": "0.19.2",
     "flamework": "3.1.6",
-    "lodash": "4.17.15",
+    "lodash": "^4.17.15",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -56,13 +56,13 @@
     "eslint-plugin-react-hooks": "4.0.4",
     "eslint-plugin-standard": "4.0.1",
     "node-pre-gyp": "0.15.0",
-    "stylelint-processor-styled-components": "1.10.0",
     "node-sass": "4.14.1"
   },
   "optionalDependencies": {
     "react-is": "16.13.1",
     "stylelint": "13.6.0",
     "stylelint-config-recommended": "3.0.0",
+    "stylelint-processor-styled-components": "1.10.0",
     "stylelint-config-styled-components": "0.1.1",
     "typescript": "3.9.5"
   },

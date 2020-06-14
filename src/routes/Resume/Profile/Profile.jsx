@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 import { lang } from 'utils';
-import hero, {
-  name, address, picture, contact, bio, text,
-} from 'data/hero';
+import * as hero from 'data/hero';
 
 import './Profile.scss';
+
+const {
+  name, address, picture, contact, bio, text,
+} = hero;
 
 const Profile = () => (
   <header className="profile">
@@ -62,6 +64,9 @@ const Profile = () => (
 
     <h5 className="mt1">Strengths</h5>
     <p>{lang(text)}</p>
+
+    <h5 className="mt1">In Depth: A Lion heart</h5>
+    <p>{lang(hero.inDepth)}</p>
   </header>
 );
 
