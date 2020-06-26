@@ -4,7 +4,7 @@
   "homepage": "https://lion.alia.ml",
   "repository": "github:itsmelion/portfolio.git",
   "description": "Get to know Chris's skills, contacts, download his CV, and more.",
-  "main": "./src/index.jsx",
+  "main": "src/index.jsx",
   "engines": {
     "node": ">=12"
   },
