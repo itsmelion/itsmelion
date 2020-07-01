@@ -14,7 +14,7 @@
   # This is where we will look for your lambda functions
   # functions = "project/functions/"
 [build.enviroment]
-  NODE_VERSION = "14",
+  NODE_VERSION = "14"
   YARN_VERSION = "1.22.4"
 
 # Set enviroment variable prompts for templates
