@@ -14,9 +14,10 @@
   # This is where we will look for your lambda functions
   # functions = "project/functions/"
 [build.environment]
-  NODE_VERSION = "14"
-  YARN_VERSION = "1.22.4"
+  NODE_VERSION = "node"
+  YARN_FLAGS = "--production --frozen-lockfile --silent"
   RUBY_VERSION = "2.7.1"
+# RUBY_VERSION may be nescessary until removal of node-sass
 
 # Set environment variable prompts for templates
 # [template.environment]
