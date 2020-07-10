@@ -5,6 +5,7 @@ import { lang } from 'utils';
 import exp from 'data/experiences';
 import * as hero from 'data/hero';
 import Tools, { wishlist } from 'data/tools';
+import { scholarity } from 'data/education';
 
 import Experience from 'routes/Resume/Experience/Experience';
 import SkillIcon from '../Skills/Skill';
@@ -104,6 +105,20 @@ const Print = () => (
     </section>
 
     <hr style={{ pageBreakAfter: 'always' }} />
+
+    <h4>Education and Certificates</h4>
+    <ol className="mb2" id="Education">
+      {scholarity.map((school) => (
+        <li
+          key={school.institution}
+          align="start"
+          row="nowrap">
+          <h5>{lang(school.course)}</h5>
+          <p>{school.alternativeName}</p>
+        </li>
+      ))}
+    </ol>
+
     <h4>Work Experience</h4>
 
     {exp.reverse().map((experience) => (

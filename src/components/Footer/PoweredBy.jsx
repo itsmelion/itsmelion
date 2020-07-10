@@ -1,12 +1,15 @@
 import React from 'react';
 
+/** @deprecated This component is not being used */
+
 const fontStack = `
   -apple-system,
   BlinkMacSystemFont,
+  system-ui,
   "Helvetica Neue",
   Arial,
   sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 `;
 
 const PoweredBy = () => (
