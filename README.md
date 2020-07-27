@@ -1,7 +1,7 @@
 # Hi, its me Lion 👋🦁
 
 I'm Christhopher Leão/Lion
-I consider myself as a _Software Developer & Designer_. My main role is as <b>Frontend Developer</b>
+I consider myself as a _Software Developer & Designer_.<br/>My main role is as <b>Frontend Developer</b>
 <br />
 
 [![Connect on LinkedIn](https://img.shields.io/badge/--linkedin?label=LinkedIn&logo=LinkedIn&style=social)](https://www.linkedin.com/in/chrislion)
