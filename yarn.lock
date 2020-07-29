@@ -4298,10 +4298,10 @@ eslint-config-airbnb@18.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-config-lion@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-1.0.7.tgz#c27e412670c0cd37b00ac22e4a08396116a84199"
-  integrity sha512-jnF+OSXeGNZTLKPxayTVzw/ru/JCmb2i82PDTRqqPV4NicDUhynyIdr2TMiRn90+3pP6TRtdZaHvx5jM09oCsQ==
+eslint-config-lion@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-1.0.9.tgz#db9415322fc64083f72581eb66091b89417edd92"
+  integrity sha512-CzzoJG/eRdtm0w+sNLjBdkGQD+2o0ZXm7SVjYCHUr4fCL/0abdEsBjrQH/t2NPUkv7fHCf1Y642QSsVURnscVA==
 
 eslint-config-promise@2.0.2:
   version "2.0.2"
