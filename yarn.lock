@@ -5067,10 +5067,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flamework@3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/flamework/-/flamework-3.1.6.tgz#2b5092e126cdfcc6ef4dc898b895229790205feb"
-  integrity sha512-t6hwIYVu+NBT0MG+Kk4/HgIjTGbq5BkCSEVy+JnVIuAf2V96l4khAj3IZCGtux/ArUy3lJ/8Nhk/N/5EclxfmA==
+flamework@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/flamework/-/flamework-4.0.1.tgz#d0110cf963a3fdae80b2da543a7e5196fd1789cb"
+  integrity sha512-1QA3bmMLSEMiRIchz4KbUJAOHaIiurQQUJLfIxosMu5MmKYiRlINTZieyJ0GeepD5kkl0oQimtch2CbFxdjijA==
 
 flat-cache@^2.0.1:
   version "2.0.1"
