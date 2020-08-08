@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#30](https://github.com//itsmelion/live8/pull/30) in [itsmelion/live8](https://github.com//itsmelion/live8)
-2. 🎉 Merged PR [#27](https://github.com//itsmelion/flamework/pull/27) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-3. 🎉 Merged PR [#2](https://github.com//itsmelion/shellscripts/pull/2) in [itsmelion/shellscripts](https://github.com//itsmelion/shellscripts)
-4. 🎉 Merged PR [#31](https://github.com//indenizou/vibrant/pull/31) in [indenizou/vibrant](https://github.com//indenizou/vibrant)
-5. 🎉 Merged PR [#14](https://github.com//itsmelion/lion-lint/pull/14) in [itsmelion/lion-lint](https://github.com//itsmelion/lion-lint)
+1. 🎉 Merged PR [#32](https://github.com//itsmelion/live8/pull/32) in [itsmelion/live8](https://github.com//itsmelion/live8)
+2. 🎉 Merged PR [#30](https://github.com//itsmelion/live8/pull/30) in [itsmelion/live8](https://github.com//itsmelion/live8)
+3. 🎉 Merged PR [#27](https://github.com//itsmelion/flamework/pull/27) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+4. 🎉 Merged PR [#2](https://github.com//itsmelion/shellscripts/pull/2) in [itsmelion/shellscripts](https://github.com//itsmelion/shellscripts)
+5. 🎉 Merged PR [#31](https://github.com//indenizou/vibrant/pull/31) in [indenizou/vibrant](https://github.com//indenizou/vibrant)
 <!--END_SECTION:activity-->
 
 ___
