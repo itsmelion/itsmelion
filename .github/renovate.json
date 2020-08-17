@@ -2,7 +2,11 @@
   "extends": [
     "config:base"
   ],
+  "rangeStrategy": "pin",
   "commitBody": "[skip ci]",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch", "pin", "digest"],
