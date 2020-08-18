@@ -20,7 +20,8 @@
     {
       "depTypeList": [
         "engines",
-        "peerDependencies"
+        "peerDependencies",
+        "resolutions"
       ],
       "rangeStrategy": "auto"
     }
