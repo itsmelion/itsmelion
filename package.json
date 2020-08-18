@@ -29,7 +29,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "axios": "0.19.2",
     "flamework": "3.1.6",
-    "lodash": "^4.17.20",
+    "lodash": "4.17.20",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -60,8 +60,8 @@
     "node-sass": "4.14.1"
   },
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.x",
-    "@typescript-eslint/parser": "2.x",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
     "node-pre-gyp": "0.15.0",
     "react-is": "16.13.1",
     "stylelint": "13.6.1",
