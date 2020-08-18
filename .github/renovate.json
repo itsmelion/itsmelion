@@ -2,7 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "rangeStrategy": "pin",
   "commitBody": "[skip ci]",
   "lockFileMaintenance": {
     "enabled": true
@@ -11,6 +10,19 @@
     {
       "updateTypes": ["major", "minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {
+      "packagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "depTypeList": [
+        "engines",
+        "peerDependencies"
+      ],
+      "rangeStrategy": "auto"
     }
   ]
 }
