@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#44](https://github.com//itsmelion/flamework/pull/44) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-2. 💪 Opened PR [#70](https://github.com//Ilshidur/action-slack/pull/70) in [Ilshidur/action-slack](https://github.com//Ilshidur/action-slack)
-3. 🎉 Merged PR [#43](https://github.com//itsmelion/flamework/pull/43) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-4. 🎉 Merged PR [#20](https://github.com//indenizou/dashboard/pull/20) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
-5. 🎉 Merged PR [#33](https://github.com//indenizou/dashboard/pull/33) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+1. 🎉 Merged PR [#47](https://github.com//itsmelion/flamework/pull/47) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+2. ❗️ Opened issue [#65](https://github.com//messagebird/messagebird-nodejs/issues/65) in [messagebird/messagebird-nodejs](https://github.com//messagebird/messagebird-nodejs)
+3. 🎉 Merged PR [#44](https://github.com//itsmelion/flamework/pull/44) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+4. 💪 Opened PR [#70](https://github.com//Ilshidur/action-slack/pull/70) in [Ilshidur/action-slack](https://github.com//Ilshidur/action-slack)
+5. 🎉 Merged PR [#43](https://github.com//itsmelion/flamework/pull/43) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
 <!--END_SECTION:activity-->
 
 ___
