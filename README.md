@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#12](https://github.com//itsmelion/node-js/pull/12) in [itsmelion/node-js](https://github.com//itsmelion/node-js)
-2. 🎉 Merged PR [#1](https://github.com//itsmelion/action-slack/pull/1) in [itsmelion/action-slack](https://github.com//itsmelion/action-slack)
-3. 💪 Opened PR [#1](https://github.com//itsmelion/action-slack/pull/1) in [itsmelion/action-slack](https://github.com//itsmelion/action-slack)
-4. 🎉 Merged PR [#47](https://github.com//itsmelion/flamework/pull/47) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-5. ❗️ Opened issue [#65](https://github.com//messagebird/messagebird-nodejs/issues/65) in [messagebird/messagebird-nodejs](https://github.com//messagebird/messagebird-nodejs)
+1. 🎉 Merged PR [#107](https://github.com//itsmelion/itsmelion/pull/107) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
+2. 🎉 Merged PR [#50](https://github.com//itsmelion/flamework/pull/50) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+3. 🎉 Merged PR [#12](https://github.com//alia-code/core/pull/12) in [alia-code/core](https://github.com//alia-code/core)
+4. 🎉 Merged PR [#12](https://github.com//itsmelion/node-js/pull/12) in [itsmelion/node-js](https://github.com//itsmelion/node-js)
+5. 🎉 Merged PR [#1](https://github.com//itsmelion/action-slack/pull/1) in [itsmelion/action-slack](https://github.com//itsmelion/action-slack)
 <!--END_SECTION:activity-->
 
 ___
