@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#70](https://github.com//itsmelion/flamework/pull/70) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-2. 🎉 Merged PR [#33](https://github.com//indenizou/vibrant/pull/33) in [indenizou/vibrant](https://github.com//indenizou/vibrant)
-3. 🎉 Merged PR [#1](https://github.com//itsmelion/react-native-deck-swiper/pull/1) in [itsmelion/react-native-deck-swiper](https://github.com//itsmelion/react-native-deck-swiper)
-4. 🎉 Merged PR [#2](https://github.com//itsmelion/react-native-deck-swiper/pull/2) in [itsmelion/react-native-deck-swiper](https://github.com//itsmelion/react-native-deck-swiper)
-5. 🎉 Merged PR [#16](https://github.com//itsmelion/node-js/pull/16) in [itsmelion/node-js](https://github.com//itsmelion/node-js)
+1. 🎉 Merged PR [#73](https://github.com//itsmelion/flamework/pull/73) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+2. 🎉 Merged PR [#112](https://github.com//itsmelion/itsmelion/pull/112) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
+3. 🎉 Merged PR [#39](https://github.com//indenizou/dashboard/pull/39) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+4. 🎉 Merged PR [#17](https://github.com//itsmelion/node-js/pull/17) in [itsmelion/node-js](https://github.com//itsmelion/node-js)
+5. 🎉 Merged PR [#9](https://github.com//itsmelion/brewser/pull/9) in [itsmelion/brewser](https://github.com//itsmelion/brewser)
 <!--END_SECTION:activity-->
 
 ___
