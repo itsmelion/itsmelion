@@ -41,7 +41,7 @@ jobs:
       run: yarn build
 
     - name: Slack - Build fail
-      uses: Ilshidur/action-slack@2.0.2
+      uses: Ilshidur/action-slack@2.1.0
       if: failure()
       with:
         args: "*BUILD failed*\n_You are not prepared._"
