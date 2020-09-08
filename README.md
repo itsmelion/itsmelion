@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#16](https://github.com//itsmelion/brewser/pull/16) in [itsmelion/brewser](https://github.com//itsmelion/brewser)
-2. 🎉 Merged PR [#38](https://github.com//itsmelion/live8/pull/38) in [itsmelion/live8](https://github.com//itsmelion/live8)
-3. 🎉 Merged PR [#34](https://github.com//indenizou/dashboard/pull/34) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
-4. 🎉 Merged PR [#35](https://github.com//indenizou/dashboard/pull/35) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
-5. 🎉 Merged PR [#36](https://github.com//indenizou/dashboard/pull/36) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+1. 🗣 Commented on [#70](https://github.com//Ilshidur/action-slack/issues/70) in [Ilshidur/action-slack](https://github.com//Ilshidur/action-slack)
+2. 🎉 Merged PR [#45](https://github.com//indenizou/dashboard/pull/45) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+3. 🎉 Merged PR [#74](https://github.com//itsmelion/flamework/pull/74) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+4. 🎉 Merged PR [#3](https://github.com//itsmelion/react-native-deck-swiper/pull/3) in [itsmelion/react-native-deck-swiper](https://github.com//itsmelion/react-native-deck-swiper)
+5. 🎉 Merged PR [#113](https://github.com//itsmelion/itsmelion/pull/113) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
 <!--END_SECTION:activity-->
 
 ___
