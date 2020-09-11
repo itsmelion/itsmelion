@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#78](https://github.com//itsmelion/flamework/pull/78) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-2. 🎉 Merged PR [#3](https://github.com//generous-studio/harvester/pull/3) in [generous-studio/harvester](https://github.com//generous-studio/harvester)
-3. 🗣 Commented on [#70](https://github.com//Ilshidur/action-slack/issues/70) in [Ilshidur/action-slack](https://github.com//Ilshidur/action-slack)
-4. 🎉 Merged PR [#45](https://github.com//indenizou/dashboard/pull/45) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
-5. 🎉 Merged PR [#74](https://github.com//itsmelion/flamework/pull/74) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+1. 🎉 Merged PR [#79](https://github.com//itsmelion/flamework/pull/79) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+2. 🎉 Merged PR [#46](https://github.com//indenizou/dashboard/pull/46) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+3. 🎉 Merged PR [#44](https://github.com//indenizou/dashboard/pull/44) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
+4. 🎉 Merged PR [#8](https://github.com//itsmelion/components/pull/8) in [itsmelion/components](https://github.com//itsmelion/components)
+5. ❌ Closed PR [#40](https://github.com//indenizou/dashboard/pull/40) in [indenizou/dashboard](https://github.com//indenizou/dashboard)
 <!--END_SECTION:activity-->
 
 ___
