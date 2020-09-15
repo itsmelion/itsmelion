@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#83](https://github.com//itsmelion/flamework/pull/83) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-2. 🎉 Merged PR [#116](https://github.com//itsmelion/itsmelion/pull/116) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
-3. 🎉 Merged PR [#81](https://github.com//itsmelion/flamework/pull/81) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-4. ❌ Closed PR [#35](https://github.com//indenizou/vibrant/pull/35) in [indenizou/vibrant](https://github.com//indenizou/vibrant)
-5. ❌ Closed PR [#34](https://github.com//indenizou/vibrant/pull/34) in [indenizou/vibrant](https://github.com//indenizou/vibrant)
+1. 🎉 Merged PR [#120](https://github.com//itsmelion/itsmelion/pull/120) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
+2. 🎉 Merged PR [#90](https://github.com//itsmelion/flamework/pull/90) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+3. 🎉 Merged PR [#119](https://github.com//itsmelion/itsmelion/pull/119) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
+4. 🎉 Merged PR [#4](https://github.com//generous-studio/harvester/pull/4) in [generous-studio/harvester](https://github.com//generous-studio/harvester)
+5. 🎉 Merged PR [#18](https://github.com//itsmelion/lion-lint/pull/18) in [itsmelion/lion-lint](https://github.com//itsmelion/lion-lint)
 <!--END_SECTION:activity-->
 
 ___
