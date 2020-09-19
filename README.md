@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#37](https://github.com//slorber/react-async-hook/issues/37) in [slorber/react-async-hook](https://github.com//slorber/react-async-hook)
-2. 🎉 Merged PR [#93](https://github.com//itsmelion/flamework/pull/93) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-3. 🎉 Merged PR [#92](https://github.com//itsmelion/flamework/pull/92) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-4. 🎉 Merged PR [#120](https://github.com//itsmelion/itsmelion/pull/120) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
-5. 🎉 Merged PR [#90](https://github.com//itsmelion/flamework/pull/90) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+1. 🎉 Merged PR [#96](https://github.com//itsmelion/flamework/pull/96) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+2. 🎉 Merged PR [#95](https://github.com//itsmelion/flamework/pull/95) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+3. 🗣 Commented on [#37](https://github.com//slorber/react-async-hook/issues/37) in [slorber/react-async-hook](https://github.com//slorber/react-async-hook)
+4. 🎉 Merged PR [#93](https://github.com//itsmelion/flamework/pull/93) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+5. 🎉 Merged PR [#92](https://github.com//itsmelion/flamework/pull/92) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
 <!--END_SECTION:activity-->
 
 ___
