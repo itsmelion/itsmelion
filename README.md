@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#5](https://github.com//itsmelion/react-native-deck-swiper/pull/5) in [itsmelion/react-native-deck-swiper](https://github.com//itsmelion/react-native-deck-swiper)
-2. 🎉 Merged PR [#96](https://github.com//itsmelion/flamework/pull/96) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-3. 🎉 Merged PR [#95](https://github.com//itsmelion/flamework/pull/95) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
-4. 🗣 Commented on [#37](https://github.com//slorber/react-async-hook/issues/37) in [slorber/react-async-hook](https://github.com//slorber/react-async-hook)
-5. 🎉 Merged PR [#93](https://github.com//itsmelion/flamework/pull/93) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+1. 💪 Opened PR [#25](https://github.com//Schlaubischlump/LocationSimulator/pull/25) in [Schlaubischlump/LocationSimulator](https://github.com//Schlaubischlump/LocationSimulator)
+2. 🎉 Merged PR [#24](https://github.com//itsmelion/node-js/pull/24) in [itsmelion/node-js](https://github.com//itsmelion/node-js)
+3. 🎉 Merged PR [#122](https://github.com//itsmelion/itsmelion/pull/122) in [itsmelion/itsmelion](https://github.com//itsmelion/itsmelion)
+4. 🎉 Merged PR [#99](https://github.com//itsmelion/flamework/pull/99) in [itsmelion/flamework](https://github.com//itsmelion/flamework)
+5. 🎉 Merged PR [#5](https://github.com//itsmelion/react-native-deck-swiper/pull/5) in [itsmelion/react-native-deck-swiper](https://github.com//itsmelion/react-native-deck-swiper)
 <!--END_SECTION:activity-->
 
 ___
