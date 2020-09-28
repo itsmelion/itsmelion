@@ -61,7 +61,7 @@
   },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "4.3.0",
-    "@typescript-eslint/parser": "4.2.0",
+    "@typescript-eslint/parser": "4.3.0",
     "node-pre-gyp": "0.15.0",
     "react-is": "16.13.1",
     "stylelint": "13.7.2",
