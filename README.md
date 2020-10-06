@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#86](https://github.com/Ilshidur/action-slack/pull/86) in [Ilshidur/action-slack](https://github.com/Ilshidur/action-slack)
-2. 🎉 Merged PR [#81](https://github.com/Ilshidur/action-slack/pull/81) in [Ilshidur/action-slack](https://github.com/Ilshidur/action-slack)
-3. 🎉 Merged PR [#7](https://github.com/itsmelion/react-native-deck-swiper/pull/7) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
-4. 🎉 Merged PR [#40](https://github.com/itsmelion/live8/pull/40) in [itsmelion/live8](https://github.com/itsmelion/live8)
-5. 🗣 Commented on [#6031](https://github.com/aws-amplify/amplify-js/issues/6031) in [aws-amplify/amplify-js](https://github.com/aws-amplify/amplify-js)
+1. 🎉 Merged PR [#29](https://github.com/itsmelion/lion-lint/pull/29) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+2. 🎉 Merged PR [#134](https://github.com/itsmelion/itsmelion/pull/134) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+3. 🎉 Merged PR [#115](https://github.com/itsmelion/flamework/pull/115) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+4. 🎉 Merged PR [#31](https://github.com/itsmelion/node-js/pull/31) in [itsmelion/node-js](https://github.com/itsmelion/node-js)
+5. 🎉 Merged PR [#86](https://github.com/Ilshidur/action-slack/pull/86) in [Ilshidur/action-slack](https://github.com/Ilshidur/action-slack)
 <!--END_SECTION:activity-->
 
 ___
