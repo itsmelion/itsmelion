@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":followTag(typescript, next)"
   ],
   "commitBody": "[skip ci]",
   // "requiredStatusChecks": null,
