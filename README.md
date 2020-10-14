@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#9](https://github.com/itsmelion/react-native-deck-swiper/pull/9) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
-2. ❗️ Closed issue [#8](https://github.com/triggercode/mamp-cli/issues/8) in [triggercode/mamp-cli](https://github.com/triggercode/mamp-cli)
-3. ❗️ Closed issue [#2411](https://github.com/uikit/uikit/issues/2411) in [uikit/uikit](https://github.com/uikit/uikit)
-4. 🎉 Merged PR [#129](https://github.com/itsmelion/flamework/pull/129) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#35](https://github.com/itsmelion/node-js/pull/35) in [itsmelion/node-js](https://github.com/itsmelion/node-js)
+1. 🎉 Merged PR [#11](https://github.com/alia-code/core/pull/11) in [alia-code/core](https://github.com/alia-code/core)
+2. 🎉 Merged PR [#10](https://github.com/alia-code/core/pull/10) in [alia-code/core](https://github.com/alia-code/core)
+3. 🎉 Merged PR [#140](https://github.com/itsmelion/itsmelion/pull/140) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. 🎉 Merged PR [#9](https://github.com/itsmelion/react-native-deck-swiper/pull/9) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
+5. ❗️ Closed issue [#8](https://github.com/triggercode/mamp-cli/issues/8) in [triggercode/mamp-cli](https://github.com/triggercode/mamp-cli)
 <!--END_SECTION:activity-->
 
 ___
