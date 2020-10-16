@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#11](https://github.com/alia-code/core/pull/11) in [alia-code/core](https://github.com/alia-code/core)
-2. 🎉 Merged PR [#10](https://github.com/alia-code/core/pull/10) in [alia-code/core](https://github.com/alia-code/core)
-3. 🎉 Merged PR [#140](https://github.com/itsmelion/itsmelion/pull/140) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🎉 Merged PR [#9](https://github.com/itsmelion/react-native-deck-swiper/pull/9) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
-5. ❗️ Closed issue [#8](https://github.com/triggercode/mamp-cli/issues/8) in [triggercode/mamp-cli](https://github.com/triggercode/mamp-cli)
+1. 🎉 Merged PR [#41](https://github.com/itsmelion/live8/pull/41) in [itsmelion/live8](https://github.com/itsmelion/live8)
+2. 🎉 Merged PR [#39](https://github.com/itsmelion/live8/pull/39) in [itsmelion/live8](https://github.com/itsmelion/live8)
+3. 🎉 Merged PR [#42](https://github.com/itsmelion/live8/pull/42) in [itsmelion/live8](https://github.com/itsmelion/live8)
+4. 🎉 Merged PR [#11](https://github.com/alia-code/core/pull/11) in [alia-code/core](https://github.com/alia-code/core)
+5. 🎉 Merged PR [#10](https://github.com/alia-code/core/pull/10) in [alia-code/core](https://github.com/alia-code/core)
 <!--END_SECTION:activity-->
 
 ___
