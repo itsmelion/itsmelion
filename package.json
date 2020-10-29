@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
-    "eslint": "6.8.0",
+    "eslint": "7.12.1",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-lion": "2.0.0-beta10.1",
     "eslint-config-promise": "2.0.2",
@@ -84,6 +84,23 @@
     "not kaios <= 99",
     "not Baidu <= 99"
   ],
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  },
   "license": "MIT",
   "bugs": "https://github.com/itsmelion/portfolio/issues"
 }
