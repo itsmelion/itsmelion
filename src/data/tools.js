@@ -19,13 +19,13 @@ import {
   faQuestion,
 } from '@fortawesome/free-solid-svg-icons';
 
-import nginxLogo from 'images/brands/nginx.png';
-import lightroomLogo from 'images/brands/lightroom.svg';
-import illustratorLogo from 'images/brands/illustrator.svg';
-import photoshopLogo from 'images/brands/photoshop.svg';
-import afterEffectsLogo from 'images/brands/after-effects.svg';
-import webpackLogo from 'images/brands/webpack.svg';
 import autodeskLogo from 'images/brands/3dsmax.svg';
+import afterEffectsLogo from 'images/brands/after-effects.svg';
+import illustratorLogo from 'images/brands/illustrator.svg';
+import lightroomLogo from 'images/brands/lightroom.svg';
+import nginxLogo from 'images/brands/nginx.png';
+import photoshopLogo from 'images/brands/photoshop.svg';
+import webpackLogo from 'images/brands/webpack.svg';
 
 // temporarely adding GraphQL icon, white Fontawesome doesnt add it
 const faGraphQl = {

@@ -22,7 +22,8 @@
     "lint:css": "stylelint './src/**/*.js' './src/**/*.jsx'"
   },
   "resolutions": {
-    "core-js": ">=3.0.0"
+    "core-js": ">=3.0.0",
+    "sass-loader": ">=10.0.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.32",

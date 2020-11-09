@@ -1,7 +1,7 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Hex from 'components/Hex/Hex';
+import React from 'react';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
+import Hex from 'components/Hex/Hex';
 
 const renderImageByType = (Logo) => {
   if (typeof Logo === 'object') return <FontAwesomeIcon icon={Logo} />;

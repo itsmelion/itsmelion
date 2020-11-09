@@ -8,8 +8,8 @@ import {
   // faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
 
-import avatar from 'images/hero/square.jpg';
 import HeroBody from 'components/Header/Hero.png';
+import avatar from 'images/hero/square.jpg';
 
 export const social = {
   github: {

@@ -1,7 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { lang } from 'utils';
+import React from 'react';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
+import { lang } from 'utils';
 import './Experience.scss';
 import i18n from './Experience.i18n';
 

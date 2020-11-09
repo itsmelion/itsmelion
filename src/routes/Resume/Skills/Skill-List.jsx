@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import ReactTooltip from 'react-tooltip';
-import { lang } from 'utils';
-import { yearsFromNow } from 'utilities';
-
 import Tools, { wishlist } from 'data/tools';
+import { yearsFromNow } from 'utilities';
+import { lang } from 'utils';
+
 import './Skills.scss';
 import SkillIcon from './Skill';
 

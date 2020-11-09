@@ -1,9 +1,9 @@
-import React, { memo } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
-import { lang } from 'utils';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { memo } from 'react';
 import * as hero from 'data/hero';
+import { lang } from 'utils';
 
 import './Profile.scss';
 

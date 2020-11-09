@@ -1,5 +1,5 @@
-import worksIcon from './icons8-open_box.png';
 import casesIcon from './icons8-microscope.png';
+import worksIcon from './icons8-open_box.png';
 import resumeIcon from './icons8-paper.png';
 
 export default [

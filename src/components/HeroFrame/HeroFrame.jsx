@@ -1,9 +1,9 @@
 import './HeroFrame.scss';
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { lang } from 'utils';
-import skills from 'data/skills';
+import React from 'react';
 import { social, ocupation } from 'data/hero';
+import skills from 'data/skills';
+import { lang } from 'utils';
 
 const HeroFrame = React.memo(({ picture }) => (
   <article className="HeroFrame">

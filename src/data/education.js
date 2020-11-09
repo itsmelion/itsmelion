@@ -1,7 +1,7 @@
+import cefetLogo from '../images/brands/cefet.png';
 import pitagorasLogo from '../images/brands/pitagoras.png';
 import pucLogo from '../images/brands/puc.png';
 import unaLogo from '../images/brands/una.png';
-import cefetLogo from '../images/brands/cefet.png';
 
 export const scholarity = [
   {

@@ -1,7 +1,7 @@
-import voceMusicoThumb from './voce_musico/thumbnail.png';
-import senseThumb from './sense_bikes/thumbnail.png';
-import live8Logo from './live8/Live8.svg';
 import live8Thumb from './live8/live8-BG.jpg';
+import live8Logo from './live8/Live8.svg';
+import senseThumb from './sense_bikes/thumbnail.png';
+import voceMusicoThumb from './voce_musico/thumbnail.png';
 
 const sense = {
   type: 'all',

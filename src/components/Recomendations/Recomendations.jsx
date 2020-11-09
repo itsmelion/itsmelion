@@ -1,7 +1,7 @@
 import React from 'react';
 import './Recomendations.scss';
-import { lang } from 'utils';
 import recomendations from 'data/recomendations';
+import { lang } from 'utils';
 
 const i18n = {
   source: {

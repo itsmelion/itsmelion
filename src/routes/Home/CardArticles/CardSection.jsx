@@ -1,8 +1,8 @@
 import React from 'react';
+import CardArticles from './CardArticles';
 import mountainSmall from './fel-mountain@0,3x.jpg';
 import mountainMedium from './fel-mountain@0,5x.jpg';
 import mountainLarge from './fel-mountain@1x.jpg';
-import CardArticles from './CardArticles';
 import './CardArticles.scss';
 
 const CardSection = React.memo(() => (

@@ -1,10 +1,10 @@
 import React from 'react';
-import { lang } from 'utils';
-import HeroFrame from '../HeroFrame/HeroFrame';
-import AsyncImage from '../AsyncImage/AsyncImage';
-import holoDefault from './holo-sillhouete.svg';
-import holoPlatform from './holo-base.svg';
 import { bio, picture, name } from '../../data/hero';
+import AsyncImage from '../AsyncImage/AsyncImage';
+import HeroFrame from '../HeroFrame/HeroFrame';
+import holoPlatform from './holo-base.svg';
+import holoDefault from './holo-sillhouete.svg';
+import { lang } from 'utils';
 
 import './Header.scss';
 

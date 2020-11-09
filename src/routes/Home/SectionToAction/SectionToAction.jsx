@@ -1,7 +1,7 @@
 import React from 'react';
-import { lang } from 'utils';
-import { contact } from 'data/hero';
 import Button from 'components/Button/Button';
+import { contact } from 'data/hero';
+import { lang } from 'utils';
 import './SectionToAction.scss';
 
 const texts = {

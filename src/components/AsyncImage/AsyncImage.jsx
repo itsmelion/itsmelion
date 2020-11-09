@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import spinner from './preloader.gif';
 
 export default class AsyncImage extends PureComponent {

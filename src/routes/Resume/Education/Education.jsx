@@ -1,7 +1,7 @@
 import React from 'react';
-import { lang } from 'utils';
-import { scholarity } from 'data/education';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
+import { scholarity } from 'data/education';
+import { lang } from 'utils';
 import './Education.scss';
 
 const Education = React.memo(() => (
