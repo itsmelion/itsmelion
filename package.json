@@ -21,6 +21,9 @@
     "lint:ci": "eslint --ext .jsx --ext .js ./src",
     "lint:css": "stylelint './src/**/*.js' './src/**/*.jsx'"
   },
+  "resolutions": {
+    "core-js": ">=3.0.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.32",
     "@fortawesome/free-brands-svg-icons": "5.15.1",
@@ -69,9 +72,6 @@
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
     "typescript": "4.1.0-beta"
-  },
-  "resolutions": {
-    "core-js": ">=3.0.0"
   },
   "browserslist": [
     ">0.3%",
