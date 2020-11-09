@@ -1,4 +1,4 @@
-import { isPlainObject } from 'lodash';
+import _ from 'lodash';
 /*
   @description exposes user language to global context
   Checks navigator language, then localStorage.lang, then query parameter,
@@ -21,13 +21,13 @@ export default class LanguageService {
     let param;
     const query = window.location.search.substring(1);
     const params = query.split('&');
-    const result = params.map((item) => {
+    const result = _.map(params, (item) => {
       const pair = item.split('=');
       if (pair[0] === parameter) return pair[1];
       return false;
     });
 
-    result.forEach((res) => {
+    _.forEach(result, (res) => {
       if (res) param = res;
     });
 
@@ -68,7 +68,7 @@ const startLanguage = () => {
 };
 
 export const trans = ((lang) => (obj) => {
-  if (!obj || !isPlainObject(obj)) {
+  if (!obj || !_.isPlainObject(obj)) {
     console.warn(obj);
     console.error('Data above is not an Object with language or is undefined.');
     return obj;
