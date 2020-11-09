@@ -69,16 +69,15 @@ const startLanguage = () => {
 
 export const trans = ((lang) => (obj) => {
   if (!obj || !isPlainObject(obj)) {
-    // eslint-disable-next-line no-console
     console.warn(obj);
-    // eslint-disable-next-line no-console
     console.error('Data above is not an Object with language or is undefined.');
     return obj;
   }
 
   if (obj && !obj[lang]) {
-    // eslint-disable-next-line no-console
-    console.warn(`Non existent language.. trying defaults. DEFAULT: ${defaultLang}\n; Available: [${Object.keys(obj).toString()}]`);
+    console.warn(`Non existent language.. trying defaults.
+DEFAULT: ${defaultLang}\n;
+Available: [${Object.keys(obj).toString()}]`);
     return obj[defaultLang] || obj[Object.keys(obj)[0]] || obj;
   }
 
