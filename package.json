@@ -68,7 +68,7 @@
     "@typescript-eslint/parser": "4.8.1",
     "node-pre-gyp": "0.16.0",
     "react-is": "17.0.1",
-    "stylelint": "13.7.2",
+    "stylelint": "13.8.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
