@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#206](https://github.com/itsmelion/itsmelion/pull/206) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🎉 Merged PR [#229](https://github.com/itsmelion/flamework/pull/229) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-3. 🎉 Merged PR [#230](https://github.com/itsmelion/flamework/pull/230) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-4. 🎉 Merged PR [#205](https://github.com/itsmelion/itsmelion/pull/205) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-5. 🎉 Merged PR [#78](https://github.com/itsmelion/live8/pull/78) in [itsmelion/live8](https://github.com/itsmelion/live8)
+1. 🗣 Commented on [#6031](https://github.com/aws-amplify/amplify-js/issues/6031) in [aws-amplify/amplify-js](https://github.com/aws-amplify/amplify-js)
+2. 🎉 Merged PR [#20](https://github.com/alia-code/core/pull/20) in [alia-code/core](https://github.com/alia-code/core)
+3. 🎉 Merged PR [#206](https://github.com/itsmelion/itsmelion/pull/206) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. 🎉 Merged PR [#229](https://github.com/itsmelion/flamework/pull/229) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+5. 🎉 Merged PR [#230](https://github.com/itsmelion/flamework/pull/230) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
 <!--END_SECTION:activity-->
 
 ___
