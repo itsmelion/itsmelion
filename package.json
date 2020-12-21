@@ -63,7 +63,7 @@
     "node-sass": "5.0.0"
   },
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.10.0",
+    "@typescript-eslint/eslint-plugin": "4.11.0",
     "@typescript-eslint/parser": "4.11.0",
     "node-pre-gyp": "0.17.0",
     "react-is": "17.0.1",
