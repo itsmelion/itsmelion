@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/itsmelion/drover/pull/2) in [itsmelion/drover](https://github.com/itsmelion/drover)
-2. 🎉 Merged PR [#2](https://github.com/itsmelion/arcane-capsule/pull/2) in [itsmelion/arcane-capsule](https://github.com/itsmelion/arcane-capsule)
-3. 🎉 Merged PR [#90](https://github.com/itsmelion/live8/pull/90) in [itsmelion/live8](https://github.com/itsmelion/live8)
-4. 🎉 Merged PR [#237](https://github.com/itsmelion/itsmelion/pull/237) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-5. 🎉 Merged PR [#288](https://github.com/itsmelion/flamework/pull/288) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+1. 🎉 Merged PR [#296](https://github.com/itsmelion/flamework/pull/296) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+2. 🎉 Merged PR [#239](https://github.com/itsmelion/itsmelion/pull/239) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+3. 🎉 Merged PR [#2](https://github.com/itsmelion/drover/pull/2) in [itsmelion/drover](https://github.com/itsmelion/drover)
+4. 🎉 Merged PR [#2](https://github.com/itsmelion/arcane-capsule/pull/2) in [itsmelion/arcane-capsule](https://github.com/itsmelion/arcane-capsule)
+5. 🎉 Merged PR [#90](https://github.com/itsmelion/live8/pull/90) in [itsmelion/live8](https://github.com/itsmelion/live8)
 <!--END_SECTION:activity-->
 
 ___
