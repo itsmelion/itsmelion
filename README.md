@@ -20,11 +20,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#96](https://github.com/itsmelion/live8/pull/96) in [itsmelion/live8](https://github.com/itsmelion/live8)
-2. 🎉 Merged PR [#316](https://github.com/itsmelion/flamework/pull/316) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-3. 🎉 Merged PR [#251](https://github.com/itsmelion/itsmelion/pull/251) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🗣 Commented on [#2725](https://github.com/FortAwesome/Font-Awesome/issues/2725) in [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
-5. 🎉 Merged PR [#247](https://github.com/itsmelion/itsmelion/pull/247) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+1. 🎉 Merged PR [#254](https://github.com/itsmelion/itsmelion/pull/254) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+2. 🎉 Merged PR [#1](https://github.com/itsmelion/settings/pull/1) in [itsmelion/settings](https://github.com/itsmelion/settings)
+3. 🎉 Merged PR [#255](https://github.com/itsmelion/itsmelion/pull/255) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. 🎉 Merged PR [#105](https://github.com/itsmelion/live8/pull/105) in [itsmelion/live8](https://github.com/itsmelion/live8)
+5. 🎉 Merged PR [#331](https://github.com/itsmelion/flamework/pull/331) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
 <!--END_SECTION:activity-->
 
 ___
