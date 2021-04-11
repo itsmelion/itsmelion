@@ -15,7 +15,6 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 - Love build utilities aimed at increasing Developer productivity; 🧰
 - A people first guy. Valor human & bio diversity. Honor, justice and wisdom. 🌍
 
-![Top programming languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsmelion&hide=php)
 ---
 ### 📰 Recent Activity
 
