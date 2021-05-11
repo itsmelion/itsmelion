@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#19](https://github.com/itsmelion/brewser/pull/19) in [itsmelion/brewser](https://github.com/itsmelion/brewser)
-2. 🎉 Merged PR [#20](https://github.com/itsmelion/brewser/pull/20) in [itsmelion/brewser](https://github.com/itsmelion/brewser)
-3. 🎉 Merged PR [#43](https://github.com/alia-code/core/pull/43) in [alia-code/core](https://github.com/alia-code/core)
-4. ❌ Closed PR [#140](https://github.com/itsmelion/lion-lint/pull/140) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-5. 🎉 Merged PR [#323](https://github.com/itsmelion/itsmelion/pull/323) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+1. 🎉 Merged PR [#25](https://github.com/itsmelion/react-native-deck-swiper/pull/25) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
+2. 🎉 Merged PR [#139](https://github.com/itsmelion/live8/pull/139) in [itsmelion/live8](https://github.com/itsmelion/live8)
+3. 🎉 Merged PR [#334](https://github.com/itsmelion/itsmelion/pull/334) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. 🎉 Merged PR [#19](https://github.com/itsmelion/brewser/pull/19) in [itsmelion/brewser](https://github.com/itsmelion/brewser)
+5. 🎉 Merged PR [#20](https://github.com/itsmelion/brewser/pull/20) in [itsmelion/brewser](https://github.com/itsmelion/brewser)
 <!--END_SECTION:activity-->
 
 ___
