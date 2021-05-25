@@ -22,7 +22,7 @@
     "lint:css": "stylelint './src/**/*.js' './src/**/*.jsx'"
   },
   "resolutions": {
-    "core-js": "3.12.1",
+    "core-js": "3.13.0",
     "sass-loader": ">=10.0.5"
   },
   "dependencies": {
