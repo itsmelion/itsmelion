@@ -19,10 +19,10 @@ import {
   gatsby,
 } from './tools';
 import backrLogo from 'images/brands/backr.svg';
+import dephionLogo from 'images/brands/dephion.png';
 import destakLogo from 'images/brands/destak.jpg';
 import droverLogo from 'images/brands/drover.png';
 import generousLogo from 'images/brands/generous.jpg';
-import dephionLogo from 'images/brands/dephion.png';
 import mgRepresentacoesLogo from 'images/brands/mgrepresentacoes.png';
 import expatLogo from 'images/brands/planetexpat.png';
 import primeLogo from 'images/brands/primeit-it.png';
