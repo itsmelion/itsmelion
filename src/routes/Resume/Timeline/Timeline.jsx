@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Modal from 'react-modal';
-import experiences from 'data/experiences';
+import { experiences } from 'data/experiences';
 import './Timeline.scss';
 import Company from './Company/Company';
 import Experience from '../Experience/Experience';

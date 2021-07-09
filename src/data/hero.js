@@ -76,16 +76,16 @@ export const contact = {
     label: 'christhopher.amaral',
     url: 'https://join.skype.com/invite/QRZJqK4phjyU',
   },
-  phone: '+351913840493',
+  phone: '+31682135435',
   agenda: 'https://calendly.com/itsmelion/talk',
 };
 
 export const address = {
-  street: 'R. Bombeiros Voluntários 20, Odivelas',
-  complement: 'Cave Esquerda',
-  code: '2675-304',
-  city: 'Lisbon',
-  country: 'Portugal',
+  street: 'Henri Hermanslaan 538',
+  complement: '',
+  code: '6162GW',
+  city: 'Geleen',
+  country: 'Netherlands',
 };
 
 export const bio = {

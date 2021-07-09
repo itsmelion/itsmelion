@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-unresolved
 import Work from './Work/Work';
 import portfolio from 'data/portfolio';
 

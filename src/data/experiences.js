@@ -22,6 +22,7 @@ import backrLogo from 'images/brands/backr.svg';
 import destakLogo from 'images/brands/destak.jpg';
 import droverLogo from 'images/brands/drover.png';
 import generousLogo from 'images/brands/generous.jpg';
+import dephionLogo from 'images/brands/dephion.png';
 import mgRepresentacoesLogo from 'images/brands/mgrepresentacoes.png';
 import expatLogo from 'images/brands/planetexpat.png';
 import primeLogo from 'images/brands/primeit-it.png';
@@ -554,11 +555,11 @@ const Generous = {
     },
     end: {
       month: {
-        semester: 0,
-        en: 'early',
-        pt: 'início de',
+        semester: 2,
+        en: 'ends',
+        pt: 'final de',
       },
-      year: 2022,
+      year: 2020,
     },
   },
   business: 'Services of development and design of software',
@@ -583,4 +584,50 @@ const Generous = {
   },
 };
 
-export default [alia, PrimeIT, Generous];
+const Dephion = {
+  name: 'Dephion',
+  position: 'Frontend Developer',
+  logo: dephionLogo,
+  ref: 'dephion.com',
+  period: {
+    start: {
+      month: {
+        semester: 2,
+        en: 'ends',
+        pt: 'final de',
+      },
+      year: 2020,
+    },
+    end: {
+      month: {
+        semester: 2,
+        en: 'ends',
+        pt: 'final de',
+      },
+      year: 2022,
+    },
+  },
+  business: 'Software mostly for Health Care and wellbeing industry',
+  description: {
+    en: `
+      Dephion is a somewhat flat hierarchy company, and we are always involved in: code review, application architecture decisions, product enhancement, etc.
+      We worked a lot on apps with a lot of animated content, siding with a unity3d team to deliver a health-care app with a realistic human coach.
+    `,
+    get pt() { return this.en; },
+  },
+  technologies: {
+    direct: [
+      wordpress,
+      nodeJs,
+      react,
+      gatsby,
+      graphQL,
+      nginx,
+      bash,
+      microServices,
+    ],
+  },
+};
+
+/** Experiences array, used to build the timeline */
+export const experiences = [alia, PrimeIT, Generous, Dephion];

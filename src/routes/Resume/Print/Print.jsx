@@ -3,7 +3,7 @@ import React from 'react';
 import SkillIcon from '../Skills/Skill';
 import Wrapper from './Print.styled';
 import { scholarity } from 'data/education';
-import exp from 'data/experiences';
+import { experiences } from 'data/experiences';
 import * as hero from 'data/hero';
 import Tools, { wishlist } from 'data/tools';
 
@@ -120,7 +120,7 @@ const Print = () => (
 
     <h4>Work Experience</h4>
 
-    {exp.reverse().map((experience) => (
+    {experiences.reverse().map((experience) => (
       <Experience key={experience.name} exp={experience} print />
     ))}
   </Wrapper>
