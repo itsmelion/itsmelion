@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import spinner from './preloader.gif';
 
@@ -31,11 +30,3 @@ export default class AsyncImage extends PureComponent {
     );
   }
 }
-
-AsyncImage.propTypes = {
-  path: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-};
-
-AsyncImage.defaultProps = {
-  path: false,
-};

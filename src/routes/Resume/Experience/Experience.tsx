@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
 import { lang } from 'utils';
+
 import './Experience.scss';
 import i18n from './Experience.i18n';
 
-const Business = React.memo(({ exp }) => (
+const Business = React.memo(({ exp }: ExperienceProps) => (
   <div className="business">
     <AsyncImage
       alt={exp.name}
@@ -55,10 +55,6 @@ const Archievements = React.memo(({ archievements }) => (
     ))}
   </ol>
 ));
-
-Archievements.propTypes = {
-  archievements: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
 
 const Experience = ({ print, exp }) => (
   <article className={`Experience ${print ? 'print' : ''}`}>
@@ -134,22 +130,22 @@ const Experience = ({ print, exp }) => (
   </article>
 );
 
-Experience.propTypes = {
-  print: PropTypes.bool,
-  exp: PropTypes.shape({
-    name: PropTypes.string,
-    ref: PropTypes.string,
-    position: PropTypes.string,
-    period: PropTypes.object,
-    description: PropTypes.object,
-    logo: PropTypes.string,
-    archievements: PropTypes.arrayOf(PropTypes.string),
-    technologies: PropTypes.shape({
-      direct: PropTypes.arrayOf(PropTypes.object),
-      indirect: PropTypes.arrayOf(PropTypes.object),
-    }),
-  }).isRequired,
-};
+interface ExperienceProps {
+  print?: boolean;
+  exp: {
+    name: string;
+    ref: string;
+    position: string;
+    period: Record<string, unknown>;
+    description: Record<string, unknown>;
+    logo: string;
+    archievements: string[],
+    technologies: {
+      direct: Record<string, unknown>[],
+      indirect: Record<string, unknown>[],
+    };
+  };
+}
 
 Experience.defaultProps = {
   print: false,
