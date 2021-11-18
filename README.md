@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗️ Opened issue [#416](https://github.com/vvo/iron-session/issues/416) in [vvo/iron-session](https://github.com/vvo/iron-session)
-2. 🎉 Merged PR [#481](https://github.com/itsmelion/itsmelion/pull/481) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-3. ❌ Closed PR [#480](https://github.com/itsmelion/itsmelion/pull/480) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🎉 Merged PR [#788](https://github.com/itsmelion/flamework/pull/788) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#34](https://github.com/itsmelion/react-native-deck-swiper/pull/34) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
+1. 🗣 Commented on [#416](https://github.com/vvo/iron-session/issues/416) in [vvo/iron-session](https://github.com/vvo/iron-session)
+2. ❗️ Opened issue [#416](https://github.com/vvo/iron-session/issues/416) in [vvo/iron-session](https://github.com/vvo/iron-session)
+3. 🎉 Merged PR [#481](https://github.com/itsmelion/itsmelion/pull/481) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. ❌ Closed PR [#480](https://github.com/itsmelion/itsmelion/pull/480) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🎉 Merged PR [#788](https://github.com/itsmelion/flamework/pull/788) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
 <!--END_SECTION:activity-->
 
 ___
