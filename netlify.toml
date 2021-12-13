@@ -14,7 +14,7 @@
   # This is where we will look for your lambda functions
   # functions = "project/functions/"
 [build.environment]
-  NODE_VERSION = "node"
+  NODE_VERSION = "16"
   YARN_FLAGS = "--production --frozen-lockfile --silent"
   # RUBY_VERSION = "2.7.1"
 # RUBY_VERSION may be nescessary until removal of node-sass
