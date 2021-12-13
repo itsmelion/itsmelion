@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cards from './CardArticles.i18n';
 import { lang } from 'utils';
+import cards from './CardArticles.i18n';
 import './CardArticles.scss';
 
 const CardArticles = React.memo(() => cards.map((card) => (

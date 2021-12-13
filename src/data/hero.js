@@ -148,4 +148,4 @@ export const inDepth = {
   get pt() { return this.en; },
 };
 
-export const url = 'https://lion.alia.ml/';
+export const url = 'https://lion-portfolio.netlify.app/';

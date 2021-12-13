@@ -1,8 +1,8 @@
 import { faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { memo } from 'react';
 import * as hero from 'data/hero';
+import React, { memo } from 'react';
 import { lang } from 'utils';
 
 import './Profile.scss';
@@ -24,7 +24,7 @@ const Profile = () => (
         <div className="mb1">
           <h2>{lang(name)}</h2>
           <h3>{hero.role}</h3>
-          <h5 className="show-print"><a href={hero.url} rel="noopener noreferer">{hero.url}</a></h5>
+          <h5 className="show-print"><a href={hero.url} rel="noopener">{hero.url}</a></h5>
         </div>
 
         <address className="mb1" flex="auto">

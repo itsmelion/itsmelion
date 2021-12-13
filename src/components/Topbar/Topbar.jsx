@@ -1,12 +1,12 @@
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { contact } from 'data/hero';
 import React, { PureComponent } from 'react';
 import { NavLink } from 'react-router-dom';
+import { lang } from 'utils';
 import Hex from '../Hex/Hex';
 import logo from './logo.svg';
 import texts from './Topbar.i18n';
-import { contact } from 'data/hero';
-import { lang } from 'utils';
 import './Topbar.scss';
 
 class Topbar extends PureComponent {

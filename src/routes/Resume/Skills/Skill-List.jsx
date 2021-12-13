@@ -1,6 +1,6 @@
+import Tools, { wishlist } from 'data/tools';
 import React, { memo } from 'react';
 import ReactTooltip from 'react-tooltip';
-import Tools, { wishlist } from 'data/tools';
 import { yearsFromNow } from 'utilities';
 import { lang } from 'utils';
 

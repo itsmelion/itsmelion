@@ -1,6 +1,6 @@
-import React from 'react';
 import Button from 'components/Button/Button';
 import { contact } from 'data/hero';
+import React from 'react';
 import { lang } from 'utils';
 import './SectionToAction.scss';
 

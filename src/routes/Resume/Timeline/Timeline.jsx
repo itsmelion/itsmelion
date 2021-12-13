@@ -1,9 +1,10 @@
-import React, { PureComponent } from 'react';
-import Modal from 'react-modal';
 import { experiences } from 'data/experiences';
+import { PureComponent } from 'react';
+import Modal from 'react-modal';
 import './Timeline.scss';
-import Company from './Company/Company';
+
 import Experience from '../Experience/Experience';
+import Company from './Company/Company';
 
 Modal.setAppElement('#root');
 

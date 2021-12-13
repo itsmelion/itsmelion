@@ -1,14 +1,13 @@
-import React from 'react';
-
-import SkillIcon from '../Skills/Skill';
-import Wrapper from './Print.styled';
 import { scholarity } from 'data/education';
 import { experiences } from 'data/experiences';
 import * as hero from 'data/hero';
 import Tools, { wishlist } from 'data/tools';
+import React from 'react';
 
 import Experience from 'routes/Resume/Experience/Experience';
 import { lang } from 'utils';
+import SkillIcon from '../Skills/Skill';
+import Wrapper from './Print.styled';
 
 const Skill = ({ name, ...props }) => (
   <div key={name} align="center center" className="tool center " column="">

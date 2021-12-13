@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { lang } from 'utils';
 import Button from '../Button/Button';
 import i18n from './Footer.i18n';
-import { lang } from 'utils';
 
 const CallToActions = () => (
   <section

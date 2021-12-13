@@ -1,6 +1,6 @@
-import React from 'react';
 import { social, lastName } from 'data/hero';
 import logo from 'images/logo.png';
+import React from 'react';
 import { lang } from 'utils';
 
 import './Footer.scss';

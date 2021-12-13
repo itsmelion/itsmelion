@@ -86,10 +86,10 @@
   status = 200
 
 # The following redirect is intended for use with most SPA's that handles routing internally.
-[[redirects]]
-  from = "https://lion-portfolio.netlify.com/*"
-  to = "https://lion.alia.ml/:splat"
-  status = 200
+# [[redirects]]
+#   from = "https://lion-portfolio.netlify.com/*"
+#   to = "https://lion.alia.ml/:splat"
+#   status = 200
 
 # [[redirects]]
 #   from = "/api/*"

@@ -1,16 +1,15 @@
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-
-import Education from './Education/Education';
-import Profile from './Profile/Profile';
-import SkillList from './Skills/Skill-List';
-import Timeline from './Timeline/Timeline';
 import Button from 'components/Button/Button';
 import Certifications from 'components/Certifications/Certifications';
 import certifications from 'data/certifications';
 import { social } from 'data/hero';
+
 import { lang } from 'utils';
+import Education from './Education/Education';
+import Profile from './Profile/Profile';
+import SkillList from './Skills/Skill-List';
+import Timeline from './Timeline/Timeline';
 import './Resume.scss';
 
 const driveURL = 'https://drive.google.com/uc?export=download&id=';

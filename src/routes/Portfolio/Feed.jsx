@@ -1,6 +1,6 @@
+import portfolio from 'data/portfolio';
 import React from 'react';
 import Work from './Work/Work';
-import portfolio from 'data/portfolio';
 
 const Feed = () => (
   <main contain="" flex="" id="Portfolio-feed">

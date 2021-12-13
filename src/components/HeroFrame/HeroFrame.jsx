@@ -1,8 +1,8 @@
 import './HeroFrame.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
 import { social, ocupation } from 'data/hero';
 import skills from 'data/skills';
+import React from 'react';
 import { lang } from 'utils';
 
 const HeroFrame = React.memo(({ picture }) => (
