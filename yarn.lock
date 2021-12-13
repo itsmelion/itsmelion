@@ -2382,7 +2382,7 @@ axobject-query@^2.2.0:
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
   integrity sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==
 
-babel-eslint@^10.1.0:
+babel-eslint@10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
   integrity sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==
@@ -7788,7 +7788,7 @@ react-router@5.2.1:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-scripts@^5.0.0-next.58:
+react-scripts@5.0.0-next.58:
   version "5.0.0-next.58"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-5.0.0-next.58.tgz#eacb11e75b588129dc177c0fa0b1e16c549d33f9"
   integrity sha512-7c7hvLB7z7gTOUfcWQhrOLvUSOCGzE1hZK5AgJoC0eQKs4jc354q+62bGzbL4Efii2dBmqsefXykJmpmtvBxCQ==
