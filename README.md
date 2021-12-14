@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#495](https://github.com/itsmelion/itsmelion/pull/495) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🎉 Merged PR [#258](https://github.com/itsmelion/lion-lint/pull/258) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-3. 🎉 Merged PR [#494](https://github.com/itsmelion/itsmelion/pull/494) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🎉 Merged PR [#817](https://github.com/itsmelion/flamework/pull/817) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#259](https://github.com/itsmelion/lion-lint/pull/259) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+1. ❌ Closed PR [#499](https://github.com/itsmelion/itsmelion/pull/499) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+2. 🎉 Merged PR [#262](https://github.com/itsmelion/lion-lint/pull/262) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+3. 🎉 Merged PR [#827](https://github.com/itsmelion/flamework/pull/827) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+4. 🎉 Merged PR [#500](https://github.com/itsmelion/itsmelion/pull/500) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🎉 Merged PR [#495](https://github.com/itsmelion/itsmelion/pull/495) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 <!--END_SECTION:activity-->
 
 ___
