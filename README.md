@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#265](https://github.com/itsmelion/lion-lint/pull/265) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-2. 🎉 Merged PR [#840](https://github.com/itsmelion/flamework/pull/840) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-3. 🎉 Merged PR [#35](https://github.com/itsmelion/react-native-deck-swiper/pull/35) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
-4. 🎉 Merged PR [#852](https://github.com/itsmelion/flamework/pull/852) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#838](https://github.com/itsmelion/flamework/pull/838) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+1. 🗣 Commented on [#509](https://github.com/itsmelion/itsmelion/issues/509) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+2. ❌ Closed PR [#509](https://github.com/itsmelion/itsmelion/pull/509) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+3. 🎉 Merged PR [#270](https://github.com/itsmelion/lion-lint/pull/270) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+4. 🎉 Merged PR [#511](https://github.com/itsmelion/itsmelion/pull/511) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🎉 Merged PR [#265](https://github.com/itsmelion/lion-lint/pull/265) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
 <!--END_SECTION:activity-->
 
 ___
