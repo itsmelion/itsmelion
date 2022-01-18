@@ -31,7 +31,7 @@
     "@fortawesome/free-regular-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.16",
-    "axios": "0.24.0",
+    "axios": "0.25.0",
     "flamework": "4.2.1",
     "lodash": "4.17.21",
     "react": "17.0.2",
