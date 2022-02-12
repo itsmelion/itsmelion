@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#4](https://github.com/itsmelion/ecommerce-feed/pull/4) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
-2. 🎉 Merged PR [#5](https://github.com/itsmelion/drover/pull/5) in [itsmelion/drover](https://github.com/itsmelion/drover)
-3. 🎉 Merged PR [#4](https://github.com/itsmelion/drover/pull/4) in [itsmelion/drover](https://github.com/itsmelion/drover)
-4. 🎉 Merged PR [#3](https://github.com/itsmelion/ecommerce-feed/pull/3) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
-5. 🎉 Merged PR [#2](https://github.com/itsmelion/ecommerce-feed/pull/2) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
+1. 🎉 Merged PR [#6](https://github.com/itsmelion/ecommerce-feed/pull/6) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
+2. 🎉 Merged PR [#7](https://github.com/itsmelion/drover/pull/7) in [itsmelion/drover](https://github.com/itsmelion/drover)
+3. 🎉 Merged PR [#4](https://github.com/itsmelion/ecommerce-feed/pull/4) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
+4. 🎉 Merged PR [#5](https://github.com/itsmelion/drover/pull/5) in [itsmelion/drover](https://github.com/itsmelion/drover)
+5. 🎉 Merged PR [#4](https://github.com/itsmelion/drover/pull/4) in [itsmelion/drover](https://github.com/itsmelion/drover)
 <!--END_SECTION:activity-->
 
 ___
