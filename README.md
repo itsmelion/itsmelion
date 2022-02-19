@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#545](https://github.com/itsmelion/itsmelion/pull/545) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🎉 Merged PR [#544](https://github.com/itsmelion/itsmelion/pull/544) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-3. 🎉 Merged PR [#539](https://github.com/itsmelion/itsmelion/pull/539) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🎉 Merged PR [#6](https://github.com/itsmelion/ecommerce-feed/pull/6) in [itsmelion/ecommerce-feed](https://github.com/itsmelion/ecommerce-feed)
-5. 🎉 Merged PR [#7](https://github.com/itsmelion/drover/pull/7) in [itsmelion/drover](https://github.com/itsmelion/drover)
+1. 🗣 Commented on [#738](https://github.com/mrousavy/react-native-vision-camera/issues/738) in [mrousavy/react-native-vision-camera](https://github.com/mrousavy/react-native-vision-camera)
+2. 🗣 Commented on [#32555](https://github.com/facebook/react-native/issues/32555) in [facebook/react-native](https://github.com/facebook/react-native)
+3. 🎉 Merged PR [#545](https://github.com/itsmelion/itsmelion/pull/545) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+4. 🎉 Merged PR [#544](https://github.com/itsmelion/itsmelion/pull/544) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🎉 Merged PR [#539](https://github.com/itsmelion/itsmelion/pull/539) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 <!--END_SECTION:activity-->
 
 ___
