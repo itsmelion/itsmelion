@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#306](https://github.com/itsmelion/lion-lint/pull/306) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-2. 🎉 Merged PR [#307](https://github.com/itsmelion/lion-lint/pull/307) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-3. 🎉 Merged PR [#8](https://github.com/itsmelion/settings/pull/8) in [itsmelion/settings](https://github.com/itsmelion/settings)
-4. 🎉 Merged PR [#568](https://github.com/itsmelion/itsmelion/pull/568) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-5. 🎉 Merged PR [#567](https://github.com/itsmelion/itsmelion/pull/567) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+1. 🎉 Merged PR [#582](https://github.com/itsmelion/itsmelion/pull/582) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+2. 🗣 Commented on [#183](https://github.com/chakra-ui/chakra-ui/issues/183) in [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui)
+3. 🎉 Merged PR [#976](https://github.com/itsmelion/flamework/pull/976) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+4. 🎉 Merged PR [#576](https://github.com/itsmelion/itsmelion/pull/576) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🎉 Merged PR [#306](https://github.com/itsmelion/lion-lint/pull/306) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
 <!--END_SECTION:activity-->
 
 ___
