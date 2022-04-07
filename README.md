@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#582](https://github.com/itsmelion/itsmelion/pull/582) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🗣 Commented on [#183](https://github.com/chakra-ui/chakra-ui/issues/183) in [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui)
-3. 🎉 Merged PR [#976](https://github.com/itsmelion/flamework/pull/976) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-4. 🎉 Merged PR [#576](https://github.com/itsmelion/itsmelion/pull/576) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-5. 🎉 Merged PR [#306](https://github.com/itsmelion/lion-lint/pull/306) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+1. 🎉 Merged PR [#979](https://github.com/itsmelion/flamework/pull/979) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+2. 🎉 Merged PR [#981](https://github.com/itsmelion/flamework/pull/981) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+3. ❌ Closed PR [#5](https://github.com/guzart/eslint-import-resolver-reactnative/pull/5) in [guzart/eslint-import-resolver-reactnative](https://github.com/guzart/eslint-import-resolver-reactnative)
+4. 🎉 Merged PR [#582](https://github.com/itsmelion/itsmelion/pull/582) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+5. 🗣 Commented on [#183](https://github.com/chakra-ui/chakra-ui/issues/183) in [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui)
 <!--END_SECTION:activity-->
 
 ___
