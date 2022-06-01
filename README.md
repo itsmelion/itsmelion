@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#335](https://github.com/itsmelion/lion-lint/pull/335) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-2. 🎉 Merged PR [#1](https://github.com/itsmelion/laserwave/pull/1) in [itsmelion/laserwave](https://github.com/itsmelion/laserwave)
-3. 💪 Opened PR [#1](https://github.com/itsmelion/laserwave/pull/1) in [itsmelion/laserwave](https://github.com/itsmelion/laserwave)
-4. 🎉 Merged PR [#1051](https://github.com/itsmelion/flamework/pull/1051) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#331](https://github.com/itsmelion/lion-lint/pull/331) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+1. 🎉 Merged PR [#1062](https://github.com/itsmelion/flamework/pull/1062) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+2. 🎉 Merged PR [#623](https://github.com/itsmelion/itsmelion/pull/623) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+3. 🎉 Merged PR [#335](https://github.com/itsmelion/lion-lint/pull/335) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+4. 🎉 Merged PR [#1](https://github.com/itsmelion/laserwave/pull/1) in [itsmelion/laserwave](https://github.com/itsmelion/laserwave)
+5. 💪 Opened PR [#1](https://github.com/itsmelion/laserwave/pull/1) in [itsmelion/laserwave](https://github.com/itsmelion/laserwave)
 <!--END_SECTION:activity-->
 
 ___
