@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#149](https://github.com/ShyykoSerhiy/vscode-spotify/issues/149) in [ShyykoSerhiy/vscode-spotify](https://github.com/ShyykoSerhiy/vscode-spotify)
-2. 🎉 Merged PR [#596](https://github.com/itsmelion/itsmelion/pull/596) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-3. 🎉 Merged PR [#633](https://github.com/itsmelion/itsmelion/pull/633) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-4. 🎉 Merged PR [#1077](https://github.com/itsmelion/flamework/pull/1077) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
-5. 🎉 Merged PR [#629](https://github.com/itsmelion/itsmelion/pull/629) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+1. 🎉 Merged PR [#339](https://github.com/itsmelion/lion-lint/pull/339) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+2. 🎉 Merged PR [#638](https://github.com/itsmelion/itsmelion/pull/638) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
+3. 🎉 Merged PR [#1096](https://github.com/itsmelion/flamework/pull/1096) in [itsmelion/flamework](https://github.com/itsmelion/flamework)
+4. 🎉 Merged PR [#350](https://github.com/itsmelion/lion-lint/pull/350) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+5. 🎉 Merged PR [#349](https://github.com/itsmelion/lion-lint/pull/349) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
 <!--END_SECTION:activity-->
 
 ___
