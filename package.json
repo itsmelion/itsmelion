@@ -22,8 +22,7 @@
   },
   "resolutions": {
     "core-js": "^3",
-    "sass-loader": "^13.0.0",
-    "eslint": "^7.32.0 || ^8.0.0"
+    "sass-loader": ">=13.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.2.0",
