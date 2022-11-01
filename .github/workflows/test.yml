@@ -22,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo if should run
-      run: echo "Feels okay man."
       if: github.event.pull_request.draft === true
       run: |
         echo "Feels okay man."
