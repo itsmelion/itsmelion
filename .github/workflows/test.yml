@@ -10,6 +10,7 @@ on:
     - dev
     - development
     - staging
+    types: [opened, synchronize, reopened, 'ready_for_review']
 
 env:
   CI: true
@@ -19,17 +20,11 @@ env:
 
 jobs:
   lint-and-build:
+    if: github.event.pull_request.draft != true
     runs-on: ubuntu-latest
     steps:
     - name: echo if should run
-      if: github.event.pull_request.draft == true
       run: |
         echo "Feels okay man."
         echo '::warning:: PR is in draft'
-        echo "::stop-commands::$stopMarker"
-
-    - name: how about this?
-      run: |
-        echo "Feels bad man."
-        echo '::warning:: PR is in draft'
-        echo "::stop-commands::$stopMarker"
+        echo "::stop-commands:: feels okay man"
