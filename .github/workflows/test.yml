@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo if should run
-      if: github.event.pull_request.draft === true
+      if: github.event.pull_request.draft == true
       run: |
         echo "Feels okay man."
         echo '::warning:: PR is in draft'
