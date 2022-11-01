@@ -2,9 +2,8 @@ import { scholarity } from 'data/education';
 import { experiences } from 'data/experiences';
 import * as hero from 'data/hero';
 import Tools, { wishlist } from 'data/tools';
-import React from 'react';
 
-import Experience from 'routes/Resume/Experience/Experience';
+import Experience from '../Experience/Experience';
 import { lang } from 'utils';
 import SkillIcon from '../Skills/Skill';
 import Wrapper from './Print.styled';

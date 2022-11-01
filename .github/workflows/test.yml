@@ -1,0 +1,30 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+    - main
+    - dev
+    - development
+    - staging
+    types: [opened, synchronize, reopened, 'ready_for_review']
+
+env:
+  CI: true
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  HUSKY_SKIP_INSTALL: true
+
+jobs:
+  lint-and-build:
+    if: github.event.pull_request.draft != true
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo if should run
+      run: |
+        echo "Feels okay man."
+        echo '::warning:: PR is in draft'
+        echo "::stop-commands:: feels okay man"
