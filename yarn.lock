@@ -8726,10 +8726,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
-react-tooltip@4.4.3:
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.4.3.tgz#44cbb6c8bdb3281c2819d16c92e3c419ebd98582"
-  integrity sha512-l7/TDBwq3JtuLBtq6FvIs7wsqcHjvoHFT8AvNGpf0JhHwzh+ZhCDN25wM/+gxelj8i1ngw/ULFv53XRQ/wCMzQ==
+react-tooltip@4.4.4:
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.4.4.tgz#a36e7a0242d3e6478c9f775383bc0cb911400a52"
+  integrity sha512-4c98L4GLAloSJBr6DY06UuAo4vX6ttjs1HvzqSItBFhErllniVA8HYZk5FBd/6u29joc6JL5lbGzA4zCHJw3bQ==
   dependencies:
     prop-types "^15.8.1"
     uuid "^7.0.3"
