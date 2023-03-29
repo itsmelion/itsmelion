@@ -3,10 +3,11 @@ import { experiences } from 'data/experiences';
 import * as hero from 'data/hero';
 import Tools, { wishlist } from 'data/tools';
 
-import Experience from '../Experience/Experience';
 import { lang } from 'utils';
-import SkillIcon from '../Skills/Skill';
+
 import Wrapper from './Print.styled';
+import { Experience } from '../Experience/Experience';
+import SkillIcon from '../Skills/Skill';
 
 const Skill = ({ name, ...props }) => (
   <div key={name} align="center center" className="tool center " column="">

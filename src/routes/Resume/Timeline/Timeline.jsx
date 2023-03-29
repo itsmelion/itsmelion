@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 import Modal from 'react-modal';
 import './Timeline.scss';
 
-import Experience from '../Experience/Experience';
+import {Experience} from '../Experience/Experience';
 import Company from './Company/Company';
 
 Modal.setAppElement('#root');

@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import backrLogo from 'images/brands/backr.svg';
 import dephionLogo from 'images/brands/dephion.png';
 import destakLogo from 'images/brands/destak.jpg';
@@ -11,6 +10,7 @@ import crmLogo from 'images/brands/rd-station_crm.svg';
 import robosLogo from 'images/brands/robos.png';
 import visionBoxLogo from 'images/brands/visionBox.svg';
 import aliaLogo from 'images/logo.png';
+
 import {
   adobeIllustrator,
   adobeAfterEffects,
@@ -600,11 +600,11 @@ const Dephion = {
     },
     end: {
       month: {
-        semester: 2,
+        semester: 1,
         en: 'ends',
         pt: 'final de',
       },
-      year: 2022,
+      year: 2023,
     },
   },
   business: 'Software mostly for Health Care and wellbeing industry',
@@ -617,14 +617,9 @@ const Dephion = {
   },
   technologies: {
     direct: [
-      wordpress,
       nodeJs,
       react,
-      gatsby,
       graphQL,
-      nginx,
-      bash,
-      microServices,
     ],
   },
 };

@@ -1,9 +1,11 @@
-import { lang } from 'utils';
 import AsyncImage from 'components/AsyncImage/AsyncImage';
+import { memo } from 'react';
+import { lang } from 'utils';
+
 import './Experience.scss';
 import i18n from './Experience.i18n';
 
-const Business = React.memo(({ exp }) => (
+const Business = memo(({ exp }) => (
   <div className="business">
     <AsyncImage
       alt={exp.name}
@@ -45,7 +47,9 @@ const Business = React.memo(({ exp }) => (
   </div>
 ));
 
-const Archievements = React.memo(({ archievements }) => (
+const Archievements = memo(({ archievements }: {
+  archievements: string[],
+}) => (
   <ol className="mv1 archievements">
     <h6>Achievements</h6>
     {archievements.map((item) => (
@@ -54,11 +58,7 @@ const Archievements = React.memo(({ archievements }) => (
   </ol>
 ));
 
-Archievements.propTypes = {
-  archievements: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
-
-const Experience = ({ print, exp }) => (
+export const Experience = ({ print, exp }: ExperienceProps) => (
   <article className={`Experience ${print ? 'print' : ''}`}>
     <div row="nowrap">
       <Business exp={exp} />
@@ -132,25 +132,25 @@ const Experience = ({ print, exp }) => (
   </article>
 );
 
-Experience.propTypes = {
-  print: PropTypes.bool,
-  exp: PropTypes.shape({
-    name: PropTypes.string,
-    ref: PropTypes.string,
-    position: PropTypes.string,
-    period: PropTypes.object,
-    description: PropTypes.object,
-    logo: PropTypes.string,
-    archievements: PropTypes.arrayOf(PropTypes.string),
-    technologies: PropTypes.shape({
-      direct: PropTypes.arrayOf(PropTypes.object),
-      indirect: PropTypes.arrayOf(PropTypes.object),
-    }),
-  }).isRequired,
-};
+interface ExperienceProps {
+  print?: boolean;
+  exp: ExperienceItem,
+}
+
+interface ExperienceItem {
+  name: string,
+  ref: string,
+  position: string,
+  period: object,
+  description: object,
+  logo: string,
+  archievements: string[],
+  technologies: {
+    direct: Array<Record<string, string>>,
+    indirect: Array<Record<string, string>>,
+  },
+}
 
 Experience.defaultProps = {
   print: false,
 };
-
-export default React.memo(Experience);
