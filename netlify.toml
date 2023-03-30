@@ -16,7 +16,7 @@
 [build.environment]
   NODE_VERSION = "18"
   YARN_FLAGS = "--production --frozen-lockfile --silent"
-  DISABLE_ESLINT_PLUGIN = true
+  DISABLE_ESLINT_PLUGIN = "true"
   # RUBY_VERSION = "2.7.1"
 # RUBY_VERSION may be nescessary until removal of node-sass
 
