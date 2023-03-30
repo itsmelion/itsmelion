@@ -14,6 +14,7 @@
     "url": "https://lion-portfolio.netlify.app"
   },
   "scripts": {
+    "postinstall": "npm rebuild node-sass",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -62,10 +63,6 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "node-sass": "8.0.0",
     "typescript": "5.0.2"
-  },
-  "optionalDependencies": {
-    "node-pre-gyp": "0.17.0",
-    "react-is": "18.2.0"
   },
   "browserslist": [
     ">0.3%",
