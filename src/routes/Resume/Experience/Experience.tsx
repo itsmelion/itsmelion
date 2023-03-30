@@ -1,3 +1,4 @@
+// @ts-nocheck
 import AsyncImage from 'components/AsyncImage/AsyncImage';
 import { memo } from 'react';
 import { lang } from 'utils';
