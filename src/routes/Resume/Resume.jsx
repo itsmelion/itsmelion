@@ -14,8 +14,8 @@ import './Resume.scss';
 
 const driveURL = 'https://drive.google.com/uc?export=download&id=';
 const resume = {
-  en: `${driveURL}1ZfczKsFOD5rbYbzSuERyGgVHqbLW46DV`,
-  pt: `${driveURL}1Ech4HtSX6ntf3RRr1Q1wLnoAj8MspYdZ`,
+  en: `${driveURL}1-1Z6_vS8hL2vOcUOqwGuuCM0GK-j0Eor`,
+  pt: `${driveURL}1-1Z6_vS8hL2vOcUOqwGuuCM0GK-j0Eor`,
 };
 
 const Resume = () => (
