@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#837](https://github.com/itsmelion/itsmelion/pull/837) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🎉 Merged PR [#558](https://github.com/itsmelion/lion-lint/pull/558) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-3. 🎉 Merged PR [#510](https://github.com/itsmelion/lion-lint/pull/510) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-4. 🎉 Merged PR [#487](https://github.com/itsmelion/lion-lint/pull/487) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
-5. 🎉 Merged PR [#482](https://github.com/itsmelion/lion-lint/pull/482) in [itsmelion/lion-lint](https://github.com/itsmelion/lion-lint)
+1. ❌ Closed PR [#3](https://github.com/itsmelion/laugh-it-up/pull/3) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
+2. ❌ Closed PR [#2](https://github.com/itsmelion/laugh-it-up/pull/2) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
+3. ❌ Closed PR [#1](https://github.com/itsmelion/laugh-it-up/pull/1) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
+4. ❌ Closed PR [#5](https://github.com/itsmelion/Mobarista/pull/5) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
+5. ❌ Closed PR [#4](https://github.com/itsmelion/Mobarista/pull/4) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
 <!--END_SECTION:activity-->
 
 ___
