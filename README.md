@@ -19,7 +19,7 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#3](https://github.com/itsmelion/laugh-it-up/pull/3) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
+1. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 2. ❌ Closed PR [#2](https://github.com/itsmelion/laugh-it-up/pull/2) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
 3. ❌ Closed PR [#1](https://github.com/itsmelion/laugh-it-up/pull/1) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
 4. ❌ Closed PR [#5](https://github.com/itsmelion/Mobarista/pull/5) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
