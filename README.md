@@ -19,10 +19,10 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
-2. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-3. ❌ Closed PR [#1](https://github.com/itsmelion/laugh-it-up/pull/1) in [itsmelion/laugh-it-up](https://github.com/itsmelion/laugh-it-up)
-4. ❌ Closed PR [#5](https://github.com/itsmelion/Mobarista/pull/5) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
+1. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094924329) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
+2. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094902666) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
+3. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
+4. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 5. ❌ Closed PR [#4](https://github.com/itsmelion/Mobarista/pull/4) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
 <!--END_SECTION:activity-->
 
