@@ -19,11 +19,11 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094924329) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
-2. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094902666) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
-3. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
-4. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-5. ❌ Closed PR [#4](https://github.com/itsmelion/Mobarista/pull/4) in [itsmelion/Mobarista](https://github.com/itsmelion/Mobarista)
+1. ❗ Opened issue [#119](https://github.com/cedricdelpoux/react-responsive-masonry/issues/119) in [cedricdelpoux/react-responsive-masonry](https://github.com/cedricdelpoux/react-responsive-masonry)
+2. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094924329) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
+3. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094902666) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
+4. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
+5. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 <!--END_SECTION:activity-->
 
 ___
