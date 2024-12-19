@@ -19,7 +19,7 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#119](https://github.com/cedricdelpoux/react-responsive-masonry/issues/119) in [cedricdelpoux/react-responsive-masonry](https://github.com/cedricdelpoux/react-responsive-masonry)
+1. 🗣 Commented on [#37268](https://github.com/facebook/react-native/issues/37268#issuecomment-2552493219) in [facebook/react-native](https://github.com/facebook/react-native)
 2. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094924329) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
 3. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094902666) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
 4. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
