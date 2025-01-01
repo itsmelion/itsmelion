@@ -26,11 +26,11 @@
     "sass-loader": ">=13.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.5.2",
-    "@fortawesome/free-brands-svg-icons": "6.5.2",
-    "@fortawesome/free-regular-svg-icons": "6.5.2",
-    "@fortawesome/free-solid-svg-icons": "6.5.2",
-    "@fortawesome/react-fontawesome": "0.2.0",
+    "@fortawesome/fontawesome-svg-core": "6.7.2",
+    "@fortawesome/free-brands-svg-icons": "6.7.2",
+    "@fortawesome/free-regular-svg-icons": "6.7.2",
+    "@fortawesome/free-solid-svg-icons": "6.7.2",
+    "@fortawesome/react-fontawesome": "0.2.2",
     "axios": "1.7.9",
     "flamework": "4.2.1",
     "lodash": "4.17.21",
