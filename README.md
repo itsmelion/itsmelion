@@ -7,13 +7,12 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 [![Connect on LinkedIn](https://img.shields.io/badge/--linkedin?label=LinkedIn&logo=LinkedIn&style=social)](https://www.linkedin.com/in/chrislion)
 [![Follow @itsmelion on GitHub](https://img.shields.io/github/followers/itsmelion?label=follow%20%40itsmeLion&style=social)](https://github.com/itsmelion)
 [![Follow chris.lion on Instagram](https://img.shields.io/badge/--instagram?label=@chris.lion&logo=Instagram&style=social)](https://instagram.com/chris.lion)
-[![Follow on Twitter](https://img.shields.io/badge/--twitter?label=@ChrisLion_me&logo=Twitter&style=social)](https://twitter.com/chrislion_me)
 
 - Performance obsessed; ⏱️
 - Love simplistic, and cutting edge software; 📆
 - Design and UIUX enthusiast; 🎨
 - Love build utilities aimed at increasing Developer productivity; 🧰
-- A people first guy. Valor human & bio diversity. Honor, justice and wisdom. 🌍
+- A people first guy. 🌍
 
 ---
 ### 📰 Recent Activity
