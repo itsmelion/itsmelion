@@ -81,10 +81,10 @@ export const contact = {
 };
 
 export const address = {
-  street: 'Henri Hermanslaan 538',
+  street: '',
   complement: '',
-  code: '6162GW',
-  city: 'Geleen',
+  code: '',
+  city: 'Randstad',
   country: 'Netherlands',
 };
 
