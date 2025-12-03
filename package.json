@@ -47,7 +47,7 @@
     "@babel/eslint-parser": "7.28.5",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.37.0 || ^9.0.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-lion": "2.2.7",
     "eslint-config-promise": "2.0.2",
