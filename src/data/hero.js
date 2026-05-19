@@ -76,7 +76,7 @@ export const contact = {
     label: 'christhopher.amaral',
     url: 'https://join.skype.com/invite/QRZJqK4phjyU',
   },
-  phone: '+31682135435',
+  phone: '+351914272805',
   agenda: 'https://calendly.com/itsmelion/talk',
 };
 
@@ -84,8 +84,8 @@ export const address = {
   street: '',
   complement: '',
   code: '',
-  city: 'Randstad',
-  country: 'Netherlands',
+  city: 'PT/NL',
+  country: 'European Union',
 };
 
 export const bio = {
