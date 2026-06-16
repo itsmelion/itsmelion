@@ -28,8 +28,17 @@ npm-debug.log
 **/.sass-cache
 **/Thumbs.ds
 
+# yarn
+.yarnrc.local.yml
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 .tmp
-.yarn
 dist
 src/styles/flamework
 public/google83411edbb80d393f.html
