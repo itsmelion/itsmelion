@@ -2,6 +2,7 @@ import { social, lastName } from 'data/hero';
 import logo from 'images/logo.png';
 import React from 'react';
 import { lang } from 'utils';
+import {ToptalBadge} from 'components/Footer/ToptalBadge';
 
 import './Footer.scss';
 
@@ -9,7 +10,7 @@ const Footer = React.memo(() => (
   <footer hide-print="" id="Footer">
     <div align="between stretch" className="contain row mobile-column footer">
       <aside className="footer-alia">
-        <img alt="Logo Alia" src={logo} width="28" />
+        <ToptalBadge />
       </aside>
 
       <article className="footer-hero">
