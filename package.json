@@ -25,11 +25,11 @@
     "eslint-plugin-import": "2.32.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.x",
-    "@fortawesome/free-brands-svg-icons": "^6.x",
-    "@fortawesome/free-regular-svg-icons": "^6.x",
-    "@fortawesome/free-solid-svg-icons": "^6.x",
-    "@fortawesome/react-fontawesome": "^0.x",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
     "axios": "1.18.0",
     "flamework": "4.2.1",
     "lodash": "4.18.1",
