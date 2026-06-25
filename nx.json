@@ -19,9 +19,7 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": {
-          "targetName": "typecheck"
-        },
+        "typecheck": { "targetName": "typecheck" },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -43,18 +41,8 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/vitest",
-      "options": {
-        "testTargetName": "test"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/vitest", "options": { "testTargetName": "test" } },
     {
       "plugin": "@nx/next/plugin",
       "options": {
@@ -75,32 +63,16 @@
         "ciTargetName": "e2e-ci"
       }
     },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ],
   "release": {
     "projects": ["!utils", "!@chrislion/source"],
-    "version": {
-      "preVersionCommand": "npx nx run-many -t build"
-    }
+    "version": { "preVersionCommand": "npx nx run-many -t build" }
   },
-  "targetDefaults": {
-    "test": {
-      "dependsOn": ["^build"]
-    }
-  },
-  "nxCloudId": "6a3d37fd772d4ee7c12a23a0",
+  "targetDefaults": { "test": { "dependsOn": ["^build"] } },
+  "nxCloudId": "6a3d3fde3ed12fbfe0260dd9",
   "analytics": true,
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "none",
-        "linter": "eslint"
-      }
-    }
+    "@nx/next": { "application": { "style": "none", "linter": "eslint" } }
   }
 }
