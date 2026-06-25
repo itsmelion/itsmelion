@@ -18,9 +18,9 @@ I consider myself as a _Software Developer & Designer_.<br/>My main role is as <
 ### 📰 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#684](https://github.com/itsmelion/itsmelion/pull/684) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
-2. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094924329) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
-3. 🗣 Commented on [#2569](https://github.com/tamagui/tamagui/issues/2569#issuecomment-2094902666) in [tamagui/tamagui](https://github.com/tamagui/tamagui)
+1. ❌ Closed PR [#57](https://github.com/itsmelion/react-native-deck-swiper/pull/57) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
+2. 🗣 Commented on [#57](https://github.com/itsmelion/react-native-deck-swiper/pull/57#issuecomment-4792941235) in [itsmelion/react-native-deck-swiper](https://github.com/itsmelion/react-native-deck-swiper)
+3. ❌ Closed PR [#684](https://github.com/itsmelion/itsmelion/pull/684) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 4. 🎉 Merged PR [#44](https://github.com/itsmelion/settings/pull/44) in [itsmelion/settings](https://github.com/itsmelion/settings)
 5. ❌ Closed PR [#854](https://github.com/itsmelion/itsmelion/pull/854) in [itsmelion/itsmelion](https://github.com/itsmelion/itsmelion)
 <!--END_SECTION:activity-->
