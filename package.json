@@ -1,67 +1,82 @@
 {
-  "name": "@alia-code/portfolio",
-  "version": "1.2.0",
+  "name": "@chrislion/portfolio",
+  "version": "2.0.0",
   "homepage": "https://lion-portfolio.netlify.app",
   "repository": "github:itsmelion/portfolio.git",
   "description": "Get to know Chris's skills, contacts, download his CV, and more.",
   "main": "src/index.jsx",
-  "engines": {
-    "node": ">=18"
-  },
+  "license": "MIT",
   "author": {
     "name": "Christhopher Lion",
     "email": "itsmelion@icloud.com",
     "url": "https://lion-portfolio.netlify.app"
   },
-  "scripts": {
-    "postinstall": "npm rebuild node-sass",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "lint": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx --fix ./src",
-    "lint:ci": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx ./src"
-  },
-  "resolutions": {
-    "eslint-plugin-import": "2.32.0"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.2.0",
-    "@fortawesome/free-brands-svg-icons": "^7.2.0",
-    "@fortawesome/free-regular-svg-icons": "^7.2.0",
-    "@fortawesome/free-solid-svg-icons": "^7.2.0",
-    "@fortawesome/react-fontawesome": "^3.3.1",
-    "axios": "1.18.0",
-    "flamework": "4.2.1",
-    "lodash": "4.18.1",
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
-    "react-helmet": "6.1.0",
-    "react-modal": "3.16.3",
-    "react-router-dom": "^5.3.4",
-    "react-scripts": "^5.0.1",
-    "react-tooltip": "^4.5.1",
-    "sass": "^1.101.0",
-    "styled-components": "6.4.2"
-  },
+  "private": true,
   "devDependencies": {
-    "@babel/eslint-parser": "7.x",
-    "@typescript-eslint/eslint-plugin": "^6.x",
-    "@typescript-eslint/parser": "^6.x",
-    "eslint": "^8.x",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-lion": "2.2.7",
-    "eslint-config-promise": "2.0.2",
-    "eslint-config-react": "1.1.7",
-    "eslint-config-react-app": "7.0.1",
-    "eslint-config-standard": "17.1.0",
-    "eslint-import-resolver-alias": "1.1.2",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "7.3.0",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.1.1",
-    "typescript": "5.9.3"
+    "@eslint/js": "^9.8.0",
+    "@next/eslint-plugin-next": "^16.1.6",
+    "@nx/cypress": "23.0.1",
+    "@nx/eslint": "23.0.1",
+    "@nx/eslint-plugin": "23.0.1",
+    "@nx/jest": "23.0.1",
+    "@nx/js": "23.0.1",
+    "@nx/next": "23.0.1",
+    "@nx/vite": "23.0.1",
+    "@nx/vitest": "23.0.1",
+    "@nx/web": "23.0.1",
+    "@swc-node/register": "1.11.1",
+    "@swc/cli": "~0.8.0",
+    "@swc/core": "1.15.8",
+    "@swc/helpers": "0.5.18",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.3.0",
+    "@types/jest": "~30.0.0",
+    "@types/node": "20.19.9",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitest/coverage-v8": "~4.1.0",
+    "@vitest/ui": "~4.1.0",
+    "babel-jest": "~30.3.0",
+    "cypress": "^15.14.2",
+    "eslint": "~8.57.0",
+    "eslint-config-next": "^16.1.6",
+    "eslint-plugin-cypress": "^3.5.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "6.10.1",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "jest": "~30.3.0",
+    "jest-environment-jsdom": "~30.3.0",
+    "jest-util": "~30.3.0",
+    "jiti": "2.4.2",
+    "jsonc-eslint-parser": "^2.1.0",
+    "nx": "23.0.1",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.0",
+    "ts-node": "10.9.1",
+    "tslib": "^2.3.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "verdaccio": "6.4.0",
+    "vite": "^8.0.0",
+    "vitest": "~4.1.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
   },
   "browserslist": [
     ">0.3%",
@@ -74,24 +89,11 @@
     "not kaios <= 99",
     "not Baidu <= 99"
   ],
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
-  },
-  "license": "MIT",
   "bugs": "https://github.com/itsmelion/portfolio/issues",
-  "packageManager": "yarn@4.17.0"
+  "packageManager": "yarn@4.17.0",
+  "dependencies": {
+    "next": "~16.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
