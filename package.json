@@ -61,7 +61,7 @@
     "eslint-plugin-promise": "7.3.0",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "browserslist": [
     ">0.3%",
