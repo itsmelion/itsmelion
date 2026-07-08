@@ -93,5 +93,5 @@
   },
   "license": "MIT",
   "bugs": "https://github.com/itsmelion/portfolio/issues",
-  "packageManager": "yarn@4.17.0"
+  "packageManager": "yarn@4.17.1"
 }
