@@ -20,6 +20,9 @@
     },
     {
       "path": "./apps/chrislion"
+    },
+    {
+      "path": "./packages/eslint-config"
     }
   ]
 }

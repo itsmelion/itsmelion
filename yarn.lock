@@ -1518,6 +1518,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@chrislion/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@chrislion/eslint-config@workspace:packages/eslint-config"
+  languageName: unknown
+  linkType: soft
+
 "@chrislion/portfolio@workspace:.":
   version: 0.0.0-use.local
   resolution: "@chrislion/portfolio@workspace:."
