@@ -64,3 +64,4 @@ vitest.config.*.timestamp*
 .next
 out
 test-output
+.vitest
