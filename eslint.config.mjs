@@ -1,6 +1,9 @@
 import nx from '@nx/eslint-plugin';
+import { base, nxConfig } from '@chrislion/eslint-config';
 
 export default [
+  ...base,
+  ...nxConfig,
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
