@@ -6,5 +6,12 @@
     "next": "~16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@chrislion/eslint-config": "workspace:*",
+    "eslint": "^9.27.1",
+    "eslint-config-next": "^16.1.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0"
   }
 }

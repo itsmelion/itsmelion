@@ -36,6 +36,12 @@ export default [
     },
   },
   {
+    files: ['**/{page,layout,route}.{js,jsx,ts,tsx}'],
+    rules: {
+      'import-x/no-default-export': 'off',
+    },
+  },
+  {
     files: ['jest.config.cts'],
     rules: {
       // ESLint 9's recommended set newly flags Jest's CommonJS configuration.

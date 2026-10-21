@@ -1486,9 +1486,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@chrislion/chrislion@workspace:apps/chrislion"
   dependencies:
+    "@chrislion/eslint-config": "workspace:*"
+    eslint: "npm:^9.27.1"
+    eslint-config-next: "npm:^16.1.6"
     next: "npm:~16.1.6"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    typescript: "npm:^6.0.3"
+    typescript-eslint: "npm:^8.65.0"
   languageName: unknown
   linkType: soft
 
@@ -1500,16 +1505,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@chrislion/eslint-config@workspace:packages/eslint-config":
+"@chrislion/eslint-config@workspace:*, @chrislion/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@chrislion/eslint-config@workspace:packages/eslint-config"
   dependencies:
     "@eslint/js": "npm:^9.0.0"
+    "@nx/eslint-plugin": "npm:^23.3.0"
     "@stylistic/eslint-plugin": "npm:^2.0.0"
     eslint-import-resolver-typescript: "npm:^3.0.0"
     eslint-plugin-import-x: "npm:^4.0.0"
     eslint-plugin-n: "npm:^17.0.0"
     eslint-plugin-promise: "npm:^7.0.0"
+    eslint-plugin-react: "npm:^7.37.0"
+    eslint-plugin-react-hooks: "npm:^7.1.1"
     globals: "npm:^15.0.0"
   peerDependencies:
     eslint: ^9.0.0
@@ -3652,7 +3660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/eslint-plugin@npm:23.3.0":
+"@nx/eslint-plugin@npm:23.3.0, @nx/eslint-plugin@npm:^23.3.0":
   version: 23.3.0
   resolution: "@nx/eslint-plugin@npm:23.3.0"
   dependencies:
@@ -16287,7 +16295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:6.0.3, typescript@npm:~6.0.3":
+"typescript@npm:6.0.3, typescript@npm:^6.0.3, typescript@npm:~6.0.3":
   version: 6.0.3
   resolution: "typescript@npm:6.0.3"
   bin:
@@ -16297,7 +16305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A~6.0.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^6.0.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A~6.0.3#optional!builtin<compat/typescript>":
   version: 6.0.3
   resolution: "typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"
   bin:

@@ -1,6 +1,7 @@
 // src/react.js
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+
 import { base } from './base.js';
 
 export const reactConfig = [
