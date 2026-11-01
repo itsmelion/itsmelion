@@ -42,7 +42,7 @@ __metadata:
     react-scripts: "npm:^5.0.1"
     react-tooltip: "npm:^4.5.1"
     sass: "npm:^1.101.0"
-    styled-components: "npm:6.5.3"
+    styled-components: "npm:6.6.0"
     typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
@@ -3048,6 +3048,13 @@ __metadata:
     "@types/react-native": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/520e236fbc8c28145cd009cf6a6baf612c74b677192158089906aba25c47b7092528640f6f0002aa0e0ef894dc87824d3b8f6e8d4630f2430137fc2b8b9f1fa3
+  languageName: node
+  linkType: hard
+
+"@types/stylis@npm:4.2.7":
+  version: 4.2.7
+  resolution: "@types/stylis@npm:4.2.7"
+  checksum: 10c0/01a9679addb3f63951a9c09729564e2205581f2db40875a28b25cc461efc52ba17a711cc50cdb5e7d3a67c5f2cd60580e078c8a69b8df7b67699d89060d2a977
   languageName: node
   linkType: hard
 
@@ -12765,11 +12772,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:6.5.3":
-  version: 6.5.3
-  resolution: "styled-components@npm:6.5.3"
+"styled-components@npm:6.6.0":
+  version: 6.6.0
+  resolution: "styled-components@npm:6.6.0"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.4.0"
+    "@types/stylis": "npm:4.2.7"
     css-to-react-native: "npm:3.2.0"
     csstype: "npm:3.2.3"
     stylis: "npm:4.3.6"
@@ -12785,7 +12793,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 10c0/76b525c7cbf4febdf52e6b15eeddb3782bb50e11f078e5d0a299b221067314386c7b05cf703f141f3eb15c541f41b20e43386405322986e441e8bb07324adf06
+  checksum: 10c0/7496a42169119fd042344875fb9247599674df1b884b78a10a03d415a638192432009ed6f9c542db7c898e5ee6292a2cdb887252e0ea4b513361635aa49d3a55
   languageName: node
   linkType: hard
 
